@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" >
+  <xsd:element name="Processo_Documento">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Ano_Processo" type="xsd:int"></xsd:element>
+        <xsd:element name="Num_Processo" type="xsd:int"></xsd:element>
+        <xsd:element name="Codigo" type="xsd:int"></xsd:element>
+        <xsd:element name="Descricao" type="xsd:string"></xsd:element>
+        <xsd:element name="Data_Entrega" type="xsd:dateTime"></xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

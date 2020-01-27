@@ -105,7 +105,6 @@
     <Reference Include="Owf.Controls.A1Panel">
       <HintPath>Files\Owf.Controls.A1Panel.dll</HintPath>
     </Reference>
-    <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.configuration" />
@@ -159,6 +158,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dsProcessoRequerente.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Datasets\Processo_Documento.cs" />
+    <Compile Include="Datasets\Processo_Requerente.cs" />
     <Compile Include="Editores\Data_Editor.cs" />
     <Compile Include="Editores\Tributo_Editor.cs" />
     <Compile Include="Forms\Atividade_ISS.cs">
@@ -540,6 +541,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Report\Comprovante_Doc.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Comprovante_Doc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Report\ComunicadoIsencao.cs">
       <DependentUpon>ComunicadoIsencao.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -604,6 +611,30 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CertidaoValorVenal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Comunicado_Doc.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Comunicado_Doc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Processo_Requerente.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Processo_Requerente.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Requerimento_Abertura.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Requerimento_Abertura.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Requerimento_Cancel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Requerimento_Cancel.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
@@ -810,6 +841,10 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\Comprovante_Doc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Comprovante_Doc.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report\ComunicadoIsencao.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ComunicadoIsencao.cs</LastGenOutput>
@@ -858,10 +893,26 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Report\ComunicadoDoc.rdlc" />
+    <EmbeddedResource Include="Report\Comunicado_Doc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Comunicado_Doc.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report\Detalhe_Parcela.rdlc" />
     <EmbeddedResource Include="Report\ProcessoRequerente.rdlc" />
+    <EmbeddedResource Include="Report\Processo_Requerente.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Processo_Requerente.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report\RequerimentoAbertura.rdlc" />
     <EmbeddedResource Include="Report\RequerimentoCancelamento.rdlc" />
+    <EmbeddedResource Include="Report\Requerimento_Abertura.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Requerimento_Abertura.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Requerimento_Cancel.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Requerimento_Cancel.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="User_Controls\ctlDataEditor.resx">
       <DependentUpon>ctlDataEditor.cs</DependentUpon>
     </EmbeddedResource>
@@ -911,6 +962,12 @@
     </None>
     <None Include="Datasets\dsProcessoRequerente.xss">
       <DependentUpon>dsProcessoRequerente.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\Processo_Documento.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\Processo_Requerente.xsd">
+      <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -1168,6 +1225,8 @@
     <None Include="Resources\History1.png" />
     <None Include="Resources\History2.png" />
     <None Include="Resources\History21.png" />
+    <Content Include="Datasets\Processo_Documento.xml" />
+    <Content Include="Datasets\Processo_Requerente.xml" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

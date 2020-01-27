@@ -1,0 +1,17 @@
+﻿<Processo_Requerente xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="Processo_Requerente.xsd">
+  <Ano_Processo>1</Ano_Processo>
+  <Num_Processo>1</Num_Processo>
+  <Seq>1</Seq>
+  <Numero_Processo></Numero_Processo>
+  <Assunto></Assunto>
+  <Data_Entrada>1980-03-23T10:20:15</Data_Entrada>
+  <Requerente></Requerente>
+  <Documento></Documento>
+  <Endereco></Endereco>
+  <Bairro></Bairro>
+  <Cidade></Cidade>
+  <Uf></Uf>
+  <Endereco_Imovel></Endereco_Imovel>
+  <RG></RG>
+</Processo_Requerente>

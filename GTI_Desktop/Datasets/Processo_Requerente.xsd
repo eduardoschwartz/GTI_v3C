@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" >
+ 
+  <xsd:element name="Processo_Requerente">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Ano_Processo" type="xsd:int"></xsd:element>
+        <xsd:element name="Num_Processo" type="xsd:int"></xsd:element>
+        <xsd:element name="Seq" type="xsd:int"></xsd:element>
+        <xsd:element name="Numero_Processo" type="xsd:string"></xsd:element>
+        <xsd:element name="Assunto" type="xsd:string"></xsd:element>
+        <xsd:element name="Data_Entrada" type="xsd:dateTime"></xsd:element>
+        <xsd:element name="Requerente" type="xsd:string"></xsd:element>
+        <xsd:element name="Documento" type="xsd:string"></xsd:element>
+        <xsd:element name="Endereco" type="xsd:string"></xsd:element>
+        <xsd:element name="Bairro" type="xsd:string"></xsd:element>
+        <xsd:element name="Cidade" type="xsd:string"></xsd:element>
+        <xsd:element name="Uf" type="xsd:string"></xsd:element>
+        <xsd:element name="Endereco_Imovel" type="xsd:string"></xsd:element>
+        <xsd:element name="RG" type="xsd:string"></xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

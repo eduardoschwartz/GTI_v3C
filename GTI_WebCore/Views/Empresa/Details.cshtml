@@ -1,0 +1,127 @@
+﻿@model GTI_WebCore.ViewModels.EmpresaDetailsViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Detalhe de uma empresa";
+}
+
+
+
+<label style="color:brown;font-size:16px;font-style:italic">Detalhes de uma empresa</label>
+<br />
+
+
+
+<form asp-controller="Empresa" enctype="multipart/form-data" method="post" onsubmit="return ValidateForm()" asp-action="Details" class="mt-3" style="margin-left:18px">
+    <div class="form-group row">
+        <label asp-for="Inscricao"> </label>
+        <div class="col-sm-10">
+            <input asp-for="Inscricao" id="codigo" class="form-control" style="max-width:100px;max-height:25px;overflow:auto;" onKeyPress="return formata(this, '§§§§§§', event)" onchange="ClearError()">
+        </div>
+    </div>
+
+    <div class="form-group row align-items-lg-baseline">
+        CPF:&nbsp; <input type="radio" required asp-for="CpfCnpjLabel" id="cpfCheck" value="cpf" name="doc" checked="checked" onclick="radioCheck()" />
+        &nbsp;CNPJ:&nbsp;  <input type="radio" required asp-for="CpfCnpjLabel" id="cnpjCheck" value="cnpj" name="doc" onclick="radioCheck()" />
+        &nbsp;<input asp-for="CpfValue" id="cpfTxt" class="form-control" style="max-width:200px;max-height:25px;" onKeyPress="return formata(this, '§§§.§§§.§§§-§§', event)" onchange="ClearError()" placeholder="Digite o nº do CPF">
+        &nbsp;<input asp-for="CnpjValue" id="cnpjTxt" class="form-control" style="max-width:200px;max-height:25px;display:none" onKeyPress="return formata(this, '§§.§§§.§§§/§§§§-§§', event)" onchange="ClearError()" placeholder="Digite o nº do CNPJ">
+    </div>
+    <br />
+    <div class="form-group row">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <img id="img-captcha" src="~/Empresa/get-captcha-image" title="Clique para atualizar" />
+            </div>
+            &nbsp;<input type="text" class="form-control" asp-for="CaptchaCode" maxlength="4" id="captchaTxt" />
+            &nbsp;<span asp-validation-for="CaptchaCode" class="text-danger"></span>
+
+            <div class="col-sm-10">
+                &nbsp;&nbsp;<button type="submit" class="green_button"> Consultar</button>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="form-group row">
+        <label class="text-danger" id="errorLabel"></label>
+    </div>
+</form>
+
+
+
+
+@if (Model != null) {
+    if (Model.EmpresaStruct == null) {
+        <div class="form-group row">
+            <label class="text-danger" id="errorLabel">@Model.ErrorMessage</label>
+        </div>
+    } else {
+        <tr>
+            <td>
+                @Model.EmpresaStruct.Razao_social
+            </td>
+        </tr>
+    }
+}
+
+@Html.ActionLink("Retornar ao menu principal", "Index", "Home")
+@section scripts{
+
+    <script type="text/javascript">
+        function radioCheck() {
+            document.getElementById('cnpjTxt').value = "";
+            document.getElementById('cpfTxt').value = "";
+            if (document.getElementById('cpfCheck').checked) {
+                document.getElementById('cpfTxt').style.display = 'block';
+            }
+            else {
+                document.getElementById('cpfTxt').style.display = 'none';
+            }
+            if (document.getElementById('cnpjCheck').checked) {
+                document.getElementById('cnpjTxt').style.display = 'block';
+            }
+            else {
+                document.getElementById('cnpjTxt').style.display = 'none';
+            }
+        }
+
+        function ValidateForm() {
+            var _cod = document.getElementById('codigo').value;
+            var _cpf = document.getElementById('cpfTxt').value;
+            var _cnpj = document.getElementById('cnpjTxt').value;
+            var _captcha = document.getElementById('captchaTxt').value;
+
+            if ((_cod == "" || parseInt(_cod) == 0) && _cpf == "" && _cnpj == "") {
+                document.getElementById('errorLabel').innerHTML = "Digite ao menos um dos campos!";
+                return false;
+            }
+            else {
+                if (parseInt(_cod) > 0 && (_cpf != "" || _cnpj != "")) {
+                    document.getElementById('errorLabel').innerHTML = "Digite a inscrição municipal ou o Cpf ou o CNPJ!";
+                    return false;
+                } else {
+                    if (_captcha == "") {
+                        document.getElementById('errorLabel').innerHTML = "Digite o código de validação!";
+                        return false;
+                    } else {
+                        return true;
+                    }
+                }
+            }
+        }
+
+        function ClearError() {
+            document.getElementById('errorLabel').innerHTML = "";
+        }
+
+        $("#img-captcha").click(function () {
+            resetCaptchaImage();
+        });
+
+        function resetCaptchaImage() {
+            d = new Date();
+            $("#img-captcha").attr("src", "/Empresa/get-captcha-image?" + d.getTime());
+        }
+
+    </script>
+}

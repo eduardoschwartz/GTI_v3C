@@ -1,0 +1,871 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.3.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{00AD477E-4D58-4CA4-89B4-CC6F9194AD52}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GTI_Web</RootNamespace>
+    <AssemblyName>GTI_Web</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.3.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.3.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1400.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1400.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1400.0\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1400.0\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\default.css" />
+    <Content Include="css\gti.css" />
+    <Content Include="css\style.css" />
+    <Content Include="Images\border2.gif" />
+    <Content Include="Images\brasaocor.png" />
+    <Content Include="Images\BrasaoJaboticabal.jpg" />
+    <Content Include="Images\brasaotitulo.png" />
+    <Content Include="Images\codbarra.jpg" />
+    <Content Include="Images\doc.jpg" />
+    <Content Include="Images\GTI_logo.png" />
+    <Content Include="Images\icon_24_buscar_on.png" />
+    <Content Include="Images\topbg.gif" />
+    <Content Include="Pages\alvara_funcionamento.aspx" />
+    <Content Include="Pages\alvara_vre.aspx" />
+    <Content Include="Pages\boletoBB.aspx" />
+    <Content Include="Pages\certidaodebito.aspx" />
+    <Content Include="Pages\certidaodebito_doc.aspx" />
+    <Content Include="Pages\certidaoendereco.aspx" />
+    <Content Include="Pages\certidaoinscricao.aspx" />
+    <Content Include="Pages\certidaoisencao.aspx" />
+    <Content Include="Pages\certidaovalorvenal.aspx" />
+    <Content Include="Pages\cip.aspx" />
+    <Content Include="Pages\cipendereco.aspx" />
+    <Content Include="Pages\ConsultaProcesso.aspx" />
+    <Content Include="Pages\ConsultaProcessoend.aspx" />
+    <Content Include="Pages\cpv_pagto.aspx" />
+    <Content Include="Pages\dadosEmpresa.aspx" />
+    <Content Include="Pages\damweb.aspx" />
+    <Content Include="Pages\damwebend2.aspx" />
+    <Content Include="Pages\detalhe_boleto.aspx" />
+    <Content Include="Pages\envioDeca.aspx" />
+    <Content Include="Pages\gticertidao.aspx" />
+    <Content Include="Pages\gtiMenu.aspx" />
+    <Content Include="Pages\gtiMenu2.aspx" />
+    <Content Include="Pages\LoginFunc.aspx" />
+    <Content Include="Pages\readVRExml.aspx" />
+    <Content Include="Pages\SegundaViaCIP.aspx" />
+    <Content Include="Pages\SegundaViaCIPFim.aspx" />
+    <Content Include="Pages\SegundaViaIPTU.aspx" />
+    <Content Include="Pages\SegundaViaIPTUend.aspx" />
+    <Content Include="Pages\SegundaViaISS.aspx" />
+    <Content Include="Pages\SegundaViaISSend.aspx" />
+    <Content Include="Pages\SegundaViaVS.aspx" />
+    <Content Include="Pages\SegundaViaVSend.aspx" />
+    <Content Include="Pages\situacao_pagto.aspx" />
+    <Content Include="Pages\Turing.aspx" />
+    <Content Include="Pages\wait.aspx" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSets\dsBoletoGuia.cs">
+      <DependentUpon>dsBoletoGuia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\dsBoletoGuia.designer.cs">
+      <DependentUpon>dsBoletoGuia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\dsBoletoGuia1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBoletoGuia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\dsDadosEmpresa.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDadosEmpresa.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\dsDAM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDAM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\dsMobiliarioAtividadeVS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsMobiliarioAtividadeVS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\dsSituacaoPagto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSituacaoPagto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gtiCore.cs" />
+    <Compile Include="Pages\alvara_funcionamento.aspx.cs">
+      <DependentUpon>alvara_funcionamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\alvara_funcionamento.aspx.designer.cs">
+      <DependentUpon>alvara_funcionamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\alvara_vre.aspx.cs">
+      <DependentUpon>alvara_vre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\alvara_vre.aspx.designer.cs">
+      <DependentUpon>alvara_vre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\boletoBB.aspx.cs">
+      <DependentUpon>boletoBB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\boletoBB.aspx.designer.cs">
+      <DependentUpon>boletoBB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\certidaodebito.aspx.cs">
+      <DependentUpon>certidaodebito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\certidaodebito.aspx.designer.cs">
+      <DependentUpon>certidaodebito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\certidaodebito_doc.aspx.cs">
+      <DependentUpon>certidaodebito_doc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\certidaodebito_doc.aspx.designer.cs">
+      <DependentUpon>certidaodebito_doc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\certidaoendereco.aspx.cs">
+      <DependentUpon>certidaoendereco.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\certidaoendereco.aspx.designer.cs">
+      <DependentUpon>certidaoendereco.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\certidaoinscricao.aspx.cs">
+      <DependentUpon>certidaoinscricao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\certidaoinscricao.aspx.designer.cs">
+      <DependentUpon>certidaoinscricao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\certidaoisencao.aspx.cs">
+      <DependentUpon>certidaoisencao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\certidaoisencao.aspx.designer.cs">
+      <DependentUpon>certidaoisencao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\certidaovalorvenal.aspx.cs">
+      <DependentUpon>certidaovalorvenal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\certidaovalorvenal.aspx.designer.cs">
+      <DependentUpon>certidaovalorvenal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\cip.aspx.cs">
+      <DependentUpon>cip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\cip.aspx.designer.cs">
+      <DependentUpon>cip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\cipendereco.aspx.cs">
+      <DependentUpon>cipendereco.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\cipendereco.aspx.designer.cs">
+      <DependentUpon>cipendereco.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ConsultaProcesso.aspx.cs">
+      <DependentUpon>ConsultaProcesso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ConsultaProcesso.aspx.designer.cs">
+      <DependentUpon>ConsultaProcesso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ConsultaProcessoend.aspx.cs">
+      <DependentUpon>ConsultaProcessoend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ConsultaProcessoend.aspx.designer.cs">
+      <DependentUpon>ConsultaProcessoend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\cpv_pagto.aspx.cs">
+      <DependentUpon>cpv_pagto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\cpv_pagto.aspx.designer.cs">
+      <DependentUpon>cpv_pagto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\dadosEmpresa.aspx.cs">
+      <DependentUpon>dadosEmpresa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\dadosEmpresa.aspx.designer.cs">
+      <DependentUpon>dadosEmpresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\damweb.aspx.cs">
+      <DependentUpon>damweb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\damweb.aspx.designer.cs">
+      <DependentUpon>damweb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\damwebend2.aspx.cs">
+      <DependentUpon>damwebend2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\damwebend2.aspx.designer.cs">
+      <DependentUpon>damwebend2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\default.Master.cs">
+      <DependentUpon>default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\default.Master.designer.cs">
+      <DependentUpon>default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\detalhe_boleto.aspx.cs">
+      <DependentUpon>detalhe_boleto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\detalhe_boleto.aspx.designer.cs">
+      <DependentUpon>detalhe_boleto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\envioDeca.aspx.cs">
+      <DependentUpon>envioDeca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\envioDeca.aspx.designer.cs">
+      <DependentUpon>envioDeca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\gticertidao.aspx.cs">
+      <DependentUpon>gticertidao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\gticertidao.aspx.designer.cs">
+      <DependentUpon>gticertidao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\gtiMenu.aspx.cs">
+      <DependentUpon>gtiMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\gtiMenu.aspx.designer.cs">
+      <DependentUpon>gtiMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\gtiMenu2.aspx.cs">
+      <DependentUpon>gtiMenu2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\gtiMenu2.aspx.designer.cs">
+      <DependentUpon>gtiMenu2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LoginFunc.aspx.cs">
+      <DependentUpon>LoginFunc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\LoginFunc.aspx.designer.cs">
+      <DependentUpon>LoginFunc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\readVRExml.aspx.cs">
+      <DependentUpon>readVRExml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\readVRExml.aspx.designer.cs">
+      <DependentUpon>readVRExml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SegundaViaCIP.aspx.cs">
+      <DependentUpon>SegundaViaCIP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SegundaViaCIP.aspx.designer.cs">
+      <DependentUpon>SegundaViaCIP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SegundaViaCIPFim.aspx.cs">
+      <DependentUpon>SegundaViaCIPFim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SegundaViaCIPFim.aspx.designer.cs">
+      <DependentUpon>SegundaViaCIPFim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SegundaViaIPTU.aspx.cs">
+      <DependentUpon>SegundaViaIPTU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SegundaViaIPTU.aspx.designer.cs">
+      <DependentUpon>SegundaViaIPTU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SegundaViaIPTUend.aspx.cs">
+      <DependentUpon>SegundaViaIPTUend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SegundaViaIPTUend.aspx.designer.cs">
+      <DependentUpon>SegundaViaIPTUend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SegundaViaISS.aspx.cs">
+      <DependentUpon>SegundaViaISS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SegundaViaISS.aspx.designer.cs">
+      <DependentUpon>SegundaViaISS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SegundaViaISSend.aspx.cs">
+      <DependentUpon>SegundaViaISSend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SegundaViaISSend.aspx.designer.cs">
+      <DependentUpon>SegundaViaISSend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SegundaViaVS.aspx.cs">
+      <DependentUpon>SegundaViaVS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SegundaViaVS.aspx.designer.cs">
+      <DependentUpon>SegundaViaVS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SegundaViaVSend.aspx.cs">
+      <DependentUpon>SegundaViaVSend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SegundaViaVSend.aspx.designer.cs">
+      <DependentUpon>SegundaViaVSend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\situacao_pagto.aspx.cs">
+      <DependentUpon>situacao_pagto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\situacao_pagto.aspx.designer.cs">
+      <DependentUpon>situacao_pagto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Turing.aspx.cs">
+      <DependentUpon>Turing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Turing.aspx.designer.cs">
+      <DependentUpon>Turing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\wait.aspx.cs">
+      <DependentUpon>wait.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\wait.aspx.designer.cs">
+      <DependentUpon>wait.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\AlvaraFuncionamentoProvisorioValida.cs">
+      <DependentUpon>AlvaraFuncionamentoProvisorioValida.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\AlvaraFuncionamentoValida.cs">
+      <DependentUpon>AlvaraFuncionamentoValida.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\CertidaoDebitoDocumentoPN.cs">
+      <DependentUpon>CertidaoDebitoDocumentoPN.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\CertidaoDebitoDocumentoP.cs">
+      <DependentUpon>CertidaoDebitoDocumentoP.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\CertidaoDebitoDocumentoN.cs">
+      <DependentUpon>CertidaoDebitoDocumentoN.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\AlvaraFuncionamento.cs">
+      <DependentUpon>AlvaraFuncionamento.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\CertidaoDebitoDocValida.cs">
+      <DependentUpon>CertidaoDebitoDocValida.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\CertidaoInscricaoExtratoValida.cs">
+      <DependentUpon>CertidaoInscricaoExtratoValida.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\ComprovanteInscricaoValida.cs">
+      <DependentUpon>ComprovanteInscricaoValida.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\ComprovanteInscricao.cs">
+      <DependentUpon>ComprovanteInscricao.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\SituacaoPagamento.cs">
+      <DependentUpon>SituacaoPagamento.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\ComprovantePagamento.cs">
+      <DependentUpon>ComprovantePagamento.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\CertidaoDebitoEmpresa.cs">
+      <DependentUpon>CertidaoDebitoEmpresa.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\CertidaoDebitoEmpresaPN.cs">
+      <DependentUpon>CertidaoDebitoEmpresaPN.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\CertidaoDebitoImovelPN.cs">
+      <DependentUpon>CertidaoDebitoImovelPN.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\CertidaoDebitoImovel.cs">
+      <DependentUpon>CertidaoDebitoImovel.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\CertidaoInscricaoExtratoEncerrada.cs">
+      <DependentUpon>CertidaoInscricaoExtratoEncerrada.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\CertidaoInscricaoExtratoAtiva.cs">
+      <DependentUpon>CertidaoInscricaoExtratoAtiva.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\CertidaoInscricaoValida.cs">
+      <DependentUpon>CertidaoInscricaoValida.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\CertidaoInscricaoAtiva.cs">
+      <DependentUpon>CertidaoInscricaoAtiva.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\CertidaoInscricaoEncerrada.cs">
+      <DependentUpon>CertidaoInscricaoEncerrada.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\CertidaoIsencaoProcesso.cs">
+      <DependentUpon>CertidaoIsencaoProcesso.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\CertidaoImunidade.cs">
+      <DependentUpon>CertidaoImunidade.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\CertidaoIsencao65.cs">
+      <DependentUpon>CertidaoIsencao65.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\CertidaoDebitoValida.cs">
+      <DependentUpon>CertidaoDebitoValida.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\CertidaoIsencaoValida.cs">
+      <DependentUpon>CertidaoIsencaoValida.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\CertidaoValorVenalValida.cs">
+      <DependentUpon>CertidaoValorVenalValida.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\CertidaoValorVenal.cs">
+      <DependentUpon>CertidaoValorVenal.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\CertidaoEnderecoValida.cs">
+      <DependentUpon>CertidaoEnderecoValida.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\CertidaoEndereco.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CertidaoEndereco.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GTI_Bll\GTI_Bll.csproj">
+      <Project>{9b7b83db-4417-4143-b465-52fe4870d2e0}</Project>
+      <Name>GTI_Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GTI_Models\GTI_Models.csproj">
+      <Project>{859b188d-0d59-418e-af77-5235b79087f4}</Project>
+      <Name>GTI_Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataSets\dsDadosEmpresa.xsc">
+      <DependentUpon>dsDadosEmpresa.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSets\dsBoletoGuia.xsc">
+      <DependentUpon>dsBoletoGuia.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSets\dsBoletoGuia.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBoletoGuia1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSets\dsBoletoGuia.xss">
+      <DependentUpon>dsBoletoGuia.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSets\dsDadosEmpresa.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDadosEmpresa.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSets\dsDadosEmpresa.xss">
+      <DependentUpon>dsDadosEmpresa.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSets\dsDAM.xsc">
+      <DependentUpon>dsDAM.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSets\dsDAM.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDAM.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSets\dsDAM.xss">
+      <DependentUpon>dsDAM.xsd</DependentUpon>
+    </Content>
+    <Content Include="Deca\DECA2018.pdf" />
+    <Content Include="DataSets\dsSituacaoPagto.xsc">
+      <DependentUpon>dsSituacaoPagto.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSets\dsMobiliarioAtividadeVS.xsc">
+      <DependentUpon>dsMobiliarioAtividadeVS.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSets\dsMobiliarioAtividadeVS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsMobiliarioAtividadeVS.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="DataSets\dsMobiliarioAtividadeVS.xss">
+      <DependentUpon>dsMobiliarioAtividadeVS.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSets\dsSituacaoPagto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSituacaoPagto.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="DataSets\dsSituacaoPagto.xss">
+      <DependentUpon>dsSituacaoPagto.xsd</DependentUpon>
+    </Content>
+    <None Include="packages.config" />
+    <Content Include="Pages\default.Master" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Report\AlvaraFuncionamentoProvisorioValida.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AlvaraFuncionamentoProvisorioValida.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\AlvaraFuncionamentoValida.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AlvaraFuncionamentoValida.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Carne_CIP.rdlc" />
+    <EmbeddedResource Include="Report\Carne_VS.rdlc" />
+    <EmbeddedResource Include="Report\Carne_ISS_TLL.rdlc" />
+    <EmbeddedResource Include="Report\CertidaoDebitoDocumentoPN.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CertidaoDebitoDocumentoPN.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CertidaoDebitoDocumentoP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CertidaoDebitoDocumentoP.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CertidaoDebitoDocumentoN.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CertidaoDebitoDocumentoN.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\AlvaraFuncionamento.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AlvaraFuncionamento.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CertidaoDebitoDocValida.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CertidaoDebitoDocValida.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CertidaoInscricaoExtratoValida.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CertidaoInscricaoExtratoValida.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ComprovanteInscricaoValida.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ComprovanteInscricaoValida.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ComprovanteInscricao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ComprovanteInscricao.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Carne_IPTU.rdlc" />
+    <EmbeddedResource Include="Report\SituacaoPagamento.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SituacaoPagamento.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ComprovantePagamento.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ComprovantePagamento.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CertidaoDebitoEmpresa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CertidaoDebitoEmpresa.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CertidaoDebitoEmpresaPN.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CertidaoDebitoEmpresaPN.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CertidaoDebitoImovelPN.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CertidaoDebitoImovelPN.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CertidaoDebitoImovel.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CertidaoDebitoImovel.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CertidaoInscricaoExtratoEncerrada.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CertidaoInscricaoExtratoEncerrada.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CertidaoInscricaoExtratoAtiva.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CertidaoInscricaoExtratoAtiva.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CertidaoInscricaoValida.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CertidaoInscricaoValida.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CertidaoInscricaoAtiva.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CertidaoInscricaoAtiva.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CertidaoInscricaoEncerrada.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CertidaoInscricaoEncerrada.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CertidaoIsencaoProcesso.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CertidaoIsencaoProcesso.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CertidaoImunidade.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CertidaoImunidade.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CertidaoIsencao65.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CertidaoIsencao65.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CertidaoDebitoValida.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CertidaoDebitoValida.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CertidaoIsencaoValida.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CertidaoIsencaoValida.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CertidaoValorVenalValida.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CertidaoValorVenalValida.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CertidaoValorVenal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CertidaoValorVenal.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CertidaoEnderecoValida.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CertidaoEnderecoValida.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CertidaoEndereco.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CertidaoEndereco.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptAlvara_vre.rdlc" />
+    <EmbeddedResource Include="Report\rptDadosEmpresa.rdlc" />
+    <EmbeddedResource Include="Report\rptDamParcelado.rdlc" />
+    <EmbeddedResource Include="Report\rptDamParceladoCIP.rdlc" />
+    <EmbeddedResource Include="Report\rptDetalheBoleto.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50432/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.3.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.3.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.3.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

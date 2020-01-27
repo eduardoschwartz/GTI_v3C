@@ -1,0 +1,52 @@
+﻿<Certidao  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="Certidao.xsd">
+  <Codigo>123456</Codigo>
+  <Ano>2000</Ano>
+  <Numero>35</Numero>
+  <Numero_Ano>35/2000</Numero_Ano>
+  <Inscricao>'1.03.0005.01234.45'</Inscricao>
+  <Nome_Requerente>'Eduardo Schwartz'</Nome_Requerente>
+  <Endereco>'Rua 1'</Endereco>
+  <Endereco_Numero>25</Endereco_Numero>
+  <Endereco_Complemento>Fundos</Endereco_Complemento>
+  <Bairro>'Centro'</Bairro>
+  <Quadra_Original>'2A'</Quadra_Original>
+  <Lote_Original>'3B'</Lote_Original>
+  <Controle>'ABC123'</Controle>
+  <Data_Geracao>1980-03-23T10:20:15</Data_Geracao>
+  <Area>25.65</Area>
+  <VVT>132.58</VVT>
+  <VVP>146.96</VVP>
+  <VVI>321.56</VVI>
+  <Numero_Processo>'35'</Numero_Processo>
+  <Data_Processo>1980-03-23T10:20:15</Data_Processo>
+  <Percentual_Isencao>32.1</Percentual_Isencao>
+  <Insc_Estadual>1</Insc_Estadual>
+  <Data_Abertura>1980-03-23T10:20:15</Data_Abertura>
+  <Data_Encerramento>1980-03-23T10:20:15</Data_Encerramento>
+  <Processo_Abertura>35/2005</Processo_Abertura>
+  <Processo_Encerramento>1980-03-23T10:20:15</Processo_Encerramento>
+  <Cpf_Cnpj>65678</Cpf_Cnpj>
+  <Razao_Social>yuuyu</Razao_Social>
+  <Nome_Fantasia>hjgjh></Nome_Fantasia>
+  <Atividade_Extenso>hgh</Atividade_Extenso>
+  <Cnae_Principal>8787</Cnae_Principal>
+  <Cnae_Secundario>7676</Cnae_Secundario>
+  <Rg>222</Rg>
+  <Cidade>Jaboticabal</Cidade>
+  <uf>SP</uf>
+  <Exercicio>2010</Exercicio>
+  <Lancamento_codigo>1</Lancamento_codigo>
+  <Lancamento_nome>aa</Lancamento_nome>
+  <Sequencia_Lancamento>2</Sequencia_Lancamento>
+  <Parcela>2</Parcela>
+  <Complemento>1</Complemento>
+  <Data_Vencimento>1980-03-23T10:20:15</Data_Vencimento>
+  <Data_Pagamento>1980-03-23T10:20:15</Data_Pagamento>
+  <Valor_Pago>22</Valor_Pago>
+  <Tipo_Certidao>Positiva</Tipo_Certidao>
+  <Nao>Sim</Nao>
+  <Certifica>que</Certifica>
+  <Tributo>IPTU</Tributo>
+</Certidao>
+

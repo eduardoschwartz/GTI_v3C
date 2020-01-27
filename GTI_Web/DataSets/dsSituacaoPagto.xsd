@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsSituacaoPagto" targetNamespace="http://tempuri.org/dsSituacaoPagto.xsd" xmlns:mstns="http://tempuri.org/dsSituacaoPagto.xsd" xmlns="http://tempuri.org/dsSituacaoPagto.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsSituacaoPagto" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsSituacaoPagto" msprop:Generator_UserDSName="dsSituacaoPagto">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtSituacaoPagto" msprop:Generator_TableClassName="dtSituacaoPagtoDataTable" msprop:Generator_TableVarName="tabledtSituacaoPagto" msprop:Generator_TablePropName="dtSituacaoPagto" msprop:Generator_RowDeletingName="dtSituacaoPagtoRowDeleting" msprop:Generator_RowChangingName="dtSituacaoPagtoRowChanging" msprop:Generator_RowEvHandlerName="dtSituacaoPagtoRowChangeEventHandler" msprop:Generator_RowDeletedName="dtSituacaoPagtoRowDeleted" msprop:Generator_UserTableName="dtSituacaoPagto" msprop:Generator_RowChangedName="dtSituacaoPagtoRowChanged" msprop:Generator_RowEvArgName="dtSituacaoPagtoRowChangeEvent" msprop:Generator_RowClassName="dtSituacaoPagtoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sid" msprop:Generator_ColumnVarNameInTable="columnsid" msprop:Generator_ColumnPropNameInRow="sid" msprop:Generator_ColumnPropNameInTable="sidColumn" msprop:Generator_UserColumnName="sid" type="xs:int" />
+              <xs:element name="ano" msprop:Generator_ColumnVarNameInTable="columnano" msprop:Generator_ColumnPropNameInRow="ano" msprop:Generator_ColumnPropNameInTable="anoColumn" msprop:Generator_UserColumnName="ano" type="xs:int" />
+              <xs:element name="lancamento" msprop:Generator_ColumnVarNameInTable="columnlancamento" msprop:Generator_ColumnPropNameInRow="lancamento" msprop:Generator_ColumnPropNameInTable="lancamentoColumn" msprop:Generator_UserColumnName="lancamento" type="xs:int" />
+              <xs:element name="seq" msprop:Generator_ColumnVarNameInTable="columnseq" msprop:Generator_ColumnPropNameInRow="seq" msprop:Generator_ColumnPropNameInTable="seqColumn" msprop:Generator_UserColumnName="seq" type="xs:int" />
+              <xs:element name="parcela" msprop:Generator_ColumnVarNameInTable="columnparcela" msprop:Generator_ColumnPropNameInRow="parcela" msprop:Generator_ColumnPropNameInTable="parcelaColumn" msprop:Generator_UserColumnName="parcela" type="xs:int" />
+              <xs:element name="complemento" msprop:Generator_ColumnVarNameInTable="columncomplemento" msprop:Generator_ColumnPropNameInRow="complemento" msprop:Generator_ColumnPropNameInTable="complementoColumn" msprop:Generator_UserColumnName="complemento" type="xs:int" />
+              <xs:element name="data_pagamento" msprop:Generator_ColumnVarNameInTable="columndata_pagamento" msprop:Generator_ColumnPropNameInRow="data_pagamento" msprop:Generator_ColumnPropNameInTable="data_pagamentoColumn" msprop:Generator_UserColumnName="data_pagamento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="valor_pago" msprop:Generator_ColumnVarNameInTable="columnvalor_pago" msprop:Generator_ColumnPropNameInRow="valor_pago" msprop:Generator_ColumnPropNameInTable="valor_pagoColumn" msprop:Generator_UserColumnName="valor_pago" type="xs:decimal" minOccurs="0" />
+              <xs:element name="data_vencimento" msprop:Generator_ColumnVarNameInTable="columndata_vencimento" msprop:Generator_ColumnPropNameInRow="data_vencimento" msprop:Generator_ColumnPropNameInTable="data_vencimentoColumn" msprop:Generator_UserColumnName="data_vencimento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="descricao" msprop:Generator_ColumnVarNameInTable="columndescricao" msprop:Generator_ColumnPropNameInRow="descricao" msprop:Generator_ColumnPropNameInTable="descricaoColumn" msprop:Generator_UserColumnName="descricao" type="xs:string" minOccurs="0" />
+              <xs:element name="situacao" msprop:Generator_ColumnVarNameInTable="columnsituacao" msprop:Generator_ColumnPropNameInRow="situacao" msprop:Generator_ColumnPropNameInTable="situacaoColumn" msprop:Generator_UserColumnName="situacao" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtSituacaoPagto" />
+      <xs:field xpath="mstns:sid" />
+      <xs:field xpath="mstns:complemento" />
+      <xs:field xpath="mstns:parcela" />
+      <xs:field xpath="mstns:seq" />
+      <xs:field xpath="mstns:lancamento" />
+      <xs:field xpath="mstns:ano" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

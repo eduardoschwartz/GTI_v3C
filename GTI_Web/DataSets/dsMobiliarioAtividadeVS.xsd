@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsMobiliarioAtividadeVS" targetNamespace="http://tempuri.org/dsMobiliarioAtividadeVS.xsd" xmlns:mstns="http://tempuri.org/dsMobiliarioAtividadeVS.xsd" xmlns="http://tempuri.org/dsMobiliarioAtividadeVS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="GTIconnection" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="GTIconnection (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.GTIconnection.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsMobiliarioAtividadeVS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsMobiliarioAtividadeVS" msprop:Generator_UserDSName="dsMobiliarioAtividadeVS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MobiliarioAtividadeVS" msprop:Generator_TableClassName="MobiliarioAtividadeVSDataTable" msprop:Generator_TableVarName="tableMobiliarioAtividadeVS" msprop:Generator_RowChangedName="MobiliarioAtividadeVSRowChanged" msprop:Generator_TablePropName="MobiliarioAtividadeVS" msprop:Generator_RowDeletingName="MobiliarioAtividadeVSRowDeleting" msprop:Generator_RowChangingName="MobiliarioAtividadeVSRowChanging" msprop:Generator_RowEvHandlerName="MobiliarioAtividadeVSRowChangeEventHandler" msprop:Generator_RowDeletedName="MobiliarioAtividadeVSRowDeleted" msprop:Generator_RowClassName="MobiliarioAtividadeVSRow" msprop:Generator_UserTableName="MobiliarioAtividadeVS" msprop:Generator_RowEvArgName="MobiliarioAtividadeVSRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CODIGO" msprop:Generator_ColumnVarNameInTable="columnCODIGO" msprop:Generator_ColumnPropNameInRow="CODIGO" msprop:Generator_ColumnPropNameInTable="CODIGOColumn" msprop:Generator_UserColumnName="CODIGO" type="xs:int" />
+              <xs:element name="CNAE" msprop:Generator_ColumnVarNameInTable="columnCNAE" msprop:Generator_ColumnPropNameInRow="CNAE" msprop:Generator_ColumnPropNameInTable="CNAEColumn" msprop:Generator_UserColumnName="CNAE" type="xs:string" />
+              <xs:element name="VALOR" msprop:Generator_ColumnVarNameInTable="columnVALOR" msprop:Generator_ColumnPropNameInRow="VALOR" msprop:Generator_ColumnPropNameInTable="VALORColumn" msprop:Generator_UserColumnName="VALOR" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MobiliarioAtividadeVS" />
+      <xs:field xpath="mstns:CODIGO" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

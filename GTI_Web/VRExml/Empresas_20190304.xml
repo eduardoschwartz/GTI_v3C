@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Empresas>
+  <Empresa id="262521">
+    <!--Dados gerais da empresa (recebidos da RFB)-->
+    <CNPJ>24183757000126</CNPJ>
+    <NomeEmpresarial>JOSE NAZARENO AGOSTINETTI MENEZES 01924173808</NomeEmpresarial>
+    <SituacaoCadastral>02</SituacaoCadastral>
+    <DataSituacaoCadastral>2016-02-17</DataSituacaoCadastral>
+    <NaturezaJuridica>2135</NaturezaJuridica>
+    <DataAbertura>2016-02-17</DataAbertura>
+    <Porte>01</Porte>
+    <!--Dados gerais da empresa (coletados do usuário)-->
+    <NumeroRegistro>35817968457</NumeroRegistro>
+    <TipoRegistro>1</TipoRegistro>
+    <TipoMEI>0</TipoMEI>
+    <!--Dados do responsável pela empresa (conforme RFB)-->
+    <CPFResponsavel>01924173808</CPFResponsavel>
+    <NomeResponsavel>JOSE NAZARENO AGOSTINETTI MENEZES</NomeResponsavel>
+    <DDD1>16</DDD1>
+    <Telefone1>32037744</Telefone1>
+    <!--Endereço do estabelecimento-->
+    <Endereco>
+      <SetorQuadraLote>22070</SetorQuadraLote>
+      <TipoLogradouro>Avenida</TipoLogradouro>
+      <Logradouro>OLGA MORELLO DE STEFANI</Logradouro>
+      <NumeroLogradouro>280</NumeroLogradouro>
+      <Bairro>COLINA VERDE</Bairro>
+      <CEP>14887364</CEP>
+      <UF>SP</UF>
+      <Municipio Concla="24303" rfb="279">Jaboticabal</Municipio>
+    </Endereco>
+    <!--Atividades cadastradas e exercidas pela empresa (CNAE e auxiliares)-->
+    <Atividades>
+      <CNAE codigo="3314719" principal="1" exercida="0" />
+      <Auxiliar id="5" />
+    </Atividades>
+    <!--QSA da empresa-->
+    <Sociedade />
+    <!--Dados do contador-->
+    <ClassificacaoCRCContadorPJ>0</ClassificacaoCRCContadorPJ>
+    <NumeroCRCContadorPJ>000000</NumeroCRCContadorPJ>
+    <CNPJContador>00000000000000</CNPJContador>
+    <ClassificacaoCRCContadorPF>0</ClassificacaoCRCContadorPF>
+    <NumeroCRCContadorPF>000000</NumeroCRCContadorPF>
+    <CPFContador>00000000000</CPFContador>
+    <!--Viabilidade-->
+    <Viabilidade id="2475898">
+      <Solicitacao id="562333">562333201696</Solicitacao>
+      <Status id="12" />
+      <DataStatus>2016-03-03T00:00:00</DataStatus>
+      <RestricaoOperacao id="3011" />
+    </Viabilidade>
+    <!--Licenciamentos (um bloco abaixo para cada órgão)-->
+    <Licenciamento id="2475896">
+      <Solicitacao id="562333">562333201696</Solicitacao>
+      <Orgao id="3" />
+      <Status id="6" />
+      <Risco id="0" />
+      <Numero>562333201696</Numero>
+      <DataEmissao>2016-03-03T00:00:00</DataEmissao>
+      <DataVencimento>2019-03-03T00:00:00</DataVencimento>
+      <Pergunta id="5448" resposta="0" />
+      <Pergunta id="5449" resposta="0" />
+      <Pergunta id="5450" resposta="0" />
+      <Pergunta id="5452" resposta="0" />
+      <Pergunta id="5453" resposta="0" />
+      <Pergunta id="5454" resposta="0" />
+      <Declaracao id="8268" />
+      <Declaracao id="8269" />
+      <Declaracao id="8270" />
+      <Declaracao id="8272" />
+      <Declaracao id="8273" />
+      <Declaracao id="8274" />
+      <Declaracao id="8277" />
+      <Declaracao id="8278" />
+      <Declaracao id="8279" />
+      <Imovel>
+        <AreaEstabelecimento>214</AreaEstabelecimento>
+        <NomeProprietario>JOSE NAZARENO AGOSTINETTI MENEZES</NomeProprietario>
+        <EmailProprietario>financeiro@ocpolachini.com.br</EmailProprietario>
+        <TelefoneProprietario>1632033538</TelefoneProprietario>
+        <NomeResponsavelUso>JOSE NAZARENO AGOSTINETTI MENEZES</NomeResponsavelUso>
+        <TelefoneResponsavelUso>1632033538</TelefoneResponsavelUso>
+        <AreaTotal>375</AreaTotal>
+        <Pavimentos>1</Pavimentos>
+        <Contiguo>0</Contiguo>
+        <OutrosUsos>0</OutrosUsos>
+      </Imovel>
+    </Licenciamento>
+    <Licenciamento id="2475894">
+      <Solicitacao id="562333">562333201696</Solicitacao>
+      <Orgao id="1" />
+      <Status id="6" />
+      <Risco id="0" />
+      <Numero>562333201696</Numero>
+      <DataEmissao>2016-03-03T00:00:00</DataEmissao>
+      <DataVencimento>2017-03-03T00:00:00</DataVencimento>
+    </Licenciamento>
+    <Licenciamento id="2475895">
+      <Solicitacao id="562333">562333201696</Solicitacao>
+      <Orgao id="2" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>562333201696</Numero>
+      <DataEmissao>2016-03-03T00:00:00</DataEmissao>
+      <DataVencimento>2021-03-03T00:00:00</DataVencimento>
+      <Declaracao id="6288" />
+    </Licenciamento>
+    <Licenciamento id="2475897">
+      <Solicitacao id="562333">562333201696</Solicitacao>
+      <Orgao id="287" />
+      <Status id="6" />
+      <Risco id="0" />
+      <Numero>562333201696</Numero>
+      <DataEmissao>2016-03-03T00:00:00</DataEmissao>
+      <DataVencimento>2017-03-03T00:00:00</DataVencimento>
+    </Licenciamento>
+  </Empresa>
+  <Empresa id="265996">
+    <!--Dados gerais da empresa (recebidos da RFB)-->
+    <CNPJ>24299207000177</CNPJ>
+    <NomeEmpresarial>NATALIA DE CASTRO 38838482802</NomeEmpresarial>
+    <SituacaoCadastral>02</SituacaoCadastral>
+    <DataSituacaoCadastral>2016-03-03</DataSituacaoCadastral>
+    <NaturezaJuridica>2135</NaturezaJuridica>
+    <DataAbertura>2016-03-03</DataAbertura>
+    <Porte>01</Porte>
+    <!--Dados gerais da empresa (coletados do usuário)-->
+    <NumeroRegistro>35818182830</NumeroRegistro>
+    <TipoRegistro>1</TipoRegistro>
+    <TipoMEI>0</TipoMEI>
+    <!--Dados do responsável pela empresa (conforme RFB)-->
+    <CPFResponsavel>38838482802</CPFResponsavel>
+    <NomeResponsavel>NATALIA DE CASTRO</NomeResponsavel>
+    <DDD1>16</DDD1>
+    <Telefone1>32023729</Telefone1>
+    <!--Endereço do estabelecimento-->
+    <Endereco>
+      <SetorQuadraLote>14461</SetorQuadraLote>
+      <TipoLogradouro>Avenida</TipoLogradouro>
+      <Logradouro>BENJAMIN CONSTANT</Logradouro>
+      <NumeroLogradouro>979</NumeroLogradouro>
+      <Bairro>CENTRO</Bairro>
+      <CEP>14870140</CEP>
+      <UF>SP</UF>
+      <Municipio Concla="24303" rfb="279">Jaboticabal</Municipio>
+    </Endereco>
+    <!--Atividades cadastradas e exercidas pela empresa (CNAE e auxiliares)-->
+    <Atividades>
+      <CNAE codigo="7319002" principal="1" exercida="0" />
+      <Auxiliar id="10" />
+    </Atividades>
+    <!--QSA da empresa-->
+    <Sociedade />
+    <!--Dados do contador-->
+    <ClassificacaoCRCContadorPJ>0</ClassificacaoCRCContadorPJ>
+    <NumeroCRCContadorPJ>000000</NumeroCRCContadorPJ>
+    <CNPJContador>00000000000000</CNPJContador>
+    <ClassificacaoCRCContadorPF>0</ClassificacaoCRCContadorPF>
+    <NumeroCRCContadorPF>000000</NumeroCRCContadorPF>
+    <CPFContador>00000000000</CPFContador>
+    <!--Viabilidade-->
+    <Viabilidade id="2475279">
+      <Solicitacao id="562169">562169201679</Solicitacao>
+      <Status id="12" />
+      <DataStatus>2016-03-03T00:00:00</DataStatus>
+      <RestricaoOperacao id="3011" />
+    </Viabilidade>
+    <!--Licenciamentos (um bloco abaixo para cada órgão)-->
+    <Licenciamento id="2475277">
+      <Solicitacao id="562169">562169201679</Solicitacao>
+      <Orgao id="3" />
+      <Status id="6" />
+      <Risco id="0" />
+      <Numero>562169201679</Numero>
+      <DataEmissao>2016-03-03T00:00:00</DataEmissao>
+      <DataVencimento>2019-03-03T00:00:00</DataVencimento>
+      <Pergunta id="5448" resposta="0" />
+      <Pergunta id="5449" resposta="0" />
+      <Pergunta id="5450" resposta="0" />
+      <Pergunta id="5452" resposta="0" />
+      <Pergunta id="5453" resposta="0" />
+      <Pergunta id="5454" resposta="0" />
+      <Declaracao id="8268" />
+      <Declaracao id="8269" />
+      <Declaracao id="8270" />
+      <Declaracao id="8272" />
+      <Declaracao id="8273" />
+      <Declaracao id="8274" />
+      <Declaracao id="8277" />
+      <Declaracao id="8278" />
+      <Declaracao id="8279" />
+      <Imovel>
+        <AreaEstabelecimento>16</AreaEstabelecimento>
+        <NomeProprietario>LUIS HENRIQUE TOMAZELLI DE CASTRO</NomeProprietario>
+        <EmailProprietario>luistomazelli@terra.com.br</EmailProprietario>
+        <TelefoneProprietario>1632023729</TelefoneProprietario>
+        <NomeResponsavelUso>NATALIA DE CASTRO 38838482802</NomeResponsavelUso>
+        <TelefoneResponsavelUso>1632023729</TelefoneResponsavelUso>
+        <AreaTotal>235</AreaTotal>
+        <Pavimentos>1</Pavimentos>
+        <Contiguo>0</Contiguo>
+        <OutrosUsos>0</OutrosUsos>
+      </Imovel>
+    </Licenciamento>
+    <Licenciamento id="2475275">
+      <Solicitacao id="562169">562169201679</Solicitacao>
+      <Orgao id="1" />
+      <Status id="6" />
+      <Risco id="0" />
+      <Numero>562169201679</Numero>
+      <DataEmissao>2016-03-03T00:00:00</DataEmissao>
+      <DataVencimento>2017-03-03T00:00:00</DataVencimento>
+    </Licenciamento>
+    <Licenciamento id="2475276">
+      <Solicitacao id="562169">562169201679</Solicitacao>
+      <Orgao id="2" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>562169201679</Numero>
+      <DataEmissao>2016-03-03T00:00:00</DataEmissao>
+      <DataVencimento>2021-03-03T00:00:00</DataVencimento>
+      <Declaracao id="6288" />
+    </Licenciamento>
+    <Licenciamento id="2475278">
+      <Solicitacao id="562169">562169201679</Solicitacao>
+      <Orgao id="287" />
+      <Status id="6" />
+      <Risco id="0" />
+      <Numero>562169201679</Numero>
+      <DataEmissao>2016-03-03T00:00:00</DataEmissao>
+      <DataVencimento>2017-03-03T00:00:00</DataVencimento>
+    </Licenciamento>
+  </Empresa>
+  <Empresa id="286819">
+    <!--Dados gerais da empresa (recebidos da RFB)-->
+    <CNPJ>08228351000166</CNPJ>
+    <NomeEmpresarial>T.B ADMINISTRACAO E PARTICIPACOES LTDA.</NomeEmpresarial>
+    <SituacaoCadastral>02</SituacaoCadastral>
+    <DataSituacaoCadastral>2006-07-17</DataSituacaoCadastral>
+    <NaturezaJuridica>2062</NaturezaJuridica>
+    <DataAbertura>2006-07-17</DataAbertura>
+    <Porte>05</Porte>
+    <!--Dados gerais da empresa (coletados do usuário)-->
+    <NumeroRegistro>35220803314</NumeroRegistro>
+    <TipoRegistro>1</TipoRegistro>
+    <TipoMEI>0</TipoMEI>
+    <!--Dados do responsável pela empresa (conforme RFB)-->
+    <CPFResponsavel>34775949837</CPFResponsavel>
+    <NomeResponsavel>CAMILA NAMIE NAKANE TOBACE</NomeResponsavel>
+    <DDD1>16</DDD1>
+    <Telefone1>32094040</Telefone1>
+    <Email>ARNALDO@TOBACE.COM.BR</Email>
+    <!--Endereço do estabelecimento-->
+    <Endereco>
+      <SetorQuadraLote>25156</SetorQuadraLote>
+      <TipoLogradouro>Rua</TipoLogradouro>
+      <Logradouro>Floriano Peixoto</Logradouro>
+      <NumeroLogradouro>1100</NumeroLogradouro>
+      <Complemento>APTO. 121</Complemento>
+      <Bairro>Centro</Bairro>
+      <CEP>14870810</CEP>
+      <UF>SP</UF>
+      <Municipio Concla="24303" rfb="279">Jaboticabal</Municipio>
+    </Endereco>
+    <!--Atividades cadastradas e exercidas pela empresa (CNAE e auxiliares)-->
+    <Atividades>
+      <CNAE codigo="6462000" principal="1" exercida="1" />
+      <CNAE codigo="6810201" principal="0" exercida="1" />
+      <CNAE codigo="6810202" principal="0" exercida="1" />
+      <CNAE codigo="7739099" principal="0" exercida="1" />
+      <Auxiliar id="10" />
+    </Atividades>
+    <!--QSA da empresa-->
+    <Sociedade>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>CAMILA NAMIE NAKANE TOBACE</Nome>
+        <Numero>00034775949837</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>LAURA AKEMI NAKANE TOBACE</Nome>
+        <Numero>00038575397800</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>CELIA KAZUE NAKANE TOBACE</Nome>
+        <Numero>00006536721870</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+    </Sociedade>
+    <!--Dados do contador-->
+    <ClassificacaoCRCContadorPJ>0</ClassificacaoCRCContadorPJ>
+    <NumeroCRCContadorPJ>000000</NumeroCRCContadorPJ>
+    <CNPJContador>00000000000000</CNPJContador>
+    <TipoCRCContadorPF>O</TipoCRCContadorPF>
+    <ClassificacaoCRCContadorPF>1</ClassificacaoCRCContadorPF>
+    <NumeroCRCContadorPF>176568</NumeroCRCContadorPF>
+    <UFCRCContadorPF>SP</UFCRCContadorPF>
+    <CPFContador>25304040899</CPFContador>
+    <!--Viabilidade-->
+    <Viabilidade id="8804390">
+      <Solicitacao id="1776259">1776259201907</Solicitacao>
+      <Status id="12" />
+    </Viabilidade>
+    <!--Licenciamentos (um bloco abaixo para cada órgão)-->
+    <Licenciamento id="5940378">
+      <Solicitacao id="1346419">1346419201831</Solicitacao>
+      <Orgao id="3" />
+      <Status id="5" />
+      <Risco id="0" />
+      <ProtocoloAtendimento>270422</ProtocoloAtendimento>
+      <DataProtocolo>2018-06-12T00:00:00</DataProtocolo>
+      <Imovel>
+        <AreaEstabelecimento>20</AreaEstabelecimento>
+        <NomeProprietario>T. B ADMINISTRACAO E PARTICIPACOES LTDA.</NomeProprietario>
+        <EmailProprietario>ARNALDO@TOBACE.COM.BR</EmailProprietario>
+        <TelefoneProprietario>1632021036</TelefoneProprietario>
+        <NomeResponsavelUso>T. B ADMINISTRACAO E PARTICIPACOES LTDA.</NomeResponsavelUso>
+        <TelefoneResponsavelUso>1632021036</TelefoneResponsavelUso>
+        <AreaTotal>198</AreaTotal>
+        <Pavimentos>1</Pavimentos>
+        <Contiguo>0</Contiguo>
+        <OutrosUsos>0</OutrosUsos>
+      </Imovel>
+    </Licenciamento>
+    <Licenciamento id="8804387">
+      <Solicitacao id="1776259">1776259201907</Solicitacao>
+      <Orgao id="1" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>1776259201907</Numero>
+      <ProtocoloAtendimento>2936008</ProtocoloAtendimento>
+      <DataProtocolo>2019-03-04T00:00:00</DataProtocolo>
+      <Declaracao id="8008241" />
+    </Licenciamento>
+    <Licenciamento id="8804388">
+      <Solicitacao id="1776259">1776259201907</Solicitacao>
+      <Orgao id="2" />
+      <Status id="5" />
+      <Risco id="0" />
+      <ProtocoloAtendimento>544408</ProtocoloAtendimento>
+      <DataProtocolo>2019-03-04T00:00:00</DataProtocolo>
+      <Declaracao id="8008248" />
+      <Declaracao id="8008251" />
+      <Declaracao id="8008247" />
+      <Declaracao id="8008246" />
+      <Declaracao id="8008249" />
+      <Declaracao id="8008250" />
+    </Licenciamento>
+    <Licenciamento id="5940379">
+      <Solicitacao id="1346419">1346419201831</Solicitacao>
+      <Orgao id="287" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>1346419201831</Numero>
+      <DataEmissao>2018-06-12T00:00:00</DataEmissao>
+      <DataVencimento>2019-06-12T00:00:00</DataVencimento>
+    </Licenciamento>
+    <Licenciamento id="8804389">
+      <Solicitacao id="1776259">1776259201907</Solicitacao>
+      <Orgao id="654" />
+      <Status id="5" />
+      <Risco id="0" />
+      <ProtocoloAtendimento>1551727390008</ProtocoloAtendimento>
+      <DataProtocolo>2019-03-04T00:00:00</DataProtocolo>
+      <Declaracao id="8008245" />
+    </Licenciamento>
+  </Empresa>
+</Empresas>

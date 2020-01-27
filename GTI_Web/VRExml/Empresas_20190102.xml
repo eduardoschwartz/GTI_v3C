@@ -1,0 +1,785 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Empresas>
+  <Empresa id="214269">
+    <!--Dados gerais da empresa (recebidos da RFB)-->
+    <CNPJ>22642775000101</CNPJ>
+    <NomeEmpresarial>A G DISTRIBUIDORA DE BEBIDAS LTDA</NomeEmpresarial>
+    <SituacaoCadastral>02</SituacaoCadastral>
+    <DataSituacaoCadastral>2015-06-15</DataSituacaoCadastral>
+    <NaturezaJuridica>2062</NaturezaJuridica>
+    <DataAbertura>2015-06-15</DataAbertura>
+    <Porte>01</Porte>
+    <!--Dados gerais da empresa (coletados do usuário)-->
+    <NumeroRegistro>35229153029</NumeroRegistro>
+    <TipoRegistro>1</TipoRegistro>
+    <TipoMEI>0</TipoMEI>
+    <!--Dados do responsável pela empresa (conforme RFB)-->
+    <CPFResponsavel>30511871864</CPFResponsavel>
+    <NomeResponsavel>ANDRE HENRIQUE RIBEIRO</NomeResponsavel>
+    <DDD1>16</DDD1>
+    <Telefone1>32029381</Telefone1>
+    <DDD2>16</DDD2>
+    <Telefone2>32123672</Telefone2>
+    <Email>PRATSJABOTICABAL@GMAIL.COM</Email>
+    <!--Endereço do estabelecimento-->
+    <Endereco>
+      <SetorQuadraLote>28190</SetorQuadraLote>
+      <TipoLogradouro>Avenida</TipoLogradouro>
+      <Logradouro>Treze de Maio</Logradouro>
+      <NumeroLogradouro>1150</NumeroLogradouro>
+      <Bairro>Centro</Bairro>
+      <CEP>14870160</CEP>
+      <UF>SP</UF>
+      <Municipio Concla="24303" rfb="279">Jaboticabal</Municipio>
+    </Endereco>
+    <!--Atividades cadastradas e exercidas pela empresa (CNAE e auxiliares)-->
+    <Atividades>
+      <CNAE codigo="4623108" principal="0" exercida="0" />
+      <CNAE codigo="4637199" principal="1" exercida="1" />
+      <CNAE codigo="4723700" principal="0" exercida="0" />
+      <CNAE codigo="4729699" principal="0" exercida="0" />
+      <Auxiliar id="5" />
+    </Atividades>
+    <!--QSA da empresa-->
+    <Sociedade>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>ANDRE HENRIQUE RIBEIRO</Nome>
+        <Numero>00030511871864</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>GUSTAVO MAGALHAES CARMINATI RIGHETTI</Nome>
+        <Numero>00036955878816</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+    </Sociedade>
+    <!--Dados do contador-->
+    <ClassificacaoCRCContadorPJ>0</ClassificacaoCRCContadorPJ>
+    <NumeroCRCContadorPJ>000000</NumeroCRCContadorPJ>
+    <CNPJContador>00000000000000</CNPJContador>
+    <TipoCRCContadorPF>O</TipoCRCContadorPF>
+    <ClassificacaoCRCContadorPF>1</ClassificacaoCRCContadorPF>
+    <NumeroCRCContadorPF>154147</NumeroCRCContadorPF>
+    <UFCRCContadorPF>SP</UFCRCContadorPF>
+    <CPFContador>21446006867</CPFContador>
+    <!--Viabilidade-->
+    <Viabilidade id="8061616">
+      <Solicitacao id="1674344">1674344201935</Solicitacao>
+      <Status id="12" />
+    </Viabilidade>
+    <!--Licenciamentos (um bloco abaixo para cada órgão)-->
+    <Licenciamento id="8061614">
+      <Solicitacao id="1674344">1674344201935</Solicitacao>
+      <Orgao id="3" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>CLCB 0000421676</Numero>
+      <DataEmissao>2018-12-04T00:00:00</DataEmissao>
+      <DataVencimento>2021-12-04T00:00:00</DataVencimento>
+      <ProtocoloAtendimento>294369-9/2018</ProtocoloAtendimento>
+      <DataProtocolo>2018-11-16T00:00:00</DataProtocolo>
+      <Imovel>
+        <AreaEstabelecimento>245</AreaEstabelecimento>
+        <NomeProprietario>JOSE CARLOS AVILLES</NomeProprietario>
+        <EmailProprietario>ND</EmailProprietario>
+        <TelefoneProprietario>ND</TelefoneProprietario>
+        <NomeResponsavelUso>A G DISTRIBUIDORA DE BEBIDAS LTDA ME</NomeResponsavelUso>
+        <TelefoneResponsavelUso>ND</TelefoneResponsavelUso>
+        <AreaTotal>245</AreaTotal>
+        <Pavimentos>0</Pavimentos>
+        <Contiguo>0</Contiguo>
+        <OutrosUsos>0</OutrosUsos>
+        <NumeroAVCB>CLCB 000042167</NumeroAVCB>
+        <ValidadeAVCB>2018-12-04</ValidadeAVCB>
+      </Imovel>
+    </Licenciamento>
+    <Licenciamento id="8061611">
+      <Solicitacao id="1674344">1674344201935</Solicitacao>
+      <Orgao id="1" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>1674344201935</Numero>
+      <ProtocoloAtendimento>2575468</ProtocoloAtendimento>
+      <DataProtocolo>2019-01-02T00:00:00</DataProtocolo>
+      <Declaracao id="6698790" />
+      <Declaracao id="6698791" />
+    </Licenciamento>
+    <Licenciamento id="8061612">
+      <Solicitacao id="1674344">1674344201935</Solicitacao>
+      <Orgao id="2" />
+      <Status id="5" />
+      <Risco id="0" />
+      <ProtocoloAtendimento>443450</ProtocoloAtendimento>
+      <DataProtocolo>2019-01-02T00:00:00</DataProtocolo>
+      <Declaracao id="6698792" />
+      <Declaracao id="6698794" />
+      <Declaracao id="6698793" />
+    </Licenciamento>
+    <Licenciamento id="8061615">
+      <Solicitacao id="1674344">1674344201935</Solicitacao>
+      <Orgao id="287" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>1674344201935</Numero>
+      <DataEmissao>2019-01-02T00:00:00</DataEmissao>
+      <DataVencimento>2020-01-02T00:00:00</DataVencimento>
+    </Licenciamento>
+    <Licenciamento id="8061613">
+      <Solicitacao id="1674344">1674344201935</Solicitacao>
+      <Orgao id="654" />
+      <Status id="5" />
+      <Risco id="0" />
+      <ProtocoloAtendimento>1546450808972</ProtocoloAtendimento>
+      <DataProtocolo>2019-01-02T00:00:00</DataProtocolo>
+    </Licenciamento>
+  </Empresa>
+  <Empresa id="402976">
+    <!--Dados gerais da empresa (recebidos da RFB)-->
+    <CNPJ>28089214000103</CNPJ>
+    <NomeEmpresarial>SILVANA APARECIDA CARDOSO MENDES</NomeEmpresarial>
+    <SituacaoCadastral>02</SituacaoCadastral>
+    <DataSituacaoCadastral>2017-07-03</DataSituacaoCadastral>
+    <NaturezaJuridica>2135</NaturezaJuridica>
+    <DataAbertura>2017-07-03</DataAbertura>
+    <Porte>01</Porte>
+    <!--Dados gerais da empresa (coletados do usuário)-->
+    <NumeroRegistro>35131427716</NumeroRegistro>
+    <TipoRegistro>1</TipoRegistro>
+    <TipoMEI>0</TipoMEI>
+    <!--Dados do responsável pela empresa (conforme RFB)-->
+    <CPFResponsavel>19508398850</CPFResponsavel>
+    <NomeResponsavel>SILVANA APARECIDA CARDOSO MENDES</NomeResponsavel>
+    <DDD1>16</DDD1>
+    <Telefone1>96373113</Telefone1>
+    <Email>GALVANICONTABILIDADE@TERRA.COM.BR</Email>
+    <!--Endereço do estabelecimento-->
+    <Endereco>
+      <SetorQuadraLote>0000000024715</SetorQuadraLote>
+      <TipoLogradouro>Avenida</TipoLogradouro>
+      <Logradouro>OSVALDO SEBASTIAO</Logradouro>
+      <NumeroLogradouro>181</NumeroLogradouro>
+      <Bairro>YUKIO NAKAGI (LUSITANIA)</Bairro>
+      <CEP>14898025</CEP>
+      <UF>SP</UF>
+      <Municipio Concla="24303" rfb="279">Jaboticabal</Municipio>
+    </Endereco>
+    <!--Atividades cadastradas e exercidas pela empresa (CNAE e auxiliares)-->
+    <Atividades>
+      <CNAE codigo="4712100" principal="0" exercida="0" />
+      <CNAE codigo="5611202" principal="1" exercida="1" />
+    </Atividades>
+    <!--QSA da empresa-->
+    <Sociedade />
+    <!--Dados do contador-->
+    <ClassificacaoCRCContadorPJ>0</ClassificacaoCRCContadorPJ>
+    <NumeroCRCContadorPJ>000000</NumeroCRCContadorPJ>
+    <CNPJContador>00000000000000</CNPJContador>
+    <TipoCRCContadorPF>O</TipoCRCContadorPF>
+    <ClassificacaoCRCContadorPF>1</ClassificacaoCRCContadorPF>
+    <NumeroCRCContadorPF>205086</NumeroCRCContadorPF>
+    <UFCRCContadorPF>SP</UFCRCContadorPF>
+    <CPFContador>18348550801</CPFContador>
+    <!--Viabilidade-->
+    <Viabilidade id="4804297">
+      <Solicitacao id="1104272">1104272201889</Solicitacao>
+      <Status id="12" />
+      <DataStatus>2018-01-02T00:00:00</DataStatus>
+      <RestricaoOperacao id="2961" />
+      <RestricaoOperacao id="2961" />
+      <RestricaoOperacao id="2961" />
+      <RestricaoOperacao id="2961" />
+      <RestricaoOperacao id="2961" />
+    </Viabilidade>
+    <!--Licenciamentos (um bloco abaixo para cada órgão)-->
+    <Licenciamento id="8055116">
+      <Solicitacao id="1673408">1673408201971</Solicitacao>
+      <Orgao id="3" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>CLCB 0000264468</Numero>
+      <DataEmissao>2017-07-21T00:00:00</DataEmissao>
+      <DataVencimento>2020-07-21T00:00:00</DataVencimento>
+      <ProtocoloAtendimento>160524-9/2017</ProtocoloAtendimento>
+      <DataProtocolo>2017-07-13T00:00:00</DataProtocolo>
+      <Imovel>
+        <AreaEstabelecimento>35</AreaEstabelecimento>
+        <NomeProprietario>SILVIO ROSA MENDES</NomeProprietario>
+        <EmailProprietario>ND</EmailProprietario>
+        <TelefoneProprietario>ND</TelefoneProprietario>
+        <NomeResponsavelUso>SILVANA APARECIDA CARDOSO MENDES ME</NomeResponsavelUso>
+        <TelefoneResponsavelUso>ND</TelefoneResponsavelUso>
+        <AreaTotal>35</AreaTotal>
+        <Pavimentos>0</Pavimentos>
+        <Contiguo>0</Contiguo>
+        <OutrosUsos>0</OutrosUsos>
+        <NumeroAVCB>CLCB 000026446</NumeroAVCB>
+        <ValidadeAVCB>2017-07-21</ValidadeAVCB>
+      </Imovel>
+    </Licenciamento>
+    <Licenciamento id="8055113">
+      <Solicitacao id="1673408">1673408201971</Solicitacao>
+      <Orgao id="1" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>1673408201971</Numero>
+      <ProtocoloAtendimento>2571331</ProtocoloAtendimento>
+      <DataProtocolo>2019-01-01T00:00:00</DataProtocolo>
+      <Declaracao id="6687612" />
+      <Declaracao id="6687613" />
+    </Licenciamento>
+    <Licenciamento id="8055114">
+      <Solicitacao id="1673408">1673408201971</Solicitacao>
+      <Orgao id="2" />
+      <Status id="5" />
+      <Risco id="0" />
+      <ProtocoloAtendimento>442515</ProtocoloAtendimento>
+      <DataProtocolo>2019-01-01T00:00:00</DataProtocolo>
+      <Declaracao id="6687616" />
+      <Declaracao id="6687617" />
+      <Declaracao id="6687615" />
+    </Licenciamento>
+    <Licenciamento id="8055117">
+      <Solicitacao id="1673408">1673408201971</Solicitacao>
+      <Orgao id="287" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Pergunta id="7397" resposta="0" />
+      <Declaracao id="1044611" />
+      <Declaracao id="1044615" />
+    </Licenciamento>
+    <Licenciamento id="8055115">
+      <Solicitacao id="1673408">1673408201971</Solicitacao>
+      <Orgao id="654" />
+      <Status id="5" />
+      <Risco id="0" />
+      <ProtocoloAtendimento>1546343879653</ProtocoloAtendimento>
+      <DataProtocolo>2019-01-01T00:00:00</DataProtocolo>
+      <Declaracao id="6687614" />
+    </Licenciamento>
+  </Empresa>
+  <Empresa id="464058">
+    <!--Dados gerais da empresa (recebidos da RFB)-->
+    <CNPJ>29269912000145</CNPJ>
+    <NomeEmpresarial>CARVALHO &amp;amp; FRANCA CONSTRUCOES E MONTAGENS LTDA</NomeEmpresarial>
+    <SituacaoCadastral>02</SituacaoCadastral>
+    <DataSituacaoCadastral>2017-12-14</DataSituacaoCadastral>
+    <NaturezaJuridica>2062</NaturezaJuridica>
+    <DataAbertura>2017-12-14</DataAbertura>
+    <Porte>01</Porte>
+    <!--Dados gerais da empresa (coletados do usuário)-->
+    <NumeroRegistro>35230830411</NumeroRegistro>
+    <TipoRegistro>1</TipoRegistro>
+    <TipoMEI>0</TipoMEI>
+    <!--Dados do responsável pela empresa (conforme RFB)-->
+    <CPFResponsavel>26901441827</CPFResponsavel>
+    <NomeResponsavel>JOAO LUIZ DE FRANCA</NomeResponsavel>
+    <DDD1>16</DDD1>
+    <Telefone1>32091060</Telefone1>
+    <Email>BERALDO@BERALDOCOSTA.COM.BR</Email>
+    <!--Endereço do estabelecimento-->
+    <Endereco>
+      <SetorQuadraLote>32305</SetorQuadraLote>
+      <TipoLogradouro>Avenida</TipoLogradouro>
+      <Logradouro>Rosa Celestino</Logradouro>
+      <NumeroLogradouro>200</NumeroLogradouro>
+      <Complemento>Sala 01</Complemento>
+      <Bairro>Jardim Monterrey</Bairro>
+      <CEP>14887450</CEP>
+      <UF>SP</UF>
+      <Municipio Concla="24303" rfb="279">Jaboticabal</Municipio>
+    </Endereco>
+    <!--Atividades cadastradas e exercidas pela empresa (CNAE e auxiliares)-->
+    <Atividades>
+      <CNAE codigo="3321000" principal="0" exercida="1" />
+      <CNAE codigo="4120400" principal="0" exercida="1" />
+      <CNAE codigo="4292802" principal="0" exercida="1" />
+      <CNAE codigo="4299501" principal="0" exercida="1" />
+      <CNAE codigo="4330499" principal="0" exercida="1" />
+      <CNAE codigo="4399104" principal="0" exercida="1" />
+      <CNAE codigo="4789099" principal="1" exercida="1" />
+      <CNAE codigo="2511000" principal="0" exercida="1" />
+      <Auxiliar id="10" />
+    </Atividades>
+    <!--QSA da empresa-->
+    <Sociedade>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>JOAO LUIZ DE FRANCA</Nome>
+        <Numero>00026901441827</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>EDNILSON MALERBA PFAIFER</Nome>
+        <Numero>00030279800843</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>JOAO RICARDO FILARDI</Nome>
+        <Numero>00026634150818</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>CARLOS WILSON ZANCHINI</Nome>
+        <Numero>00004812903890</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+    </Sociedade>
+    <!--Dados do contador-->
+    <TipoCRCContadorPJ>O</TipoCRCContadorPJ>
+    <ClassificacaoCRCContadorPJ>2</ClassificacaoCRCContadorPJ>
+    <NumeroCRCContadorPJ>020713</NumeroCRCContadorPJ>
+    <UFCRCContadorPJ>SP</UFCRCContadorPJ>
+    <CNPJContador>02991920000144</CNPJContador>
+    <TipoCRCContadorPF>O</TipoCRCContadorPF>
+    <ClassificacaoCRCContadorPF>1</ClassificacaoCRCContadorPF>
+    <NumeroCRCContadorPF>109376</NumeroCRCContadorPF>
+    <UFCRCContadorPF>SP</UFCRCContadorPF>
+    <CPFContador>97961337849</CPFContador>
+    <!--Viabilidade-->
+    <Viabilidade id="7644597">
+      <Solicitacao id="1616504">1616504201858</Solicitacao>
+      <Status id="12" />
+    </Viabilidade>
+    <!--Licenciamentos (um bloco abaixo para cada órgão)-->
+    <Licenciamento id="7644594">
+      <Solicitacao id="1616504">1616504201858</Solicitacao>
+      <Orgao id="3" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>CLCB 0000198961</Numero>
+      <DataEmissao>2016-11-28T00:00:00</DataEmissao>
+      <DataVencimento>2021-11-28T00:00:00</DataVencimento>
+      <ProtocoloAtendimento>490318-9/2016</ProtocoloAtendimento>
+      <DataProtocolo>2016-11-22T00:00:00</DataProtocolo>
+      <Imovel>
+        <AreaEstabelecimento>10</AreaEstabelecimento>
+        <NomeProprietario>CARVALHO E FRANCA ENGENHARIA S/S</NomeProprietario>
+        <EmailProprietario>ND</EmailProprietario>
+        <TelefoneProprietario>ND</TelefoneProprietario>
+        <NomeResponsavelUso>CARVALHO E FRANCA ENGENHARIA S/S</NomeResponsavelUso>
+        <TelefoneResponsavelUso>ND</TelefoneResponsavelUso>
+        <AreaTotal>524</AreaTotal>
+        <Pavimentos>0</Pavimentos>
+        <Contiguo>0</Contiguo>
+        <OutrosUsos>0</OutrosUsos>
+        <NumeroAVCB>CLCB 000019896</NumeroAVCB>
+        <ValidadeAVCB>2016-11-28</ValidadeAVCB>
+      </Imovel>
+    </Licenciamento>
+    <Licenciamento id="7644592">
+      <Solicitacao id="1616504">1616504201858</Solicitacao>
+      <Orgao id="1" />
+      <Status id="5" />
+      <Risco id="1" />
+      <Numero>1616504201858</Numero>
+      <ProtocoloAtendimento>2370976</ProtocoloAtendimento>
+      <DataProtocolo>2018-11-13T00:00:00</DataProtocolo>
+      <Declaracao id="5912776" />
+    </Licenciamento>
+    <Licenciamento id="7644593">
+      <Solicitacao id="1616504">1616504201858</Solicitacao>
+      <Orgao id="2" />
+      <Status id="5" />
+      <Risco id="1" />
+      <Numero>52000432</Numero>
+      <DataEmissao>2018-10-04T00:00:00</DataEmissao>
+      <DataVencimento>2023-10-04T00:00:00</DataVencimento>
+      <ProtocoloAtendimento>385772</ProtocoloAtendimento>
+      <DataProtocolo>2018-12-21T00:00:00</DataProtocolo>
+      <Declaracao id="5912787" />
+      <Declaracao id="5912790" />
+      <Declaracao id="5912797" />
+      <Declaracao id="5912800" />
+      <Declaracao id="5912788" />
+      <Declaracao id="5912791" />
+      <Declaracao id="5912786" />
+      <Declaracao id="5912789" />
+      <Declaracao id="5912793" />
+      <Declaracao id="5912799" />
+      <Declaracao id="5912785" />
+      <Declaracao id="5912795" />
+    </Licenciamento>
+    <Licenciamento id="7644595">
+      <Solicitacao id="1616504">1616504201858</Solicitacao>
+      <Orgao id="287" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>1616504201858</Numero>
+      <DataEmissao>2018-11-13T00:00:00</DataEmissao>
+      <DataVencimento>2019-11-13T00:00:00</DataVencimento>
+    </Licenciamento>
+    <Licenciamento id="7644596">
+      <Solicitacao id="1616504">1616504201858</Solicitacao>
+      <Orgao id="654" />
+      <Status id="5" />
+      <Risco id="1" />
+      <ProtocoloAtendimento>1542122194266</ProtocoloAtendimento>
+      <DataProtocolo>2018-11-13T00:00:00</DataProtocolo>
+      <Declaracao id="5912784" />
+    </Licenciamento>
+  </Empresa>
+  <Empresa id="506528">
+    <!--Dados gerais da empresa (recebidos da RFB)-->
+    <CNPJ>14120724000183</CNPJ>
+    <NomeEmpresarial>SANDRA CARRIAN BOANERGES DE ALMEIDA</NomeEmpresarial>
+    <SituacaoCadastral>02</SituacaoCadastral>
+    <DataSituacaoCadastral>2011-08-03</DataSituacaoCadastral>
+    <NaturezaJuridica>2135</NaturezaJuridica>
+    <DataAbertura>2011-08-03</DataAbertura>
+    <Porte>01</Porte>
+    <!--Dados gerais da empresa (coletados do usuário)-->
+    <NumeroRegistro>35127270719</NumeroRegistro>
+    <TipoRegistro>1</TipoRegistro>
+    <TipoMEI>0</TipoMEI>
+    <!--Dados do responsável pela empresa (conforme RFB)-->
+    <CPFResponsavel>33424935859</CPFResponsavel>
+    <NomeResponsavel>SANDRA CARRIAN BOANERGES DE ALMEIDA</NomeResponsavel>
+    <DDD1>16</DDD1>
+    <Telefone1>32046239</Telefone1>
+    <Email>SANDRACARRIAN@YAHOO.COM.BR</Email>
+    <!--Endereço do estabelecimento-->
+    <Endereco>
+      <SetorQuadraLote>01568</SetorQuadraLote>
+      <TipoLogradouro>Rua</TipoLogradouro>
+      <Logradouro>Vinte e Quatro de Maio</Logradouro>
+      <NumeroLogradouro>587</NumeroLogradouro>
+      <Bairro>Centro</Bairro>
+      <CEP>14870350</CEP>
+      <UF>SP</UF>
+      <Municipio Concla="24303" rfb="279">Jaboticabal</Municipio>
+    </Endereco>
+    <!--Atividades cadastradas e exercidas pela empresa (CNAE e auxiliares)-->
+    <Atividades>
+      <CNAE codigo="4772500" principal="0" exercida="1" />
+      <CNAE codigo="4781400" principal="1" exercida="1" />
+      <CNAE codigo="9602501" principal="0" exercida="1" />
+      <CNAE codigo="9602502" principal="0" exercida="1" />
+    </Atividades>
+    <!--QSA da empresa-->
+    <Sociedade />
+    <!--Dados do contador-->
+    <ClassificacaoCRCContadorPJ>0</ClassificacaoCRCContadorPJ>
+    <NumeroCRCContadorPJ>000000</NumeroCRCContadorPJ>
+    <CNPJContador>00000000000000</CNPJContador>
+    <TipoCRCContadorPF>O</TipoCRCContadorPF>
+    <ClassificacaoCRCContadorPF>1</ClassificacaoCRCContadorPF>
+    <NumeroCRCContadorPF>190090</NumeroCRCContadorPF>
+    <UFCRCContadorPF>SP</UFCRCContadorPF>
+    <CPFContador>13855314870</CPFContador>
+    <!--Viabilidade-->
+    <Viabilidade id="6595589">
+      <Solicitacao id="1506362">1506362201811</Solicitacao>
+      <Status id="12" />
+    </Viabilidade>
+    <!--Licenciamentos (um bloco abaixo para cada órgão)-->
+    <Licenciamento id="6595586">
+      <Solicitacao id="1506362">1506362201811</Solicitacao>
+      <Orgao id="3" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>CLCB 0000428298</Numero>
+      <DataEmissao>2018-12-26T00:00:00</DataEmissao>
+      <DataVencimento>2021-12-26T00:00:00</DataVencimento>
+      <ProtocoloAtendimento>327309-9/2018</ProtocoloAtendimento>
+      <DataProtocolo>2018-12-20T00:00:00</DataProtocolo>
+      <Imovel>
+        <AreaEstabelecimento>297</AreaEstabelecimento>
+        <NomeProprietario>MA ROQUE PRESENTES E BIJUTERIAS</NomeProprietario>
+        <EmailProprietario>ND</EmailProprietario>
+        <TelefoneProprietario>ND</TelefoneProprietario>
+        <NomeResponsavelUso>MA ROQUE PRESENTES E BIJUTERIAS</NomeResponsavelUso>
+        <TelefoneResponsavelUso>ND</TelefoneResponsavelUso>
+        <AreaTotal>297</AreaTotal>
+        <Pavimentos>0</Pavimentos>
+        <Contiguo>0</Contiguo>
+        <OutrosUsos>0</OutrosUsos>
+        <NumeroAVCB>CLCB 000042829</NumeroAVCB>
+        <ValidadeAVCB>2018-12-26</ValidadeAVCB>
+      </Imovel>
+    </Licenciamento>
+    <Licenciamento id="6595584">
+      <Solicitacao id="1506362">1506362201811</Solicitacao>
+      <Orgao id="1" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>1506362201811</Numero>
+      <ProtocoloAtendimento>1983439</ProtocoloAtendimento>
+      <DataProtocolo>2018-08-31T00:00:00</DataProtocolo>
+      <Declaracao id="4054287" />
+      <Declaracao id="4054290" />
+      <Declaracao id="4054286" />
+    </Licenciamento>
+    <Licenciamento id="6595585">
+      <Solicitacao id="1506362">1506362201811</Solicitacao>
+      <Orgao id="2" />
+      <Status id="5" />
+      <Risco id="0" />
+      <ProtocoloAtendimento>272517</ProtocoloAtendimento>
+      <DataProtocolo>2018-08-31T00:00:00</DataProtocolo>
+      <Declaracao id="4054293" />
+      <Declaracao id="4054294" />
+      <Declaracao id="4054295" />
+    </Licenciamento>
+    <Licenciamento id="6595587">
+      <Solicitacao id="1506362">1506362201811</Solicitacao>
+      <Orgao id="287" />
+      <Status id="5" />
+      <Risco id="1" />
+      <Numero>1506362201811</Numero>
+      <DataEmissao>2018-09-10T00:00:00</DataEmissao>
+      <DataVencimento>2019-09-10T00:00:00</DataVencimento>
+      <ProtocoloAtendimento>14.473-8/2018</ProtocoloAtendimento>
+      <DataProtocolo>2018-09-06T00:00:00</DataProtocolo>
+    </Licenciamento>
+    <Licenciamento id="6595588">
+      <Solicitacao id="1506362">1506362201811</Solicitacao>
+      <Orgao id="654" />
+      <Status id="5" />
+      <Risco id="0" />
+      <ProtocoloAtendimento>1535742589015</ProtocoloAtendimento>
+      <DataProtocolo>2018-08-31T00:00:00</DataProtocolo>
+      <Declaracao id="4054292" />
+    </Licenciamento>
+  </Empresa>
+  <Empresa id="654558">
+    <!--Dados gerais da empresa (recebidos da RFB)-->
+    <CNPJ>32173061000147</CNPJ>
+    <NomeEmpresarial>WALDECIR LUIZ MACHADO JUNIOR</NomeEmpresarial>
+    <SituacaoCadastral>02</SituacaoCadastral>
+    <DataSituacaoCadastral>2018-12-04</DataSituacaoCadastral>
+    <NaturezaJuridica>2135</NaturezaJuridica>
+    <DataAbertura>2018-12-04</DataAbertura>
+    <Porte>01</Porte>
+    <!--Dados gerais da empresa (coletados do usuário)-->
+    <NumeroRegistro>35131971246</NumeroRegistro>
+    <TipoRegistro>1</TipoRegistro>
+    <TipoMEI>0</TipoMEI>
+    <!--Dados do responsável pela empresa (conforme RFB)-->
+    <CPFResponsavel>44388650854</CPFResponsavel>
+    <NomeResponsavel>WALDECIR LUIZ MACHADO JUNIOR</NomeResponsavel>
+    <DDD1>16</DDD1>
+    <Telefone1>88060703</Telefone1>
+    <DDD2>16</DDD2>
+    <Telefone2>32035402</Telefone2>
+    <Email>BOARINICONTABIL@UOL.COM.BR</Email>
+    <!--Endereço do estabelecimento-->
+    <Endereco>
+      <SetorQuadraLote>13827</SetorQuadraLote>
+      <TipoLogradouro>Avenida</TipoLogradouro>
+      <Logradouro>João Pinto Ferreira</Logradouro>
+      <NumeroLogradouro>660</NumeroLogradouro>
+      <Bairro>Aparecida</Bairro>
+      <CEP>14883200</CEP>
+      <UF>SP</UF>
+      <Municipio Concla="24303" rfb="279">Jaboticabal</Municipio>
+    </Endereco>
+    <!--Atividades cadastradas e exercidas pela empresa (CNAE e auxiliares)-->
+    <Atividades>
+      <CNAE codigo="8129000" principal="1" exercida="1" />
+      <CNAE codigo="8130300" principal="0" exercida="1" />
+      <CNAE codigo="4321500" principal="0" exercida="1" />
+      <Auxiliar id="10" />
+    </Atividades>
+    <!--QSA da empresa-->
+    <Sociedade />
+    <!--Dados do contador-->
+    <ClassificacaoCRCContadorPJ>0</ClassificacaoCRCContadorPJ>
+    <NumeroCRCContadorPJ>000000</NumeroCRCContadorPJ>
+    <CNPJContador>00000000000000</CNPJContador>
+    <TipoCRCContadorPF>O</TipoCRCContadorPF>
+    <ClassificacaoCRCContadorPF>1</ClassificacaoCRCContadorPF>
+    <NumeroCRCContadorPF>065598</NumeroCRCContadorPF>
+    <UFCRCContadorPF>SP</UFCRCContadorPF>
+    <CPFContador>09204126884</CPFContador>
+    <!--Viabilidade-->
+    <Viabilidade id="8060185">
+      <Solicitacao id="1674135">1674135201953</Solicitacao>
+      <Status id="12" />
+    </Viabilidade>
+    <!--Licenciamentos (um bloco abaixo para cada órgão)-->
+    <Licenciamento id="8060182">
+      <Solicitacao id="1674135">1674135201953</Solicitacao>
+      <Orgao id="3" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>CLCB 0000426570</Numero>
+      <DataEmissao>2018-12-19T00:00:00</DataEmissao>
+      <DataVencimento>2021-12-19T00:00:00</DataVencimento>
+      <ProtocoloAtendimento>324186-9/2018</ProtocoloAtendimento>
+      <DataProtocolo>2018-12-18T00:00:00</DataProtocolo>
+      <Imovel>
+        <AreaEstabelecimento>94</AreaEstabelecimento>
+        <NomeProprietario>BENEDITA SOARES MERENDA</NomeProprietario>
+        <EmailProprietario>ND</EmailProprietario>
+        <TelefoneProprietario>ND</TelefoneProprietario>
+        <NomeResponsavelUso>WALDECIR LUIZ MACHADO JUNIOR</NomeResponsavelUso>
+        <TelefoneResponsavelUso>ND</TelefoneResponsavelUso>
+        <AreaTotal>94</AreaTotal>
+        <Pavimentos>0</Pavimentos>
+        <Contiguo>0</Contiguo>
+        <OutrosUsos>0</OutrosUsos>
+        <NumeroAVCB>CLCB 000042657</NumeroAVCB>
+        <ValidadeAVCB>2018-12-19</ValidadeAVCB>
+      </Imovel>
+    </Licenciamento>
+    <Licenciamento id="8060180">
+      <Solicitacao id="1674135">1674135201953</Solicitacao>
+      <Orgao id="1" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>1674135201953</Numero>
+      <ProtocoloAtendimento>2574053</ProtocoloAtendimento>
+      <DataProtocolo>2019-01-02T00:00:00</DataProtocolo>
+      <Declaracao id="6696613" />
+    </Licenciamento>
+    <Licenciamento id="8060181">
+      <Solicitacao id="1674135">1674135201953</Solicitacao>
+      <Orgao id="2" />
+      <Status id="5" />
+      <Risco id="0" />
+      <ProtocoloAtendimento>443241</ProtocoloAtendimento>
+      <DataProtocolo>2019-01-02T00:00:00</DataProtocolo>
+      <Declaracao id="6696617" />
+      <Declaracao id="6696618" />
+      <Declaracao id="6696619" />
+    </Licenciamento>
+    <Licenciamento id="8060184">
+      <Solicitacao id="1674135">1674135201953</Solicitacao>
+      <Orgao id="287" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>1674135201953</Numero>
+      <DataEmissao>2019-01-02T00:00:00</DataEmissao>
+      <DataVencimento>2020-01-02T00:00:00</DataVencimento>
+    </Licenciamento>
+    <Licenciamento id="8060183">
+      <Solicitacao id="1674135">1674135201953</Solicitacao>
+      <Orgao id="654" />
+      <Status id="5" />
+      <Risco id="0" />
+      <ProtocoloAtendimento>1546446770920</ProtocoloAtendimento>
+      <DataProtocolo>2019-01-02T00:00:00</DataProtocolo>
+      <Declaracao id="6696616" />
+    </Licenciamento>
+  </Empresa>
+  <Empresa id="655933">
+    <!--Dados gerais da empresa (recebidos da RFB)-->
+    <CNPJ>32317184000104</CNPJ>
+    <NomeEmpresarial>MARCOS ANTONIO FRANCISCATTO</NomeEmpresarial>
+    <SituacaoCadastral>02</SituacaoCadastral>
+    <DataSituacaoCadastral>2018-12-27</DataSituacaoCadastral>
+    <NaturezaJuridica>2135</NaturezaJuridica>
+    <DataAbertura>2018-12-27</DataAbertura>
+    <Porte>01</Porte>
+    <!--Dados gerais da empresa (coletados do usuário)-->
+    <NumeroRegistro>35131993631</NumeroRegistro>
+    <TipoRegistro>1</TipoRegistro>
+    <TipoMEI>0</TipoMEI>
+    <!--Dados do responsável pela empresa (conforme RFB)-->
+    <CPFResponsavel>08734555846</CPFResponsavel>
+    <NomeResponsavel>MARCOS ANTONIO FRANCISCATTO</NomeResponsavel>
+    <DDD1>16</DDD1>
+    <Telefone1>91675939</Telefone1>
+    <Email>MARCOSFRANCISCATTO@GMAIL.COM</Email>
+    <!--Endereço do estabelecimento-->
+    <Endereco>
+      <SetorQuadraLote>04497</SetorQuadraLote>
+      <TipoLogradouro>Rua</TipoLogradouro>
+      <Logradouro>JOAO MARTINS DE ANDRADE</Logradouro>
+      <NumeroLogradouro>311</NumeroLogradouro>
+      <Bairro>JARDIM SAO MARCOS II</Bairro>
+      <CEP>14887230</CEP>
+      <UF>SP</UF>
+      <Municipio Concla="24303" rfb="279">Jaboticabal</Municipio>
+    </Endereco>
+    <!--Atividades cadastradas e exercidas pela empresa (CNAE e auxiliares)-->
+    <Atividades>
+      <CNAE codigo="8211300" principal="1" exercida="0" />
+      <Auxiliar id="10" />
+    </Atividades>
+    <!--QSA da empresa-->
+    <Sociedade />
+    <!--Dados do contador-->
+    <ClassificacaoCRCContadorPJ>0</ClassificacaoCRCContadorPJ>
+    <NumeroCRCContadorPJ>000000</NumeroCRCContadorPJ>
+    <CNPJContador>00000000000000</CNPJContador>
+    <TipoCRCContadorPF>O</TipoCRCContadorPF>
+    <ClassificacaoCRCContadorPF>1</ClassificacaoCRCContadorPF>
+    <NumeroCRCContadorPF>076026</NumeroCRCContadorPF>
+    <UFCRCContadorPF>SP</UFCRCContadorPF>
+    <CPFContador>45920265868</CPFContador>
+    <!--Viabilidade-->
+    <Viabilidade id="8055995">
+      <Solicitacao id="1673542">1673542201937</Solicitacao>
+      <Status id="12" />
+      <DataStatus>2019-01-02T00:00:00</DataStatus>
+      <RestricaoOperacao id="19024" />
+    </Viabilidade>
+    <!--Licenciamentos (um bloco abaixo para cada órgão)-->
+    <Licenciamento id="8055992">
+      <Solicitacao id="1673542">1673542201937</Solicitacao>
+      <Orgao id="3" />
+      <Status id="5" />
+      <Risco id="0" />
+      <ProtocoloAtendimento>417475</ProtocoloAtendimento>
+      <DataProtocolo>2019-01-02T00:00:00</DataProtocolo>
+      <Imovel>
+        <AreaEstabelecimento>40</AreaEstabelecimento>
+        <NomeProprietario>JOSE LUIS DA VEIGA CAMPOS 27432953848</NomeProprietario>
+        <EmailProprietario>ND</EmailProprietario>
+        <TelefoneProprietario>ND</TelefoneProprietario>
+        <NomeResponsavelUso>JOSE LUIS DA VEIGA CAMPOS 27432953848</NomeResponsavelUso>
+        <TelefoneResponsavelUso>ND</TelefoneResponsavelUso>
+        <AreaTotal>40</AreaTotal>
+        <Pavimentos>0</Pavimentos>
+        <Contiguo>0</Contiguo>
+        <OutrosUsos>0</OutrosUsos>
+        <NumeroAVCB>CLCB 000042855</NumeroAVCB>
+        <ValidadeAVCB>2018-12-27</ValidadeAVCB>
+      </Imovel>
+    </Licenciamento>
+    <Licenciamento id="8055990">
+      <Solicitacao id="1673542">1673542201937</Solicitacao>
+      <Orgao id="1" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>1673542201937</Numero>
+      <ProtocoloAtendimento>2572144</ProtocoloAtendimento>
+      <DataProtocolo>2019-01-02T00:00:00</DataProtocolo>
+    </Licenciamento>
+    <Licenciamento id="8055991">
+      <Solicitacao id="1673542">1673542201937</Solicitacao>
+      <Orgao id="2" />
+      <Status id="5" />
+      <Risco id="0" />
+      <ProtocoloAtendimento>442648</ProtocoloAtendimento>
+      <DataProtocolo>2019-01-02T00:00:00</DataProtocolo>
+      <Declaracao id="6689201" />
+      <Declaracao id="6689202" />
+      <Declaracao id="6689203" />
+    </Licenciamento>
+    <Licenciamento id="8055993">
+      <Solicitacao id="1673542">1673542201937</Solicitacao>
+      <Orgao id="287" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>1673542201937</Numero>
+      <DataEmissao>2019-01-02T00:00:00</DataEmissao>
+      <DataVencimento>2020-01-02T00:00:00</DataVencimento>
+    </Licenciamento>
+    <Licenciamento id="8055994">
+      <Solicitacao id="1673542">1673542201937</Solicitacao>
+      <Orgao id="654" />
+      <Status id="5" />
+      <Risco id="0" />
+      <ProtocoloAtendimento>1546428878976</ProtocoloAtendimento>
+      <DataProtocolo>2019-01-02T00:00:00</DataProtocolo>
+      <Declaracao id="6689200" />
+    </Licenciamento>
+  </Empresa>
+</Empresas>

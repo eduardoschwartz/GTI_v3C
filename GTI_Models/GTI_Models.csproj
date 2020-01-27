@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{859B188D-0D59-418E-AF77-5235B79087F4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GTI_Models</RootNamespace>
+    <AssemblyName>GTI_Models</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="modelCore.cs" />
+    <Compile Include="Models\alvara_funcionamento.cs" />
+    <Compile Include="Models\anexo.cs" />
+    <Compile Include="Models\anexo_log.cs" />
+    <Compile Include="Models\areas.cs" />
+    <Compile Include="Models\assunto.cs" />
+    <Compile Include="Models\assuntodoc.cs" />
+    <Compile Include="Models\atividade.cs" />
+    <Compile Include="Models\atividadeiss.cs" />
+    <Compile Include="Models\bairro.cs" />
+    <Compile Include="Models\banco.cs" />
+    <Compile Include="Models\boleto.cs" />
+    <Compile Include="Models\boletoguia.cs" />
+    <Compile Include="Models\Integrativa\cadastro.cs" />
+    <Compile Include="Models\cadimob.cs" />
+    <Compile Include="Models\calculo_resumo.cs" />
+    <Compile Include="Models\Integrativa\cancelamentos.cs" />
+    <Compile Include="Models\carta_cobranca.cs" />
+    <Compile Include="Models\carta_cobranca_detalhe.cs" />
+    <Compile Include="Models\carta_cobranca_exclusao.cs" />
+    <Compile Include="Models\categconstr.cs" />
+    <Compile Include="Models\Integrativa\cdadebitos.cs" />
+    <Compile Include="Models\Integrativa\cdas.cs" />
+    <Compile Include="Models\cep.cs" />
+    <Compile Include="Models\certidao_debito.cs" />
+    <Compile Include="Models\certidao_debito_doc.cs" />
+    <Compile Include="Models\certidao_endereco.cs" />
+    <Compile Include="Models\certidao_inscricao.cs" />
+    <Compile Include="Models\certidao_isencao.cs" />
+    <Compile Include="Models\certidao_valor_venal.cs" />
+    <Compile Include="Models\cidadao.cs" />
+    <Compile Include="Models\cidade.cs" />
+    <Compile Include="Models\cnae.cs" />
+    <Compile Include="Models\cnaecriterio.cs" />
+    <Compile Include="Models\cnaecriteriodesc.cs" />
+    <Compile Include="Models\cnaesubclasse.cs" />
+    <Compile Include="Models\cnae_criterio.cs" />
+    <Compile Include="Models\comercio_eletronico.cs" />
+    <Compile Include="Models\comprovante_pagamento.cs" />
+    <Compile Include="Models\comunicado_isencao.cs" />
+    <Compile Include="Models\condominio.cs" />
+    <Compile Include="Models\condominioarea.cs" />
+    <Compile Include="Models\condominiounidade.cs" />
+    <Compile Include="Models\debitocancel.cs" />
+    <Compile Include="Models\debitoobservacao.cs" />
+    <Compile Include="Models\debitopago.cs" />
+    <Compile Include="Models\debitoparcela.cs" />
+    <Compile Include="Models\debitotributo.cs" />
+    <Compile Include="Models\DEmpresa.cs" />
+    <Compile Include="Models\destinoreparc.cs" />
+    <Compile Include="Models\endentrega.cs" />
+    <Compile Include="Models\endereco.cs" />
+    <Compile Include="Models\escritoriocontabil.cs" />
+    <Compile Include="Models\facequadra.cs" />
+    <Compile Include="Models\ficha_compensacao_documento.cs" />
+    <Compile Include="Models\foto_imovel.cs" />
+    <Compile Include="Models\historico.cs" />
+    <Compile Include="Models\historicocidadao.cs" />
+    <Compile Include="Models\horariofunc.cs" />
+    <Compile Include="Models\horario_funcionamento.cs" />
+    <Compile Include="Models\isencao.cs" />
+    <Compile Include="Models\lancamento.cs" />
+    <Compile Include="Models\laseriptu.cs" />
+    <Compile Include="Models\livro.cs" />
+    <Compile Include="Models\logevento.cs" />
+    <Compile Include="Models\mei.cs" />
+    <Compile Include="Models\mobiliario.cs" />
+    <Compile Include="Models\benfeitoria.cs" />
+    <Compile Include="Models\categprop.cs" />
+    <Compile Include="Models\mobiliarioatividadevs2.cs" />
+    <Compile Include="Models\mobiliariocnae.cs" />
+    <Compile Include="Models\mobiliarioendentrega.cs" />
+    <Compile Include="Models\mobiliariohist.cs" />
+    <Compile Include="Models\mobiliarioplaca.cs" />
+    <Compile Include="Models\mobiliariovs.cs" />
+    <Compile Include="Models\numdocumento.cs" />
+    <Compile Include="Models\obscidadao.cs" />
+    <Compile Include="Models\obsparcela.cs" />
+    <Compile Include="Models\origemreparc.cs" />
+    <Compile Include="Models\parametros.cs" />
+    <Compile Include="Models\paramparcela.cs" />
+    <Compile Include="Models\parceladocumento.cs" />
+    <Compile Include="Models\Integrativa\partes.cs" />
+    <Compile Include="Models\pedologia.cs" />
+    <Compile Include="Models\periodomei.cs" />
+    <Compile Include="Models\processocidadao.cs" />
+    <Compile Include="Models\processodoc.cs" />
+    <Compile Include="Models\processoend.cs" />
+    <Compile Include="Models\processoreparc.cs" />
+    <Compile Include="Models\processo_historico.cs" />
+    <Compile Include="Models\proprietario.cs" />
+    <Compile Include="Models\certidao_inscricao_extrato.cs" />
+    <Compile Include="Models\redesim_viabilidade.cs" />
+    <Compile Include="Models\security_event.cs" />
+    <Compile Include="Models\segunda_via_web.cs" />
+    <Compile Include="Models\serasa.cs" />
+    <Compile Include="Models\sil.cs" />
+    <Compile Include="Models\sistema.cs" />
+    <Compile Include="Models\situacao.cs" />
+    <Compile Include="Models\situacaolancamento.cs" />
+    <Compile Include="Models\spCalculo.cs" />
+    <Compile Include="Models\spExtrato.cs" />
+    <Compile Include="Models\spExtrato_carta.cs" />
+    <Compile Include="Models\tabelaiss.cs" />
+    <Compile Include="Models\Eicon\tb_inter_encerramento_giss.cs" />
+    <Compile Include="Models\testada.cs" />
+    <Compile Include="Models\Testadacondominio.cs" />
+    <Compile Include="Models\tipoconstr.cs" />
+    <Compile Include="Models\tipolivro.cs" />
+    <Compile Include="Models\tipousuario.cs" />
+    <Compile Include="Models\topografia.cs" />
+    <Compile Include="Models\tramitacao.cs" />
+    <Compile Include="Models\tramitacaocc.cs" />
+    <Compile Include="Models\tributo.cs" />
+    <Compile Include="Models\tributoaliquota.cs" />
+    <Compile Include="Models\tributolancamento.cs" />
+    <Compile Include="Models\usoconstr.cs" />
+    <Compile Include="Models\usoterreno.cs" />
+    <Compile Include="Models\mobiliarioatividadeiss.cs" />
+    <Compile Include="Models\mobiliarioevento.cs" />
+    <Compile Include="Models\mobiliarioproprietario.cs" />
+    <Compile Include="Models\processoGTI.cs" />
+    <Compile Include="Models\assuntocc.cs" />
+    <Compile Include="Models\despacho.cs" />
+    <Compile Include="Models\logradouro.cs" />
+    <Compile Include="Models\pais.cs" />
+    <Compile Include="Models\documento.cs" />
+    <Compile Include="Models\centrocusto.cs" />
+    <Compile Include="Models\profissao.cs" />
+    <Compile Include="Models\uf.cs" />
+    <Compile Include="Models\usuario.cs" />
+    <Compile Include="Models\usuariocc.cs" />
+    <Compile Include="Models\usuariofunc.cs" />
+    <Compile Include="Models\vre_atividade.cs" />
+    <Compile Include="Models\vre_empresa.cs" />
+    <Compile Include="Models\vre_licenciamento.cs" />
+    <Compile Include="Models\vre_socio.cs" />
+    <Compile Include="Models\vwproprietarioduplicado.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

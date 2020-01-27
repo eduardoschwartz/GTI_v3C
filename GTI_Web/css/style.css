@@ -1,0 +1,308 @@
+
+html
+{ height: 100%;}
+
+*
+{ margin: 0;
+  padding: 0;}
+
+body
+{ font: normal 90% Arial, Helvetica, sans-serif;
+  color: #000;
+  background: transparent url(../images/background.png) repeat;
+   input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+         display: none;
+         }
+}
+
+p
+{ padding: 0 0 10px 0;
+  color: #1D1D1D;
+  line-height: 1.7em;
+  font-size: 100% }
+
+img
+{ border-style: none;
+    border-color: inherit;
+    border-width: 0;
+    height: 89px;
+    width: 418px;
+    margin-left: 0;
+}
+
+h1, h2, h3, h4, h5, h6 
+{ font: normal 100%  Arial, Helvetica, sans-serif;
+  color: #1D1D1D;
+  text-shadow: 0px -1px 0px #fff;
+  letter-spacing: -1px;
+  margin: 0 0 10px 0;}
+
+h2
+{ font: normal 125% Arial, Helvetica, sans-serif;}
+
+h3
+{ font:  120% Arial, Helvetica, sans-serif;
+}
+
+h4, h5, h6
+{ margin: 0;
+  padding: 0 0 0px 0;
+  font: normal 150% Arial, Helvetica, sans-serif;
+  line-height: 1.5em;}
+
+h5, h6
+{ font: normal 95% Arial, Helvetica, sans-serif;
+  color: #888;
+  padding-bottom: 15px;}
+
+a, a:hover
+{ color: #1D1D1D;
+  background: transparent;
+  outline: none;
+  text-decoration: underline;}
+
+a:hover
+{ text-decoration: none;}
+
+ul
+{ margin: 2px 0 22px 30px;
+  line-height: 1.7em;
+  font-style: normal;
+  font-size: 100%;}
+
+ol
+{ margin: 8px 0 22px 20px;}
+
+ol li
+{ margin: 0 0 11px 0;}
+
+#main, #header, #banner, #menubar, #site_content, #footer, #content_green
+{ margin-left: auto; 
+  margin-right: auto;}
+
+#main
+{ background: transparent;}
+
+#banner
+{ width: 950px;
+  position: relative;
+  margin-top: 30px;
+  height: 75px;
+  padding: 0 0 0 0;
+  
+  border-radius: 7px 7px 0px 0px;
+  -moz-border-radius: 7px 7px 0px 0px;
+  -webkit-border: 7px 7px 0px 0px;}
+
+#menubar {
+    width: 950px;
+    height: 50px;
+    text-align: left;
+    margin: 0 auto;
+    background: #FFF;
+    background: -moz-linear-gradient(#434322, #000);
+    background: -o-linear-gradient(#434322, #000);
+    background: -webkit-linear-gradient(#434322, #000);
+  border-radius: 7px 7px 0px 0px;
+  -moz-border-radius: 7px 7px 0px 0px;
+  -webkit-border: 7px 7px 0px 0px;
+box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;}
+
+#welcome
+{ width: 720px;
+  float: none;
+  text-align:center;
+  height: 90px;
+  margin: 0 auto;
+  background: transparent;}  
+
+#login {
+    border: thin solid #993300;
+    width: 320px;
+    float: none;
+    text-align: center;
+    height: 120px;
+    margin: 0 auto;
+    background: #FFFFFF;
+}
+
+ 
+   
+#welcome H1
+{ font: normal 300%  Arial, sans-serif;
+  letter-spacing: -3px;
+  color: #FFF;
+  text-shadow: 0px -1px 0px #000;}
+  
+ul#menu
+{ margin:0;}
+
+ul#menu li
+{ padding: 0 0 0 0px;
+  list-style: none;
+  margin: 20px 0 0 0;
+  display: inline;
+  background: transparent;}
+
+ul#menu li a
+{ 
+  font:  100% Arial, Helvetica, sans-serif;
+  height: 24px;
+  margin: 0 0 0 10px;
+  text-shadow: 0px -1px 0px #FFF;
+  padding: 6px 20px 0 20px;
+  background: border-box; 
+  border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  -webkit-border: 4px 4px 4px 4px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;} 
+  
+ul#menu li.current a
+{ color: #FFF;
+  background: #2A3542;
+  background: -moz-linear-gradient(#585E68, #585E68);
+  background: -o-linear-gradient(#585E68, #585E68);
+  background: -webkit-linear-gradient(#585E68, #585E68);
+  color: #000;
+  text-shadow: none;}
+  
+ul#menu li:hover a
+{ font: 100% Arial, Helvetica, sans-serif;
+  color : #000;
+  text-shadow: none;}
+
+#site_content
+{ width: 940px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-left: 10px;
+  background: transparent url(../images/transparent_light.png) repeat;
+  border-radius: 0px 0px 7px 7px;
+  -moz-border-radius: 0px 0px 7px 7px;
+  -webkit-border: 0px 0px 7px 7px;} 
+
+
+
+#content
+{ width: 680px;
+  margin: 0 0 20px 10px;
+  float: left;}
+
+.content_item
+{ width: 680px;
+  margin-top: 20px;
+  margin-bottom: 20px;}
+  
+  
+.content_heading
+{ width: 680px;
+  padding: 5px;
+  margin-right: 10px;
+  float: left;}
+
+    .content_heading h3 {
+        font: normal 100%  Arial, Helvetica, sans-serif;
+        padding: 5px;
+        border-bottom: 3px solid #000;
+        background: #CCC;
+        background: -moz-linear-gradient(#FFFFFF, #585E68);
+        background: -o-linear-gradient(#FFFFFF, #585E68);
+        background: -webkit-linear-gradient(#FFFFFF, #585E68);
+    } 
+ 
+#footer
+{ width: 950px;
+  height: 40px;
+  padding-top: 20px;
+  text-align: center; 
+  font-weight: normal;
+  background: transparent;
+  text-shadow: 1px 1px #FFF;
+  color: #0e283b;}
+
+
+.form_settings
+{ margin: 15px 0 0 0;}
+
+.form_settings p
+{ padding: 0 0 4px 0;}
+
+.form_settings span
+{ float: left; 
+  width: 280px; 
+  text-align: left;}
+  
+.form_settings input, .form_settings textarea
+{ padding: 2px; 
+  width: 299px; 
+  font: 100% arial; 
+  border: 1px solid #E5E5DB; 
+  background: #FFF; 
+  color: #47433F;}
+  
+.form_settings input[type="checkbox"]
+{ padding: 2px 0; 
+  width: 15px; 
+  font: 100% arial; 
+  border: 0; 
+  background: #FFF; 
+  color: #47433F;
+  margin: 28px 0;}
+
+.form_settings .submit
+{ font: 100% arial; 
+  border: 1px solid; 
+  width: 99px; 
+  margin: 0 0 0 206px; 
+  height: 26px;
+  padding: 2px 0 3px 0;
+  cursor: pointer; 
+  background: #1D1D1D; 
+  color: #FFF;}
+
+/* styling for the slideshow on the homepage */
+ul.slideshow {
+  list-style: none;
+  width: 680px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 0 0 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;}
+  
+ul.slideshow li {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  right: 0;}
+ 
+ul.slideshow li.show {
+  z-index: 500;}
+ 
+ul img {
+  border: none;}
+ 
+#slideshow-caption {
+  width: 680px;
+  height: 38px;
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+  z-index: 500;}
+ 
+#slideshow-caption .slideshow-caption-container {
+  padding: 10px 25px 10px 25px; 
+  background: transparent url(../images/transparent.png) repeat;  
+  z-index: 1000;}
+ 
+#slideshow-caption p {
+  padding: 0;
+  font: normal 130% arial, sans-serif;
+  color: #FFF;}
+ 

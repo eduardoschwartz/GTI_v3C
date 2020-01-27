@@ -1,0 +1,1451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Empresas>
+  <Empresa id="264785">
+    <!--Dados gerais da empresa (recebidos da RFB)-->
+    <CNPJ>24247887000185</CNPJ>
+    <NomeEmpresarial>KAREN DE OLIVEIRA TRANSPORTADORA</NomeEmpresarial>
+    <SituacaoCadastral>02</SituacaoCadastral>
+    <DataSituacaoCadastral>2016-02-23</DataSituacaoCadastral>
+    <NaturezaJuridica>2135</NaturezaJuridica>
+    <DataAbertura>2016-02-23</DataAbertura>
+    <Porte>01</Porte>
+    <!--Dados gerais da empresa (coletados do usuário)-->
+    <NumeroRegistro>35130614644</NumeroRegistro>
+    <TipoRegistro>1</TipoRegistro>
+    <TipoMEI>0</TipoMEI>
+    <!--Dados do responsável pela empresa (conforme RFB)-->
+    <CPFResponsavel>46685142847</CPFResponsavel>
+    <NomeResponsavel>KAREN DE OLIVEIRA</NomeResponsavel>
+    <DDD1>16</DDD1>
+    <Telefone1>97878539</Telefone1>
+    <Email>FISCAL@LOGOSCONT.COM.BR</Email>
+    <!--Endereço do estabelecimento-->
+    <Endereco>
+      <SetorQuadraLote>08394</SetorQuadraLote>
+      <TipoLogradouro>Avenida</TipoLogradouro>
+      <Logradouro>JOSE MARTINS CRUZ</Logradouro>
+      <NumeroLogradouro>420</NumeroLogradouro>
+      <Bairro>SANTA LUZIA</Bairro>
+      <CEP>14883245</CEP>
+      <UF>SP</UF>
+      <Municipio Concla="24303" rfb="279">Jaboticabal</Municipio>
+    </Endereco>
+    <!--Atividades cadastradas e exercidas pela empresa (CNAE e auxiliares)-->
+    <Atividades>
+      <CNAE codigo="4744004" principal="1" exercida="1" />
+      <CNAE codigo="4930202" principal="0" exercida="1" />
+      <CNAE codigo="4744004" principal="1" exercida="1" />
+      <CNAE codigo="4930202" principal="0" exercida="1" />
+      <Auxiliar id="5" />
+      <Auxiliar id="5" />
+    </Atividades>
+    <!--QSA da empresa-->
+    <Sociedade />
+    <!--Dados do contador-->
+    <ClassificacaoCRCContadorPJ>0</ClassificacaoCRCContadorPJ>
+    <NumeroCRCContadorPJ>000000</NumeroCRCContadorPJ>
+    <CNPJContador>00000000000000</CNPJContador>
+    <TipoCRCContadorPF>O</TipoCRCContadorPF>
+    <ClassificacaoCRCContadorPF>1</ClassificacaoCRCContadorPF>
+    <NumeroCRCContadorPF>158104</NumeroCRCContadorPF>
+    <UFCRCContadorPF>SP</UFCRCContadorPF>
+    <CPFContador>02846104883</CPFContador>
+    <!--Viabilidade-->
+    <Viabilidade id="4688911">
+      <Solicitacao id="1078213">1078213201762</Solicitacao>
+      <Status id="12" />
+      <DataStatus>2017-12-04T00:00:00</DataStatus>
+      <RestricaoOperacao id="2961" />
+      <RestricaoOperacao id="2961" />
+      <RestricaoOperacao id="2961" />
+      <RestricaoOperacao id="2961" />
+      <RestricaoOperacao id="2961" />
+      <RestricaoOperacao id="2961" />
+    </Viabilidade>
+    <!--Licenciamentos (um bloco abaixo para cada órgão)-->
+    <Licenciamento id="4688908">
+      <Solicitacao id="1078213">1078213201762</Solicitacao>
+      <Orgao id="3" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>CLCB 0000269634</Numero>
+      <DataEmissao>2017-08-07T00:00:00</DataEmissao>
+      <DataVencimento>2020-08-07T00:00:00</DataVencimento>
+      <ProtocoloAtendimento>1078213201762</ProtocoloAtendimento>
+      <DataProtocolo>2017-08-07T00:00:00</DataProtocolo>
+      <Imovel>
+        <AreaEstabelecimento>150</AreaEstabelecimento>
+        <NomeProprietario>KAREN DE OLIVEIRA TRANSPORTADORA - ME</NomeProprietario>
+        <EmailProprietario>ND</EmailProprietario>
+        <TelefoneProprietario>ND</TelefoneProprietario>
+        <NomeResponsavelUso>KAREN DE OLIVEIRA TRANSPORTADORA - ME</NomeResponsavelUso>
+        <TelefoneResponsavelUso>ND</TelefoneResponsavelUso>
+        <AreaTotal>150</AreaTotal>
+        <Pavimentos>0</Pavimentos>
+        <Contiguo>0</Contiguo>
+        <OutrosUsos>0</OutrosUsos>
+        <NumeroAVCB>CLCB 000026963</NumeroAVCB>
+        <ValidadeAVCB>2017-08-07</ValidadeAVCB>
+      </Imovel>
+    </Licenciamento>
+    <Licenciamento id="8351370">
+      <Solicitacao id="1713419">1713419201964</Solicitacao>
+      <Orgao id="1" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>1713419201964</Numero>
+      <ProtocoloAtendimento>2711605</ProtocoloAtendimento>
+      <DataProtocolo>2019-01-29T00:00:00</DataProtocolo>
+      <Declaracao id="7223532" />
+    </Licenciamento>
+    <Licenciamento id="8351371">
+      <Solicitacao id="1713419">1713419201964</Solicitacao>
+      <Orgao id="2" />
+      <Status id="5" />
+      <Risco id="0" />
+      <ProtocoloAtendimento>482425</ProtocoloAtendimento>
+      <DataProtocolo>2019-01-29T00:00:00</DataProtocolo>
+      <Declaracao id="7223535" />
+      <Declaracao id="7223536" />
+      <Declaracao id="7223537" />
+    </Licenciamento>
+    <Licenciamento id="8351372">
+      <Solicitacao id="1713419">1713419201964</Solicitacao>
+      <Orgao id="287" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>1713419201964</Numero>
+      <DataEmissao>2019-01-29T00:00:00</DataEmissao>
+      <DataVencimento>2020-01-29T00:00:00</DataVencimento>
+    </Licenciamento>
+    <Licenciamento id="8351373">
+      <Solicitacao id="1713419">1713419201964</Solicitacao>
+      <Orgao id="654" />
+      <Status id="5" />
+      <Risco id="0" />
+      <ProtocoloAtendimento>1548756232018</ProtocoloAtendimento>
+      <DataProtocolo>2019-01-29T00:00:00</DataProtocolo>
+      <Declaracao id="7223534" />
+    </Licenciamento>
+  </Empresa>
+  <Empresa id="264785">
+    <!--Dados gerais da empresa (recebidos da RFB)-->
+    <CNPJ>24247887000185</CNPJ>
+    <NomeEmpresarial>KAREN DE OLIVEIRA TRANSPORTADORA</NomeEmpresarial>
+    <SituacaoCadastral>02</SituacaoCadastral>
+    <DataSituacaoCadastral>2016-02-23</DataSituacaoCadastral>
+    <NaturezaJuridica>2135</NaturezaJuridica>
+    <DataAbertura>2016-02-23</DataAbertura>
+    <Porte>01</Porte>
+    <!--Dados gerais da empresa (coletados do usuário)-->
+    <NumeroRegistro>35130614644</NumeroRegistro>
+    <TipoRegistro>1</TipoRegistro>
+    <TipoMEI>0</TipoMEI>
+    <!--Dados do responsável pela empresa (conforme RFB)-->
+    <CPFResponsavel>46685142847</CPFResponsavel>
+    <NomeResponsavel>KAREN DE OLIVEIRA</NomeResponsavel>
+    <DDD1>16</DDD1>
+    <Telefone1>97878539</Telefone1>
+    <Email>FISCAL@LOGOSCONT.COM.BR</Email>
+    <!--Endereço do estabelecimento-->
+    <Endereco>
+      <SetorQuadraLote>08394</SetorQuadraLote>
+      <TipoLogradouro>Avenida</TipoLogradouro>
+      <Logradouro>JOSE MARTINS CRUZ</Logradouro>
+      <NumeroLogradouro>420</NumeroLogradouro>
+      <Bairro>SANTA LUZIA</Bairro>
+      <CEP>14883245</CEP>
+      <UF>SP</UF>
+      <Municipio Concla="24303" rfb="279">Jaboticabal</Municipio>
+    </Endereco>
+    <!--Atividades cadastradas e exercidas pela empresa (CNAE e auxiliares)-->
+    <Atividades>
+      <CNAE codigo="4744004" principal="1" exercida="1" />
+      <CNAE codigo="4930202" principal="0" exercida="1" />
+      <CNAE codigo="4744004" principal="1" exercida="1" />
+      <CNAE codigo="4930202" principal="0" exercida="1" />
+      <Auxiliar id="5" />
+      <Auxiliar id="5" />
+    </Atividades>
+    <!--QSA da empresa-->
+    <Sociedade />
+    <!--Dados do contador-->
+    <ClassificacaoCRCContadorPJ>0</ClassificacaoCRCContadorPJ>
+    <NumeroCRCContadorPJ>000000</NumeroCRCContadorPJ>
+    <CNPJContador>00000000000000</CNPJContador>
+    <TipoCRCContadorPF>O</TipoCRCContadorPF>
+    <ClassificacaoCRCContadorPF>1</ClassificacaoCRCContadorPF>
+    <NumeroCRCContadorPF>158104</NumeroCRCContadorPF>
+    <UFCRCContadorPF>SP</UFCRCContadorPF>
+    <CPFContador>02846104883</CPFContador>
+    <!--Viabilidade-->
+    <Viabilidade id="4688911">
+      <Solicitacao id="1078213">1078213201762</Solicitacao>
+      <Status id="12" />
+      <DataStatus>2017-12-04T00:00:00</DataStatus>
+      <RestricaoOperacao id="2961" />
+      <RestricaoOperacao id="2961" />
+      <RestricaoOperacao id="2961" />
+      <RestricaoOperacao id="2961" />
+      <RestricaoOperacao id="2961" />
+      <RestricaoOperacao id="2961" />
+    </Viabilidade>
+    <!--Licenciamentos (um bloco abaixo para cada órgão)-->
+    <Licenciamento id="4688908">
+      <Solicitacao id="1078213">1078213201762</Solicitacao>
+      <Orgao id="3" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>CLCB 0000269634</Numero>
+      <DataEmissao>2017-08-07T00:00:00</DataEmissao>
+      <DataVencimento>2020-08-07T00:00:00</DataVencimento>
+      <ProtocoloAtendimento>1078213201762</ProtocoloAtendimento>
+      <DataProtocolo>2017-08-07T00:00:00</DataProtocolo>
+      <Imovel>
+        <AreaEstabelecimento>150</AreaEstabelecimento>
+        <NomeProprietario>KAREN DE OLIVEIRA TRANSPORTADORA - ME</NomeProprietario>
+        <EmailProprietario>ND</EmailProprietario>
+        <TelefoneProprietario>ND</TelefoneProprietario>
+        <NomeResponsavelUso>KAREN DE OLIVEIRA TRANSPORTADORA - ME</NomeResponsavelUso>
+        <TelefoneResponsavelUso>ND</TelefoneResponsavelUso>
+        <AreaTotal>150</AreaTotal>
+        <Pavimentos>0</Pavimentos>
+        <Contiguo>0</Contiguo>
+        <OutrosUsos>0</OutrosUsos>
+        <NumeroAVCB>CLCB 000026963</NumeroAVCB>
+        <ValidadeAVCB>2017-08-07</ValidadeAVCB>
+      </Imovel>
+    </Licenciamento>
+    <Licenciamento id="8351370">
+      <Solicitacao id="1713419">1713419201964</Solicitacao>
+      <Orgao id="1" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>1713419201964</Numero>
+      <ProtocoloAtendimento>2711605</ProtocoloAtendimento>
+      <DataProtocolo>2019-01-29T00:00:00</DataProtocolo>
+      <Declaracao id="7223532" />
+    </Licenciamento>
+    <Licenciamento id="8351371">
+      <Solicitacao id="1713419">1713419201964</Solicitacao>
+      <Orgao id="2" />
+      <Status id="5" />
+      <Risco id="0" />
+      <ProtocoloAtendimento>482425</ProtocoloAtendimento>
+      <DataProtocolo>2019-01-29T00:00:00</DataProtocolo>
+      <Declaracao id="7223535" />
+      <Declaracao id="7223536" />
+      <Declaracao id="7223537" />
+    </Licenciamento>
+    <Licenciamento id="8351372">
+      <Solicitacao id="1713419">1713419201964</Solicitacao>
+      <Orgao id="287" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>1713419201964</Numero>
+      <DataEmissao>2019-01-29T00:00:00</DataEmissao>
+      <DataVencimento>2020-01-29T00:00:00</DataVencimento>
+    </Licenciamento>
+    <Licenciamento id="8351373">
+      <Solicitacao id="1713419">1713419201964</Solicitacao>
+      <Orgao id="654" />
+      <Status id="5" />
+      <Risco id="0" />
+      <ProtocoloAtendimento>1548756232018</ProtocoloAtendimento>
+      <DataProtocolo>2019-01-29T00:00:00</DataProtocolo>
+      <Declaracao id="7223534" />
+    </Licenciamento>
+  </Empresa>
+  <Empresa id="265842">
+    <!--Dados gerais da empresa (recebidos da RFB)-->
+    <CNPJ>09617665000113</CNPJ>
+    <NomeEmpresarial>CLAUDECI DAMIAO ARTESANATOS - ME</NomeEmpresarial>
+    <SituacaoCadastral>02</SituacaoCadastral>
+    <DataSituacaoCadastral>2008-05-15</DataSituacaoCadastral>
+    <NaturezaJuridica>2135</NaturezaJuridica>
+    <DataAbertura>2008-05-15</DataAbertura>
+    <Porte>01</Porte>
+    <!--Dados gerais da empresa (coletados do usuário)-->
+    <NumeroRegistro>35123201925</NumeroRegistro>
+    <TipoRegistro>1</TipoRegistro>
+    <TipoMEI>0</TipoMEI>
+    <!--Dados do responsável pela empresa (conforme RFB)-->
+    <CPFResponsavel>06493828899</CPFResponsavel>
+    <NomeResponsavel>CLAUDECI DAMIAO</NomeResponsavel>
+    <DDD1>16</DDD1>
+    <Telefone1>97255819</Telefone1>
+    <Email>IUGHETTIJUNIOR@BOL.COM.BR</Email>
+    <!--Endereço do estabelecimento-->
+    <Endereco>
+      <SetorQuadraLote>25052</SetorQuadraLote>
+      <TipoLogradouro>Rua</TipoLogradouro>
+      <Logradouro>SÃO JOÃO</Logradouro>
+      <NumeroLogradouro>3001</NumeroLogradouro>
+      <Bairro>PARQUE INDUSTRIAL BRUNO VERARDINO</Bairro>
+      <CEP>14876285</CEP>
+      <UF>SP</UF>
+      <Municipio Concla="24303" rfb="279">Jaboticabal</Municipio>
+    </Endereco>
+    <!--Atividades cadastradas e exercidas pela empresa (CNAE e auxiliares)-->
+    <Atividades>
+      <CNAE codigo="4649499" principal="1" exercida="1" />
+      <CNAE codigo="4649499" principal="1" exercida="1" />
+      <Auxiliar id="5" />
+      <Auxiliar id="5" />
+    </Atividades>
+    <!--QSA da empresa-->
+    <Sociedade />
+    <!--Dados do contador-->
+    <ClassificacaoCRCContadorPJ>0</ClassificacaoCRCContadorPJ>
+    <NumeroCRCContadorPJ>000000</NumeroCRCContadorPJ>
+    <CNPJContador>00000000000000</CNPJContador>
+    <TipoCRCContadorPF>O</TipoCRCContadorPF>
+    <ClassificacaoCRCContadorPF>1</ClassificacaoCRCContadorPF>
+    <NumeroCRCContadorPF>125518</NumeroCRCContadorPF>
+    <UFCRCContadorPF>SP</UFCRCContadorPF>
+    <CPFContador>27632695834</CPFContador>
+    <!--Viabilidade-->
+    <Viabilidade id="2473687">
+      <Solicitacao id="561772">561772201696</Solicitacao>
+      <Status id="12" />
+    </Viabilidade>
+    <Viabilidade id="2473687">
+      <Solicitacao id="561772">561772201696</Solicitacao>
+      <Status id="12" />
+    </Viabilidade>
+    <!--Licenciamentos (um bloco abaixo para cada órgão)-->
+    <Licenciamento id="2473685">
+      <Solicitacao id="561772">561772201696</Solicitacao>
+      <Orgao id="3" />
+      <Status id="6" />
+      <Risco id="0" />
+      <Numero>561772201696</Numero>
+      <DataEmissao>2016-03-02T00:00:00</DataEmissao>
+      <DataVencimento>2019-03-02T00:00:00</DataVencimento>
+      <Pergunta id="5448" resposta="0" />
+      <Pergunta id="5449" resposta="0" />
+      <Pergunta id="5450" resposta="0" />
+      <Pergunta id="5452" resposta="0" />
+      <Pergunta id="5453" resposta="0" />
+      <Pergunta id="5454" resposta="0" />
+      <Declaracao id="8268" />
+      <Declaracao id="8269" />
+      <Declaracao id="8270" />
+      <Declaracao id="8272" />
+      <Declaracao id="8273" />
+      <Declaracao id="8274" />
+      <Declaracao id="8277" />
+      <Declaracao id="8278" />
+      <Declaracao id="8279" />
+      <Imovel>
+        <AreaEstabelecimento>68</AreaEstabelecimento>
+        <NomeProprietario>CLAUDECI DAMIAO ARTESANATOS ME</NomeProprietario>
+        <EmailProprietario>iughettijunior@bol.com.br</EmailProprietario>
+        <TelefoneProprietario>1697255819</TelefoneProprietario>
+        <NomeResponsavelUso>CLAUDECI DAMIAO ARTESANATOS ME</NomeResponsavelUso>
+        <TelefoneResponsavelUso>1697255819</TelefoneResponsavelUso>
+        <AreaTotal>150</AreaTotal>
+        <Pavimentos>1</Pavimentos>
+        <Contiguo>0</Contiguo>
+        <OutrosUsos>0</OutrosUsos>
+      </Imovel>
+    </Licenciamento>
+    <Licenciamento id="2473683">
+      <Solicitacao id="561772">561772201696</Solicitacao>
+      <Orgao id="1" />
+      <Status id="6" />
+      <Risco id="0" />
+      <Numero>561772201696</Numero>
+      <DataEmissao>2016-03-02T00:00:00</DataEmissao>
+      <DataVencimento>2017-03-02T00:00:00</DataVencimento>
+    </Licenciamento>
+    <Licenciamento id="2473684">
+      <Solicitacao id="561772">561772201696</Solicitacao>
+      <Orgao id="2" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>561772201696</Numero>
+      <DataEmissao>2016-03-02T00:00:00</DataEmissao>
+      <DataVencimento>2021-03-02T00:00:00</DataVencimento>
+      <Declaracao id="6288" />
+    </Licenciamento>
+    <Licenciamento id="2473686">
+      <Solicitacao id="561772">561772201696</Solicitacao>
+      <Orgao id="287" />
+      <Status id="6" />
+      <Risco id="0" />
+      <Numero>561772201696</Numero>
+      <DataEmissao>2016-03-02T00:00:00</DataEmissao>
+      <DataVencimento>2017-03-02T00:00:00</DataVencimento>
+    </Licenciamento>
+  </Empresa>
+  <Empresa id="265842">
+    <!--Dados gerais da empresa (recebidos da RFB)-->
+    <CNPJ>09617665000113</CNPJ>
+    <NomeEmpresarial>CLAUDECI DAMIAO ARTESANATOS - ME</NomeEmpresarial>
+    <SituacaoCadastral>02</SituacaoCadastral>
+    <DataSituacaoCadastral>2008-05-15</DataSituacaoCadastral>
+    <NaturezaJuridica>2135</NaturezaJuridica>
+    <DataAbertura>2008-05-15</DataAbertura>
+    <Porte>01</Porte>
+    <!--Dados gerais da empresa (coletados do usuário)-->
+    <NumeroRegistro>35123201925</NumeroRegistro>
+    <TipoRegistro>1</TipoRegistro>
+    <TipoMEI>0</TipoMEI>
+    <!--Dados do responsável pela empresa (conforme RFB)-->
+    <CPFResponsavel>06493828899</CPFResponsavel>
+    <NomeResponsavel>CLAUDECI DAMIAO</NomeResponsavel>
+    <DDD1>16</DDD1>
+    <Telefone1>97255819</Telefone1>
+    <Email>IUGHETTIJUNIOR@BOL.COM.BR</Email>
+    <!--Endereço do estabelecimento-->
+    <Endereco>
+      <SetorQuadraLote>25052</SetorQuadraLote>
+      <TipoLogradouro>Rua</TipoLogradouro>
+      <Logradouro>SÃO JOÃO</Logradouro>
+      <NumeroLogradouro>3001</NumeroLogradouro>
+      <Bairro>PARQUE INDUSTRIAL BRUNO VERARDINO</Bairro>
+      <CEP>14876285</CEP>
+      <UF>SP</UF>
+      <Municipio Concla="24303" rfb="279">Jaboticabal</Municipio>
+    </Endereco>
+    <!--Atividades cadastradas e exercidas pela empresa (CNAE e auxiliares)-->
+    <Atividades>
+      <CNAE codigo="4649499" principal="1" exercida="1" />
+      <CNAE codigo="4649499" principal="1" exercida="1" />
+      <Auxiliar id="5" />
+      <Auxiliar id="5" />
+    </Atividades>
+    <!--QSA da empresa-->
+    <Sociedade />
+    <!--Dados do contador-->
+    <ClassificacaoCRCContadorPJ>0</ClassificacaoCRCContadorPJ>
+    <NumeroCRCContadorPJ>000000</NumeroCRCContadorPJ>
+    <CNPJContador>00000000000000</CNPJContador>
+    <TipoCRCContadorPF>O</TipoCRCContadorPF>
+    <ClassificacaoCRCContadorPF>1</ClassificacaoCRCContadorPF>
+    <NumeroCRCContadorPF>125518</NumeroCRCContadorPF>
+    <UFCRCContadorPF>SP</UFCRCContadorPF>
+    <CPFContador>27632695834</CPFContador>
+    <!--Viabilidade-->
+    <Viabilidade id="2473687">
+      <Solicitacao id="561772">561772201696</Solicitacao>
+      <Status id="12" />
+    </Viabilidade>
+    <Viabilidade id="2473687">
+      <Solicitacao id="561772">561772201696</Solicitacao>
+      <Status id="12" />
+    </Viabilidade>
+    <!--Licenciamentos (um bloco abaixo para cada órgão)-->
+    <Licenciamento id="2473685">
+      <Solicitacao id="561772">561772201696</Solicitacao>
+      <Orgao id="3" />
+      <Status id="6" />
+      <Risco id="0" />
+      <Numero>561772201696</Numero>
+      <DataEmissao>2016-03-02T00:00:00</DataEmissao>
+      <DataVencimento>2019-03-02T00:00:00</DataVencimento>
+      <Pergunta id="5448" resposta="0" />
+      <Pergunta id="5449" resposta="0" />
+      <Pergunta id="5450" resposta="0" />
+      <Pergunta id="5452" resposta="0" />
+      <Pergunta id="5453" resposta="0" />
+      <Pergunta id="5454" resposta="0" />
+      <Declaracao id="8268" />
+      <Declaracao id="8269" />
+      <Declaracao id="8270" />
+      <Declaracao id="8272" />
+      <Declaracao id="8273" />
+      <Declaracao id="8274" />
+      <Declaracao id="8277" />
+      <Declaracao id="8278" />
+      <Declaracao id="8279" />
+      <Imovel>
+        <AreaEstabelecimento>68</AreaEstabelecimento>
+        <NomeProprietario>CLAUDECI DAMIAO ARTESANATOS ME</NomeProprietario>
+        <EmailProprietario>iughettijunior@bol.com.br</EmailProprietario>
+        <TelefoneProprietario>1697255819</TelefoneProprietario>
+        <NomeResponsavelUso>CLAUDECI DAMIAO ARTESANATOS ME</NomeResponsavelUso>
+        <TelefoneResponsavelUso>1697255819</TelefoneResponsavelUso>
+        <AreaTotal>150</AreaTotal>
+        <Pavimentos>1</Pavimentos>
+        <Contiguo>0</Contiguo>
+        <OutrosUsos>0</OutrosUsos>
+      </Imovel>
+    </Licenciamento>
+    <Licenciamento id="2473683">
+      <Solicitacao id="561772">561772201696</Solicitacao>
+      <Orgao id="1" />
+      <Status id="6" />
+      <Risco id="0" />
+      <Numero>561772201696</Numero>
+      <DataEmissao>2016-03-02T00:00:00</DataEmissao>
+      <DataVencimento>2017-03-02T00:00:00</DataVencimento>
+    </Licenciamento>
+    <Licenciamento id="2473684">
+      <Solicitacao id="561772">561772201696</Solicitacao>
+      <Orgao id="2" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>561772201696</Numero>
+      <DataEmissao>2016-03-02T00:00:00</DataEmissao>
+      <DataVencimento>2021-03-02T00:00:00</DataVencimento>
+      <Declaracao id="6288" />
+    </Licenciamento>
+    <Licenciamento id="2473686">
+      <Solicitacao id="561772">561772201696</Solicitacao>
+      <Orgao id="287" />
+      <Status id="6" />
+      <Risco id="0" />
+      <Numero>561772201696</Numero>
+      <DataEmissao>2016-03-02T00:00:00</DataEmissao>
+      <DataVencimento>2017-03-02T00:00:00</DataVencimento>
+    </Licenciamento>
+  </Empresa>
+  <Empresa id="280694">
+    <!--Dados gerais da empresa (recebidos da RFB)-->
+    <CNPJ>50380674000137</CNPJ>
+    <NomeEmpresarial>UZINAS CHIMICAS BRASILEIRAS S A</NomeEmpresarial>
+    <SituacaoCadastral>02</SituacaoCadastral>
+    <DataSituacaoCadastral>2005-02-19</DataSituacaoCadastral>
+    <NaturezaJuridica>2054</NaturezaJuridica>
+    <DataAbertura>1966-08-30</DataAbertura>
+    <Porte>05</Porte>
+    <!--Dados gerais da empresa (coletados do usuário)-->
+    <NumeroRegistro>35300021631</NumeroRegistro>
+    <TipoRegistro>1</TipoRegistro>
+    <TipoMEI>0</TipoMEI>
+    <!--Dados do responsável pela empresa (conforme RFB)-->
+    <CPFResponsavel>04955366872</CPFResponsavel>
+    <NomeResponsavel>URIAS DE SOUZA</NomeResponsavel>
+    <DDD1>16</DDD1>
+    <Telefone1>32024222</Telefone1>
+    <Email>ucb@ucbvet.com.br</Email>
+    <!--Endereço do estabelecimento-->
+    <Endereco>
+      <SetorQuadraLote>01010</SetorQuadraLote>
+      <TipoLogradouro>Praça</TipoLogradouro>
+      <Logradouro>Doutor Joaquim Batista</Logradouro>
+      <NumeroLogradouro>150</NumeroLogradouro>
+      <Bairro>Centro</Bairro>
+      <CEP>14870090</CEP>
+      <UF>SP</UF>
+      <Municipio Concla="24303" rfb="279">Jaboticabal</Municipio>
+    </Endereco>
+    <!--Atividades cadastradas e exercidas pela empresa (CNAE e auxiliares)-->
+    <Atividades>
+      <CNAE codigo="2122000" principal="1" exercida="1" />
+      <CNAE codigo="4623109" principal="0" exercida="0" />
+      <CNAE codigo="4683400" principal="0" exercida="0" />
+      <CNAE codigo="2122000" principal="1" exercida="1" />
+      <CNAE codigo="4623109" principal="0" exercida="0" />
+      <CNAE codigo="4683400" principal="0" exercida="0" />
+      <Auxiliar id="5" />
+      <Auxiliar id="5" />
+    </Atividades>
+    <!--QSA da empresa-->
+    <Sociedade>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>URIAS DE SOUZA</Nome>
+        <Numero>00004955366872</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>URIAS DE SOUZA</Nome>
+        <Numero>00004955366872</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MARIA HELENA SAGULA BRUNINI</Nome>
+        <Numero>00009887311855</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MARIA HELENA SAGULA BRUNINI</Nome>
+        <Numero>00009887311855</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MARCELO BRUNINI RODRIGUES</Nome>
+        <Numero>00019508215879</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MARCELO BRUNINI RODRIGUES</Nome>
+        <Numero>00019508215879</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MOACIR MARCHIORI FILHO</Nome>
+        <Numero>00018640315817</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MOACIR MARCHIORI FILHO</Nome>
+        <Numero>00018640315817</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>RODRIGO GALVAO DE SOUZA FALEIROS</Nome>
+        <Numero>00029096271874</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>RODRIGO GALVAO DE SOUZA FALEIROS</Nome>
+        <Numero>00029096271874</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>NILTON CESAR MARTINI</Nome>
+        <Numero>00004956584806</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>NILTON CESAR MARTINI</Nome>
+        <Numero>00004956584806</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>HILARY APARECIDO RODRIGUES</Nome>
+        <Numero>00022821406800</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>HILARY APARECIDO RODRIGUES</Nome>
+        <Numero>00022821406800</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>URIAS DE SOUZA</Nome>
+        <Numero>00004955366872</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>URIAS DE SOUZA</Nome>
+        <Numero>00004955366872</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MARIA HELENA SAGULA BRUNINI</Nome>
+        <Numero>00009887311855</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MARIA HELENA SAGULA BRUNINI</Nome>
+        <Numero>00009887311855</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MARCELO BRUNINI RODRIGUES</Nome>
+        <Numero>00019508215879</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MARCELO BRUNINI RODRIGUES</Nome>
+        <Numero>00019508215879</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MOACIR MARCHIORI FILHO</Nome>
+        <Numero>00018640315817</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MOACIR MARCHIORI FILHO</Nome>
+        <Numero>00018640315817</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>RODRIGO GALVAO DE SOUZA FALEIROS</Nome>
+        <Numero>00029096271874</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>RODRIGO GALVAO DE SOUZA FALEIROS</Nome>
+        <Numero>00029096271874</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>NILTON CESAR MARTINI</Nome>
+        <Numero>00004956584806</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>NILTON CESAR MARTINI</Nome>
+        <Numero>00004956584806</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>HILARY APARECIDO RODRIGUES</Nome>
+        <Numero>00022821406800</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>HILARY APARECIDO RODRIGUES</Nome>
+        <Numero>00022821406800</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+    </Sociedade>
+    <!--Dados do contador-->
+    <ClassificacaoCRCContadorPJ>0</ClassificacaoCRCContadorPJ>
+    <NumeroCRCContadorPJ>000000</NumeroCRCContadorPJ>
+    <CNPJContador>00000000000000</CNPJContador>
+    <TipoCRCContadorPF>O</TipoCRCContadorPF>
+    <ClassificacaoCRCContadorPF>1</ClassificacaoCRCContadorPF>
+    <NumeroCRCContadorPF>293360</NumeroCRCContadorPF>
+    <UFCRCContadorPF>SP</UFCRCContadorPF>
+    <CPFContador>29493189830</CPFContador>
+    <!--Viabilidade-->
+    <Viabilidade id="6048474">
+      <Solicitacao id="1373367">1373367201803</Solicitacao>
+      <Status id="12" />
+    </Viabilidade>
+    <Viabilidade id="6048474">
+      <Solicitacao id="1373367">1373367201803</Solicitacao>
+      <Status id="12" />
+    </Viabilidade>
+    <!--Licenciamentos (um bloco abaixo para cada órgão)-->
+    <Licenciamento id="6048471">
+      <Solicitacao id="1373367">1373367201803</Solicitacao>
+      <Orgao id="3" />
+      <Status id="5" />
+      <Risco id="1" />
+      <Numero>AVCB 0000234698</Numero>
+      <DataEmissao>2016-04-20T00:00:00</DataEmissao>
+      <DataVencimento>2019-04-17T00:00:00</DataVencimento>
+      <ProtocoloAtendimento>306884-2/2016</ProtocoloAtendimento>
+      <DataProtocolo>2016-03-30T00:00:00</DataProtocolo>
+      <Imovel>
+        <AreaEstabelecimento>5837</AreaEstabelecimento>
+        <NomeProprietario>UZINAS CHIMICAS BRASILEIRAS S/A</NomeProprietario>
+        <EmailProprietario>ND</EmailProprietario>
+        <TelefoneProprietario>ND</TelefoneProprietario>
+        <NomeResponsavelUso>UZINAS CHIMICAS BRASILEIRAS S/A</NomeResponsavelUso>
+        <TelefoneResponsavelUso>ND</TelefoneResponsavelUso>
+        <AreaTotal>5837</AreaTotal>
+        <Pavimentos>0</Pavimentos>
+        <Contiguo>0</Contiguo>
+        <OutrosUsos>0</OutrosUsos>
+        <NumeroAVCB>AVCB 000023469</NumeroAVCB>
+        <ValidadeAVCB>2016-04-20</ValidadeAVCB>
+      </Imovel>
+    </Licenciamento>
+    <Licenciamento id="6048469">
+      <Solicitacao id="1373367">1373367201803</Solicitacao>
+      <Orgao id="1" />
+      <Status id="5" />
+      <Risco id="1" />
+      <Numero>1373367201803</Numero>
+      <ProtocoloAtendimento>1621920</ProtocoloAtendimento>
+      <DataProtocolo>2018-06-26T00:00:00</DataProtocolo>
+      <Declaracao id="3036908" />
+    </Licenciamento>
+    <Licenciamento id="6048470">
+      <Solicitacao id="1373367">1373367201803</Solicitacao>
+      <Orgao id="2" />
+      <Status id="5" />
+      <Risco id="1" />
+      <Numero>52002147</Numero>
+      <DataEmissao>2017-05-25T00:00:00</DataEmissao>
+      <DataVencimento>2019-05-25T00:00:00</DataVencimento>
+      <ProtocoloAtendimento>178695</ProtocoloAtendimento>
+      <DataProtocolo>2018-08-06T00:00:00</DataProtocolo>
+      <Declaracao id="3036910" />
+      <Declaracao id="3036913" />
+      <Declaracao id="3036920" />
+      <Declaracao id="3036923" />
+      <Declaracao id="3036926" />
+      <Declaracao id="3036929" />
+      <Declaracao id="3036936" />
+      <Declaracao id="3036939" />
+      <Declaracao id="3036942" />
+      <Declaracao id="3036911" />
+      <Declaracao id="3036914" />
+      <Declaracao id="3036917" />
+      <Declaracao id="3036924" />
+      <Declaracao id="3036927" />
+      <Declaracao id="3036930" />
+      <Declaracao id="3036933" />
+      <Declaracao id="3036937" />
+      <Declaracao id="3036940" />
+      <Declaracao id="3036943" />
+      <Declaracao id="3036946" />
+      <Declaracao id="3036953" />
+      <Declaracao id="3036912" />
+      <Declaracao id="3036915" />
+      <Declaracao id="3036918" />
+      <Declaracao id="3036921" />
+      <Declaracao id="3036928" />
+      <Declaracao id="3036931" />
+      <Declaracao id="3036934" />
+      <Declaracao id="3036941" />
+      <Declaracao id="3036944" />
+      <Declaracao id="3036950" />
+      <Declaracao id="3036916" />
+      <Declaracao id="3036919" />
+      <Declaracao id="3036922" />
+      <Declaracao id="3036925" />
+      <Declaracao id="3036932" />
+      <Declaracao id="3036935" />
+      <Declaracao id="3036938" />
+      <Declaracao id="3036948" />
+      <Declaracao id="3036954" />
+    </Licenciamento>
+    <Licenciamento id="6048472">
+      <Solicitacao id="1373367">1373367201803</Solicitacao>
+      <Orgao id="287" />
+      <Status id="6" />
+      <Risco id="1" />
+      <Numero>1373367201803</Numero>
+      <DataEmissao>2018-03-03T00:00:00</DataEmissao>
+      <DataVencimento>2019-03-03T00:00:00</DataVencimento>
+      <ProtocoloAtendimento>12.670-5/2018</ProtocoloAtendimento>
+      <DataProtocolo>2018-08-06T00:00:00</DataProtocolo>
+    </Licenciamento>
+    <Licenciamento id="6048473">
+      <Solicitacao id="1373367">1373367201803</Solicitacao>
+      <Orgao id="654" />
+      <Status id="5" />
+      <Risco id="1" />
+      <ProtocoloAtendimento>1530039032665</ProtocoloAtendimento>
+      <DataProtocolo>2018-06-26T00:00:00</DataProtocolo>
+      <Declaracao id="3036909" />
+    </Licenciamento>
+  </Empresa>
+  <Empresa id="280694">
+    <!--Dados gerais da empresa (recebidos da RFB)-->
+    <CNPJ>50380674000137</CNPJ>
+    <NomeEmpresarial>UZINAS CHIMICAS BRASILEIRAS S A</NomeEmpresarial>
+    <SituacaoCadastral>02</SituacaoCadastral>
+    <DataSituacaoCadastral>2005-02-19</DataSituacaoCadastral>
+    <NaturezaJuridica>2054</NaturezaJuridica>
+    <DataAbertura>1966-08-30</DataAbertura>
+    <Porte>05</Porte>
+    <!--Dados gerais da empresa (coletados do usuário)-->
+    <NumeroRegistro>35300021631</NumeroRegistro>
+    <TipoRegistro>1</TipoRegistro>
+    <TipoMEI>0</TipoMEI>
+    <!--Dados do responsável pela empresa (conforme RFB)-->
+    <CPFResponsavel>04955366872</CPFResponsavel>
+    <NomeResponsavel>URIAS DE SOUZA</NomeResponsavel>
+    <DDD1>16</DDD1>
+    <Telefone1>32024222</Telefone1>
+    <Email>ucb@ucbvet.com.br</Email>
+    <!--Endereço do estabelecimento-->
+    <Endereco>
+      <SetorQuadraLote>01010</SetorQuadraLote>
+      <TipoLogradouro>Praça</TipoLogradouro>
+      <Logradouro>Doutor Joaquim Batista</Logradouro>
+      <NumeroLogradouro>150</NumeroLogradouro>
+      <Bairro>Centro</Bairro>
+      <CEP>14870090</CEP>
+      <UF>SP</UF>
+      <Municipio Concla="24303" rfb="279">Jaboticabal</Municipio>
+    </Endereco>
+    <!--Atividades cadastradas e exercidas pela empresa (CNAE e auxiliares)-->
+    <Atividades>
+      <CNAE codigo="2122000" principal="1" exercida="1" />
+      <CNAE codigo="4623109" principal="0" exercida="0" />
+      <CNAE codigo="4683400" principal="0" exercida="0" />
+      <CNAE codigo="2122000" principal="1" exercida="1" />
+      <CNAE codigo="4623109" principal="0" exercida="0" />
+      <CNAE codigo="4683400" principal="0" exercida="0" />
+      <Auxiliar id="5" />
+      <Auxiliar id="5" />
+    </Atividades>
+    <!--QSA da empresa-->
+    <Sociedade>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>URIAS DE SOUZA</Nome>
+        <Numero>00004955366872</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>URIAS DE SOUZA</Nome>
+        <Numero>00004955366872</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MARIA HELENA SAGULA BRUNINI</Nome>
+        <Numero>00009887311855</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MARIA HELENA SAGULA BRUNINI</Nome>
+        <Numero>00009887311855</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MARCELO BRUNINI RODRIGUES</Nome>
+        <Numero>00019508215879</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MARCELO BRUNINI RODRIGUES</Nome>
+        <Numero>00019508215879</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MOACIR MARCHIORI FILHO</Nome>
+        <Numero>00018640315817</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MOACIR MARCHIORI FILHO</Nome>
+        <Numero>00018640315817</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>RODRIGO GALVAO DE SOUZA FALEIROS</Nome>
+        <Numero>00029096271874</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>RODRIGO GALVAO DE SOUZA FALEIROS</Nome>
+        <Numero>00029096271874</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>NILTON CESAR MARTINI</Nome>
+        <Numero>00004956584806</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>NILTON CESAR MARTINI</Nome>
+        <Numero>00004956584806</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>HILARY APARECIDO RODRIGUES</Nome>
+        <Numero>00022821406800</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>HILARY APARECIDO RODRIGUES</Nome>
+        <Numero>00022821406800</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>URIAS DE SOUZA</Nome>
+        <Numero>00004955366872</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>URIAS DE SOUZA</Nome>
+        <Numero>00004955366872</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MARIA HELENA SAGULA BRUNINI</Nome>
+        <Numero>00009887311855</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MARIA HELENA SAGULA BRUNINI</Nome>
+        <Numero>00009887311855</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MARCELO BRUNINI RODRIGUES</Nome>
+        <Numero>00019508215879</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MARCELO BRUNINI RODRIGUES</Nome>
+        <Numero>00019508215879</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MOACIR MARCHIORI FILHO</Nome>
+        <Numero>00018640315817</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MOACIR MARCHIORI FILHO</Nome>
+        <Numero>00018640315817</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>RODRIGO GALVAO DE SOUZA FALEIROS</Nome>
+        <Numero>00029096271874</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>RODRIGO GALVAO DE SOUZA FALEIROS</Nome>
+        <Numero>00029096271874</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>NILTON CESAR MARTINI</Nome>
+        <Numero>00004956584806</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>NILTON CESAR MARTINI</Nome>
+        <Numero>00004956584806</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>HILARY APARECIDO RODRIGUES</Nome>
+        <Numero>00022821406800</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>HILARY APARECIDO RODRIGUES</Nome>
+        <Numero>00022821406800</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+    </Sociedade>
+    <!--Dados do contador-->
+    <ClassificacaoCRCContadorPJ>0</ClassificacaoCRCContadorPJ>
+    <NumeroCRCContadorPJ>000000</NumeroCRCContadorPJ>
+    <CNPJContador>00000000000000</CNPJContador>
+    <TipoCRCContadorPF>O</TipoCRCContadorPF>
+    <ClassificacaoCRCContadorPF>1</ClassificacaoCRCContadorPF>
+    <NumeroCRCContadorPF>293360</NumeroCRCContadorPF>
+    <UFCRCContadorPF>SP</UFCRCContadorPF>
+    <CPFContador>29493189830</CPFContador>
+    <!--Viabilidade-->
+    <Viabilidade id="6048474">
+      <Solicitacao id="1373367">1373367201803</Solicitacao>
+      <Status id="12" />
+    </Viabilidade>
+    <Viabilidade id="6048474">
+      <Solicitacao id="1373367">1373367201803</Solicitacao>
+      <Status id="12" />
+    </Viabilidade>
+    <!--Licenciamentos (um bloco abaixo para cada órgão)-->
+    <Licenciamento id="6048471">
+      <Solicitacao id="1373367">1373367201803</Solicitacao>
+      <Orgao id="3" />
+      <Status id="5" />
+      <Risco id="1" />
+      <Numero>AVCB 0000234698</Numero>
+      <DataEmissao>2016-04-20T00:00:00</DataEmissao>
+      <DataVencimento>2019-04-17T00:00:00</DataVencimento>
+      <ProtocoloAtendimento>306884-2/2016</ProtocoloAtendimento>
+      <DataProtocolo>2016-03-30T00:00:00</DataProtocolo>
+      <Imovel>
+        <AreaEstabelecimento>5837</AreaEstabelecimento>
+        <NomeProprietario>UZINAS CHIMICAS BRASILEIRAS S/A</NomeProprietario>
+        <EmailProprietario>ND</EmailProprietario>
+        <TelefoneProprietario>ND</TelefoneProprietario>
+        <NomeResponsavelUso>UZINAS CHIMICAS BRASILEIRAS S/A</NomeResponsavelUso>
+        <TelefoneResponsavelUso>ND</TelefoneResponsavelUso>
+        <AreaTotal>5837</AreaTotal>
+        <Pavimentos>0</Pavimentos>
+        <Contiguo>0</Contiguo>
+        <OutrosUsos>0</OutrosUsos>
+        <NumeroAVCB>AVCB 000023469</NumeroAVCB>
+        <ValidadeAVCB>2016-04-20</ValidadeAVCB>
+      </Imovel>
+    </Licenciamento>
+    <Licenciamento id="6048469">
+      <Solicitacao id="1373367">1373367201803</Solicitacao>
+      <Orgao id="1" />
+      <Status id="5" />
+      <Risco id="1" />
+      <Numero>1373367201803</Numero>
+      <ProtocoloAtendimento>1621920</ProtocoloAtendimento>
+      <DataProtocolo>2018-06-26T00:00:00</DataProtocolo>
+      <Declaracao id="3036908" />
+    </Licenciamento>
+    <Licenciamento id="6048470">
+      <Solicitacao id="1373367">1373367201803</Solicitacao>
+      <Orgao id="2" />
+      <Status id="5" />
+      <Risco id="1" />
+      <Numero>52002147</Numero>
+      <DataEmissao>2017-05-25T00:00:00</DataEmissao>
+      <DataVencimento>2019-05-25T00:00:00</DataVencimento>
+      <ProtocoloAtendimento>178695</ProtocoloAtendimento>
+      <DataProtocolo>2018-08-06T00:00:00</DataProtocolo>
+      <Declaracao id="3036910" />
+      <Declaracao id="3036913" />
+      <Declaracao id="3036920" />
+      <Declaracao id="3036923" />
+      <Declaracao id="3036926" />
+      <Declaracao id="3036929" />
+      <Declaracao id="3036936" />
+      <Declaracao id="3036939" />
+      <Declaracao id="3036942" />
+      <Declaracao id="3036911" />
+      <Declaracao id="3036914" />
+      <Declaracao id="3036917" />
+      <Declaracao id="3036924" />
+      <Declaracao id="3036927" />
+      <Declaracao id="3036930" />
+      <Declaracao id="3036933" />
+      <Declaracao id="3036937" />
+      <Declaracao id="3036940" />
+      <Declaracao id="3036943" />
+      <Declaracao id="3036946" />
+      <Declaracao id="3036953" />
+      <Declaracao id="3036912" />
+      <Declaracao id="3036915" />
+      <Declaracao id="3036918" />
+      <Declaracao id="3036921" />
+      <Declaracao id="3036928" />
+      <Declaracao id="3036931" />
+      <Declaracao id="3036934" />
+      <Declaracao id="3036941" />
+      <Declaracao id="3036944" />
+      <Declaracao id="3036950" />
+      <Declaracao id="3036916" />
+      <Declaracao id="3036919" />
+      <Declaracao id="3036922" />
+      <Declaracao id="3036925" />
+      <Declaracao id="3036932" />
+      <Declaracao id="3036935" />
+      <Declaracao id="3036938" />
+      <Declaracao id="3036948" />
+      <Declaracao id="3036954" />
+    </Licenciamento>
+    <Licenciamento id="6048472">
+      <Solicitacao id="1373367">1373367201803</Solicitacao>
+      <Orgao id="287" />
+      <Status id="6" />
+      <Risco id="1" />
+      <Numero>1373367201803</Numero>
+      <DataEmissao>2018-03-03T00:00:00</DataEmissao>
+      <DataVencimento>2019-03-03T00:00:00</DataVencimento>
+      <ProtocoloAtendimento>12.670-5/2018</ProtocoloAtendimento>
+      <DataProtocolo>2018-08-06T00:00:00</DataProtocolo>
+    </Licenciamento>
+    <Licenciamento id="6048473">
+      <Solicitacao id="1373367">1373367201803</Solicitacao>
+      <Orgao id="654" />
+      <Status id="5" />
+      <Risco id="1" />
+      <ProtocoloAtendimento>1530039032665</ProtocoloAtendimento>
+      <DataProtocolo>2018-06-26T00:00:00</DataProtocolo>
+      <Declaracao id="3036909" />
+    </Licenciamento>
+  </Empresa>
+  <Empresa id="284764">
+    <!--Dados gerais da empresa (recebidos da RFB)-->
+    <CNPJ>04430065000128</CNPJ>
+    <NomeEmpresarial>OSNEI TEODORO CARDOSO - ME</NomeEmpresarial>
+    <SituacaoCadastral>02</SituacaoCadastral>
+    <DataSituacaoCadastral>2005-11-03</DataSituacaoCadastral>
+    <NaturezaJuridica>2135</NaturezaJuridica>
+    <DataAbertura>2001-05-04</DataAbertura>
+    <Porte>01</Porte>
+    <!--Dados gerais da empresa (coletados do usuário)-->
+    <NumeroRegistro>35117875367</NumeroRegistro>
+    <TipoRegistro>1</TipoRegistro>
+    <TipoMEI>0</TipoMEI>
+    <!--Dados do responsável pela empresa (conforme RFB)-->
+    <CPFResponsavel>09984476847</CPFResponsavel>
+    <NomeResponsavel>OSNEI TEODORO CARDOSO</NomeResponsavel>
+    <!--Endereço do estabelecimento-->
+    <Endereco>
+      <SetorQuadraLote>20639</SetorQuadraLote>
+      <TipoLogradouro>Rua</TipoLogradouro>
+      <Logradouro>FORTUNATO FRASCA</Logradouro>
+      <NumeroLogradouro>481</NumeroLogradouro>
+      <Bairro>JARDIM DAS ROSAS</Bairro>
+      <CEP>14871800</CEP>
+      <UF>SP</UF>
+      <Municipio Concla="24303" rfb="279">Jaboticabal</Municipio>
+    </Endereco>
+    <!--Atividades cadastradas e exercidas pela empresa (CNAE e auxiliares)-->
+    <Atividades>
+      <CNAE codigo="4723700" principal="0" exercida="1" />
+      <CNAE codigo="4784900" principal="1" exercida="1" />
+      <CNAE codigo="4723700" principal="0" exercida="1" />
+      <CNAE codigo="4784900" principal="1" exercida="1" />
+      <Auxiliar id="5" />
+      <Auxiliar id="5" />
+    </Atividades>
+    <!--QSA da empresa-->
+    <Sociedade />
+    <!--Dados do contador-->
+    <ClassificacaoCRCContadorPJ>0</ClassificacaoCRCContadorPJ>
+    <NumeroCRCContadorPJ>000000</NumeroCRCContadorPJ>
+    <CNPJContador>00000000000000</CNPJContador>
+    <ClassificacaoCRCContadorPF>0</ClassificacaoCRCContadorPF>
+    <NumeroCRCContadorPF>125518</NumeroCRCContadorPF>
+    <UFCRCContadorPF>SP</UFCRCContadorPF>
+    <CPFContador>27632695834</CPFContador>
+    <!--Viabilidade-->
+    <Viabilidade id="2658008">
+      <Solicitacao id="607750">607750201610</Solicitacao>
+      <Status id="12" />
+      <DataStatus>2016-05-18T00:00:00</DataStatus>
+      <RestricaoOperacao id="2961" />
+      <RestricaoOperacao id="2961" />
+      <RestricaoOperacao id="2961" />
+      <RestricaoOperacao id="2961" />
+      <RestricaoOperacao id="2961" />
+      <RestricaoOperacao id="2961" />
+      <RestricaoOperacao id="2961" />
+      <RestricaoOperacao id="2961" />
+    </Viabilidade>
+    <!--Licenciamentos (um bloco abaixo para cada órgão)-->
+    <Licenciamento id="3192093">
+      <Solicitacao id="742648">742648201637</Solicitacao>
+      <Orgao id="3" />
+      <Status id="5" />
+      <Risco id="1" />
+      <Numero>270820</Numero>
+      <DataEmissao>2016-11-22T00:00:00</DataEmissao>
+      <DataVencimento>2019-11-21T00:00:00</DataVencimento>
+      <ProtocoloAtendimento>742648201637</ProtocoloAtendimento>
+      <DataProtocolo>2016-12-08T00:00:00</DataProtocolo>
+      <Pergunta id="5448" resposta="0" />
+      <Pergunta id="5449" resposta="0" />
+      <Pergunta id="5452" resposta="0" />
+      <Pergunta id="5453" resposta="0" />
+      <Pergunta id="5454" resposta="0" />
+      <Pergunta id="5450" resposta="1" />
+      <Imovel>
+        <AreaEstabelecimento>292</AreaEstabelecimento>
+        <NomeProprietario>JF Com. de Pecas de Ar condiocionado automotivo e reparos eletri</NomeProprietario>
+        <EmailProprietario>ND</EmailProprietario>
+        <TelefoneProprietario>ND</TelefoneProprietario>
+        <NomeResponsavelUso>Joao Batista da Silva Ribeiro</NomeResponsavelUso>
+        <TelefoneResponsavelUso>ND</TelefoneResponsavelUso>
+        <AreaTotal>292</AreaTotal>
+        <Pavimentos>0</Pavimentos>
+        <Contiguo>0</Contiguo>
+        <OutrosUsos>0</OutrosUsos>
+        <NumeroAVCB>CLCB 000011963</NumeroAVCB>
+        <ValidadeAVCB>2016-03-03</ValidadeAVCB>
+      </Imovel>
+    </Licenciamento>
+    <Licenciamento id="4920095">
+      <Solicitacao id="1128791">1128791201898</Solicitacao>
+      <Orgao id="1" />
+      <Status id="6" />
+      <Risco id="0" />
+      <Numero>1128791201898</Numero>
+      <DataVencimento>2019-03-02T00:00:00</DataVencimento>
+      <ProtocoloAtendimento>871611</ProtocoloAtendimento>
+      <DataProtocolo>2018-01-19T00:00:00</DataProtocolo>
+      <Declaracao id="1142728" />
+      <Declaracao id="1142726" />
+      <Declaracao id="1142727" />
+    </Licenciamento>
+    <Licenciamento id="3192095">
+      <Solicitacao id="742648">742648201637</Solicitacao>
+      <Orgao id="2" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>742648201637</Numero>
+      <DataEmissao>2016-12-07T00:00:00</DataEmissao>
+      <DataVencimento>2021-12-07T00:00:00</DataVencimento>
+    </Licenciamento>
+    <Licenciamento id="4920096">
+      <Solicitacao id="1128791">1128791201898</Solicitacao>
+      <Orgao id="287" />
+      <Status id="6" />
+      <Risco id="1" />
+      <Numero>1128791201898</Numero>
+      <DataEmissao>2018-01-19T00:00:00</DataEmissao>
+      <DataVencimento>2019-01-19T00:00:00</DataVencimento>
+      <ProtocoloAtendimento>1.484-2/2018</ProtocoloAtendimento>
+      <DataProtocolo>2018-01-25T00:00:00</DataProtocolo>
+    </Licenciamento>
+    <Licenciamento id="4920097">
+      <Solicitacao id="1128791">1128791201898</Solicitacao>
+      <Orgao id="654" />
+      <Status id="5" />
+      <Risco id="0" />
+      <ProtocoloAtendimento>1516383037942</ProtocoloAtendimento>
+      <DataProtocolo>2018-01-19T00:00:00</DataProtocolo>
+      <Declaracao id="1142729" />
+    </Licenciamento>
+  </Empresa>
+  <Empresa id="284764">
+    <!--Dados gerais da empresa (recebidos da RFB)-->
+    <CNPJ>04430065000128</CNPJ>
+    <NomeEmpresarial>OSNEI TEODORO CARDOSO - ME</NomeEmpresarial>
+    <SituacaoCadastral>02</SituacaoCadastral>
+    <DataSituacaoCadastral>2005-11-03</DataSituacaoCadastral>
+    <NaturezaJuridica>2135</NaturezaJuridica>
+    <DataAbertura>2001-05-04</DataAbertura>
+    <Porte>01</Porte>
+    <!--Dados gerais da empresa (coletados do usuário)-->
+    <NumeroRegistro>35117875367</NumeroRegistro>
+    <TipoRegistro>1</TipoRegistro>
+    <TipoMEI>0</TipoMEI>
+    <!--Dados do responsável pela empresa (conforme RFB)-->
+    <CPFResponsavel>09984476847</CPFResponsavel>
+    <NomeResponsavel>OSNEI TEODORO CARDOSO</NomeResponsavel>
+    <!--Endereço do estabelecimento-->
+    <Endereco>
+      <SetorQuadraLote>20639</SetorQuadraLote>
+      <TipoLogradouro>Rua</TipoLogradouro>
+      <Logradouro>FORTUNATO FRASCA</Logradouro>
+      <NumeroLogradouro>481</NumeroLogradouro>
+      <Bairro>JARDIM DAS ROSAS</Bairro>
+      <CEP>14871800</CEP>
+      <UF>SP</UF>
+      <Municipio Concla="24303" rfb="279">Jaboticabal</Municipio>
+    </Endereco>
+    <!--Atividades cadastradas e exercidas pela empresa (CNAE e auxiliares)-->
+    <Atividades>
+      <CNAE codigo="4723700" principal="0" exercida="1" />
+      <CNAE codigo="4784900" principal="1" exercida="1" />
+      <CNAE codigo="4723700" principal="0" exercida="1" />
+      <CNAE codigo="4784900" principal="1" exercida="1" />
+      <Auxiliar id="5" />
+      <Auxiliar id="5" />
+    </Atividades>
+    <!--QSA da empresa-->
+    <Sociedade />
+    <!--Dados do contador-->
+    <ClassificacaoCRCContadorPJ>0</ClassificacaoCRCContadorPJ>
+    <NumeroCRCContadorPJ>000000</NumeroCRCContadorPJ>
+    <CNPJContador>00000000000000</CNPJContador>
+    <ClassificacaoCRCContadorPF>0</ClassificacaoCRCContadorPF>
+    <NumeroCRCContadorPF>125518</NumeroCRCContadorPF>
+    <UFCRCContadorPF>SP</UFCRCContadorPF>
+    <CPFContador>27632695834</CPFContador>
+    <!--Viabilidade-->
+    <Viabilidade id="2658008">
+      <Solicitacao id="607750">607750201610</Solicitacao>
+      <Status id="12" />
+      <DataStatus>2016-05-18T00:00:00</DataStatus>
+      <RestricaoOperacao id="2961" />
+      <RestricaoOperacao id="2961" />
+      <RestricaoOperacao id="2961" />
+      <RestricaoOperacao id="2961" />
+      <RestricaoOperacao id="2961" />
+      <RestricaoOperacao id="2961" />
+      <RestricaoOperacao id="2961" />
+      <RestricaoOperacao id="2961" />
+    </Viabilidade>
+    <!--Licenciamentos (um bloco abaixo para cada órgão)-->
+    <Licenciamento id="3192093">
+      <Solicitacao id="742648">742648201637</Solicitacao>
+      <Orgao id="3" />
+      <Status id="5" />
+      <Risco id="1" />
+      <Numero>270820</Numero>
+      <DataEmissao>2016-11-22T00:00:00</DataEmissao>
+      <DataVencimento>2019-11-21T00:00:00</DataVencimento>
+      <ProtocoloAtendimento>742648201637</ProtocoloAtendimento>
+      <DataProtocolo>2016-12-08T00:00:00</DataProtocolo>
+      <Pergunta id="5448" resposta="0" />
+      <Pergunta id="5449" resposta="0" />
+      <Pergunta id="5452" resposta="0" />
+      <Pergunta id="5453" resposta="0" />
+      <Pergunta id="5454" resposta="0" />
+      <Pergunta id="5450" resposta="1" />
+      <Imovel>
+        <AreaEstabelecimento>292</AreaEstabelecimento>
+        <NomeProprietario>JF Com. de Pecas de Ar condiocionado automotivo e reparos eletri</NomeProprietario>
+        <EmailProprietario>ND</EmailProprietario>
+        <TelefoneProprietario>ND</TelefoneProprietario>
+        <NomeResponsavelUso>Joao Batista da Silva Ribeiro</NomeResponsavelUso>
+        <TelefoneResponsavelUso>ND</TelefoneResponsavelUso>
+        <AreaTotal>292</AreaTotal>
+        <Pavimentos>0</Pavimentos>
+        <Contiguo>0</Contiguo>
+        <OutrosUsos>0</OutrosUsos>
+        <NumeroAVCB>CLCB 000011963</NumeroAVCB>
+        <ValidadeAVCB>2016-03-03</ValidadeAVCB>
+      </Imovel>
+    </Licenciamento>
+    <Licenciamento id="4920095">
+      <Solicitacao id="1128791">1128791201898</Solicitacao>
+      <Orgao id="1" />
+      <Status id="6" />
+      <Risco id="0" />
+      <Numero>1128791201898</Numero>
+      <DataVencimento>2019-03-02T00:00:00</DataVencimento>
+      <ProtocoloAtendimento>871611</ProtocoloAtendimento>
+      <DataProtocolo>2018-01-19T00:00:00</DataProtocolo>
+      <Declaracao id="1142728" />
+      <Declaracao id="1142726" />
+      <Declaracao id="1142727" />
+    </Licenciamento>
+    <Licenciamento id="3192095">
+      <Solicitacao id="742648">742648201637</Solicitacao>
+      <Orgao id="2" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>742648201637</Numero>
+      <DataEmissao>2016-12-07T00:00:00</DataEmissao>
+      <DataVencimento>2021-12-07T00:00:00</DataVencimento>
+    </Licenciamento>
+    <Licenciamento id="4920096">
+      <Solicitacao id="1128791">1128791201898</Solicitacao>
+      <Orgao id="287" />
+      <Status id="6" />
+      <Risco id="1" />
+      <Numero>1128791201898</Numero>
+      <DataEmissao>2018-01-19T00:00:00</DataEmissao>
+      <DataVencimento>2019-01-19T00:00:00</DataVencimento>
+      <ProtocoloAtendimento>1.484-2/2018</ProtocoloAtendimento>
+      <DataProtocolo>2018-01-25T00:00:00</DataProtocolo>
+    </Licenciamento>
+    <Licenciamento id="4920097">
+      <Solicitacao id="1128791">1128791201898</Solicitacao>
+      <Orgao id="654" />
+      <Status id="5" />
+      <Risco id="0" />
+      <ProtocoloAtendimento>1516383037942</ProtocoloAtendimento>
+      <DataProtocolo>2018-01-19T00:00:00</DataProtocolo>
+      <Declaracao id="1142729" />
+    </Licenciamento>
+  </Empresa>
+</Empresas>

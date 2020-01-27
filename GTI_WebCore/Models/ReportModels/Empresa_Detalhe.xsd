@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <!-- XML Schema Generated from XML Document on Wed Aug 14 2019 14:27:00 GMT-0300 (Horário Padrão de Brasília) -->
+  <!-- with XmlGrid.net Free Online Service http://xmlgrid.net -->
+  <xs:element name="Empresa_Detalhe">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Codigo" type="xs:int"></xs:element>
+        <xs:element name="Razao_Social" type="xs:string"></xs:element>
+        <xs:element name="Cpf_Cnpj" type="xs:string"></xs:element>
+        <xs:element name="Inscricao_Estadual" type="xs:int"></xs:element>
+        <xs:element name="Endereco" type="xs:string"></xs:element>
+        <xs:element name="Bairro" type="xs:string"></xs:element>
+        <xs:element name="Cidade" type="xs:string"></xs:element>
+        <xs:element name="UF" type="xs:string"></xs:element>
+        <xs:element name="Cep" type="xs:int"></xs:element>
+        <xs:element name="Data_Abertura" type="xs:dateTime"></xs:element>
+        <xs:element name="Data_Encerramento" type="xs:dateTime"></xs:element>
+        <xs:element name="Atividade" type="xs:string"></xs:element>
+        <xs:element name="Situacao" type="xs:string"></xs:element>
+        <xs:element name="Email" type="xs:string"></xs:element>
+        <xs:element name="Telefone" type="xs:string"></xs:element>
+        <xs:element name="RegimeISS" type="xs:string"></xs:element>
+        <xs:element name="Taxa_Licenca" type="xs:string"></xs:element>
+        <xs:element name="Vigilancia_Sanitaria" type="xs:string"></xs:element>
+        <xs:element name="Cnae" type="xs:string"></xs:element>
+        <xs:element name="Mei" type="xs:string"></xs:element>
+        <xs:element name="Area" type="xs:string"></xs:element>
+        <xs:element name="Proprietario" type="xs:string"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+

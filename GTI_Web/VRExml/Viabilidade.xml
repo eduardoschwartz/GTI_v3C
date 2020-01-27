@@ -1,0 +1,2323 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Extração>
+  <Viabilidade>
+    <Protocolo>SPM1930034953</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>35095914000168</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4711302,4723700,4755503,4781400,4782201,4772500,4744001,4761003,4763604,4757100,4759899,4753900,4751201</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>25/10/2019 07:41:19</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200,200,200,200,200,200,200,200,200,200,200,200,200</cdEvento>
+    <Evento>Regularização de Empresa,Regularização de Empresa,Regularização de Empresa,Regularização de Empresa,Regularização de Empresa,Regularização de Empresa,Regularização de Empresa,Regularização de Empresa,Regularização de Empresa,Regularização de Empresa,Regularização de Empresa,Regularização de Empresa,Regularização de Empresa</Evento>
+    <Cep>14871700</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>17587</NumeroInscricaoImovel>
+    <TipoLogradouro>VIA</TipoLogradouro>
+    <Logradouro>MAJOR HILARIO TAVARES PINHEIRO</Logradouro>
+    <Bairro>SOROCABANO</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>UNIAO SHOPPING DA UTILIDADE DE JABOTICABAL EIRELI</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>2380</Area Imóvel>
+    <Area Estabelecimento>2323</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930037016</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>18260298000134</CNPJ>
+    <EmpresaEstabelecida>Não</EmpresaEstabelecida>
+    <Cnae>8011101,4321500,4399103,8020001</Cnae>
+    <AtividadeAuxiliar>Sede</AtividadeAuxiliar>
+    <DataProtocolo>25/10/2019 13:41:53</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>16,23,39,16,23,39,16,23,39,16,23,39</cdEvento>
+    <Evento>Alteração de endereço dentro do mesmo município,Alteração do nome empresarial  (firma ou denominação),Alteração de atividades econômicas (principal e secundárias),Alteração de endereço dentro do mesmo município,Alteração do nome empresarial  (firma ou denominação),Alteração de atividades econômicas (principal e secundárias),Alteração de endereço dentro do mesmo município,Alteração do nome empresarial  (firma ou denominação),Alteração de atividades econômicas (principal e secundárias),Alteração de endereço dentro do mesmo município,Alteração do nome empresarial  (firma ou denominação),Alteração de atividades econômicas (principal e secundárias)</Evento>
+    <Cep>14871425</Cep>
+    <TipoInscricaoImovel />
+    <NumeroInscricaoImovel />
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>Madre Francisca</Logradouro>
+    <Bairro>Jardim Kennedy</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>C. T. M NEVES</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>2380</Area Imóvel>
+    <Area Estabelecimento>2323</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930038278</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>60701190030607</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>6422100</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>25/10/2019 16:33:27</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200</cdEvento>
+    <Evento>Regularização de Empresa</Evento>
+    <Cep>14875455</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>00607</NumeroInscricaoImovel>
+    <TipoLogradouro>PRACA</TipoLogradouro>
+    <Logradouro>NOVE DE JULHO</Logradouro>
+    <Bairro>CENTRO</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>ITAU UNIBANCO S.A.</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>435</Area Imóvel>
+    <Area Estabelecimento>435</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930039082</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>17425402000130</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>3299006</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>28/10/2019 07:26:30</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>16</cdEvento>
+    <Evento>Alteração de endereço dentro do mesmo município</Evento>
+    <Cep>14883105</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>13462</NumeroInscricaoImovel>
+    <TipoLogradouro>AVENIDA</TipoLogradouro>
+    <Logradouro>Jaime Ribeiro</Logradouro>
+    <Bairro>Santa Luzia</Bairro>
+    <Complementos>A,10</Complementos>
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>JABOTICABAL VELAS LTDA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>500</Area Imóvel>
+    <Area Estabelecimento>70</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930039282</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>31494244000100</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>8712300</Cnae>
+    <AtividadeAuxiliar>Sede</AtividadeAuxiliar>
+    <DataProtocolo>28/10/2019 08:42:22</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>2</cdEvento>
+    <Evento>Inscrição dos demais estabelecimentos</Evento>
+    <Cep>14875641</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>22813</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>Salvador Turco</Logradouro>
+    <Bairro>Loteamento Santo Antônio</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>LUCIANA DA SILVA BASSI 17110791890</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>53</Area Imóvel>
+    <Area Estabelecimento>12</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930040116</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ />
+    <EmpresaEstabelecida>Não</EmpresaEstabelecida>
+    <Cnae>4618499</Cnae>
+    <AtividadeAuxiliar>Sede,Escritório Administrativo</AtividadeAuxiliar>
+    <DataProtocolo>28/10/2019 10:22:27</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>1</cdEvento>
+    <Evento>Inscrição de primeiro estabelecimento</Evento>
+    <Cep>14870540</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>14800</NumeroInscricaoImovel>
+    <TipoLogradouro>AVENIDA</TipoLogradouro>
+    <Logradouro>Líbero Badaró</Logradouro>
+    <Bairro>Centro</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>DANILO DE ARRUDA BISCOLA REPRESENTACAO</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>53</Area Imóvel>
+    <Area Estabelecimento>12</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930040242</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>35323631000126</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4322301</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>28/10/2019 10:37:48</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200</cdEvento>
+    <Evento>Regularização de Empresa</Evento>
+    <Cep>14875253</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>09985</NumeroInscricaoImovel>
+    <TipoLogradouro>AVENIDA</TipoLogradouro>
+    <Logradouro>JOAO NEPOMUCENO ROSA</Logradouro>
+    <Bairro>JARDIM PATRIARCA</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>FLORISVALDO DELFINO 97957984800</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>223</Area Imóvel>
+    <Area Estabelecimento>171</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930040666</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>22642775000101</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4637199,4623108,4723700,4729699,4930202</Cnae>
+    <AtividadeAuxiliar>Sede</AtividadeAuxiliar>
+    <DataProtocolo>28/10/2019 11:22:38</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>39,39,39,39,39</cdEvento>
+    <Evento>Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias)</Evento>
+    <Cep>14870160</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>28190</NumeroInscricaoImovel>
+    <TipoLogradouro>AVENIDA</TipoLogradouro>
+    <Logradouro>TREZE DE MAIO</Logradouro>
+    <Bairro>CENTRO</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>A G DISTRIBUIDORA DE BEBIDAS LTDA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>245</Area Imóvel>
+    <Area Estabelecimento>245</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930041720</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ />
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4635401,4635402,4635499,4723700</Cnae>
+    <AtividadeAuxiliar>Sede,Escritório Administrativo,Depósito Fechado</AtividadeAuxiliar>
+    <DataProtocolo>28/10/2019 14:34:29</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>1,1,1,1</cdEvento>
+    <Evento>Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento</Evento>
+    <Cep>14890673</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>21678</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>Engenheiro Alfredo Alário</Logradouro>
+    <Bairro>Jardim Guanabara</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>PALAZZO DISTRIBUIDORA DE BEBIDAS LTDA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>200</Area Imóvel>
+    <Area Estabelecimento>151</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930042168</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ />
+    <EmpresaEstabelecida>Não</EmpresaEstabelecida>
+    <Cnae>4930202</Cnae>
+    <AtividadeAuxiliar>Escritório Administrativo</AtividadeAuxiliar>
+    <DataProtocolo>28/10/2019 15:27:15</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>1</cdEvento>
+    <Evento>Inscrição de primeiro estabelecimento</Evento>
+    <Cep>14890015</Cep>
+    <TipoInscricaoImovel />
+    <NumeroInscricaoImovel />
+    <TipoLogradouro>AVENIDA</TipoLogradouro>
+    <Logradouro>José Ribeiro</Logradouro>
+    <Bairro>Nova Jaboticabal</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>M. C. RIGUETTO LTDA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>200</Area Imóvel>
+    <Area Estabelecimento>151</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930042684</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>17978575000186</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>8599604,7319002,7112000,4744002,4687703,4789099,4311801,4687701,4662100</Cnae>
+    <AtividadeAuxiliar>Escritório Administrativo</AtividadeAuxiliar>
+    <DataProtocolo>28/10/2019 16:28:37</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>39,39,39,39,39,39,39,39,39</cdEvento>
+    <Evento>Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias)</Evento>
+    <Cep>14883270</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>08474</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>RAMIRO COELHO</Logradouro>
+    <Bairro>SANTA LUZIA</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>VICTOR SALAZAR MARQUES</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>315</Area Imóvel>
+    <Area Estabelecimento>170</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930043370</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>35301525000141</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4721103</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>28/10/2019 20:11:05</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200</cdEvento>
+    <Evento>Regularização de Empresa</Evento>
+    <Cep>14883294</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>07931</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>JOSE ROMITO</Logradouro>
+    <Bairro>VILA SANTA TEREZA</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>ISRAEL COSTA PEREIRA 06506422874</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>172</Area Imóvel>
+    <Area Estabelecimento>172</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930043827</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>28211108000142</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>8599699,8650003</Cnae>
+    <AtividadeAuxiliar>Sede</AtividadeAuxiliar>
+    <DataProtocolo>29/10/2019 08:56:16</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>16,23,39,16,23,39</cdEvento>
+    <Evento>Alteração de endereço dentro do mesmo município,Alteração do nome empresarial  (firma ou denominação),Alteração de atividades econômicas (principal e secundárias),Alteração de endereço dentro do mesmo município,Alteração do nome empresarial  (firma ou denominação),Alteração de atividades econômicas (principal e secundárias)</Evento>
+    <Cep>14887208</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>42272</NumeroInscricaoImovel>
+    <TipoLogradouro>AVENIDA</TipoLogradouro>
+    <Logradouro>Aristides Bellodi</Logradouro>
+    <Bairro>Jardim São Marcos I</Bairro>
+    <Complementos>1</Complementos>
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>ROGERIO RICARDO HIPNOTERAPIA, CURSOS E PALESTRAS </RazaoSocial>
+    <Orgão />
+    <Area Imóvel>496</Area Imóvel>
+    <Area Estabelecimento>12</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930044313</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ />
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4617600</Cnae>
+    <AtividadeAuxiliar>Sede</AtividadeAuxiliar>
+    <DataProtocolo>29/10/2019 09:54:48</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>1</cdEvento>
+    <Evento>Inscrição de primeiro estabelecimento</Evento>
+    <Cep>14871620</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>16003</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>Antônia Poli</Logradouro>
+    <Bairro>Jardim Ebenezer</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>JOSE ROBERTO DA SILVA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>242</Area Imóvel>
+    <Area Estabelecimento>92</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930044867</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>03427884000315</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4520001,4530703,4530705,4732600</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>29/10/2019 10:49:35</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>16,39,16,39,16,39,16,39</cdEvento>
+    <Evento>Alteração de endereço dentro do mesmo município,Alteração de atividades econômicas (principal e secundárias),Alteração de endereço dentro do mesmo município,Alteração de atividades econômicas (principal e secundárias),Alteração de endereço dentro do mesmo município,Alteração de atividades econômicas (principal e secundárias),Alteração de endereço dentro do mesmo município,Alteração de atividades econômicas (principal e secundárias)</Evento>
+    <Cep>14870430</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>14495</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>Carlos Gomes</Logradouro>
+    <Bairro>Centro</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>STEFANI MOTORS LTDA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>1356</Area Imóvel>
+    <Area Estabelecimento>1356</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930045031</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>31393738000190</CNPJ>
+    <EmpresaEstabelecida>Não</EmpresaEstabelecida>
+    <Cnae>0161003,0113000,4313400,5212500,7731400,7732201,0161099,0210107,4399104,7719599,3900500,8129000,5021101,5021102,4930201,4930202,4744002,4687702,4687701,5229002</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>29/10/2019 11:07:42</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14</cdEvento>
+    <Evento>Alteração de endereço entre municípios dentro do mesmo estado,Alteração de endereço entre municípios dentro do mesmo estado,Alteração de endereço entre municípios dentro do mesmo estado,Alteração de endereço entre municípios dentro do mesmo estado,Alteração de endereço entre municípios dentro do mesmo estado,Alteração de endereço entre municípios dentro do mesmo estado,Alteração de endereço entre municípios dentro do mesmo estado,Alteração de endereço entre municípios dentro do mesmo estado,Alteração de endereço entre municípios dentro do mesmo estado,Alteração de endereço entre municípios dentro do mesmo estado,Alteração de endereço entre municípios dentro do mesmo estado,Alteração de endereço entre municípios dentro do mesmo estado,Alteração de endereço entre municípios dentro do mesmo estado,Alteração de endereço entre municípios dentro do mesmo estado,Alteração de endereço entre municípios dentro do mesmo estado,Alteração de endereço entre municípios dentro do mesmo estado,Alteração de endereço entre municípios dentro do mesmo estado,Alteração de endereço entre municípios dentro do mesmo estado,Alteração de endereço entre municípios dentro do mesmo estado,Alteração de endereço entre municípios dentro do mesmo estado</Evento>
+    <Cep>14887269</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>24566</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>Doutor Mário de Campos</Logradouro>
+    <Bairro>Residencial São Judas Tadeu</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>RKL AGRICOLA EIRELI</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>1356</Area Imóvel>
+    <Area Estabelecimento>1356</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930045091</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>03427884000315</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4520001,4530703,4520002,4520003</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>29/10/2019 11:13:42</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>16,39,16,39,16,39,16,39</cdEvento>
+    <Evento>Alteração de endereço dentro do mesmo município,Alteração de atividades econômicas (principal e secundárias),Alteração de endereço dentro do mesmo município,Alteração de atividades econômicas (principal e secundárias),Alteração de endereço dentro do mesmo município,Alteração de atividades econômicas (principal e secundárias),Alteração de endereço dentro do mesmo município,Alteração de atividades econômicas (principal e secundárias)</Evento>
+    <Cep>14870430</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>14495</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>Carlos Gomes</Logradouro>
+    <Bairro>Centro</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>STEFANI MOTORS LTDA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>1356</Area Imóvel>
+    <Area Estabelecimento>1356</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930045494</Protocolo>
+    <Analise>Viabilidade Aprovada</Analise>
+    <Nire />
+    <CNPJ>45337425000129</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>8531700</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>29/10/2019 12:15:41</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200</cdEvento>
+    <Evento>Regularização de Empresa</Evento>
+    <Cep>14870810</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>02032</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>FLORIANO PEIXOTO</Logradouro>
+    <Bairro>CENTRO</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>ASSOCIACAO JABOTICABALENSE DE EDUCACAO E CULTURA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>8926</Area Imóvel>
+    <Area Estabelecimento>8926</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930046762</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>48662175002649</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4683400,4623199</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>29/10/2019 15:21:37</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200,200</cdEvento>
+    <Evento>Regularização de Empresa,Regularização de Empresa</Evento>
+    <Cep>14875455</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>19088</NumeroInscricaoImovel>
+    <TipoLogradouro>RODOVIA</TipoLogradouro>
+    <Logradouro>SP 333, KM 121,750 MTS</Logradouro>
+    <Bairro>COHAB II</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>COPLANA - COOPERATIVA AGROINDUSTRIAL</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>47172</Area Imóvel>
+    <Area Estabelecimento>500</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930046786</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>48662175001081</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4683400,4623199</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>29/10/2019 15:24:00</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200,200</cdEvento>
+    <Evento>Regularização de Empresa,Regularização de Empresa</Evento>
+    <Cep>14875455</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>19088</NumeroInscricaoImovel>
+    <TipoLogradouro>RODOVIA</TipoLogradouro>
+    <Logradouro>SP 333 KM 121+750 MTS.</Logradouro>
+    <Bairro>COHAB II</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>COPLANA - COOPERATIVA AGROINDUSTRIAL</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>47172</Area Imóvel>
+    <Area Estabelecimento>46672</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930047218</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>08585117000196</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>6911701</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>29/10/2019 16:09:35</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>23,27</cdEvento>
+    <Evento>Alteração do nome empresarial  (firma ou denominação),Alteração da natureza jurídica</Evento>
+    <Cep>14870080</Cep>
+    <TipoInscricaoImovel>Imóvel sem regularização</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>Imóvel sem regularização</NumeroInscricaoImovel>
+    <TipoLogradouro>AVENIDA</TipoLogradouro>
+    <Logradouro>MAJOR NOVAES</Logradouro>
+    <Bairro>APARECIDA</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>ADVOCACIA BAHIA, WAHBE E BAHIA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>434</Area Imóvel>
+    <Area Estabelecimento>434</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930047230</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>12829471000196</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>6920601</Cnae>
+    <AtividadeAuxiliar>Escritório Administrativo</AtividadeAuxiliar>
+    <DataProtocolo>29/10/2019 16:10:37</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>16,39</cdEvento>
+    <Evento>Alteração de endereço dentro do mesmo município,Alteração de atividades econômicas (principal e secundárias)</Evento>
+    <Cep>14870160</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>01660</NumeroInscricaoImovel>
+    <TipoLogradouro>AVENIDA</TipoLogradouro>
+    <Logradouro>Treze de Maio</Logradouro>
+    <Bairro>Centro</Bairro>
+    <Complementos>8,804</Complementos>
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>DANILO DE SOUZA ABEL</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>142</Area Imóvel>
+    <Area Estabelecimento>142</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930047696</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>03427884000315</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4511101,4520001,4530703,4530705,4732600</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>29/10/2019 17:02:41</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200,200,200,200,200</cdEvento>
+    <Evento>Regularização de Empresa,Regularização de Empresa,Regularização de Empresa,Regularização de Empresa,Regularização de Empresa</Evento>
+    <Cep>14870430</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>14495</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>CARLOS GOMES</Logradouro>
+    <Bairro>CENTRO</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>STEFANI MOTORS LTDA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>1356</Area Imóvel>
+    <Area Estabelecimento>1356</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930048296</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ />
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4645101,4686902,4541206,4642702,4772500,4781400,4789099</Cnae>
+    <AtividadeAuxiliar>Sede,Escritório Administrativo</AtividadeAuxiliar>
+    <DataProtocolo>29/10/2019 22:51:26</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>1,1,1,1,1,1,1</cdEvento>
+    <Evento>Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento</Evento>
+    <Cep>14870780</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>01137</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>Barão do Rio Branco</Logradouro>
+    <Bairro>Centro</Bairro>
+    <Complementos>06</Complementos>
+    <Tipo de Unidade>Auxiliar</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>CORPUS COMERCIO EIRELI</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>400</Area Imóvel>
+    <Area Estabelecimento>10</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930048587</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ />
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>9491000</Cnae>
+    <AtividadeAuxiliar>Sede</AtividadeAuxiliar>
+    <DataProtocolo>30/10/2019 08:41:02</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>1</cdEvento>
+    <Evento>Inscrição de primeiro estabelecimento</Evento>
+    <Cep>14875643</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>22928</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>Domingos Sellaro</Logradouro>
+    <Bairro>Loteamento Santo Antônio</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>IGREJA PENTECOSTAL RESTAURANDO VIDAS </RazaoSocial>
+    <Orgão />
+    <Area Imóvel>222</Area Imóvel>
+    <Area Estabelecimento>122</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930048609</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>13145929000150</CNPJ>
+    <EmpresaEstabelecida>Não</EmpresaEstabelecida>
+    <Cnae>7112000,4299599,7119704</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>30/10/2019 08:44:02</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200,200,200</cdEvento>
+    <Evento>Regularização de Empresa,Regularização de Empresa,Regularização de Empresa</Evento>
+    <Cep>14882030</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>05915</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>QUINTINO BOCAIUVA</Logradouro>
+    <Bairro>APARECIDA</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>INFINITO ENGENHARIA LTDA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>222</Area Imóvel>
+    <Area Estabelecimento>122</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930048624</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ />
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>9491000</Cnae>
+    <AtividadeAuxiliar>Sede</AtividadeAuxiliar>
+    <DataProtocolo>30/10/2019 08:45:16</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>1</cdEvento>
+    <Evento>Inscrição de primeiro estabelecimento</Evento>
+    <Cep>14875643</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>22928</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>Domingos Sellaro</Logradouro>
+    <Bairro>Loteamento Santo Antônio</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>IGREJA PENTECOSTAL RESTAURANDO VIDAS MINISTERIO DE JABOTICABAL</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>222</Area Imóvel>
+    <Area Estabelecimento>122</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930048661</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>13145929000150</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>7112000,4299599,7119704</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>30/10/2019 08:50:59</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200,200,200</cdEvento>
+    <Evento>Regularização de Empresa,Regularização de Empresa,Regularização de Empresa</Evento>
+    <Cep>14882030</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>05915</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>QUINTINO BOCAIUVA</Logradouro>
+    <Bairro>APARECIDA</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>INFINITO ENGENHARIA LTDA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>444</Area Imóvel>
+    <Area Estabelecimento>20</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930048936</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>28708029000141</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>9313100</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>30/10/2019 09:27:45</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>16</cdEvento>
+    <Evento>Alteração de endereço dentro do mesmo município</Evento>
+    <Cep>14887392</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>22180</NumeroInscricaoImovel>
+    <TipoLogradouro>AVENIDA</TipoLogradouro>
+    <Logradouro>Manoel Martins Fontes</Logradouro>
+    <Bairro>Colina Verde</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>PAULO VICTOR PENITENTI DE MARTIN</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>376</Area Imóvel>
+    <Area Estabelecimento>376</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930049102</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>68104306000121</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4712100</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>30/10/2019 09:45:00</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>23,27</cdEvento>
+    <Evento>Alteração do nome empresarial  (firma ou denominação),Alteração da natureza jurídica</Evento>
+    <Cep>14870720</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>00429</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>SAO SEBASTIAO</Logradouro>
+    <Bairro>CENTRO</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>ADRIANO DE CARVALHO ARAUJO</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>424</Area Imóvel>
+    <Area Estabelecimento>424</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930049976</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>50510692000196</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>6912500</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>30/10/2019 11:12:53</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>16</cdEvento>
+    <Evento>Alteração de endereço dentro do mesmo município</Evento>
+    <Cep>14870350</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>01352</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>Vinte e Quatro de Maio</Logradouro>
+    <Bairro>Centro</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>1TABELIAO DE NOTAS E PROTESTO DE LETRAS E TITULOS DE JABOTICABAL</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>346</Area Imóvel>
+    <Area Estabelecimento>346</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930052236</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>18787811000140</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>5611201</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>30/10/2019 16:09:31</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>16</cdEvento>
+    <Evento>Alteração de endereço dentro do mesmo município</Evento>
+    <Cep>14870160</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>14119</NumeroInscricaoImovel>
+    <TipoLogradouro>AVENIDA</TipoLogradouro>
+    <Logradouro>Treze de Maio</Logradouro>
+    <Bairro>Centro</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>DANTAS E PRESOTTI PIZZARIA LTDA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>294</Area Imóvel>
+    <Area Estabelecimento>217</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930052440</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ />
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>9491000</Cnae>
+    <AtividadeAuxiliar>Sede</AtividadeAuxiliar>
+    <DataProtocolo>30/10/2019 16:31:46</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>1</cdEvento>
+    <Evento>Inscrição de primeiro estabelecimento</Evento>
+    <Cep>14875643</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>22928</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>Domingos Sellaro</Logradouro>
+    <Bairro>Loteamento Santo Antônio</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>IGREJA PENTECOSTAL RESTAURANDO VIDAS MINISTERIO DE JABOTICABAL</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>222</Area Imóvel>
+    <Area Estabelecimento>122</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930053034</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ />
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4930202</Cnae>
+    <AtividadeAuxiliar>Sede</AtividadeAuxiliar>
+    <DataProtocolo>30/10/2019 17:59:25</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>1</cdEvento>
+    <Evento>Inscrição de primeiro estabelecimento</Evento>
+    <Cep>14870790</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>01400</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>Vinte e Quatro de Maio</Logradouro>
+    <Bairro>Centro</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Auxiliar</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>GABRIELE CRISTINA VERONEZZI  </RazaoSocial>
+    <Orgão />
+    <Area Imóvel>83</Area Imóvel>
+    <Area Estabelecimento>83</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930053506</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ />
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>6462000,6810202,6810201</Cnae>
+    <AtividadeAuxiliar>Escritório Administrativo</AtividadeAuxiliar>
+    <DataProtocolo>31/10/2019 08:39:16</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>1,1,1</cdEvento>
+    <Evento>Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento</Evento>
+    <Cep>14887014</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>02897</NumeroInscricaoImovel>
+    <TipoLogradouro>AVENIDA</TipoLogradouro>
+    <Logradouro>Sylvio Vantini</Logradouro>
+    <Bairro>Nova Jaboticabal</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>MRZ Administracao Patrimonial Ltda</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>363</Area Imóvel>
+    <Area Estabelecimento>240</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930053622</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ />
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4617600</Cnae>
+    <AtividadeAuxiliar>Sede</AtividadeAuxiliar>
+    <DataProtocolo>31/10/2019 08:58:21</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>1</cdEvento>
+    <Evento>Inscrição de primeiro estabelecimento</Evento>
+    <Cep>14871620</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>16003</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>Antônia Poli</Logradouro>
+    <Bairro>Jardim Ebenezer</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Auxiliar</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>JOSE ROBERTO DA SILVA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>242</Area Imóvel>
+    <Area Estabelecimento>92</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930053871</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>35188094000159</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4781400</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>31/10/2019 09:37:06</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200</cdEvento>
+    <Evento>Regularização de Empresa</Evento>
+    <Cep>14870090</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>00314</NumeroInscricaoImovel>
+    <TipoLogradouro>PRACA</TipoLogradouro>
+    <Logradouro>DOUTOR JOAQUIM BATISTA</Logradouro>
+    <Bairro>CENTRO</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>DIRCE ROSA DA SILVA OLIVEIRA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>719</Area Imóvel>
+    <Area Estabelecimento>719</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930055290</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>68104470000139</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4761003</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>31/10/2019 13:10:34</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>23,27</cdEvento>
+    <Evento>Alteração do nome empresarial  (firma ou denominação),Alteração da natureza jurídica</Evento>
+    <Cep>14870120</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>00927</NumeroInscricaoImovel>
+    <TipoLogradouro>AVENIDA</TipoLogradouro>
+    <Logradouro>PINTOS</Logradouro>
+    <Bairro>CENTRO</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>PAPELARIA GANEKO EIRELI</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>396</Area Imóvel>
+    <Area Estabelecimento>396</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930055742</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>34707205000123</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>8211300,6810201,0151201,0153902,0113000,0115600,0111302,0116401,0111399</Cnae>
+    <AtividadeAuxiliar>Sede</AtividadeAuxiliar>
+    <DataProtocolo>31/10/2019 14:20:41</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>39,39,39,39,39,39,39,39,39</cdEvento>
+    <Evento>Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias)</Evento>
+    <Cep>14870330</Cep>
+    <TipoInscricaoImovel>Número Cadastro Rural (antigo INCRA)</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>6121380023567</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>BARAO DO RIO BRANCO</Logradouro>
+    <Bairro>CENTRO</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>AGROPECUARIA TERRA VERMELHA LTDA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>20</Area Imóvel>
+    <Area Estabelecimento>20</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930056271</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>12309653000136</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4759899,4649499</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>31/10/2019 15:21:24</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>23,27,23,27</cdEvento>
+    <Evento>Alteração do nome empresarial  (firma ou denominação),Alteração da natureza jurídica,Alteração do nome empresarial  (firma ou denominação),Alteração da natureza jurídica</Evento>
+    <Cep>14887364</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>22080</NumeroInscricaoImovel>
+    <TipoLogradouro>AVENIDA</TipoLogradouro>
+    <Logradouro>OLGA MORELLO DE STEFANI</Logradouro>
+    <Bairro>LOTEAMENTO COLINA VERDE</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>A A BESSA FILTROS LTDA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>341</Area Imóvel>
+    <Area Estabelecimento>341</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930056594</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ />
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>5611201,4712100,5611204</Cnae>
+    <AtividadeAuxiliar>Sede,Escritório Administrativo,Almoxarifado</AtividadeAuxiliar>
+    <DataProtocolo>31/10/2019 15:55:09</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>1,1,1</cdEvento>
+    <Evento>Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento</Evento>
+    <Cep>14887244</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>38481</NumeroInscricaoImovel>
+    <TipoLogradouro>AVENIDA</TipoLogradouro>
+    <Logradouro>Caetano Merlino</Logradouro>
+    <Bairro>Jardim São Marcos I</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Auxiliar</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>Borba &amp; Souza Ltda</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>1300</Area Imóvel>
+    <Area Estabelecimento>57</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930056866</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ />
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4617600</Cnae>
+    <AtividadeAuxiliar>Sede,Escritório Administrativo</AtividadeAuxiliar>
+    <DataProtocolo>31/10/2019 16:25:00</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>1</cdEvento>
+    <Evento>Inscrição de primeiro estabelecimento</Evento>
+    <Cep>14871620</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>16003</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>Antônia Poli</Logradouro>
+    <Bairro>Jardim Ebenezer</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>JOSE ROBERTO DA SILVA REPRESENTACOES </RazaoSocial>
+    <Orgão />
+    <Area Imóvel>242</Area Imóvel>
+    <Area Estabelecimento>93</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930056902</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>07008120000184</CNPJ>
+    <EmpresaEstabelecida>Não</EmpresaEstabelecida>
+    <Cnae>4649499</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>31/10/2019 16:28:52</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>16</cdEvento>
+    <Evento>Alteração de endereço dentro do mesmo município</Evento>
+    <Cep>14890722</Cep>
+    <TipoInscricaoImovel />
+    <NumeroInscricaoImovel />
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>Francisco Beutler</Logradouro>
+    <Bairro>Parque das Araras</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>LUANA SOARES CABRAL BRINQUEDOS</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>242</Area Imóvel>
+    <Area Estabelecimento>93</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930057963</Protocolo>
+    <Analise>Viabilidade Aprovada</Analise>
+    <Nire />
+    <CNPJ>32161177000166</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4784900</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>01/11/2019 08:36:18</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200</cdEvento>
+    <Evento>Regularização de Empresa</Evento>
+    <Cep>14875434</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>13385</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>ALBERTO BOTTINO</Logradouro>
+    <Bairro>CONJUNTO HABITACIONAL HUGO LACORTE VITALLE</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>ANDREA DA SILVA 28869898865</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>56</Area Imóvel>
+    <Area Estabelecimento>56</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930058787</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ />
+    <EmpresaEstabelecida>Não</EmpresaEstabelecida>
+    <Cnae>4618499</Cnae>
+    <AtividadeAuxiliar>Sede,Escritório Administrativo</AtividadeAuxiliar>
+    <DataProtocolo>01/11/2019 09:55:33</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>1</cdEvento>
+    <Evento>Inscrição de primeiro estabelecimento</Evento>
+    <Cep>14870540</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>14800</NumeroInscricaoImovel>
+    <TipoLogradouro>AVENIDA</TipoLogradouro>
+    <Logradouro>Líbero Badaró</Logradouro>
+    <Bairro>Centro</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>DANILO DE ARRUDA BISCOLA REPRESENTACAO LTDA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>56</Area Imóvel>
+    <Area Estabelecimento>56</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930059271</Protocolo>
+    <Analise>Viabilidade Aprovada</Analise>
+    <Nire />
+    <CNPJ>34333359000100</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>3314711,4530703</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>01/11/2019 10:37:26</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200,200</cdEvento>
+    <Evento>Regularização de Empresa,Regularização de Empresa</Evento>
+    <Cep>14871300</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>16832</NumeroInscricaoImovel>
+    <TipoLogradouro>VIA</TipoLogradouro>
+    <Logradouro>MAJOR HILARIO TAVARES PINHEIRO</Logradouro>
+    <Bairro>SOROCABANO</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>A R DE MENEZES SERVICOS E PECAS</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>342</Area Imóvel>
+    <Area Estabelecimento>342</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930059572</Protocolo>
+    <Analise>Viabilidade Aprovada</Analise>
+    <Nire />
+    <CNPJ>07187083000119</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>0161001</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>01/11/2019 11:01:09</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200</cdEvento>
+    <Evento>Regularização de Empresa</Evento>
+    <Cep>14887054</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>03880</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>GINO BELLODI</Logradouro>
+    <Bairro>JARDIM SANTA RITA</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>AEROAGRICOLA LG LTDA.</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>360</Area Imóvel>
+    <Area Estabelecimento>205</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930060408</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>33222666000143</CNPJ>
+    <EmpresaEstabelecida>Não</EmpresaEstabelecida>
+    <Cnae>4930202,4930203</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>01/11/2019 13:35:25</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>23,27,23,27</cdEvento>
+    <Evento>Alteração do nome empresarial  (firma ou denominação),Alteração da natureza jurídica,Alteração do nome empresarial  (firma ou denominação),Alteração da natureza jurídica</Evento>
+    <Cep>14882304</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>30632</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>ANGELINA TRAETTA AFFONSO</Logradouro>
+    <Bairro>JARDIM MORADA NOVA</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>SIMONE SANTOS TRANSPORTADORA EIRELI</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>360</Area Imóvel>
+    <Area Estabelecimento>205</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930060553</Protocolo>
+    <Analise>Viabilidade Aprovada</Analise>
+    <Nire />
+    <CNPJ>03500580000174</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>2063100</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>01/11/2019 13:51:14</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200</cdEvento>
+    <Evento>Regularização de Empresa</Evento>
+    <Cep>14870100</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>14418</NumeroInscricaoImovel>
+    <TipoLogradouro>AVENIDA</TipoLogradouro>
+    <Logradouro>GENERAL OSORIO</Logradouro>
+    <Bairro>CENTRO</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>BIOCUTHIS - INDUSTRIA E COMERCIO DE COSMETICOS EIRELI</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>152</Area Imóvel>
+    <Area Estabelecimento>152</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930060594</Protocolo>
+    <Analise>Viabilidade Aprovada</Analise>
+    <Nire />
+    <CNPJ>31494244000100</CNPJ>
+    <EmpresaEstabelecida>Não</EmpresaEstabelecida>
+    <Cnae>8712300</Cnae>
+    <AtividadeAuxiliar>Sede</AtividadeAuxiliar>
+    <DataProtocolo>01/11/2019 13:56:36</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200</cdEvento>
+    <Evento>Regularização de Empresa</Evento>
+    <Cep>14875641</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>22813</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>SALVADOR TURCO</Logradouro>
+    <Bairro>LOTEAMENTO SANTO ANTONIO</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>LUCIANA DA SILVA BASSI 17110791890</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>152</Area Imóvel>
+    <Area Estabelecimento>152</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930060610</Protocolo>
+    <Analise>Viabilidade Aprovada</Analise>
+    <Nire />
+    <CNPJ>31561794000196</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>8712300</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>01/11/2019 13:58:15</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200</cdEvento>
+    <Evento>Regularização de Empresa</Evento>
+    <Cep>14883260</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>21220</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>PROFESSOR VALDIR PEDRO MORANO</Logradouro>
+    <Bairro>JARDIM BELA VISTA</Bairro>
+    <Complementos>4;BLOCO C</Complementos>
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>LEICI ANA DA SILVA 30121713806</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>63</Area Imóvel>
+    <Area Estabelecimento>63</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930060756</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>31526584000167</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4110700,6821801,6821802</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>01/11/2019 14:17:33</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200,200,200</cdEvento>
+    <Evento>Regularização de Empresa,Regularização de Empresa,Regularização de Empresa</Evento>
+    <Cep>14890214</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>36443</NumeroInscricaoImovel>
+    <TipoLogradouro>AVENIDA</TipoLogradouro>
+    <Logradouro>HERMINIA CASTELETI BELLODI</Logradouro>
+    <Bairro>JARDIM MORUMBI</Bairro>
+    <Complementos>14</Complementos>
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>ILHAS D'ITALIA EMPREENDIMENTOS IMOBILIARIOS SPE LTDA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>1913</Area Imóvel>
+    <Area Estabelecimento>30</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930060789</Protocolo>
+    <Analise>Viabilidade Aprovada</Analise>
+    <Nire />
+    <CNPJ>31526610000157</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4110700,6821801,6821802</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>01/11/2019 14:20:13</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200,200,200</cdEvento>
+    <Evento>Regularização de Empresa,Regularização de Empresa,Regularização de Empresa</Evento>
+    <Cep>14890214</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>36443</NumeroInscricaoImovel>
+    <TipoLogradouro>AVENIDA</TipoLogradouro>
+    <Logradouro>HERMINIA CASTELETI BELLODI</Logradouro>
+    <Bairro>JARDIM MORUMBI</Bairro>
+    <Complementos>15</Complementos>
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>CM05 EMPREENDIMENTOS IMOBILIARIOS LTDA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>1913</Area Imóvel>
+    <Area Estabelecimento>30</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930061373</Protocolo>
+    <Analise>Viabilidade Aprovada</Analise>
+    <Nire />
+    <CNPJ>11006345000179</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4649499,4759899</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>01/11/2019 15:19:02</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200,200</cdEvento>
+    <Evento>Regularização de Empresa,Regularização de Empresa</Evento>
+    <Cep>14871660</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>17694</NumeroInscricaoImovel>
+    <TipoLogradouro>AVENIDA</TipoLogradouro>
+    <Logradouro>GALDENCIO BRANDIMARTE</Logradouro>
+    <Bairro>JARDIM BRANDI</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>LEANDRO FATORI</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>360</Area Imóvel>
+    <Area Estabelecimento>20</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930061942</Protocolo>
+    <Analise>Viabilidade Aprovada</Analise>
+    <Nire />
+    <CNPJ>04602875000114</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4771701</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>01/11/2019 16:24:48</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200</cdEvento>
+    <Evento>Regularização de Empresa</Evento>
+    <Cep>14870240</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>12621</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>SAO JOAO</Logradouro>
+    <Bairro>JARDIN BOA VISTA</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>ROBERTO APARECIDO CHIODA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>196</Area Imóvel>
+    <Area Estabelecimento>196</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930062000</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>22781930000162</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>6821801,7319002</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>01/11/2019 16:33:08</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200,200</cdEvento>
+    <Evento>Regularização de Empresa,Regularização de Empresa</Evento>
+    <Cep>14887118</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>11702</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>DOUTOR MARIO DE CAMPOS</Logradouro>
+    <Bairro>NOVA JABOTICABAL</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>ANA REGINA ALI DE MENDONCA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>369</Area Imóvel>
+    <Area Estabelecimento>20</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930062684</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>14263002000188</CNPJ>
+    <EmpresaEstabelecida>Não</EmpresaEstabelecida>
+    <Cnae>4744002,3101200,9529105</Cnae>
+    <AtividadeAuxiliar>Escritório Administrativo</AtividadeAuxiliar>
+    <DataProtocolo>02/11/2019 12:45:18</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>14,39,44,14,39,44,14,39,44</cdEvento>
+    <Evento>Alteração de endereço entre municípios dentro do mesmo estado,Alteração de atividades econômicas (principal e secundárias),Alteração da forma de atuação,Alteração de endereço entre municípios dentro do mesmo estado,Alteração de atividades econômicas (principal e secundárias),Alteração da forma de atuação,Alteração de endereço entre municípios dentro do mesmo estado,Alteração de atividades econômicas (principal e secundárias),Alteração da forma de atuação</Evento>
+    <Cep>14875545</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>23328</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>Nelson Spelman</Logradouro>
+    <Bairro>Jardim Angélica</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>MOSSELIN - COMERCIO DE MADEIRAS LTDA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>369</Area Imóvel>
+    <Area Estabelecimento>20</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930062845</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>31657162000120</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4399103</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>03/11/2019 14:22:29</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>23</cdEvento>
+    <Evento>Alteração do nome empresarial  (firma ou denominação)</Evento>
+    <Cep>14875635</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>01010</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>ADOLPHO PAVANELLI</Logradouro>
+    <Bairro>JARDIM ALVORADA</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>FLAVIO PEREIRA DOS SANTOS</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>200</Area Imóvel>
+    <Area Estabelecimento>25</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930064895</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ />
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>2013401,2029100,2051700,2099199,2013402,4789099,4683400</Cnae>
+    <AtividadeAuxiliar>Sede</AtividadeAuxiliar>
+    <DataProtocolo>04/11/2019 15:06:25</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>1,1,1,1,1,1,1</cdEvento>
+    <Evento>Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento</Evento>
+    <Cep>14896040</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>19191</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>Francisco Manduca Ferreira</Logradouro>
+    <Bairro>Córrego Rico</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>BESSER AGROQUIMICA LTDA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>116</Area Imóvel>
+    <Area Estabelecimento>116</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930064967</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>35323631000126</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>3314702</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>04/11/2019 15:13:58</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200</cdEvento>
+    <Evento>Regularização de Empresa</Evento>
+    <Cep>14875253</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>09985</NumeroInscricaoImovel>
+    <TipoLogradouro>AVENIDA</TipoLogradouro>
+    <Logradouro>JOAO NEPOMUCENO ROSA</Logradouro>
+    <Bairro>JARDIM PATRIARCA</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>FLORISVALDO DELFINO 97957984800</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>223</Area Imóvel>
+    <Area Estabelecimento>171</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930065463</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>64624307000146</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4781400</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>04/11/2019 16:00:37</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200</cdEvento>
+    <Evento>Regularização de Empresa</Evento>
+    <Cep>14870740</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>00726</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>RUI BARBOSA</Logradouro>
+    <Bairro>CENTRO</Bairro>
+    <Complementos>2</Complementos>
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>DORIVAL MARQUES JABOTICABAL</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>191</Area Imóvel>
+    <Area Estabelecimento>191</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930065870</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>06343709000338</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4789001,4755502,4781400,4782202,4782201,4772500,4783101</Cnae>
+    <AtividadeAuxiliar>Filial</AtividadeAuxiliar>
+    <DataProtocolo>04/11/2019 16:35:18</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>39,39,39,39,39,39,39</cdEvento>
+    <Evento>Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias)</Evento>
+    <Cep>14870325</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>09891</NumeroInscricaoImovel>
+    <TipoLogradouro>PRACA</TipoLogradouro>
+    <Logradouro>NOVE DE JULHO</Logradouro>
+    <Bairro>CENTRO</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>ROGERIO TADEU RANCAN</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>270</Area Imóvel>
+    <Area Estabelecimento>270</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930066324</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ />
+    <EmpresaEstabelecida>Não</EmpresaEstabelecida>
+    <Cnae>4618499</Cnae>
+    <AtividadeAuxiliar>Sede,Escritório Administrativo</AtividadeAuxiliar>
+    <DataProtocolo>04/11/2019 17:23:40</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>1</cdEvento>
+    <Evento>Inscrição de primeiro estabelecimento</Evento>
+    <Cep>14870540</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>14800</NumeroInscricaoImovel>
+    <TipoLogradouro>AVENIDA</TipoLogradouro>
+    <Logradouro>Líbero Badaró</Logradouro>
+    <Bairro>Centro</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>DANILO DE ARRUDA BISCOLA REPRESENTACAO</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>270</Area Imóvel>
+    <Area Estabelecimento>270</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930067534</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>03261588000125</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>8630502</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>05/11/2019 09:34:28</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>16</cdEvento>
+    <Evento>Alteração de endereço dentro do mesmo município</Evento>
+    <Cep>14887200</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>34181</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>Doutor Mário de Campos</Logradouro>
+    <Bairro>Jardim São Marcos I</Bairro>
+    <Complementos>12</Complementos>
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>LEDY CARDIOLOGIA S/S LTDA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>6392</Area Imóvel>
+    <Area Estabelecimento>20</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930068085</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>10731270000126</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4649499</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>05/11/2019 10:32:26</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200</cdEvento>
+    <Evento>Regularização de Empresa</Evento>
+    <Cep>14871080</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>15442</NumeroInscricaoImovel>
+    <TipoLogradouro>AVENIDA</TipoLogradouro>
+    <Logradouro>PINTOS</Logradouro>
+    <Bairro>SOROCABANO</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>N. A. MALERBO FILTROS CERAMICOS</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>116</Area Imóvel>
+    <Area Estabelecimento>116</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930068153</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>22781930000162</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>6821801,7319002</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>05/11/2019 10:41:01</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200,200</cdEvento>
+    <Evento>Regularização de Empresa,Regularização de Empresa</Evento>
+    <Cep>14887118</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>11702</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>DOUTOR MARIO DE CAMPOS</Logradouro>
+    <Bairro>NOVA JABOTICABAL</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>ANA REGINA ALI DE MENDONCA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>369</Area Imóvel>
+    <Area Estabelecimento>20</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930068439</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>22781930000162</CNPJ>
+    <EmpresaEstabelecida>Não</EmpresaEstabelecida>
+    <Cnae>6821801,7319002</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>05/11/2019 11:12:44</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200,200</cdEvento>
+    <Evento>Regularização de Empresa,Regularização de Empresa</Evento>
+    <Cep>14887118</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>11702</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>DOUTOR MARIO DE CAMPOS</Logradouro>
+    <Bairro>NOVA JABOTICABAL</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>ANA REGINA ALI DE MENDONCA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>369</Area Imóvel>
+    <Area Estabelecimento>20</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930068583</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ />
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>5250804,6463800</Cnae>
+    <AtividadeAuxiliar>Sede</AtividadeAuxiliar>
+    <DataProtocolo>05/11/2019 11:29:14</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>1,1</cdEvento>
+    <Evento>Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento</Evento>
+    <Cep>14897899</Cep>
+    <TipoInscricaoImovel>Número Cadastro Rural (antigo INCRA)</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>6120570007600</NumeroInscricaoImovel>
+    <TipoLogradouro>AREA</TipoLogradouro>
+    <Logradouro>Rural</Logradouro>
+    <Bairro>Área Rural de Jaboticabal</Bairro>
+    <Complementos>01</Complementos>
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>JNB JABOTICABAL PARTICIPACOES LTDA </RazaoSocial>
+    <Orgão />
+    <Area Imóvel>1082</Area Imóvel>
+    <Area Estabelecimento>1050</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930068746</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ />
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>6550200</Cnae>
+    <AtividadeAuxiliar>Escritório Administrativo</AtividadeAuxiliar>
+    <DataProtocolo>05/11/2019 11:52:57</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>1</cdEvento>
+    <Evento>Inscrição de primeiro estabelecimento</Evento>
+    <Cep>14870500</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>01054</NumeroInscricaoImovel>
+    <TipoLogradouro>AVENIDA</TipoLogradouro>
+    <Logradouro>do Carmo</Logradouro>
+    <Bairro>Centro</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Auxiliar</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>sao francisco sistemas de saude sociedade empresaria ltda</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>149</Area Imóvel>
+    <Area Estabelecimento>149</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930069501</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ />
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>0161003</Cnae>
+    <AtividadeAuxiliar>Sede</AtividadeAuxiliar>
+    <DataProtocolo>05/11/2019 14:18:43</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>1</cdEvento>
+    <Evento>Inscrição de primeiro estabelecimento</Evento>
+    <Cep>14870160</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>01647</NumeroInscricaoImovel>
+    <TipoLogradouro>AVENIDA</TipoLogradouro>
+    <Logradouro>Treze de Maio</Logradouro>
+    <Bairro>Centro</Bairro>
+    <Complementos>603</Complementos>
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>SANTA LEOPOLDINA SERVICOS AGRICOLAS EIRELI</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>3938</Area Imóvel>
+    <Area Estabelecimento>58</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930070046</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ />
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>5829800,1732000,1811301,1811302,1813001,1813099,1821100,1822901,1822999,8219901</Cnae>
+    <AtividadeAuxiliar>Sede</AtividadeAuxiliar>
+    <DataProtocolo>05/11/2019 15:16:30</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>1,1,1,1,1,1,1,1,1,1</cdEvento>
+    <Evento>Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento</Evento>
+    <Cep>14870010</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>13960</NumeroInscricaoImovel>
+    <TipoLogradouro>AVENIDA</TipoLogradouro>
+    <Logradouro>Carlos Berchieri</Logradouro>
+    <Bairro>Centro</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>R. R. DA COSTA E CIA. LTDA.</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>407</Area Imóvel>
+    <Area Estabelecimento>407</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930070245</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>30046328000100</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>2013402,2013401,2110600,4930202</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>05/11/2019 15:38:22</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200,200,200,200</cdEvento>
+    <Evento>Regularização de Empresa,Regularização de Empresa,Regularização de Empresa,Regularização de Empresa</Evento>
+    <Cep>14875042</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>26396</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>SEBASTIAO PEDRINHO</Logradouro>
+    <Bairro>JARDIM BOTHANICO</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>BIO FORCE AGROSCIENCIES LTDA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>300</Area Imóvel>
+    <Area Estabelecimento>210</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930070462</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>07187083000119</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>0161001</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>05/11/2019 16:02:27</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200</cdEvento>
+    <Evento>Regularização de Empresa</Evento>
+    <Cep>14887054</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>03880</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>GINO BELLODI</Logradouro>
+    <Bairro>JARDIM SANTA RITA</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>AEROAGRICOLA LG LTDA.</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>360</Area Imóvel>
+    <Area Estabelecimento>205</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930070829</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>10869552000194</CNPJ>
+    <EmpresaEstabelecida>Não</EmpresaEstabelecida>
+    <Cnae>8211300</Cnae>
+    <AtividadeAuxiliar>Sede</AtividadeAuxiliar>
+    <DataProtocolo>05/11/2019 16:40:22</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>16,23,27,39</cdEvento>
+    <Evento>Alteração de endereço dentro do mesmo município,Alteração do nome empresarial  (firma ou denominação),Alteração da natureza jurídica,Alteração de atividades econômicas (principal e secundárias)</Evento>
+    <Cep>14870290</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>19469</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>São Sebastião</Logradouro>
+    <Bairro>Centro</Bairro>
+    <Complementos>ILHA BELA,502</Complementos>
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>FABIANA SANCHEZ ESCRITORIO DE APOIO ADMINISTRACAO LTDA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>360</Area Imóvel>
+    <Area Estabelecimento>205</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930071381</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ />
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>9603399,4789002,6511102</Cnae>
+    <AtividadeAuxiliar>Sede</AtividadeAuxiliar>
+    <DataProtocolo>05/11/2019 18:42:36</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>1,1,1</cdEvento>
+    <Evento>Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento,Inscrição de primeiro estabelecimento</Evento>
+    <Cep>14870350</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>28382</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>Vinte e Quatro de Maio</Logradouro>
+    <Bairro>Centro</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>FUNERARIA E FLORICULTURA JABOTICABAL LTDA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>152</Area Imóvel>
+    <Area Estabelecimento>152</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930071517</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>31657162000120</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4399103</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>05/11/2019 22:22:31</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>23</cdEvento>
+    <Evento>Alteração do nome empresarial  (firma ou denominação)</Evento>
+    <Cep>14875635</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>23565</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>ADOLPHO PAVANELLI</Logradouro>
+    <Bairro>JARDIM ALVORADA</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>FLAVIO PEREIRA DOS SANTOS</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>200</Area Imóvel>
+    <Area Estabelecimento>110</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930071660</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>06343709000338</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4789001,4755502,4781400,4782202,4782201,4772500,4783101</Cnae>
+    <AtividadeAuxiliar>Filial</AtividadeAuxiliar>
+    <DataProtocolo>06/11/2019 07:51:22</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>39,39,39,39,39,39,39</cdEvento>
+    <Evento>Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias)</Evento>
+    <Cep>14870325</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>00989</NumeroInscricaoImovel>
+    <TipoLogradouro>PRACA</TipoLogradouro>
+    <Logradouro>NOVE DE JULHO</Logradouro>
+    <Bairro>CENTRO</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>ROGERIO TADEU RANCAN</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>270</Area Imóvel>
+    <Area Estabelecimento>270</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930072034</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>38815817000867</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4781400</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>06/11/2019 08:42:25</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200</cdEvento>
+    <Evento>Regularização de Empresa</Evento>
+    <Cep>14870120</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>19570</NumeroInscricaoImovel>
+    <TipoLogradouro>AVENIDA</TipoLogradouro>
+    <Logradouro>PINTOS</Logradouro>
+    <Bairro>CENTRO</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>TRAVESSOLO &amp; TRAVESSOLO LTDA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>272</Area Imóvel>
+    <Area Estabelecimento>272</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPM1930072215</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>19438863000173</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4744099,4789004</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>06/11/2019 08:55:47</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>200,200</cdEvento>
+    <Evento>Regularização de Empresa,Regularização de Empresa</Evento>
+    <Cep>14875639</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>22705</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>ANGELINA COSTA CLARO</Logradouro>
+    <Bairro>JARDIM SANTO ANTONIO</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>BORGUESAN MATERIAIS DE CONSTRUCAO LTDA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>188</Area Imóvel>
+    <Area Estabelecimento>188</Area Estabelecimento>
+  </Viabilidade>
+  <Viabilidade>
+    <Protocolo>SPP1930072296</Protocolo>
+    <Analise>Em Andamento</Analise>
+    <Nire />
+    <CNPJ>04731876000401</CNPJ>
+    <EmpresaEstabelecida>Sim</EmpresaEstabelecida>
+    <Cnae>4683400,4771704,4744001,4789004,4618499,7490103,4623106,4611700,4632001,5211799</Cnae>
+    <AtividadeAuxiliar />
+    <DataProtocolo>06/11/2019 09:00:55</DataProtocolo>
+    <DataResultadoAnalise>01/01/0001 00:00:00</DataResultadoAnalise>
+    <DataResultadoViabilidade />
+    <TempoAndamento />
+    <cdEvento>39,39,39,39,39,39,39,39,39,39</cdEvento>
+    <Evento>Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias),Alteração de atividades econômicas (principal e secundárias)</Evento>
+    <Cep>14870460</Cep>
+    <TipoInscricaoImovel>Número IPTU</TipoInscricaoImovel>
+    <NumeroInscricaoImovel>29988</NumeroInscricaoImovel>
+    <TipoLogradouro>RUA</TipoLogradouro>
+    <Logradouro>MADRE LUCIA MARIA</Logradouro>
+    <Bairro>MARIA DE LOURDES</Bairro>
+    <Complementos />
+    <Tipo de Unidade>Produtiva</Tipo de Unidade>
+    <Forma de Atuação>Estabelecimento Fixo,Em Local Fixo Fora de Loja,Porta a Porta, Postos Móveis ou por Ambulantes,Atividade Desenvolvida Fora do Estabelecimento,Internet,Máquinas Automáticas,Televendas</Forma de Atuação>
+    <Municipio>Jaboticabal</Municipio>
+    <RazaoSocial>NOVA ERA AGRICOLA PIRANGI LTDA</RazaoSocial>
+    <Orgão />
+    <Area Imóvel>515</Area Imóvel>
+    <Area Estabelecimento>515</Area Estabelecimento>
+  </Viabilidade>
+</Extração>

@@ -1,0 +1,61 @@
+﻿<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="~/js/gti.js"></script>
+    <link href="~/css/gti.css" rel="stylesheet" />
+
+    <title>@ViewBag.Title</title>
+
+
+</head>
+<body>
+    <header>
+        <div class="container2" style="margin-bottom: 0px;">
+            <table>
+                <tr>
+                    <td>
+                        <div><a href="http://www.jaboticabal.sp.gov.br">
+                                <img src="~/images/brasaocor.png" class='iconDetails' />
+                            </a>
+                        </div>
+
+                    </td>
+                    <td>
+                        <span style="font-size: 14px; font-weight: bold;">
+
+                        </span>
+                        <br />
+                        <span style="font-family: 'Times New Roman', 'Arial', 'Helvetica', 'sans-serif';font-size: 22px;font-weight: bold;">&nbsp;&nbsp; Prefeitura Municipal de Jaboticabal</span><br />
+                        <span style="font-family: 'Times New Roman', 'Arial', 'Helvetica', 'sans-serif';font-size: 18px;font-weight: bold;margin-left:70px">
+                            Serviços disponíveis online
+                        </span>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </header>
+
+    @*<div class='container2'>
+            <div>
+                <img src="~/images/brasaocor.png" class='iconDetails'>
+            </div>
+            <div style='margin-left:60px;'>
+                <h4>&nbsp;</h4>
+                <h4 style=" font-family: 'Times New Roman', 'Arial', 'Helvetica', 'sans-serif';font-size: 22px;font-weight: bold;">&nbsp;&nbsp; PREFEITURA MUNICIPAL DE JABOTICABAL<br /><span style="font-family: 'Times New Roman', 'Arial', 'Helvetica', 'sans-serif';font-size: 18px;margin-left:120px">Serviços disponíveis online</span></h4>
+
+            </div>
+        </div>*@
+
+
+    <div style="margin: 30px; width: auto">
+        @RenderBody()
+    </div>
+    @RenderSection("scripts", required: false)
+    <br />
+    <div style=" margin-left:30px; font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-weight: bold;">&copy;2019 - Gestão Tributária Integrada (G.T.I.)</div>
+</body>
+</html>

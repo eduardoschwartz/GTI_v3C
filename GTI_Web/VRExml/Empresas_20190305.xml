@@ -1,0 +1,633 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Empresas>
+  <Empresa id="159650">
+    <!--Dados gerais da empresa (recebidos da RFB)-->
+    <CNPJ>07724892000112</CNPJ>
+    <NomeEmpresarial>MARCELA SAMPAIO PEREIRA COSTA</NomeEmpresarial>
+    <SituacaoCadastral>02</SituacaoCadastral>
+    <DataSituacaoCadastral>2005-11-29</DataSituacaoCadastral>
+    <NaturezaJuridica>2135</NaturezaJuridica>
+    <DataAbertura>2005-11-29</DataAbertura>
+    <Porte>01</Porte>
+    <!--Dados gerais da empresa (coletados do usuário)-->
+    <NumeroRegistro>35131422358</NumeroRegistro>
+    <TipoRegistro>1</TipoRegistro>
+    <TipoMEI>0</TipoMEI>
+    <!--Dados do responsável pela empresa (conforme RFB)-->
+    <CPFResponsavel>19962173809</CPFResponsavel>
+    <NomeResponsavel>MARCELA SAMPAIO PEREIRA COSTA</NomeResponsavel>
+    <DDD1>16</DDD1>
+    <Telefone1>32037925</Telefone1>
+    <Email>GUSTAVO@IMEVE.COM.BR</Email>
+    <!--Endereço do estabelecimento-->
+    <Endereco>
+      <SetorQuadraLote>03270</SetorQuadraLote>
+      <TipoLogradouro>Rua</TipoLogradouro>
+      <Logradouro>Professor Antônio Ruete</Logradouro>
+      <NumeroLogradouro>456</NumeroLogradouro>
+      <Bairro>Nova Jaboticabal</Bairro>
+      <CEP>14887032</CEP>
+      <UF>SP</UF>
+      <Municipio Concla="24303" rfb="279">Jaboticabal</Municipio>
+    </Endereco>
+    <!--Atividades cadastradas e exercidas pela empresa (CNAE e auxiliares)-->
+    <Atividades>
+      <CNAE codigo="4781400" principal="1" exercida="1" />
+      <CNAE codigo="4755501" principal="0" exercida="1" />
+      <CNAE codigo="4781400" principal="1" exercida="1" />
+      <CNAE codigo="4755501" principal="0" exercida="1" />
+    </Atividades>
+    <!--QSA da empresa-->
+    <Sociedade />
+    <!--Dados do contador-->
+    <ClassificacaoCRCContadorPJ>0</ClassificacaoCRCContadorPJ>
+    <NumeroCRCContadorPJ>000000</NumeroCRCContadorPJ>
+    <CNPJContador>00000000000000</CNPJContador>
+    <TipoCRCContadorPF>O</TipoCRCContadorPF>
+    <ClassificacaoCRCContadorPF>1</ClassificacaoCRCContadorPF>
+    <NumeroCRCContadorPF>176568</NumeroCRCContadorPF>
+    <UFCRCContadorPF>SP</UFCRCContadorPF>
+    <CPFContador>25304040899</CPFContador>
+    <!--Viabilidade-->
+    <Viabilidade id="8805191">
+      <Solicitacao id="1776353">1776353201910</Solicitacao>
+      <Status id="12" />
+    </Viabilidade>
+    <Viabilidade id="8805191">
+      <Solicitacao id="1776353">1776353201910</Solicitacao>
+      <Status id="12" />
+    </Viabilidade>
+    <!--Licenciamentos (um bloco abaixo para cada órgão)-->
+    <Licenciamento id="3032242">
+      <Solicitacao id="702110">702110201622</Solicitacao>
+      <Orgao id="3" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>702110201622</Numero>
+      <DataEmissao>2016-10-03T00:00:00</DataEmissao>
+      <DataVencimento>2019-10-03T00:00:00</DataVencimento>
+      <Pergunta id="5448" resposta="0" />
+      <Pergunta id="5449" resposta="0" />
+      <Pergunta id="5450" resposta="0" />
+      <Pergunta id="5452" resposta="0" />
+      <Pergunta id="5453" resposta="0" />
+      <Pergunta id="5454" resposta="0" />
+      <Declaracao id="8268" />
+      <Declaracao id="8269" />
+      <Declaracao id="8270" />
+      <Declaracao id="8272" />
+      <Declaracao id="8273" />
+      <Declaracao id="8274" />
+      <Declaracao id="8277" />
+      <Declaracao id="8278" />
+      <Declaracao id="8279" />
+      <Imovel>
+        <AreaEstabelecimento>126</AreaEstabelecimento>
+        <NomeProprietario>RENATO BRINGEL SANTOS</NomeProprietario>
+        <EmailProprietario>gustavo@imeve.com.br</EmailProprietario>
+        <TelefoneProprietario>1632037925</TelefoneProprietario>
+        <NomeResponsavelUso>MARCELA HENRIQUE NOGUEIRA COSTA</NomeResponsavelUso>
+        <TelefoneResponsavelUso>1632037925</TelefoneResponsavelUso>
+        <AreaTotal>363</AreaTotal>
+        <Pavimentos>1</Pavimentos>
+        <Contiguo>0</Contiguo>
+        <OutrosUsos>0</OutrosUsos>
+      </Imovel>
+    </Licenciamento>
+    <Licenciamento id="8805187">
+      <Solicitacao id="1776353">1776353201910</Solicitacao>
+      <Orgao id="1" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>1776353201910</Numero>
+      <ProtocoloAtendimento>2936273</ProtocoloAtendimento>
+      <DataProtocolo>2019-03-05T00:00:00</DataProtocolo>
+      <Declaracao id="8009710" />
+    </Licenciamento>
+    <Licenciamento id="8805188">
+      <Solicitacao id="1776353">1776353201910</Solicitacao>
+      <Orgao id="2" />
+      <Status id="5" />
+      <Risco id="0" />
+      <ProtocoloAtendimento>544502</ProtocoloAtendimento>
+      <DataProtocolo>2019-03-05T00:00:00</DataProtocolo>
+      <Declaracao id="8009713" />
+      <Declaracao id="8009715" />
+      <Declaracao id="8009714" />
+    </Licenciamento>
+    <Licenciamento id="8805189">
+      <Solicitacao id="1776353">1776353201910</Solicitacao>
+      <Orgao id="287" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>1776353201910</Numero>
+      <DataEmissao>2019-03-05T00:00:00</DataEmissao>
+      <DataVencimento>2020-03-05T00:00:00</DataVencimento>
+    </Licenciamento>
+    <Licenciamento id="8805190">
+      <Solicitacao id="1776353">1776353201910</Solicitacao>
+      <Orgao id="654" />
+      <Status id="5" />
+      <Risco id="0" />
+      <ProtocoloAtendimento>1551785649946</ProtocoloAtendimento>
+      <DataProtocolo>2019-03-05T00:00:00</DataProtocolo>
+      <Declaracao id="8009712" />
+    </Licenciamento>
+  </Empresa>
+  <Empresa id="159650">
+    <!--Dados gerais da empresa (recebidos da RFB)-->
+    <CNPJ>07724892000112</CNPJ>
+    <NomeEmpresarial>MARCELA SAMPAIO PEREIRA COSTA</NomeEmpresarial>
+    <SituacaoCadastral>02</SituacaoCadastral>
+    <DataSituacaoCadastral>2005-11-29</DataSituacaoCadastral>
+    <NaturezaJuridica>2135</NaturezaJuridica>
+    <DataAbertura>2005-11-29</DataAbertura>
+    <Porte>01</Porte>
+    <!--Dados gerais da empresa (coletados do usuário)-->
+    <NumeroRegistro>35131422358</NumeroRegistro>
+    <TipoRegistro>1</TipoRegistro>
+    <TipoMEI>0</TipoMEI>
+    <!--Dados do responsável pela empresa (conforme RFB)-->
+    <CPFResponsavel>19962173809</CPFResponsavel>
+    <NomeResponsavel>MARCELA SAMPAIO PEREIRA COSTA</NomeResponsavel>
+    <DDD1>16</DDD1>
+    <Telefone1>32037925</Telefone1>
+    <Email>GUSTAVO@IMEVE.COM.BR</Email>
+    <!--Endereço do estabelecimento-->
+    <Endereco>
+      <SetorQuadraLote>03270</SetorQuadraLote>
+      <TipoLogradouro>Rua</TipoLogradouro>
+      <Logradouro>Professor Antônio Ruete</Logradouro>
+      <NumeroLogradouro>456</NumeroLogradouro>
+      <Bairro>Nova Jaboticabal</Bairro>
+      <CEP>14887032</CEP>
+      <UF>SP</UF>
+      <Municipio Concla="24303" rfb="279">Jaboticabal</Municipio>
+    </Endereco>
+    <!--Atividades cadastradas e exercidas pela empresa (CNAE e auxiliares)-->
+    <Atividades>
+      <CNAE codigo="4781400" principal="1" exercida="1" />
+      <CNAE codigo="4755501" principal="0" exercida="1" />
+      <CNAE codigo="4781400" principal="1" exercida="1" />
+      <CNAE codigo="4755501" principal="0" exercida="1" />
+    </Atividades>
+    <!--QSA da empresa-->
+    <Sociedade />
+    <!--Dados do contador-->
+    <ClassificacaoCRCContadorPJ>0</ClassificacaoCRCContadorPJ>
+    <NumeroCRCContadorPJ>000000</NumeroCRCContadorPJ>
+    <CNPJContador>00000000000000</CNPJContador>
+    <TipoCRCContadorPF>O</TipoCRCContadorPF>
+    <ClassificacaoCRCContadorPF>1</ClassificacaoCRCContadorPF>
+    <NumeroCRCContadorPF>176568</NumeroCRCContadorPF>
+    <UFCRCContadorPF>SP</UFCRCContadorPF>
+    <CPFContador>25304040899</CPFContador>
+    <!--Viabilidade-->
+    <Viabilidade id="8805191">
+      <Solicitacao id="1776353">1776353201910</Solicitacao>
+      <Status id="12" />
+    </Viabilidade>
+    <Viabilidade id="8805191">
+      <Solicitacao id="1776353">1776353201910</Solicitacao>
+      <Status id="12" />
+    </Viabilidade>
+    <!--Licenciamentos (um bloco abaixo para cada órgão)-->
+    <Licenciamento id="3032242">
+      <Solicitacao id="702110">702110201622</Solicitacao>
+      <Orgao id="3" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>702110201622</Numero>
+      <DataEmissao>2016-10-03T00:00:00</DataEmissao>
+      <DataVencimento>2019-10-03T00:00:00</DataVencimento>
+      <Pergunta id="5448" resposta="0" />
+      <Pergunta id="5449" resposta="0" />
+      <Pergunta id="5450" resposta="0" />
+      <Pergunta id="5452" resposta="0" />
+      <Pergunta id="5453" resposta="0" />
+      <Pergunta id="5454" resposta="0" />
+      <Declaracao id="8268" />
+      <Declaracao id="8269" />
+      <Declaracao id="8270" />
+      <Declaracao id="8272" />
+      <Declaracao id="8273" />
+      <Declaracao id="8274" />
+      <Declaracao id="8277" />
+      <Declaracao id="8278" />
+      <Declaracao id="8279" />
+      <Imovel>
+        <AreaEstabelecimento>126</AreaEstabelecimento>
+        <NomeProprietario>RENATO BRINGEL SANTOS</NomeProprietario>
+        <EmailProprietario>gustavo@imeve.com.br</EmailProprietario>
+        <TelefoneProprietario>1632037925</TelefoneProprietario>
+        <NomeResponsavelUso>MARCELA HENRIQUE NOGUEIRA COSTA</NomeResponsavelUso>
+        <TelefoneResponsavelUso>1632037925</TelefoneResponsavelUso>
+        <AreaTotal>363</AreaTotal>
+        <Pavimentos>1</Pavimentos>
+        <Contiguo>0</Contiguo>
+        <OutrosUsos>0</OutrosUsos>
+      </Imovel>
+    </Licenciamento>
+    <Licenciamento id="8805187">
+      <Solicitacao id="1776353">1776353201910</Solicitacao>
+      <Orgao id="1" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>1776353201910</Numero>
+      <ProtocoloAtendimento>2936273</ProtocoloAtendimento>
+      <DataProtocolo>2019-03-05T00:00:00</DataProtocolo>
+      <Declaracao id="8009710" />
+    </Licenciamento>
+    <Licenciamento id="8805188">
+      <Solicitacao id="1776353">1776353201910</Solicitacao>
+      <Orgao id="2" />
+      <Status id="5" />
+      <Risco id="0" />
+      <ProtocoloAtendimento>544502</ProtocoloAtendimento>
+      <DataProtocolo>2019-03-05T00:00:00</DataProtocolo>
+      <Declaracao id="8009713" />
+      <Declaracao id="8009715" />
+      <Declaracao id="8009714" />
+    </Licenciamento>
+    <Licenciamento id="8805189">
+      <Solicitacao id="1776353">1776353201910</Solicitacao>
+      <Orgao id="287" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>1776353201910</Numero>
+      <DataEmissao>2019-03-05T00:00:00</DataEmissao>
+      <DataVencimento>2020-03-05T00:00:00</DataVencimento>
+    </Licenciamento>
+    <Licenciamento id="8805190">
+      <Solicitacao id="1776353">1776353201910</Solicitacao>
+      <Orgao id="654" />
+      <Status id="5" />
+      <Risco id="0" />
+      <ProtocoloAtendimento>1551785649946</ProtocoloAtendimento>
+      <DataProtocolo>2019-03-05T00:00:00</DataProtocolo>
+      <Declaracao id="8009712" />
+    </Licenciamento>
+  </Empresa>
+  <Empresa id="166108">
+    <!--Dados gerais da empresa (recebidos da RFB)-->
+    <CNPJ>21229892000177</CNPJ>
+    <NomeEmpresarial>DROGARIA SARAH DE JABOTICABAL LTDA</NomeEmpresarial>
+    <SituacaoCadastral>02</SituacaoCadastral>
+    <DataSituacaoCadastral>2014-10-15</DataSituacaoCadastral>
+    <NaturezaJuridica>2062</NaturezaJuridica>
+    <DataAbertura>2014-10-15</DataAbertura>
+    <Porte>01</Porte>
+    <!--Dados gerais da empresa (coletados do usuário)-->
+    <NumeroRegistro>35228685744</NumeroRegistro>
+    <TipoRegistro>1</TipoRegistro>
+    <TipoMEI>0</TipoMEI>
+    <!--Dados do responsável pela empresa (conforme RFB)-->
+    <CPFResponsavel>17868717858</CPFResponsavel>
+    <NomeResponsavel>MARLENE FRAGA BALESTRIEIRO</NomeResponsavel>
+    <DDD1>16</DDD1>
+    <Telefone1>32046830</Telefone1>
+    <Email>DROGARIASARAH@GMAIL.COM</Email>
+    <!--Endereço do estabelecimento-->
+    <Endereco>
+      <SetorQuadraLote>13182</SetorQuadraLote>
+      <TipoLogradouro>Rua</TipoLogradouro>
+      <Logradouro>Chico Mendes</Logradouro>
+      <NumeroLogradouro>256</NumeroLogradouro>
+      <Bairro>Conjunto Habitacional Hugo Lacorte Vitalle III</Bairro>
+      <CEP>14875464</CEP>
+      <UF>SP</UF>
+      <Municipio Concla="24303" rfb="279">Jaboticabal</Municipio>
+    </Endereco>
+    <!--Atividades cadastradas e exercidas pela empresa (CNAE e auxiliares)-->
+    <Atividades>
+      <CNAE codigo="4771701" principal="1" exercida="1" />
+      <CNAE codigo="4772500" principal="0" exercida="1" />
+      <CNAE codigo="4771701" principal="1" exercida="1" />
+      <CNAE codigo="4772500" principal="0" exercida="1" />
+      <Auxiliar id="5" />
+      <Auxiliar id="5" />
+    </Atividades>
+    <!--QSA da empresa-->
+    <Sociedade>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MARLENE FRAGA BALESTRIEIRO</Nome>
+        <Numero>00017868717858</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MARLENE FRAGA BALESTRIEIRO</Nome>
+        <Numero>00017868717858</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MARLENE FRAGA BALESTRIEIRO</Nome>
+        <Numero>00017868717858</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MARLENE FRAGA BALESTRIEIRO</Nome>
+        <Numero>00017868717858</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>DAIANE FRAGA BALESTRIEIRO</Nome>
+        <Numero>00036884009845</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>DAIANE FRAGA BALESTRIEIRO</Nome>
+        <Numero>00036884009845</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>DAIANE FRAGA BALESTRIEIRO</Nome>
+        <Numero>00036884009845</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>DAIANE FRAGA BALESTRIEIRO</Nome>
+        <Numero>00036884009845</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+    </Sociedade>
+    <!--Dados do contador-->
+    <ClassificacaoCRCContadorPJ>0</ClassificacaoCRCContadorPJ>
+    <NumeroCRCContadorPJ>000000</NumeroCRCContadorPJ>
+    <CNPJContador>00000000000000</CNPJContador>
+    <TipoCRCContadorPF>O</TipoCRCContadorPF>
+    <ClassificacaoCRCContadorPF>1</ClassificacaoCRCContadorPF>
+    <NumeroCRCContadorPF>095028</NumeroCRCContadorPF>
+    <UFCRCContadorPF>SP</UFCRCContadorPF>
+    <CPFContador>86217160897</CPFContador>
+    <!--Viabilidade-->
+    <Viabilidade id="7364345">
+      <Solicitacao id="1578085">1578085201816</Solicitacao>
+      <Status id="12" />
+      <DataStatus>2018-10-18T00:00:00</DataStatus>
+      <RestricaoOperacao id="19006" />
+      <RestricaoOperacao id="19006" />
+      <RestricaoOperacao id="19006" />
+      <RestricaoOperacao id="19006" />
+      <RestricaoOperacao id="19006" />
+      <RestricaoOperacao id="19006" />
+    </Viabilidade>
+    <!--Licenciamentos (um bloco abaixo para cada órgão)-->
+    <Licenciamento id="6765437">
+      <Solicitacao id="1517526">1517526201886</Solicitacao>
+      <Orgao id="3" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>CLCB 0000390509</Numero>
+      <DataEmissao>2018-08-31T00:00:00</DataEmissao>
+      <DataVencimento>2021-08-31T00:00:00</DataVencimento>
+      <ProtocoloAtendimento>220043-9/2018</ProtocoloAtendimento>
+      <DataProtocolo>2018-08-30T00:00:00</DataProtocolo>
+      <Imovel>
+        <AreaEstabelecimento>188</AreaEstabelecimento>
+        <NomeProprietario>JOAO CARLOS GESSY</NomeProprietario>
+        <EmailProprietario>ND</EmailProprietario>
+        <TelefoneProprietario>ND</TelefoneProprietario>
+        <NomeResponsavelUso>DROGARIA SARAH DE JABOTICABAL LTDA</NomeResponsavelUso>
+        <TelefoneResponsavelUso>ND</TelefoneResponsavelUso>
+        <AreaTotal>222</AreaTotal>
+        <Pavimentos>0</Pavimentos>
+        <Contiguo>0</Contiguo>
+        <OutrosUsos>0</OutrosUsos>
+        <NumeroAVCB>CLCB 000039050</NumeroAVCB>
+        <ValidadeAVCB>2018-08-31</ValidadeAVCB>
+      </Imovel>
+    </Licenciamento>
+    <Licenciamento id="7364342">
+      <Solicitacao id="1578085">1578085201816</Solicitacao>
+      <Orgao id="1" />
+      <Status id="6" />
+      <Risco id="1" />
+      <Numero>352430311-477-000113-1-2</Numero>
+      <DataEmissao>2018-06-25T00:00:00</DataEmissao>
+      <DataVencimento>2019-03-05T00:00:00</DataVencimento>
+      <ProtocoloAtendimento>2249491</ProtocoloAtendimento>
+      <DataProtocolo>2018-10-18T00:00:00</DataProtocolo>
+      <Declaracao id="5406717" />
+    </Licenciamento>
+    <Licenciamento id="7364343">
+      <Solicitacao id="1578085">1578085201816</Solicitacao>
+      <Orgao id="2" />
+      <Status id="5" />
+      <Risco id="1" />
+      <ProtocoloAtendimento>346526</ProtocoloAtendimento>
+      <DataProtocolo>2018-10-18T00:00:00</DataProtocolo>
+      <Declaracao id="5406721" />
+      <Declaracao id="5406719" />
+      <Declaracao id="5406720" />
+    </Licenciamento>
+    <Licenciamento id="6765439">
+      <Solicitacao id="1517526">1517526201886</Solicitacao>
+      <Orgao id="287" />
+      <Status id="5" />
+      <Risco id="1" />
+      <Numero>1517526201886</Numero>
+      <DataEmissao>2018-09-20T00:00:00</DataEmissao>
+      <DataVencimento>2019-09-20T00:00:00</DataVencimento>
+      <ProtocoloAtendimento>19.205-8/2016</ProtocoloAtendimento>
+      <DataProtocolo>2018-09-20T00:00:00</DataProtocolo>
+    </Licenciamento>
+    <Licenciamento id="7364344">
+      <Solicitacao id="1578085">1578085201816</Solicitacao>
+      <Orgao id="654" />
+      <Status id="5" />
+      <Risco id="1" />
+      <ProtocoloAtendimento>1539886972978</ProtocoloAtendimento>
+      <DataProtocolo>2018-10-18T00:00:00</DataProtocolo>
+      <Declaracao id="5406718" />
+    </Licenciamento>
+  </Empresa>
+  <Empresa id="166108">
+    <!--Dados gerais da empresa (recebidos da RFB)-->
+    <CNPJ>21229892000177</CNPJ>
+    <NomeEmpresarial>DROGARIA SARAH DE JABOTICABAL LTDA</NomeEmpresarial>
+    <SituacaoCadastral>02</SituacaoCadastral>
+    <DataSituacaoCadastral>2014-10-15</DataSituacaoCadastral>
+    <NaturezaJuridica>2062</NaturezaJuridica>
+    <DataAbertura>2014-10-15</DataAbertura>
+    <Porte>01</Porte>
+    <!--Dados gerais da empresa (coletados do usuário)-->
+    <NumeroRegistro>35228685744</NumeroRegistro>
+    <TipoRegistro>1</TipoRegistro>
+    <TipoMEI>0</TipoMEI>
+    <!--Dados do responsável pela empresa (conforme RFB)-->
+    <CPFResponsavel>17868717858</CPFResponsavel>
+    <NomeResponsavel>MARLENE FRAGA BALESTRIEIRO</NomeResponsavel>
+    <DDD1>16</DDD1>
+    <Telefone1>32046830</Telefone1>
+    <Email>DROGARIASARAH@GMAIL.COM</Email>
+    <!--Endereço do estabelecimento-->
+    <Endereco>
+      <SetorQuadraLote>13182</SetorQuadraLote>
+      <TipoLogradouro>Rua</TipoLogradouro>
+      <Logradouro>Chico Mendes</Logradouro>
+      <NumeroLogradouro>256</NumeroLogradouro>
+      <Bairro>Conjunto Habitacional Hugo Lacorte Vitalle III</Bairro>
+      <CEP>14875464</CEP>
+      <UF>SP</UF>
+      <Municipio Concla="24303" rfb="279">Jaboticabal</Municipio>
+    </Endereco>
+    <!--Atividades cadastradas e exercidas pela empresa (CNAE e auxiliares)-->
+    <Atividades>
+      <CNAE codigo="4771701" principal="1" exercida="1" />
+      <CNAE codigo="4772500" principal="0" exercida="1" />
+      <CNAE codigo="4771701" principal="1" exercida="1" />
+      <CNAE codigo="4772500" principal="0" exercida="1" />
+      <Auxiliar id="5" />
+      <Auxiliar id="5" />
+    </Atividades>
+    <!--QSA da empresa-->
+    <Sociedade>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MARLENE FRAGA BALESTRIEIRO</Nome>
+        <Numero>00017868717858</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MARLENE FRAGA BALESTRIEIRO</Nome>
+        <Numero>00017868717858</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MARLENE FRAGA BALESTRIEIRO</Nome>
+        <Numero>00017868717858</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>MARLENE FRAGA BALESTRIEIRO</Nome>
+        <Numero>00017868717858</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>DAIANE FRAGA BALESTRIEIRO</Nome>
+        <Numero>00036884009845</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>DAIANE FRAGA BALESTRIEIRO</Nome>
+        <Numero>00036884009845</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>DAIANE FRAGA BALESTRIEIRO</Nome>
+        <Numero>00036884009845</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+      <Socio>
+        <Tipo>2</Tipo>
+        <Nome>DAIANE FRAGA BALESTRIEIRO</Nome>
+        <Numero>00036884009845</Numero>
+        <CodigoPaisOrigem>000</CodigoPaisOrigem>
+      </Socio>
+    </Sociedade>
+    <!--Dados do contador-->
+    <ClassificacaoCRCContadorPJ>0</ClassificacaoCRCContadorPJ>
+    <NumeroCRCContadorPJ>000000</NumeroCRCContadorPJ>
+    <CNPJContador>00000000000000</CNPJContador>
+    <TipoCRCContadorPF>O</TipoCRCContadorPF>
+    <ClassificacaoCRCContadorPF>1</ClassificacaoCRCContadorPF>
+    <NumeroCRCContadorPF>095028</NumeroCRCContadorPF>
+    <UFCRCContadorPF>SP</UFCRCContadorPF>
+    <CPFContador>86217160897</CPFContador>
+    <!--Viabilidade-->
+    <Viabilidade id="7364345">
+      <Solicitacao id="1578085">1578085201816</Solicitacao>
+      <Status id="12" />
+      <DataStatus>2018-10-18T00:00:00</DataStatus>
+      <RestricaoOperacao id="19006" />
+      <RestricaoOperacao id="19006" />
+      <RestricaoOperacao id="19006" />
+      <RestricaoOperacao id="19006" />
+      <RestricaoOperacao id="19006" />
+      <RestricaoOperacao id="19006" />
+    </Viabilidade>
+    <!--Licenciamentos (um bloco abaixo para cada órgão)-->
+    <Licenciamento id="6765437">
+      <Solicitacao id="1517526">1517526201886</Solicitacao>
+      <Orgao id="3" />
+      <Status id="5" />
+      <Risco id="0" />
+      <Numero>CLCB 0000390509</Numero>
+      <DataEmissao>2018-08-31T00:00:00</DataEmissao>
+      <DataVencimento>2021-08-31T00:00:00</DataVencimento>
+      <ProtocoloAtendimento>220043-9/2018</ProtocoloAtendimento>
+      <DataProtocolo>2018-08-30T00:00:00</DataProtocolo>
+      <Imovel>
+        <AreaEstabelecimento>188</AreaEstabelecimento>
+        <NomeProprietario>JOAO CARLOS GESSY</NomeProprietario>
+        <EmailProprietario>ND</EmailProprietario>
+        <TelefoneProprietario>ND</TelefoneProprietario>
+        <NomeResponsavelUso>DROGARIA SARAH DE JABOTICABAL LTDA</NomeResponsavelUso>
+        <TelefoneResponsavelUso>ND</TelefoneResponsavelUso>
+        <AreaTotal>222</AreaTotal>
+        <Pavimentos>0</Pavimentos>
+        <Contiguo>0</Contiguo>
+        <OutrosUsos>0</OutrosUsos>
+        <NumeroAVCB>CLCB 000039050</NumeroAVCB>
+        <ValidadeAVCB>2018-08-31</ValidadeAVCB>
+      </Imovel>
+    </Licenciamento>
+    <Licenciamento id="7364342">
+      <Solicitacao id="1578085">1578085201816</Solicitacao>
+      <Orgao id="1" />
+      <Status id="6" />
+      <Risco id="1" />
+      <Numero>352430311-477-000113-1-2</Numero>
+      <DataEmissao>2018-06-25T00:00:00</DataEmissao>
+      <DataVencimento>2019-03-05T00:00:00</DataVencimento>
+      <ProtocoloAtendimento>2249491</ProtocoloAtendimento>
+      <DataProtocolo>2018-10-18T00:00:00</DataProtocolo>
+      <Declaracao id="5406717" />
+    </Licenciamento>
+    <Licenciamento id="7364343">
+      <Solicitacao id="1578085">1578085201816</Solicitacao>
+      <Orgao id="2" />
+      <Status id="5" />
+      <Risco id="1" />
+      <ProtocoloAtendimento>346526</ProtocoloAtendimento>
+      <DataProtocolo>2018-10-18T00:00:00</DataProtocolo>
+      <Declaracao id="5406721" />
+      <Declaracao id="5406719" />
+      <Declaracao id="5406720" />
+    </Licenciamento>
+    <Licenciamento id="6765439">
+      <Solicitacao id="1517526">1517526201886</Solicitacao>
+      <Orgao id="287" />
+      <Status id="5" />
+      <Risco id="1" />
+      <Numero>1517526201886</Numero>
+      <DataEmissao>2018-09-20T00:00:00</DataEmissao>
+      <DataVencimento>2019-09-20T00:00:00</DataVencimento>
+      <ProtocoloAtendimento>19.205-8/2016</ProtocoloAtendimento>
+      <DataProtocolo>2018-09-20T00:00:00</DataProtocolo>
+    </Licenciamento>
+    <Licenciamento id="7364344">
+      <Solicitacao id="1578085">1578085201816</Solicitacao>
+      <Orgao id="654" />
+      <Status id="5" />
+      <Risco id="1" />
+      <ProtocoloAtendimento>1539886972978</ProtocoloAtendimento>
+      <DataProtocolo>2018-10-18T00:00:00</DataProtocolo>
+      <Declaracao id="5406718" />
+    </Licenciamento>
+  </Empresa>
+</Empresas>

@@ -1,0 +1,32 @@
+﻿<Comprovante_Inscricao xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="Comprovante_Inscricao.xsd">
+  <Numero>35</Numero>
+  <Ano>2000</Ano>
+  <Data_Emissao>1980-03-23T10:20:15</Data_Emissao>
+  <Controle>'12121'</Controle>
+  <Endereco>Rua de Teste, 345 - 2ª Andar</Endereco>
+  <Codigo>123456</Codigo>
+  <Razao_Social>Empresa de Teste</Razao_Social>
+  <Bairro>Nova Cidade</Bairro>
+  <Cidade>Jaboticabal</Cidade>
+  <UF>SP</UF>
+  <Cpf_Cnpj>50.387.655/0002-23</Cpf_Cnpj>
+  <Atividade>Mecânico</Atividade>
+  <Data_Abertura>1980-03-23T10:20:15</Data_Abertura>
+  <Inscricao_Estadual>12121</Inscricao_Estadual>
+  <Nome_Fantasia>sss</Nome_Fantasia>
+  <Cep>15990450</Cep>
+  <Atividade2>jdksldj</Atividade2>
+  <Complemento>sala 1</Complemento>
+  <Situacao>Ativa</Situacao>
+  <Email>email@gti.com</Email>
+  <Telefone>(16) 3333-2222</Telefone>
+  <Taxa_Licenca>Sim</Taxa_Licenca>
+  <Vigilancia_Sanitaria>Não</Vigilancia_Sanitaria>
+  <Mei>Sim</Mei>
+  <Area>1234,56 m²</Area>
+  <Rg>9898</Rg>
+  <Processo_Abertura>53/2010</Processo_Abertura>
+  <Processo_Encerramento>53/2010</Processo_Encerramento>
+  <Data_Encerramento>1980-03-23T10:20:15</Data_Encerramento>
+</Comprovante_Inscricao>

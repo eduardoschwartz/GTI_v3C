@@ -1,0 +1,233 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+    <ReferencePath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\</ReferencePath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Reports\CertidaoInscricaoExtratoAtiva.rpt" />
+    <None Remove="Reports\CertidaoInscricaoExtratoEncerrada.rpt" />
+    <None Remove="Reports\CertidaoInscricaoExtratoValida.rpt" />
+    <None Remove="Reports\Certidao_Debito_Empresa.rpt" />
+    <None Remove="Reports\Certidao_Debito_Imovel.rpt" />
+    <None Remove="Reports\Certidao_Endereco.rpt" />
+    <None Remove="Reports\Certidao_Endereco_Valida.rpt" />
+    <None Remove="Reports\Certidao_Imunidade.rpt" />
+    <None Remove="Reports\Certidao_Isencao_65metros.rpt" />
+    <None Remove="Reports\Certidao_Isencao_Processo.rpt" />
+    <None Remove="Reports\Certidao_Isencao_Valida.rpt" />
+    <None Remove="Reports\Certidao_Valor_Venal.rpt" />
+    <None Remove="Reports\Certidao_Valor_Venal_Valida.rpt" />
+    <None Remove="Reports\Comprovante_Inscricao.rpt" />
+    <None Remove="Reports\Comprovante_Inscricao_Valida.rpt" />
+    <None Remove="Reports\Empresa_Detalhe.rpt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\Certidao_Debito_Empresa.rpt">
+      <LastGenOutput>Certidao_Debito_Empresa.cs</LastGenOutput>
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Certidao_Debito_Imovel.rpt">
+      <LastGenOutput>Certidao_Debito_Imovel.cs</LastGenOutput>
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CertidaoInscricaoExtratoEncerrada.rpt">
+      <LastGenOutput>CertidaoInscricaoExtratoEncerrada.cs</LastGenOutput>
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CertidaoInscricaoExtratoAtiva.rpt">
+      <LastGenOutput>CertidaoInscricaoExtratoEncerrada.cs</LastGenOutput>
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CertidaoInscricaoExtratoValida.rpt">
+      <LastGenOutput>CertidaoInscricaoExtratoValida.cs</LastGenOutput>
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Certidao_Imunidade.rpt">
+      <LastGenOutput>Certidao_Imunidade.cs</LastGenOutput>
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Certidao_Isencao_Valida.rpt">
+      <LastGenOutput>Certidao_Isencao_Valida.cs</LastGenOutput>
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Certidao_Isencao_65metros.rpt">
+      <LastGenOutput>Certidao_Isencao_65metros.cs</LastGenOutput>
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Certidao_Isencao_Processo.rpt">
+      <LastGenOutput>Certidao_Isencao_Processo.cs</LastGenOutput>
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Certidao_Valor_Venal_Valida.rpt">
+      <LastGenOutput>Certidao_Valor_Venal_Valida.cs</LastGenOutput>
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Certidao_Valor_Venal.rpt">
+      <LastGenOutput>Certidao_Valor_Venal.cs</LastGenOutput>
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Certidao_Endereco_Valida.rpt">
+      <LastGenOutput>Certidao_Endereco_Valida.cs</LastGenOutput>
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Certidao_Endereco.rpt">
+      <LastGenOutput>Certidao_Endereco.cs</LastGenOutput>
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Comprovante_Inscricao.rpt">
+      <LastGenOutput>Comprovante_Inscricao.cs</LastGenOutput>
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Comprovante_Inscricao_Valida.rpt">
+      <LastGenOutput>Comprovante_Inscricao_Valida.cs</LastGenOutput>
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Empresa_Detalhe.rpt">
+      <LastGenOutput>Empresa_Detalhe.cs</LastGenOutput>
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Buffering" Version="0.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Formatters.Xml" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+    <PackageReference Include="System.Drawing.Common" Version="4.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine">
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource">
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared">
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{c0c07587-41a7-46c8-8fbd-3f9c8ebe2ddc}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Reports\Certidao_Debito_Empresa.cs">
+      <SubType>Component</SubType>
+      <DependentUpon>Certidao_Debito_Empresa.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Reports\Certidao_Debito_Imovel.cs">
+      <SubType>Component</SubType>
+      <DependentUpon>Certidao_Debito_Imovel.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Reports\CertidaoInscricaoExtratoAtiva - Copy.cs">
+      <SubType>Component</SubType>
+      <DependentUpon>CertidaoInscricaoExtratoAtiva.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Reports\CertidaoInscricaoExtratoEncerrada.cs">
+      <SubType>Component</SubType>
+      <DependentUpon>CertidaoInscricaoExtratoEncerrada.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Reports\CertidaoInscricaoExtratoValida.cs">
+      <SubType>Component</SubType>
+      <DependentUpon>CertidaoInscricaoExtratoValida.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Reports\Certidao_Imunidade.cs">
+      <SubType>Component</SubType>
+      <DependentUpon>Certidao_Imunidade.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Reports\Certidao_Isencao_Valida.cs">
+      <SubType>Component</SubType>
+      <DependentUpon>Certidao_Isencao_Valida.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Reports\Certidao_Isencao_65metros.cs">
+      <SubType>Component</SubType>
+      <DependentUpon>Certidao_Isencao_65metros.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Reports\Certidao_Isencao_Processo.cs">
+      <SubType>Component</SubType>
+      <DependentUpon>Certidao_Isencao_Processo.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Reports\Certidao_Valor_Venal_Valida.cs">
+      <SubType>Component</SubType>
+      <DependentUpon>Certidao_Valor_Venal_Valida.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Reports\Certidao_Valor_Venal.cs">
+      <SubType>Component</SubType>
+      <DependentUpon>Certidao_Valor_Venal.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Reports\Certidao_Endereco_Valida.cs">
+      <SubType>Component</SubType>
+      <DependentUpon>Certidao_Endereco_Valida.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Reports\Certidao_Endereco.cs">
+      <SubType>Component</SubType>
+      <DependentUpon>Certidao_Endereco.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Reports\Comprovante_Inscricao.cs">
+      <SubType>Component</SubType>
+      <DependentUpon>Comprovante_Inscricao.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Reports\Comprovante_Inscricao_Valida.cs">
+      <SubType>Component</SubType>
+      <DependentUpon>Comprovante_Inscricao_Valida.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Reports\Empresa_Detalhe.cs">
+      <SubType>Component</SubType>
+      <DependentUpon>Empresa_Detalhe.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+
+</Project>

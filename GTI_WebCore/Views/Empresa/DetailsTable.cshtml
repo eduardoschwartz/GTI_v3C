@@ -1,0 +1,173 @@
+﻿@model EmpresaDetailsViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Detalhe de uma empresa";
+}
+
+
+
+<label style="color:brown;font-size:16px;font-style:italic">Detalhes de uma empresa</label>
+
+
+<br />
+
+
+<form asp-controller="Empresa" asp-action="" class="mt-3" style="margin-left:18px">
+    <table class="table table-sm" style="width:700px; border:double; border-color:#3a8dcc; ">
+        <thead>
+            <tr>
+                <th>
+                    Descrição
+                </th>
+                <th>
+                    Valor
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="width:550px">
+                <td style="width:25%">
+                    Inscrição Municipal
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.EmpresaStruct.Codigo)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Razão Social
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.EmpresaStruct.Razao_social)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    CPF/CNPJ
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.EmpresaStruct.Cpf_cnpj)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Inscrição Estadual
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.EmpresaStruct.Inscricao_estadual)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Endereço
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.EmpresaStruct.Endereco_nome),&nbsp;@Html.DisplayFor(modelItem => Model.EmpresaStruct.Numero)&nbsp;@Html.DisplayFor(modelItem => Model.EmpresaStruct.Complemento)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Bairro/Cidade/UF/Cep
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.EmpresaStruct.Bairro_nome)-@Html.DisplayFor(modelItem => Model.EmpresaStruct.Cidade_nome)-@Html.DisplayFor(modelItem => Model.EmpresaStruct.UF)-@Html.DisplayFor(modelItem => Model.EmpresaStruct.Cep)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Data de Abertura
+                </td>
+                <td>
+                    @Convert.ToDateTime(Model.EmpresaStruct.Data_abertura).ToString("dd/MM/yyyy")
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Data de Encerramento
+                </td>
+                <td>
+                    @if (Model.EmpresaStruct.Data_Encerramento.HasValue) {
+                        @Convert.ToDateTime(Model.EmpresaStruct.Data_Encerramento).ToString("dd/MM/yyyy");
+                    }
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Situação
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.EmpresaStruct.Situacao)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.EmpresaStruct.Email_contato)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Telefone
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.EmpresaStruct.Fone_contato)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Regime ISS
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.Regime_Iss)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Optante do Mei
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.Mei)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Taxa de Licença
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.TaxaLicenca)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Vigilância Sanitária
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.Vigilancia_Sanitaria)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Cnae(s)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.Cnae)
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+    <div class="col-sm-10">
+        &nbsp;&nbsp;<button type="button" class="green_button" onclick="location.href='@Url.Action("Empresa_Details_Report", "EmpresaDetails",new { Id=Model.EmpresaStruct.Codigo})'"> Imprimir</button>
+    </div>
+    <br />
+    @Html.ActionLink("Consultar outra empresa", "Details", "Empresa")<br />
+    @Html.ActionLink("Retornar ao menu principal", "Index", "Home")
+
+
+</form>
+
+
+

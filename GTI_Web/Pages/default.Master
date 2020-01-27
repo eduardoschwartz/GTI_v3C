@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="default.master.cs" Inherits="GTI_Web.Pages._default" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="../css/default.css" rel="stylesheet" />
+    <title></title>
+        
+    
+    <style type="text/css">
+        
+        .auto-style3 {
+            left: 0px;
+            top: 0px;
+            width: 434px;
+        }
+        
+     
+        
+       
+        
+     
+        
+        </style>
+        
+    
+</head>
+<body>
+
+
+    <div id="outer">
+
+        <form id="form1" runat="server" >
+            <div id="header">
+                <br />
+                <table style="margin-left: 10px;">
+                    <tr>
+                        <td>&nbsp;<img id="header2" src="../Images/brasaotitulo.png" class="auto-style3" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <asp:ContentPlaceHolder ID="MenuContentPlaceHolder" runat="server">
+
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="footer"   >
+                 <a href="gtiMenu.aspx">Retornar ao menu principal</a> 
+            </div>
+
+        
+        </form>
+       </div>
+</body>
+</html>

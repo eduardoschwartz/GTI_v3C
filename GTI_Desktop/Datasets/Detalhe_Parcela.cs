@@ -29,5 +29,6 @@ namespace GTI_Desktop.Datasets {
 		public decimal Valor_Atual { get; set; }
 		public decimal Valor_Pago { get; set; }
 		public decimal Valor_Dif { get; set; }
+		public string Banco { get; set; }
 	}
 }

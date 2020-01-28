@@ -29,5 +29,6 @@
   <Valor_Atual>3337730.2349058</Valor_Atual>
   <Valor_Pago>-2976989.7650942</Valor_Pago>
   <Valor_Dif>-4629649.7650942</Valor_Dif>
+  <Banco>string</Banco>
 </Detalhe_Parcela>
 

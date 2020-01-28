@@ -3,7 +3,6 @@ using GTI_Bll.Classes;
 using GTI_Desktop.Classes;
 using GTI_Desktop.Datasets;
 using GTI_Models.Models;
-using Microsoft.Reporting.WinForms;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -66,7 +65,8 @@ namespace GTI_Desktop.Forms {
                 Data_Pagamento=DataPagtoLabel.Text,
                 Data_Receita=DataReceitaLabel.Text,
                 Valor_Pago= Convert.ToDecimal(ValorPagoLabel.Text),
-                Valor_Dif= Convert.ToDecimal(ValorDifLabel.Text)
+                Valor_Dif= Convert.ToDecimal(ValorDifLabel.Text),
+                Banco=BancoLabel.Text
             };
 
             certidao.Add(reg);
@@ -84,8 +84,8 @@ namespace GTI_Desktop.Forms {
                         Codtributo = 1,
                         Desctributo=Item.Text,
                         Principal= Convert.ToDecimal( Item.SubItems[1].Text),
-                        Juros= Convert.ToDecimal(Item.SubItems[2].Text),
-                        Multa = Convert.ToDecimal(Item.SubItems[3].Text),
+                        Juros= Convert.ToDecimal(Item.SubItems[3].Text),
+                        Multa = Convert.ToDecimal(Item.SubItems[2].Text),
                         Correcao = Convert.ToDecimal(Item.SubItems[4].Text),
                         Total = Convert.ToDecimal(Item.SubItems[5].Text)
                     };
@@ -150,11 +150,11 @@ namespace GTI_Desktop.Forms {
                 ForeColor = Color.Brown,
                 UseItemStyleForSubItems = false
             };
-            lvItem2.SubItems.Add(_valorTributo.ToString("#0.00"), Color.Brown, _backColor, _font);
-            lvItem2.SubItems.Add(_valorMulta.ToString("#0.00"), Color.Brown, _backColor, _font);
-            lvItem2.SubItems.Add(_valorJuros.ToString("#0.00"), Color.Brown, _backColor, _font);
-            lvItem2.SubItems.Add(_valorCorrecao.ToString("#0.00"), Color.Brown, _backColor, _font);
-            lvItem2.SubItems.Add(_valorTotal.ToString("#0.00"), Color.Brown, _backColor, _font);
+            lvItem2.SubItems.Add(Math.Round(_valorTributo, 2, mode: MidpointRounding.AwayFromZero).ToString("#0.00"), Color.Brown, _backColor, _font);
+            lvItem2.SubItems.Add(Math.Round(_valorMulta, 2, mode: MidpointRounding.AwayFromZero).ToString("#0.00"), Color.Brown, _backColor, _font);
+            lvItem2.SubItems.Add(Math.Round(_valorJuros, 2, mode: MidpointRounding.AwayFromZero).ToString("#0.00"), Color.Brown, _backColor, _font);
+            lvItem2.SubItems.Add(Math.Round(_valorCorrecao, 2, mode: MidpointRounding.AwayFromZero).ToString("#0.00"), Color.Brown, _backColor, _font);
+            lvItem2.SubItems.Add(Math.Round(_valorTotal, 2, mode: MidpointRounding.AwayFromZero).ToString("#0.00"), Color.Brown, _backColor, _font);
             TributoListView.Items.Add(lvItem2);
 
             SpExtrato reg = Lista[0];

@@ -1,22 +1,15 @@
 ﻿using CrystalDecisions.CrystalReports.Engine;
 using GTI_Bll.Classes;
 using GTI_Desktop.Classes;
-using GTI_Desktop.Datasets;
-using GTI_Desktop.Report;
-using GTI_Desktop.Properties;
-using GTI_Models;
 using GTI_Models.Models;
-//using GTI_v3C.Datasets;
-using Microsoft.Reporting.WinForms;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using static GTI_Desktop.Classes.GtiTypes;
-using System.IO;
-using System.Reflection;
 
 namespace GTI_Desktop.Forms {
     public partial class Processo : Form {

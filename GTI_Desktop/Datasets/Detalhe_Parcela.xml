@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<Detalhe_Parcela xsi:noNamespaceSchemaLocation="Detalhe_Parcela.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Codigo>3610</Codigo>
+  <Nome>string</Nome>
+  <Exercicio>-986</Exercicio>
+  <Lanc>1</Lanc>
+  <Lancamento>string</Lancamento>
+  <Seq>4129</Seq>
+  <Parc>-3063</Parc>
+  <Compl>1784</Compl>
+  <Status>string</Status>
+  <Isento>string</Isento>
+  <Desconto>string</Desconto>
+  <Livro>string</Livro>
+  <Data_Inscricao>string</Data_Inscricao>
+  <Pagina>string</Pagina>
+  <Certidao>string</Certidao>
+  <Data_Ajuiza>string</Data_Ajuiza>
+  <ProcessoCnj>string</ProcessoCnj>
+  <Protocolo>string</Protocolo>
+  <Data_Remessa>string</Data_Remessa>
+  <Data_Base>string</Data_Base>
+  <Data_Vencto>string</Data_Vencto>
+  <Data_VenctoCalc>string</Data_VenctoCalc>
+  <Data_Pagamento>string</Data_Pagamento>
+  <Data_Receita>string</Data_Receita>
+  <Valor_Lancado>161880.234905804</Valor_Lancado>
+  <Valor_Atual>3337730.2349058</Valor_Atual>
+  <Valor_Pago>-2976989.7650942</Valor_Pago>
+  <Valor_Dif>-4629649.7650942</Valor_Dif>
+</Detalhe_Parcela>
+

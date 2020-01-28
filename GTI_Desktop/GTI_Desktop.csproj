@@ -65,10 +65,10 @@
     <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
-    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
-    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
-    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -130,6 +130,12 @@
     <Compile Include="Classes\gtiTypes.cs" />
     <Compile Include="Classes\ListViewColumnSorter.cs" />
     <Compile Include="Classes\TAcesso.cs" />
+    <Compile Include="Datasets\Detalhe_Parcela.cs">
+      <DependentUpon>Detalhe_Parcela.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\Detalhe_Parcela_Tributo.cs">
+      <DependentUpon>Detalhe_Parcela_Tributo.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Datasets\dsCartaCobranca.cs">
       <DependentUpon>dsCartaCobranca.xsd</DependentUpon>
     </Compile>
@@ -159,8 +165,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dsProcessoRequerente.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Datasets\Processo_Documento.cs" />
-    <Compile Include="Datasets\Processo_Requerente.cs" />
+    <Compile Include="Datasets\Processo_Documento.cs">
+      <DependentUpon>Processo_Documento.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\Processo_Requerente.cs">
+      <DependentUpon>Processo_Requerente.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Editores\Data_Editor.cs" />
     <Compile Include="Editores\Tributo_Editor.cs" />
     <Compile Include="Forms\Atividade_ISS.cs">
@@ -626,6 +636,12 @@
       <DependentUpon>Comunicado_Doc.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Report\Detalhe_Parcela.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Detalhe_Parcela.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Report\Processo_Requerente.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -904,6 +920,10 @@
       <LastGenOutput>Comunicado_Doc.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Report\Detalhe_Parcela.rdlc" />
+    <EmbeddedResource Include="Report\Detalhe_Parcela.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Detalhe_Parcela.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report\Processo_Requerente.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Processo_Requerente.cs</LastGenOutput>
@@ -922,6 +942,12 @@
     <EmbeddedResource Include="User_Controls\ctlTributoEditor.resx">
       <DependentUpon>ctlTributoEditor.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Datasets\Detalhe_Parcela.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\Detalhe_Parcela_Tributo.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Datasets\dsCartaCobranca.xsc">
       <DependentUpon>dsCartaCobranca.xsd</DependentUpon>
     </None>
@@ -1228,6 +1254,8 @@
     <None Include="Resources\History1.png" />
     <None Include="Resources\History2.png" />
     <None Include="Resources\History21.png" />
+    <Content Include="Datasets\Detalhe_Parcela.xml" />
+    <Content Include="Datasets\Detalhe_Parcela_Tributo.xml" />
     <Content Include="Datasets\Processo_Documento.xml" />
     <Content Include="Datasets\Processo_Requerente.xml" />
     <Content Include="SqlServerTypes\readme.htm" />

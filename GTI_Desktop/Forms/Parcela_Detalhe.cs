@@ -1,4 +1,5 @@
-﻿using GTI_Bll.Classes;
+﻿using CrystalDecisions.CrystalReports.Engine;
+using GTI_Bll.Classes;
 using GTI_Desktop.Classes;
 using GTI_Desktop.Datasets;
 using GTI_Models.Models;
@@ -7,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -28,58 +30,86 @@ namespace GTI_Desktop.Forms {
         }
 
         private void BtPrint_Click(object sender, EventArgs e) {
-            gtiCore.Ocupado(this);
-            String sReportName = "Detalhe_Parcela";
-            dsDetalheParcela Ds = new dsDetalheParcela();
-            DataTable dTable = new dsDetalheParcela.DetalheParcelaDataTable();
 
+            string rptPath = System.IO.Path.Combine(Properties.Settings.Default.Path_Report, "Detalhe_Parcela.rpt");
+            if (!File.Exists(rptPath)) {
+                MessageBox.Show("Caminho " + rptPath + " não encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+           
+            List<Datasets.Detalhe_Parcela> certidao = new List<Datasets.Detalhe_Parcela>();
+            Datasets.Detalhe_Parcela reg = new Datasets.Detalhe_Parcela() {
+                Codigo= Lista_Extrato_Tributo[0].Codreduzido,
+                Nome=NomeLabel.Text,
+                Exercicio= Lista_Extrato_Tributo[0].Anoexercicio,
+                Lanc= Lista_Extrato_Tributo[0].Codlancamento,
+                Lancamento =LancamentoLabel.Text,
+                Seq= Lista_Extrato_Tributo[0].Seqlancamento,
+                Parc= Lista_Extrato_Tributo[0].Numparcela,
+                Compl= Lista_Extrato_Tributo[0].Codcomplemento,
+                Status=StatusLabel.Text,
+                Isento=IsentoLabel.Text,
+                Desconto=DescontoLabel.Text,
+                Livro=LivroLabel.Text,
+                Data_Inscricao=DataInscricaoLabel.Text,
+                Pagina=PaginaLabel.Text,
+                Certidao=CertidaoLabel.Text,
+                Data_Ajuiza=AjuizamentoLabel.Text,
+                ProcessoCnj=ProcessoCNJLabel.Text,
+                Protocolo=NumProtocoloLabel.Text,
+                Data_Remessa=DataRemessaLabel.Text,
+                Data_Base=DataBaseLabel.Text,
+                Data_Vencto=DataVenctoLabel.Text,
+                Data_VenctoCalc=DataVenctoCalcLabel.Text,
+                Valor_Lancado=Convert.ToDecimal(ValorLancadoLabel.Text),
+                Valor_Atual= Convert.ToDecimal(ValorAtualLabel.Text),
+                Data_Pagamento=DataPagtoLabel.Text,
+                Data_Receita=DataReceitaLabel.Text,
+                Valor_Pago= Convert.ToDecimal(ValorPagoLabel.Text),
+                Valor_Dif= Convert.ToDecimal(ValorDifLabel.Text)
+            };
+
+            certidao.Add(reg);
+
+            List<Detalhe_Parcela_Tributo> ListaCrystal = new List<Detalhe_Parcela_Tributo>();
             foreach (ListViewItem Item in TributoListView.Items) {
-                if (Item.Index < TributoListView.Items.Count-1) {
-                    DataRow dRow = dTable.NewRow();
-                    dRow["Descricao"] = Item.Text;
-                    dRow["Principal"] = Item.SubItems[1].Text;
-                    dRow["Juros"] = Item.SubItems[2].Text;
-                    dRow["Multa"] = Item.SubItems[3].Text;
-                    dRow["Correcao"] = Item.SubItems[4].Text;
-                    dRow["Total"] = Item.SubItems[5].Text;
-                    dTable.Rows.Add(dRow);
+                if (Item.Index < TributoListView.Items.Count - 1) {
+                    Detalhe_Parcela_Tributo x = new Detalhe_Parcela_Tributo() {
+                        Codigo = Lista_Extrato_Tributo[0].Codreduzido,
+                        Exercicio = Lista_Extrato_Tributo[0].Anoexercicio,
+                        Lanc = Lista_Extrato_Tributo[0].Codlancamento,
+                        Seq = Lista_Extrato_Tributo[0].Seqlancamento,
+                        Parc = Lista_Extrato_Tributo[0].Numparcela,
+                        Compl = Lista_Extrato_Tributo[0].Codcomplemento,
+                        Codtributo = 1,
+                        Desctributo=Item.Text,
+                        Principal= Convert.ToDecimal( Item.SubItems[1].Text),
+                        Juros= Convert.ToDecimal(Item.SubItems[2].Text),
+                        Multa = Convert.ToDecimal(Item.SubItems[3].Text),
+                        Correcao = Convert.ToDecimal(Item.SubItems[4].Text),
+                        Total = Convert.ToDecimal(Item.SubItems[5].Text)
+                    };
+                    ListaCrystal.Add(x);
                 }
             }
-            Ds.Tables.Add(dTable);
 
-            ReportParameter p1 = new ReportParameter("prmContribuinte", NomeLabel.Text);
-            ReportParameter p2 = new ReportParameter("prmExercicio", Lista_Extrato_Tributo[0].Anoexercicio.ToString());
-            ReportParameter p3 = new ReportParameter("prmLancamento", LancamentoLabel.Text);
-            ReportParameter p4 = new ReportParameter("prmSequencia", Lista_Extrato_Tributo[0].Seqlancamento.ToString());
-            ReportParameter p5 = new ReportParameter("prmParcela", Lista_Extrato_Tributo[0].Numparcela.ToString("00"));
-            ReportParameter p6 = new ReportParameter("prmComplemento", Lista_Extrato_Tributo[0].Codcomplemento.ToString("00"));
-            ReportParameter p7 = new ReportParameter("prmSituacao", StatusLabel.Text);
-            ReportParameter p8 = new ReportParameter("prmIsento", IsentoLabel.Text);
-            ReportParameter p9 = new ReportParameter("prmDesconto", DescontoLabel.Text);
-            ReportParameter p10 = new ReportParameter("prmLivro", LivroLabel.Text);
-            ReportParameter p11 = new ReportParameter("prmInscricao", DataInscricaoLabel.Text);
-            ReportParameter p12 = new ReportParameter("prmPagina", PaginaLabel.Text);
-            ReportParameter p13 = new ReportParameter("prmCertidao", CertidaoLabel.Text);
-            ReportParameter p14 = new ReportParameter("prmAjuizamento", AjuizamentoLabel.Text);
-            ReportParameter p15 = new ReportParameter("prmProcessoCNJ", ProcessoCNJLabel.Text);
-            ReportParameter p16 = new ReportParameter("prmProtocolo", NumProtocoloLabel.Text);
-            ReportParameter p17 = new ReportParameter("prmDataRemessa", DataRemessaLabel.Text);
-            ReportParameter p18 = new ReportParameter("prmDataBase", DataBaseLabel.Text);
-            ReportParameter p19 = new ReportParameter("prmDataVencimento", DataVenctoLabel.Text);
-            ReportParameter p20 = new ReportParameter("prmDataVencimentoCalc", DataVenctoCalcLabel.Text);
-            ReportParameter p21 = new ReportParameter("prmValorLancado", ValorLancadoLabel.Text);
-            ReportParameter p22 = new ReportParameter("prmValorAtual", ValorAtualLabel.Text);
-            ReportParameter p23 = new ReportParameter("prmDataPagamento", DataPagtoLabel.Text);
-            ReportParameter p24 = new ReportParameter("prmDataReceita", DataReceitaLabel.Text);
-            ReportParameter p25 = new ReportParameter("prmBanco", BancoLabel.Text);
-            ReportParameter p26 = new ReportParameter("prmValorPago", ValorPagoLabel.Text);
-            ReportParameter p27 = new ReportParameter("prmValorDif", ValorDifLabel.Text);
-
-            gtiCore.Liberado(this);
-            Report f1 = new Report(sReportName, Ds, 1, true, new ReportParameter[] { p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27 }) {
-                Tag = this.Name
-            };
-            f1.ShowDialog();
+            ReportDocument rd = new ReportDocument();
+            rd.Load(rptPath);
+            try {
+                rd.SetDataSource(certidao);
+                RptViewer rptViewer = new RptViewer();
+                rd.Database.Tables[0].SetDataSource(certidao);
+                rd.Database.Tables[1].SetDataSource(ListaCrystal);
+                rptViewer.CrystalViewer.ReportSource = rd;
+                Main f1 = (Main)Application.OpenForms["Main"];
+                rptViewer.MdiParent = f1;
+                rptViewer.Text = "Detalhe da Parcela";
+                rptViewer.CrystalViewer.ShowGroupTreeButton = false;
+                rptViewer.CrystalViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+                rptViewer.Show();
+            } catch {
+                throw;
+            }
 
         }
 

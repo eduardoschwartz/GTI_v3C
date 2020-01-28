@@ -667,7 +667,7 @@ namespace GTI_Desktop.Classes {
             } else {
                 List<string> aLista = new List<string>();
                 aLista.Add(ConvertDatReg("ZZ", 1.ToString().Split())); //Versão do arquivo
-                aLista.Add(ConvertDatReg("SN", new[] { "Deutsch" })); // Server Name
+                aLista.Add(ConvertDatReg("SN", new[] { "SkyNet" })); // Server Name
                 aLista.Add(ConvertDatReg("DR", new[] { "Tributacao" })); // DataBase Real
                 aLista.Add(ConvertDatReg("DT", new[] { "TributacaoTeste" })); // DataBase Teste
                 CreateDatFile(sDir + "\\gti000.dat", aLista);

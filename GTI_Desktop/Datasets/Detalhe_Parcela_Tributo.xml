@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<Detalhe_Parcela_Tributo xsi:noNamespaceSchemaLocation="Detalhe_Parcela_Tributo.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Codigo>762</Codigo>
+  <Exercicio>-2065</Exercicio>
+  <Lanc>3848</Lanc>
+  <Seq>-1795</Seq>
+  <Parc>-1569</Parc>
+  <Compl>-355</Compl>
+  <Codtributo>4208</Codtributo>
+  <Desctributo>string</Desctributo>
+  <Principal>-3178919.7650942</Principal>
+  <Juros>-4351909.7650942</Juros>
+  <Multa>1379140.2349058</Multa>
+  <Correcao>1961390.2349058</Correcao>
+  <Total>3678350.2349058</Total>
+</Detalhe_Parcela_Tributo>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" >
+  <xsd:element name="Detalhe_Parcela">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Codigo" type="xsd:int"></xsd:element>
+        <xsd:element name="Nome" type="xsd:string"></xsd:element>
+        <xsd:element name="Exercicio" type="xsd:int"></xsd:element>
+        <xsd:element name="Lanc" type="xsd:int"></xsd:element>
+        <xsd:element name="Lancamento" type="xsd:string"></xsd:element>
+        <xsd:element name="Seq" type="xsd:int"></xsd:element>
+        <xsd:element name="Parc" type="xsd:int"></xsd:element>
+        <xsd:element name="Compl" type="xsd:int"></xsd:element>
+        <xsd:element name="Status" type="xsd:string"></xsd:element>
+        <xsd:element name="Isento" type="xsd:string"></xsd:element>
+        <xsd:element name="Desconto" type="xsd:string"></xsd:element>
+        <xsd:element name="Livro" type="xsd:string"></xsd:element>
+        <xsd:element name="Data_Inscricao" type="xsd:string"></xsd:element>
+        <xsd:element name="Pagina" type="xsd:string"></xsd:element>
+        <xsd:element name="Certidao" type="xsd:string"></xsd:element>
+        <xsd:element name="Data_Ajuiza" type="xsd:string"></xsd:element>
+        <xsd:element name="ProcessoCnj" type="xsd:string"></xsd:element>
+        <xsd:element name="Protocolo" type="xsd:string"></xsd:element>
+        <xsd:element name="Data_Remessa" type="xsd:string"></xsd:element>
+        <xsd:element name="Data_Base" type="xsd:string"></xsd:element>
+        <xsd:element name="Data_Vencto" type="xsd:string"></xsd:element>
+        <xsd:element name="Data_VenctoCalc" type="xsd:string"></xsd:element>
+        <xsd:element name="Data_Pagamento" type="xsd:string"></xsd:element>
+        <xsd:element name="Data_Receita" type="xsd:string"></xsd:element>
+        <xsd:element name="Valor_Lancado" type="xsd:decimal"></xsd:element>
+        <xsd:element name="Valor_Atual" type="xsd:decimal"></xsd:element>
+        <xsd:element name="Valor_Pago" type="xsd:decimal"></xsd:element>
+        <xsd:element name="Valor_Dif" type="xsd:decimal"></xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

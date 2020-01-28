@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" >
+  <xsd:element name="Detalhe_Parcela_Tributo">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Codigo" type="xsd:int"></xsd:element>
+        <xsd:element name="Exercicio" type="xsd:int"></xsd:element>
+        <xsd:element name="Lanc" type="xsd:int"></xsd:element>
+        <xsd:element name="Seq" type="xsd:int"></xsd:element>
+        <xsd:element name="Parc" type="xsd:int"></xsd:element>
+        <xsd:element name="Compl" type="xsd:int"></xsd:element>
+        <xsd:element name="Codtributo" type="xsd:int"></xsd:element>
+        <xsd:element name="Desctributo" type="xsd:string"></xsd:element>
+        <xsd:element name="Principal" type="xsd:decimal"></xsd:element>
+        <xsd:element name="Juros" type="xsd:decimal"></xsd:element>
+        <xsd:element name="Multa" type="xsd:decimal"></xsd:element>
+        <xsd:element name="Correcao" type="xsd:decimal"></xsd:element>
+        <xsd:element name="Total" type="xsd:decimal"></xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

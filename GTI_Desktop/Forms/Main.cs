@@ -25,7 +25,7 @@ namespace GTI_Desktop.Forms
         public Main()
         {
             InitializeComponent();
-            this.DoubleBuffered = true;
+            DoubleBuffered = true;
             DateTimePicker t = new DateTimePicker
             {
                 AutoSize = false,
@@ -36,48 +36,34 @@ namespace GTI_Desktop.Forms
             };
             TopBarToolStrip.Renderer = new MySR();
             t.CloseUp += new System.EventHandler(SbDataBase_CloseUp);
-
             BarStatus.Items.Insert(17, new ToolStripControlHost(t));
             MaquinaToolStripStatus.Text = Environment.MachineName;
-            DataBaseToolStripStatus.Text = Properties.Settings.Default.DataBaseReal;
-
+            
         }
 
         private void Main_Load(object sender, EventArgs e)
         {
-            this.IsMdiContainer = true;
-            this.Refresh();
+            IsMdiContainer = true;
+            Refresh();
 
-            this.SetStyle(ControlStyles.DoubleBuffer | ControlStyles.UserPaint | ControlStyles.AllPaintingInWmPaint, true);
+            SetStyle(ControlStyles.DoubleBuffer | ControlStyles.UserPaint | ControlStyles.AllPaintingInWmPaint, true);
             FillBackgroundImage(false);
 
-            ServidorToolStripStatus.Text = Properties.Settings.Default.ServerName;
+            ServidorToolStripStatus.Text = gtiCore.ServerName;
 
             Version version = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
             VersaoToolStripStatus.Text = $"{version.Major}"+"."+ $"{version.Minor}" +"."+ $"{version.Build}";
-            this.Text += VersaoToolStripStatus.Text;
-
-            LockForm(true);
-            Forms.Login login = new Forms.Login();
-            login.ShowDialog();
-        }
-
-        private void CorFundo()
-        {
-            MdiClient ctlMDI;
-
-            foreach (Control ctl in this.Controls)
-            {
-                try
-                {
-                    ctlMDI = (MdiClient)ctl;
-                    ctlMDI.BackColor = this.BackColor;
-                    //ctlMDI.BackgroundImage = Properties.Resources.GTI_logo;
-
-                }
-                catch
-                {
-                }
+            Text += VersaoToolStripStatus.Text;
+            Exception ex = gtiCore.LoadSettings();
+            if (ex != null) {
+                ErrorBox eBox = new ErrorBox("Atenção", "Erro ao carregar as configurações do sistema.", ex);
+                eBox.ShowDialog();
+                Application.Exit();
+            } else {
+                ServidorToolStripStatus.Text = gtiCore.ServerName;
+                LockForm(true);
+                Forms.Login login = new Forms.Login();
+                login.ShowDialog();
             }
         }
 
@@ -109,7 +95,7 @@ namespace GTI_Desktop.Forms
                 ts.Enabled = !bLocked;
             }
 
-            List<ToolStripMenuItem> mItems = gtiCore.GetItems(this.MenuBarStrip);
+            List<ToolStripMenuItem> mItems = gtiCore.GetItems(MenuBarStrip);
             foreach (var item in mItems)
             {
                 item.Enabled = !bLocked;
@@ -131,7 +117,7 @@ namespace GTI_Desktop.Forms
         {
             if (MessageBox.Show("Deseja fechar todas as janelas e retornar a tela de login?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                Form[] charr = this.MdiChildren;
+                Form[] charr = MdiChildren;
                 foreach (Form chform in charr)
                 {
                     chform.Close();
@@ -168,33 +154,33 @@ namespace GTI_Desktop.Forms
 
         private void BaseRealToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form[] charr = this.MdiChildren;
+            Form[] charr = MdiChildren;
             foreach (Form chform in charr)
                 chform.Close();
 
             FillBackgroundImage(false);
-            DataBaseToolStripStatus.Text = Properties.Settings.Default.DataBaseReal;
+            DataBaseToolStripStatus.Text = gtiCore.BaseDados;
             gtiCore.UpdateUserBinary();
-            this.Refresh();
+            Refresh();
         }
 
         private void BaseDeTestesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form[] charr = this.MdiChildren;
+            Form[] charr = MdiChildren;
             foreach (Form chform in charr)
                 chform.Close();
 
             FillBackgroundImage(true);
-            DataBaseToolStripStatus.Text = Properties.Settings.Default.DataBaseTeste;
+            DataBaseToolStripStatus.Text = gtiCore.BaseDadosTeste;
             gtiCore.UpdateUserBinary();
-            this.Refresh();
+            Refresh();
         }
 
         private void FillBackgroundImage(bool bTeste)
         {
             Bitmap img = bTeste ? Properties.Resources.rosa : Properties.Resources.bege;
             Color cor = bTeste ? Color.FromArgb(250, 218, 226) : Color.OldLace;
-            this.BackgroundImage = img;
+            BackgroundImage = img;
             BarStatus.BackgroundImage = img;
             LedGreen.BackgroundImage = img;
             LedRed.BackgroundImage = img;
@@ -323,33 +309,33 @@ namespace GTI_Desktop.Forms
 
         private void MinimizarTodasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form[] charr = this.MdiChildren;
+            Form[] charr = MdiChildren;
             foreach (Form chform in charr)
                 chform.WindowState = FormWindowState.Minimized;
         }
 
         private void RestaurarTodasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form[] charr = this.MdiChildren;
+            Form[] charr = MdiChildren;
             foreach (Form chform in charr)
                 chform.WindowState = FormWindowState.Normal;
         }
 
         private void FecharTodasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form[] charr = this.MdiChildren;
+            Form[] charr = MdiChildren;
             foreach (Form chform in charr)
                 chform.Close();
         }
 
         private void EmCascataToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.LayoutMdi(System.Windows.Forms.MdiLayout.Cascade);
+            LayoutMdi(System.Windows.Forms.MdiLayout.Cascade);
         }
 
         private void LadoALadoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.LayoutMdi(System.Windows.Forms.MdiLayout.TileVertical);
+            LayoutMdi(System.Windows.Forms.MdiLayout.TileVertical);
         }
 
         private void ControleDeProcessosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -977,5 +963,8 @@ namespace GTI_Desktop.Forms
             } else
                 MessageBox.Show("Acesso não permitido.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
+
+
     }//end class
 }

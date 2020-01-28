@@ -105,7 +105,7 @@ namespace GTI_Desktop.Forms {
             this.Size = new Size(this.Size.Width, 190);
             OriginSize = this.Size.Height;
             LoginToolStrip.Renderer = new MySR();
-            txtServer.Text = GTI_Desktop.Properties.Settings.Default.ServerName;
+            txtServer.Text = gtiCore.ServerName;
             txtLogin.Text = gtiCore.Retorna_Last_User();
             txtPwd.Focus();
         }
@@ -193,8 +193,8 @@ namespace GTI_Desktop.Forms {
                 return;
             }
             gtiCore.Ocupado(this);
-            Properties.Settings.Default.ServerName = txtServer.Text;
-            Properties.Settings.Default.Save();
+            gtiCore.ServerName = txtServer.Text;
+            //Properties.Settings.Default.Save();
 
             string _connection = gtiCore.Connection_Name();
             Sistema_bll sistema_Class = new Sistema_bll(_connection);
@@ -224,7 +224,7 @@ namespace GTI_Desktop.Forms {
                 MessageBox.Show(ex.InnerException.Message, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            GTI_Desktop.Properties.Settings.Default.ServerName = txtServer.Text.ToUpper();
+            gtiCore.ServerName = txtServer.Text.ToUpper();
             GTI_Desktop.Properties.Settings.Default.LastUser = txtLogin.Text.ToUpper();
             GTI_Desktop.Properties.Settings.Default.UserId = sistema_Class.Retorna_User_LoginId(txtLogin.Text);
             GTI_Desktop.Properties.Settings.Default.Save();

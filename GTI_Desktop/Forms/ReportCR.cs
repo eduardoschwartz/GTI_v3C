@@ -20,7 +20,7 @@ namespace GTI_Desktop.Forms {
             InitializeComponent();
             this.Size = new System.Drawing.Size(Properties.Settings.Default.Form_Report_width, Properties.Settings.Default.Form_Report_height);
 
-            crConnectionInfo.ServerName = Properties.Settings.Default.ServerName;
+            crConnectionInfo.ServerName = gtiCore.ServerName;
             crConnectionInfo.DatabaseName = "TributacaoTeste";
             crConnectionInfo.UserID = gtiCore.Ul;
             crConnectionInfo.Password = gtiCore.Up;
@@ -36,7 +36,7 @@ namespace GTI_Desktop.Forms {
                 case "CertidaoEndereco":
                     Text = "Certidão de Endereço";
                     CertidaoEndereco rpt_endereco = new CertidaoEndereco();
-                    rpt_endereco.SetDatabaseLogon(gtiCore.Ul, gtiCore.Up, Properties.Settings.Default.ServerName, Properties.Settings.Default.DataBaseReal);
+                    rpt_endereco.SetDatabaseLogon(gtiCore.Ul, gtiCore.Up, gtiCore.ServerName, gtiCore.BaseDados);
                     rpt_endereco.SetParameterValue("NUMCERTIDAO", _dados.Numero_Certidao);
                     rpt_endereco.SetParameterValue("DATAEMISSAO", DateTime.Now);
                     rpt_endereco.SetParameterValue("CONTROLE", _dados.Controle);
@@ -56,7 +56,7 @@ namespace GTI_Desktop.Forms {
                 case "CertidaoImunidade":
                     Text = "Certidão de Isenção";
                     CertidaoImunidade rpt_imunidade = new CertidaoImunidade();
-                    rpt_imunidade.SetDatabaseLogon(gtiCore.Ul, gtiCore.Up, Properties.Settings.Default.ServerName, Properties.Settings.Default.DataBaseReal);
+                    rpt_imunidade.SetDatabaseLogon(gtiCore.Ul, gtiCore.Up, gtiCore.ServerName, gtiCore.BaseDados);
                     rpt_imunidade.SetParameterValue("NUMCERTIDAO", _dados.Numero_Certidao);
                     rpt_imunidade.SetParameterValue("DATAEMISSAO", DateTime.Now);
                     rpt_imunidade.SetParameterValue("CONTROLE", _dados.Controle);
@@ -77,7 +77,7 @@ namespace GTI_Desktop.Forms {
                 case "CertidaoIsencaoProcesso":
                     Text = "Certidão de Isenção";
                     CertidaoIsencaoProcesso rpt_isencao = new CertidaoIsencaoProcesso();
-                    rpt_isencao.SetDatabaseLogon(gtiCore.Ul, gtiCore.Up, Properties.Settings.Default.ServerName, Properties.Settings.Default.DataBaseReal);
+                    rpt_isencao.SetDatabaseLogon(gtiCore.Ul, gtiCore.Up, gtiCore.ServerName, gtiCore.BaseDados);
                     rpt_isencao.SetParameterValue("NUMCERTIDAO", _dados.Numero_Certidao);
                     rpt_isencao.SetParameterValue("DATAEMISSAO", DateTime.Now);
                     rpt_isencao.SetParameterValue("CONTROLE", _dados.Controle);
@@ -100,7 +100,7 @@ namespace GTI_Desktop.Forms {
                 case "CertidaoIsencao65":
                     Text = "Certidão de Isenção";
                     CertidaoIsencao65 rpt_isencao65 = new CertidaoIsencao65();
-                    rpt_isencao65.SetDatabaseLogon(gtiCore.Ul, gtiCore.Up, Properties.Settings.Default.ServerName, Properties.Settings.Default.DataBaseReal);
+                    rpt_isencao65.SetDatabaseLogon(gtiCore.Ul, gtiCore.Up, gtiCore.ServerName, gtiCore.BaseDados);
                     rpt_isencao65.SetParameterValue("NUMCERTIDAO", _dados.Numero_Certidao);
                     rpt_isencao65.SetParameterValue("DATAEMISSAO", DateTime.Now);
                     rpt_isencao65.SetParameterValue("CONTROLE", _dados.Controle);
@@ -123,7 +123,7 @@ namespace GTI_Desktop.Forms {
                     CertidaoValorVenal rpt_vvenal = new CertidaoValorVenal();
                     Tributario_bll tributario_Class = new Tributario_bll(_connection);
                     SpCalculo RegCalculo = tributario_Class.Calculo_IPTU(Convert.ToInt32( _dados.Codigo), DateTime.Now.Year);
-                    rpt_vvenal.SetDatabaseLogon(gtiCore.Ul, gtiCore.Up, Properties.Settings.Default.ServerName, Properties.Settings.Default.DataBaseReal);
+                    rpt_vvenal.SetDatabaseLogon(gtiCore.Ul, gtiCore.Up, gtiCore.ServerName, gtiCore.BaseDados);
                     rpt_vvenal.SetParameterValue("NUMCERTIDAO", _dados.Numero_Certidao);
                     rpt_vvenal.SetParameterValue("DATAEMISSAO", DateTime.Now);
                     rpt_vvenal.SetParameterValue("CONTROLE", _dados.Controle);
@@ -146,7 +146,7 @@ namespace GTI_Desktop.Forms {
                 case "CertidaoDebitoImovel":
                     Text = "Certidão de Débito";
                     CertidaoDebitoImovel rpt_cdebitoimovel = new CertidaoDebitoImovel();
-                    rpt_cdebitoimovel.SetDatabaseLogon(gtiCore.Ul, gtiCore.Up, Properties.Settings.Default.ServerName, Properties.Settings.Default.DataBaseReal);
+                    rpt_cdebitoimovel.SetDatabaseLogon(gtiCore.Ul, gtiCore.Up, gtiCore.ServerName, gtiCore.BaseDados);
                     rpt_cdebitoimovel.SetParameterValue("NUMCERTIDAO", _dados.Numero_Certidao);
                     rpt_cdebitoimovel.SetParameterValue("DATAEMISSAO", DateTime.Now);
                     rpt_cdebitoimovel.SetParameterValue("CONTROLE", _dados.Controle);
@@ -169,7 +169,7 @@ namespace GTI_Desktop.Forms {
                 case "CertidaoDebitoEmpresa":
                     Text = "Certidão de Débito";
                     CertidaoDebitoEmpresa rpt_cdebitoempresa = new CertidaoDebitoEmpresa();
-                    rpt_cdebitoempresa.SetDatabaseLogon(gtiCore.Ul, gtiCore.Up, Properties.Settings.Default.ServerName, Properties.Settings.Default.DataBaseReal);
+                    rpt_cdebitoempresa.SetDatabaseLogon(gtiCore.Ul, gtiCore.Up, gtiCore.ServerName, gtiCore.BaseDados);
                     rpt_cdebitoempresa.SetParameterValue("NUMCERTIDAO", _dados.Numero_Certidao);
                     rpt_cdebitoempresa.SetParameterValue("DATAEMISSAO", DateTime.Now);
                     rpt_cdebitoempresa.SetParameterValue("CONTROLE", _dados.Controle);
@@ -192,7 +192,7 @@ namespace GTI_Desktop.Forms {
                 case "CertidaoDebitoImovelPN":
                     Text = "Certidão de Débito";
                     CertidaoDebitoImovelPN rpt_cdebitoimovelpn = new CertidaoDebitoImovelPN();
-                    rpt_cdebitoimovelpn.SetDatabaseLogon(gtiCore.Ul, gtiCore.Up, Properties.Settings.Default.ServerName, Properties.Settings.Default.DataBaseReal);
+                    rpt_cdebitoimovelpn.SetDatabaseLogon(gtiCore.Ul, gtiCore.Up, gtiCore.ServerName, gtiCore.BaseDados);
                     rpt_cdebitoimovelpn.SetParameterValue("NUMCERTIDAO", _dados.Numero_Certidao);
                     rpt_cdebitoimovelpn.SetParameterValue("DATAEMISSAO", DateTime.Now);
                     rpt_cdebitoimovelpn.SetParameterValue("CONTROLE", _dados.Controle);
@@ -215,7 +215,7 @@ namespace GTI_Desktop.Forms {
                 case "CertidaoDebitoEmpresapn":
                     Text = "Certidão de Débito";
                     CertidaoDebitoEmpresaPN rpt_cdebitoempresapn = new CertidaoDebitoEmpresaPN();
-                    rpt_cdebitoempresapn.SetDatabaseLogon(gtiCore.Ul, gtiCore.Up, Properties.Settings.Default.ServerName, Properties.Settings.Default.DataBaseReal);
+                    rpt_cdebitoempresapn.SetDatabaseLogon(gtiCore.Ul, gtiCore.Up, gtiCore.ServerName, gtiCore.BaseDados);
                     rpt_cdebitoempresapn.SetParameterValue("NUMCERTIDAO", _dados.Numero_Certidao);
                     rpt_cdebitoempresapn.SetParameterValue("DATAEMISSAO", DateTime.Now);
                     rpt_cdebitoempresapn.SetParameterValue("CONTROLE", _dados.Controle);

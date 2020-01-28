@@ -19,7 +19,7 @@ namespace GTI_Desktop.Classes {
         
         public enum eTweakMode { Normal, AllLetters, AllLettersAllCaps, AllLettersAllSmall, AlphaNumeric, AlphaNumericAllCaps, AlphaNumericAllSmall, IntegerPositive, DecimalPositive };
         public enum LocalEndereco { Imovel, Empresa, Cidadao }
-   //     public enum TipoEndereco { Local, Proprietario, Entrega }
+        public enum TipoEndereco { Local, Proprietario, Entrega }
         public enum EventoForm { Nenhum=0, Insert=1, Edit=2,Delete=3,Print=4 }
 
         private static byte[] key = new byte[8] { 1, 2, 3, 4, 5, 6, 7, 8 };
@@ -27,9 +27,13 @@ namespace GTI_Desktop.Classes {
 
         private static string _up;
         private static string _baseDados;
+        private static string _baseDadosTeste;
         private static string _ul;
+        private static string _servername;
 
+        public static string ServerName { get => _servername; set => _servername = value; }
         public static string BaseDados { get => _baseDados; set => _baseDados = value; }
+        public static string BaseDadosTeste { get => _baseDadosTeste; set => _baseDadosTeste = value; }
         public static string Ul { get => _ul; set => _ul = value; }
         public static string Up { get => _up; set => _up = value; }
         
@@ -213,10 +217,10 @@ namespace GTI_Desktop.Classes {
         public static string Connection_Name() {
             string connString = "";
             Ul = "gtisys"; Up = "everest";
-            Main f1 = (Main)Application.OpenForms["Main"];
+            //Main f1 = (Main)Application.OpenForms["Main"];
             try {
-                BaseDados = f1.DataBaseToolStripStatus.Text;
-                connString = CreateConnectionString(Properties.Settings.Default.ServerName, BaseDados, Ul, Up);
+                //BaseDados = f1.DataBaseToolStripStatus.Text;
+                connString = CreateConnectionString(ServerName, BaseDados, Ul, Up);
             } catch (Exception) {
             }
             return connString;
@@ -228,11 +232,11 @@ namespace GTI_Desktop.Classes {
         public static string Connection_Name(string DataBase_Name) {
             string connString = "";
             Ul = "gtisys"; Up = "everest";
-            Main f1 = (Main)Application.OpenForms["Main"];
+            //Main f1 = (Main)Application.OpenForms["Main"];
             try {
                 BaseDados = DataBase_Name;
-                //connString = CreateConnectionString(Properties.Settings.Default.ServerName, BaseDados, Ul, Up);
-                connString = CreateConnectionString("SKYNET", BaseDados, Ul, Up); //Base de testes por enquanto
+                connString = CreateConnectionString(ServerName, BaseDados, Ul, Up);
+                //connString = CreateConnectionString("SKYNET", BaseDados, Ul, Up); //Base de testes por enquanto
             } catch (Exception) {
             }
             return connString;
@@ -629,7 +633,7 @@ namespace GTI_Desktop.Classes {
 
         public static string Retorna_Path_Anexo() {
             string _path;
-            if (Properties.Settings.Default.ServerName == "SKYNET" || Properties.Settings.Default.ServerName == "DEUTSCH")
+            if (ServerName == "SKYNET" || ServerName == "DEUTSCH")
                 _path = Properties.Settings.Default.Path_Anexo_Local;
             else
                 _path = Properties.Settings.Default.Path_Anexo_Net;
@@ -644,6 +648,34 @@ namespace GTI_Desktop.Classes {
                 return getrandom.Next(1, 2000000);
             }
         }
+
+        public static Exception LoadSettings() {
+            List<ArrayList> aDatResult;
+            string sDir = AppDomain.CurrentDomain.BaseDirectory;
+            string sFileName = "\\gti000.dat";
+            if (File.Exists(sDir + sFileName)) {
+                try {
+                    aDatResult = ReadFromDatFile(sDir + sFileName, "SN");
+                    ServerName = aDatResult[0][0].ToString();
+                    aDatResult = ReadFromDatFile(sDir + sFileName, "DR");
+                    BaseDados = aDatResult[0][0].ToString();
+                    aDatResult = ReadFromDatFile(sDir + sFileName, "DT");
+                    BaseDadosTeste = aDatResult[0][0].ToString();
+                } catch (Exception ex) {
+                    return ex;
+                }
+            } else {
+                List<string> aLista = new List<string>();
+                aLista.Add(ConvertDatReg("ZZ", 1.ToString().Split())); //Versão do arquivo
+                aLista.Add(ConvertDatReg("SN", new[] { "Deutsch" })); // Server Name
+                aLista.Add(ConvertDatReg("DR", new[] { "Tributacao" })); // DataBase Real
+                aLista.Add(ConvertDatReg("DT", new[] { "TributacaoTeste" })); // DataBase Teste
+                CreateDatFile(sDir + "\\gti000.dat", aLista);
+                LoadSettings();
+            }
+            return null;
+        }
+
 
     }
 

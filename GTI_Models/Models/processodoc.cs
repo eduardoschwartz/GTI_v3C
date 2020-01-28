@@ -15,4 +15,13 @@ namespace GTI_Models.Models {
         public short Coddoc { get; set; }
         public DateTime? Data { get; set; }
     }
+
+    public class ProcessoDocStructCrystal {
+        public int Ano_Processo { get; set; }
+        public int Num_Processo { get; set; }
+        public int Codigo { get; set; }
+        public string Descricao { get; set; }
+        public DateTime Data_Entrega { get; set; }
+    }
+
 }

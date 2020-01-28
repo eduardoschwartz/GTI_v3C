@@ -250,5 +250,17 @@ namespace GTI_Desktop.Properties {
                 this["Form_Report_height"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\Work\\GTI_v3C\\GTI_Desktop\\Report")]
+        public string Path_Report {
+            get {
+                return ((string)(this["Path_Report"]));
+            }
+            set {
+                this["Path_Report"] = value;
+            }
+        }
     }
 }

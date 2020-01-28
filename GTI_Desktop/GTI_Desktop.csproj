@@ -480,6 +480,12 @@
     <Compile Include="Forms\ReportCR.Designer.cs">
       <DependentUpon>ReportCR.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\RptViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RptViewer.Designer.cs">
+      <DependentUpon>RptViewer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\SecurityEventForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -809,6 +815,9 @@
     <EmbeddedResource Include="Forms\ReportCR.resx">
       <DependentUpon>ReportCR.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RptViewer.resx">
+      <DependentUpon>RptViewer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\SecurityEventForm.resx">
       <DependentUpon>SecurityEventForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -889,22 +898,15 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CertidaoValorVenal.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report\ComprovanteDoc.rdlc">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Report\ComunicadoDoc.rdlc" />
     <EmbeddedResource Include="Report\Comunicado_Doc.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Comunicado_Doc.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Report\Detalhe_Parcela.rdlc" />
-    <EmbeddedResource Include="Report\ProcessoRequerente.rdlc" />
     <EmbeddedResource Include="Report\Processo_Requerente.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Processo_Requerente.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report\RequerimentoAbertura.rdlc" />
-    <EmbeddedResource Include="Report\RequerimentoCancelamento.rdlc" />
     <EmbeddedResource Include="Report\Requerimento_Abertura.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Requerimento_Abertura.cs</LastGenOutput>

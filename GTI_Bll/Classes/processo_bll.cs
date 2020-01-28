@@ -500,6 +500,9 @@ namespace GTI_Bll.Classes {
             return obj.Lista_Processo_Parcelamento_Header(Codigo);
         }
 
-
+        public List<ProcessoDocStruct> ListProcessoDoc(int nAno, int nNumero) {
+            Processo_Data obj = new Processo_Data(_connection);
+            return obj.ListProcessoDoc(nAno,nNumero);
+        }
     }
 }

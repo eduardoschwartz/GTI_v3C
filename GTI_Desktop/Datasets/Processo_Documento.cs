@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GTI_v4.ReportModels {
+namespace GTI_Desktop.Datasets {
     public class Processo_Documento {
         public int Ano_Processo { get; set; }
         public int Num_Processo { get; set; }

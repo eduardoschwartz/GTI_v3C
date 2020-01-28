@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GTI_v4.ReportModels {
+namespace GTI_Desktop.Datasets {
     public class Processo_Requerente {
         public int Ano_Processo { get; set; }
         public int Num_Processo { get; set; }

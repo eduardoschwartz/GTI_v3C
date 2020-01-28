@@ -425,7 +425,7 @@ namespace GTI_Dal.Classes {
             }
         }
 
-        private List<ProcessoDocStruct> ListProcessoDoc(int nAno, int nNumero) {
+        public List<ProcessoDocStruct> ListProcessoDoc(int nAno, int nNumero) {
             using (GTI_Context db = new GTI_Context(_connection)) {
                 var Sql = (from pd in db.Processodoc join d in db.Documento on pd.Coddoc equals d.Codigo where pd.Ano == nAno && pd.Numero == nNumero
                            select new ProcessoDocStruct { CodigoDocumento = pd.Coddoc, NomeDocumento = d.Nome, DataEntrega = pd.Data });

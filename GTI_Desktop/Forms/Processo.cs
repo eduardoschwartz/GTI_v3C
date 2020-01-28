@@ -1,9 +1,12 @@
-﻿using GTI_Bll.Classes;
+﻿using CrystalDecisions.CrystalReports.Engine;
+using GTI_Bll.Classes;
 using GTI_Desktop.Classes;
 using GTI_Desktop.Datasets;
+using GTI_Desktop.Report;
 using GTI_Desktop.Properties;
 using GTI_Models;
 using GTI_Models.Models;
+//using GTI_v3C.Datasets;
 using Microsoft.Reporting.WinForms;
 using System;
 using System.Collections.Generic;
@@ -12,6 +15,8 @@ using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
 using static GTI_Desktop.Classes.GtiTypes;
+using System.IO;
+using System.Reflection;
 
 namespace GTI_Desktop.Forms {
     public partial class Processo : Form {
@@ -1205,232 +1210,344 @@ namespace GTI_Desktop.Forms {
                 PrintRequerimento(false);
         }
 
-        private void PrintProcessoRequerente()
-        {
-            gtiCore.Ocupado(this);
-            String sReportName = "ProcessoRequerente";
-            dsProcessoRequerente Ds = new dsProcessoRequerente();
-            DataTable dTable = new dsProcessoRequerente.dtProcessoRequerenteDataTable();
-            DataRow dRow = dTable.NewRow();
+        private void PrintProcessoRequerente() {
+
+            string rptPath = System.IO.Path.Combine(Properties.Settings.Default.Path_Report, "Processo_Requerente.rpt");
+            if (!File.Exists(rptPath)) {
+                MessageBox.Show("Caminho " + rptPath + " não encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             Processo_bll clsProcesso = new Processo_bll(_connection);
             short Ano_Processo = clsProcesso.ExtractAnoProcesso(NumProcText.Text);
             int Num_Processo = clsProcesso.ExtractNumeroProcessoNoDV(NumProcText.Text);
-
-            ProcessoStruct Reg = clsProcesso.Dados_Processo(Ano_Processo, Num_Processo);
-            dRow["AnoProcesso"] = Ano_Processo;
-            dRow["NumProcesso"] = Num_Processo;
-            dRow["Seq"] = 1;
-            dRow["NumeroProcesso"] = string.Format("{0}-{1}/{2}", Num_Processo, clsProcesso.DvProcesso(Num_Processo), Ano_Processo);
-            dRow["Assunto"] = Reg.Assunto;
-            dRow["DataEntrada"] = DateTime.Parse(Reg.DataEntrada.ToString()).ToString("dd/MM/yyyy");
+            ProcessoStruct processo = clsProcesso.Dados_Processo(Ano_Processo, Num_Processo);
 
             Cidadao_bll clsCidadao = new Cidadao_bll(_connection);
-            CidadaoStruct Reg2 = clsCidadao.LoadReg((int)Reg.CodigoCidadao);
-
-            dRow["Requerente"] = Reg2.Nome;
-            if (!string.IsNullOrEmpty(Reg2.Cnpj))
-                dRow["Documento"] = Convert.ToUInt64(Reg2.Cnpj).ToString(@"00\.000\.000\/0000\-00");
-            else {
-                if (!string.IsNullOrEmpty(Reg2.Cpf))
-                    dRow["Documento"] = Convert.ToUInt64(Reg2.Cpf).ToString(@"000\.000\.000\-00");
-                else
-                    dRow["Documento"] = Reg2.Rg;
-            }
-            if (ResOption.Checked) {
-                dRow["Endereco"] = Reg2.EnderecoR + " " + Reg2.NumeroR;
-                dRow["Bairro"] = Reg2.NomeBairroR;
-                dRow["Cidade"] = Reg2.NomeCidadeR;
-                dRow["UF"] = Reg2.UfR;
-            } else {
-                dRow["Endereco"] = Reg2.EnderecoC + " " + Reg2.NumeroC;
-                dRow["Bairro"] = Reg2.NomeBairroC;
-                dRow["Cidade"] = Reg2.NomeCidadeC;
-                dRow["UF"] = Reg2.UfC;
-            }
-            dTable.Rows.Add(dRow);
-            Ds.Tables.Add();
-
-            gtiCore.Liberado(this);
-            Report f1 = new Forms.Report(sReportName, Ds, 1, true, null) {
-                Tag = this.Name
+            CidadaoStruct cidadao = clsCidadao.LoadReg((int)processo.CodigoCidadao);
+            List<Datasets.Processo_Requerente> certidao = new List<Datasets.Processo_Requerente>();
+            Datasets.Processo_Requerente reg = new Datasets.Processo_Requerente() {
+                Ano_Processo = Ano_Processo,
+                Num_Processo = Num_Processo,
+                Seq = 1,
+                Numero_Processo = string.Format("{0}-{1}/{2}", Num_Processo, clsProcesso.DvProcesso(Num_Processo), Ano_Processo),
+                Data_Entrada = (DateTime)processo.DataEntrada,
+                Assunto = processo.Complemento
             };
-            f1.ShowDialog();
 
-        }
-
-        private void PrintRequerimento(bool bAbertura)
-        {
-            gtiCore.Ocupado(this);
-            string sReportName;
-            if (bAbertura)
-                sReportName = "RequerimentoAbertura";
-            else
-                sReportName = "RequerimentoCancelamento";
-            dsProcessoRequerente Ds = new dsProcessoRequerente();
-            DataTable dTable = new dsProcessoRequerente.dtProcessoRequerenteDataTable();
-
-            Processo_bll clsProcesso = new Processo_bll(_connection);
-            short Ano_Processo = clsProcesso.ExtractAnoProcesso(NumProcText.Text);
-            int Num_Processo = clsProcesso.ExtractNumeroProcessoNoDV(NumProcText.Text);
-            ProcessoStruct Reg = clsProcesso.Dados_Processo(Ano_Processo, Num_Processo);
-            int nSeq = 1;
-            if (Reg.ListaProcessoEndereco.Count == 0) {
-                ProcessoEndStruct RegTmp = new ProcessoEndStruct {
-                    NomeLogradouro = ""
-                };
-                Reg.ListaProcessoEndereco.Add(RegTmp);
-            }
-            foreach (var item in Reg.ListaProcessoEndereco) {
-                DataRow dRow = dTable.NewRow();
-                if (!string.IsNullOrEmpty(item.NomeLogradouro))
-                    dRow["EnderecoOcorrencia"] = nSeq.ToString() + ") " + item.NomeLogradouro + " " + item.Numero;
-                dRow["AnoProcesso"] = Ano_Processo;
-                dRow["NumProcesso"] = Num_Processo;
-                dRow["Seq"] = nSeq;
-                dRow["NumeroProcesso"] = string.Format("{0}-{1}/{2}", Num_Processo, clsProcesso.DvProcesso(Num_Processo), Ano_Processo);
-                dRow["Assunto"] = Reg.Complemento;
-
-                Cidadao_bll clsCidadao = new Cidadao_bll(_connection);
-                CidadaoStruct Reg2 = clsCidadao.LoadReg((int)Reg.CodigoCidadao);
-                dRow["Requerente"] = Reg2.Nome;
-                if (!string.IsNullOrEmpty(Reg2.Cnpj))
-                    dRow["Documento"] = Convert.ToUInt64(Reg2.Cnpj).ToString(@"00\.000\.000\/0000\-00");
-                else {
-                    if (!string.IsNullOrEmpty(Reg2.Cpf))
-                        dRow["Documento"] = Convert.ToUInt64(Reg2.Cpf).ToString(@"000\.000\.000\-00");
-                    else
-                        dRow["Documento"] = Reg2.Rg;
-                }
-                if (ResOption.Checked) {
-                    dRow["Endereco"] = Reg2.EnderecoR + " " + Reg2.NumeroR;
-                    dRow["Bairro"] = Reg2.NomeBairroR;
-                    dRow["Cidade"] = Reg2.NomeCidadeR;
-                    dRow["UF"] = Reg2.UfR;
+            if (cidadao != null) {
+                reg.Requerente = cidadao.Nome;
+                reg.Rg = cidadao.Rg ?? "";
+                if (cidadao.EtiquetaR == "S") {
+                    reg.Endereco = cidadao.EnderecoR + " " + cidadao.NumeroR;
+                    reg.Bairro = cidadao.NomeBairroR;
+                    reg.Cidade = cidadao.NomeCidadeR;
+                    reg.Uf = cidadao.UfR;
                 } else {
-                    dRow["Endereco"] = Reg2.EnderecoC + " " + Reg2.NumeroC;
-                    dRow["Bairro"] = Reg2.NomeBairroC;
-                    dRow["Cidade"] = Reg2.NomeCidadeC;
-                    dRow["UF"] = Reg2.UfC;
+                    reg.Endereco = cidadao.EnderecoC + " " + cidadao.NumeroC;
+                    reg.Bairro = cidadao.NomeBairroC;
+                    reg.Cidade = cidadao.NomeCidadeC;
+                    reg.Uf = cidadao.UfC;
                 }
-                dRow["RG"] = Reg2.Rg + " " + Reg2.Orgao;
-                dRow["INSCRICAO"] = Reg.Inscricao;
-                dRow["OBSERVACAO"] = Reg.Observacao;
-
-                dTable.Rows.Add(dRow);
-                nSeq++;
             }
 
-            Ds.Tables.Add(dTable);
-            gtiCore.Liberado(this);
-            Report f1 = new Report(sReportName, Ds, 1, true, null) {
-                Tag = this.Name
-            };
-            f1.ShowDialog();
+            if (!string.IsNullOrEmpty(cidadao.Cnpj))
+                reg.Documento = Convert.ToUInt64(cidadao.Cnpj).ToString(@"00\.000\.000\/0000\-00");
+            else {
+                if (!string.IsNullOrEmpty(cidadao.Cpf))
+                    reg.Documento = Convert.ToUInt64(cidadao.Cpf).ToString(@"000\.000\.000\-00");
+            }
 
+            certidao.Add(reg);
+
+            ReportDocument rd = new ReportDocument();
+            rd.Load(rptPath);
+            try {
+                rd.SetDataSource(certidao);
+                RptViewer rptViewer = new RptViewer();
+                rptViewer.CrystalViewer.ReportSource = rd;
+                Main f1 = (Main)Application.OpenForms["Main"];
+                rptViewer.MdiParent = f1;
+                rptViewer.Text = "Protocolo de Abertura de processo";
+                rptViewer.CrystalViewer.ShowGroupTreeButton = false;
+                rptViewer.CrystalViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+                rptViewer.Show();
+            } catch {
+                throw;
+            }
         }
 
-        private void PrintComunicadoDoc()
-        {
-            gtiCore.Ocupado(this);
-            String sNumProc, sNome, sAssunto, sDoc, sData;
-            String sReportName = "ComunicadoDoc";
-            dsProcessoDoc Ds = new dsProcessoDoc();
-            DataTable dTable = new dsProcessoDoc.dtProcessoDocDataTable();
+        private void PrintRequerimento(bool bAbertura) {
+            string rptPath;
+            if (bAbertura)
+                rptPath = Path.Combine(Properties.Settings.Default.Path_Report, "Requerimento_Abertura.rpt");
+            else
+                rptPath =Path.Combine(Properties.Settings.Default.Path_Report, "Requerimento_Cancel.rpt");
 
+            if (!File.Exists(rptPath)) {
+                MessageBox.Show("Caminho " + rptPath + " não encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string EndImovel = "";
             Processo_bll clsProcesso = new Processo_bll(_connection);
             short Ano_Processo = clsProcesso.ExtractAnoProcesso(NumProcText.Text);
             int Num_Processo = clsProcesso.ExtractNumeroProcessoNoDV(NumProcText.Text);
-            ProcessoStruct Reg = clsProcesso.Dados_Processo(Ano_Processo, Num_Processo);
+            ProcessoStruct processo = clsProcesso.Dados_Processo(Ano_Processo, Num_Processo);
+            if (processo.ListaProcessoEndereco.Count == 0)
+                EndImovel = "";
+            else {
+                foreach (var item in processo.ListaProcessoEndereco) {
+                    if (!string.IsNullOrEmpty(item.NomeLogradouro))
+                        EndImovel += item.NomeLogradouro + " " + item.Numero + Environment.NewLine;
+                };
+            }
 
             Cidadao_bll clsCidadao = new Cidadao_bll(_connection);
-            CidadaoStruct Reg2 = clsCidadao.LoadReg((int)Reg.CodigoCidadao);
+            CidadaoStruct cidadao = clsCidadao.LoadReg((int)processo.CodigoCidadao);
+            List<Datasets.Processo_Requerente> certidao = new List<Datasets.Processo_Requerente>();
+            Datasets.Processo_Requerente reg = new Datasets.Processo_Requerente() {
+                Ano_Processo = Ano_Processo,
+                Num_Processo = Num_Processo,
+                Seq = 1,
+                Numero_Processo = string.Format("{0}-{1}/{2}", Num_Processo, clsProcesso.DvProcesso(Num_Processo), Ano_Processo),
+                Endereco_Imovel = EndImovel,
+                Assunto = processo.Complemento
+            };
 
-            if (!string.IsNullOrEmpty(Reg2.Cnpj))
-                sDoc = Convert.ToUInt64(Reg2.Cnpj).ToString(@"00\.000\.000\/0000\-00");
-            else {
-                if (!string.IsNullOrEmpty(Reg2.Cpf))
-                    sDoc = Convert.ToUInt64(Reg2.Cpf).ToString(@"000\.000\.000\-00");
-                else
-                    sDoc = Reg2.Rg;
-            }
-            sNumProc = string.Format("{0}-{1}/{2}", Num_Processo, clsProcesso.DvProcesso(Num_Processo), Ano_Processo);
-            sNome = Reg.NomeCidadao;
-            sAssunto = Reg.Complemento;
-            sData = DateTime.Parse(Reg.DataEntrada.ToString()).ToString("dd/MM/yyyy");
-            foreach (var Item in Reg.ListaProcessoDoc) {
-                if (Item.DataEntrega == null) {
-                    DataRow dRow = dTable.NewRow();
-                    dRow["Codigo"] = Item.CodigoDocumento;
-                    dRow["Nome"] = Item.NomeDocumento;
-                    dTable.Rows.Add(dRow);
+            if (cidadao != null) {
+                reg.Requerente = cidadao.Nome;
+                reg.Rg = cidadao.Rg ?? "";
+                if (cidadao.EtiquetaR == "S") {
+                    reg.Endereco = cidadao.EnderecoR + " " + cidadao.NumeroR;
+                    reg.Bairro = cidadao.NomeBairroR;
+                    reg.Cidade = cidadao.NomeCidadeR;
+                    reg.Uf = cidadao.UfR;
+                } else {
+                    reg.Endereco = cidadao.EnderecoC + " " + cidadao.NumeroC;
+                    reg.Bairro = cidadao.NomeBairroC;
+                    reg.Cidade = cidadao.NomeCidadeC;
+                    reg.Uf = cidadao.UfC;
                 }
             }
-            Ds.Tables.Add(dTable);
-            ReportParameter p1 = new ReportParameter("prmProcesso", sNumProc);
-            ReportParameter p2 = new ReportParameter("prmNome", sNome);
-            ReportParameter p3 = new ReportParameter("prmAssunto", sAssunto);
-            ReportParameter p4 = new ReportParameter("prmDataEntrada", sData);
-            ReportParameter p5 = new ReportParameter("prmDoc", sDoc);
-            gtiCore.Liberado(this);
-            Report f1 = new Report(sReportName, Ds, 1, true, new ReportParameter[] { p1, p2, p3, p4, p5 }) {
-                Tag = this.Name
-            };
-            f1.ShowDialog();
 
-        }
+            if (!string.IsNullOrEmpty(cidadao.Cnpj))
+                reg.Documento = Convert.ToUInt64(cidadao.Cnpj).ToString(@"00\.000\.000\/0000\-00");
+            else {
+                if (!string.IsNullOrEmpty(cidadao.Cpf))
+                    reg.Documento = Convert.ToUInt64(cidadao.Cpf).ToString(@"000\.000\.000\-00");
+            }
 
-        private void PrintComprovanteDoc()
-        {
-            gtiCore.Ocupado(this);
-            String sReportName = "ComprovanteDoc";
-            dsProcessoDoc Ds = new dsProcessoDoc();
-            DataTable dTable = new dsProcessoDoc.dtProcessoDocDataTable();
-            String sNumProc, sNome, sAssunto, sDoc, sData;
+            certidao.Add(reg);
 
+            ReportDocument rd = new ReportDocument();
+            rd.Load(rptPath);
+            try {
+                RptViewer rptViewer = new RptViewer();
+                rd.Database.Tables[0].SetDataSource(certidao);
+                rptViewer.CrystalViewer.ReportSource = rd;
+                if (bAbertura)
+                    rptViewer.Text = "Requerimento de Abertura de processo";
+                else
+                    rptViewer.Text = "Requerimento de Cancelamento de processo";
+                Main f1 = (Main)Application.OpenForms["Main"];
+                rptViewer.MdiParent = f1;
+                rptViewer.CrystalViewer.ShowGroupTreeButton = false;
+                rptViewer.CrystalViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+                rptViewer.Show();
+            } catch {
+                throw;
+            }
+        } 
+
+
+        private void PrintComunicadoDoc() {
+            string rptPath;
+            rptPath =Path.Combine(Properties.Settings.Default.Path_Report, "Comunicado_Doc.rpt");
+
+            if (!File.Exists(rptPath)) {
+                MessageBox.Show("Caminho " + rptPath + " não encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string EndImovel = "";
             Processo_bll clsProcesso = new Processo_bll(_connection);
             short Ano_Processo = clsProcesso.ExtractAnoProcesso(NumProcText.Text);
             int Num_Processo = clsProcesso.ExtractNumeroProcessoNoDV(NumProcText.Text);
-            ProcessoStruct Reg = clsProcesso.Dados_Processo(Ano_Processo, Num_Processo);
+            ProcessoStruct processo = clsProcesso.Dados_Processo(Ano_Processo, Num_Processo);
+            if (processo.ListaProcessoEndereco.Count == 0)
+                EndImovel = "";
+            else {
+                foreach (var item in processo.ListaProcessoEndereco) {
+                    if (!string.IsNullOrEmpty(item.NomeLogradouro))
+                        EndImovel += item.NomeLogradouro + " " + item.Numero + Environment.NewLine;
+                };
+            }
+
+            List<ProcessoDocStruct> ListaDoc = clsProcesso.ListProcessoDoc(Ano_Processo, Num_Processo);
+            List<ProcessoDocStructCrystal> ListaDocCrystal = new List<ProcessoDocStructCrystal>();
+            foreach (ProcessoDocStruct item in ListaDoc) {
+                ProcessoDocStructCrystal x = new ProcessoDocStructCrystal() {
+                    Ano_Processo = Ano_Processo,
+                    Num_Processo = Num_Processo,
+                    Codigo = item.CodigoDocumento,
+                    Descricao = item.NomeDocumento
+                };
+                ListaDocCrystal.Add(x);
+            }
 
             Cidadao_bll clsCidadao = new Cidadao_bll(_connection);
-            CidadaoStruct Reg2 = clsCidadao.LoadReg((int)Reg.CodigoCidadao);
+            CidadaoStruct cidadao = clsCidadao.LoadReg((int)processo.CodigoCidadao);
+            List<Datasets.Processo_Requerente> certidao = new List<Datasets.Processo_Requerente>();
+            Datasets.Processo_Requerente reg = new Datasets.Processo_Requerente() {
+                Ano_Processo = Ano_Processo,
+                Num_Processo = Num_Processo,
+                Seq = 1,
+                Numero_Processo = string.Format("{0}-{1}/{2}", Num_Processo, clsProcesso.DvProcesso(Num_Processo), Ano_Processo),
+                Endereco_Imovel = EndImovel,
+                Assunto = processo.Complemento
+            };
 
-            if (!string.IsNullOrEmpty(Reg2.Cnpj))
-                sDoc = Convert.ToUInt64(Reg2.Cnpj).ToString(@"00\.000\.000\/0000\-00");
-            else {
-                if (!string.IsNullOrEmpty(Reg2.Cpf))
-                    sDoc = Convert.ToUInt64(Reg2.Cpf).ToString(@"000\.000\.000\-00");
-                else
-                    sDoc = Reg2.Rg;
-            }
-            sNumProc = string.Format("{0}-{1}/{2}", Num_Processo, clsProcesso.DvProcesso(Num_Processo), Ano_Processo);
-            sNome = Reg.NomeCidadao;
-            sAssunto = Reg.Complemento;
-            sData = DateTime.Parse(Reg.DataEntrada.ToString()).ToString("dd/MM/yyyy");
-            foreach (var Item in Reg.ListaProcessoDoc) {
-                if (Item.DataEntrega != null) {
-                    DataRow dRow = dTable.NewRow();
-                    dRow["Codigo"] = Item.CodigoDocumento;
-                    dRow["Nome"] = Item.NomeDocumento;
-                    dRow["DataEntrega"] = DateTime.Parse(Item.DataEntrega.ToString()).ToString("dd/MM/yyyy");
-                    dTable.Rows.Add(dRow);
+
+
+            if (cidadao != null) {
+                reg.Requerente = cidadao.Nome;
+                reg.Rg = cidadao.Rg ?? "";
+                if (cidadao.EtiquetaR == "S") {
+                    reg.Endereco = cidadao.EnderecoR + " " + cidadao.NumeroR;
+                    reg.Bairro = cidadao.NomeBairroR;
+                    reg.Cidade = cidadao.NomeCidadeR;
+                    reg.Uf = cidadao.UfR;
+                } else {
+                    reg.Endereco = cidadao.EnderecoC + " " + cidadao.NumeroC;
+                    reg.Bairro = cidadao.NomeBairroC;
+                    reg.Cidade = cidadao.NomeCidadeC;
+                    reg.Uf = cidadao.UfC;
                 }
             }
 
-            Ds.Tables.Add(dTable);
-            ReportParameter p1 = new ReportParameter("prmProcesso", sNumProc);
-            ReportParameter p2 = new ReportParameter("prmNome", sNome);
-            ReportParameter p3 = new ReportParameter("prmAssunto", sAssunto);
-            ReportParameter p4 = new ReportParameter("prmDataEntrada", sData);
-            ReportParameter p5 = new ReportParameter("prmDoc", sDoc);
-            gtiCore.Liberado(this);
-            Forms.Report f1 = new Report(sReportName, Ds, 1, true, new ReportParameter[] { p1, p2, p3, p4, p5 }) {
-                Tag = this.Name
-            };
-            f1.ShowDialog();
+            if (!string.IsNullOrEmpty(cidadao.Cnpj))
+                reg.Documento = Convert.ToUInt64(cidadao.Cnpj).ToString(@"00\.000\.000\/0000\-00");
+            else {
+                if (!string.IsNullOrEmpty(cidadao.Cpf))
+                    reg.Documento = Convert.ToUInt64(cidadao.Cpf).ToString(@"000\.000\.000\-00");
+            }
+
+            certidao.Add(reg);
+
+            ReportDocument rd = new ReportDocument();
+            rd.Load(rptPath);
+            try {
+                RptViewer rptViewer = new RptViewer();
+                rd.Database.Tables[0].SetDataSource(certidao);
+                rd.Database.Tables[1].SetDataSource(ListaDocCrystal);
+                rptViewer.CrystalViewer.ReportSource = rd;
+                rptViewer.Text = "Comunicado de entrega de documentos";
+                Main f1 = (Main)Application.OpenForms["Main"];
+                rptViewer.MdiParent = f1;
+                rptViewer.CrystalViewer.ShowGroupTreeButton = false;
+                rptViewer.CrystalViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+                rptViewer.Show();
+            } catch {
+                throw;
+            }
 
         }
+
+        private void PrintComprovanteDoc() {
+            string rptPath;
+            rptPath = System.IO.Path.Combine(Properties.Settings.Default.Path_Report, "Comprovante_Doc.rpt");
+
+            if (!File.Exists(rptPath)) {
+                MessageBox.Show("Caminho " + rptPath + " não encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string EndImovel = "";
+            Processo_bll clsProcesso = new Processo_bll(_connection);
+            short Ano_Processo = clsProcesso.ExtractAnoProcesso(NumProcText.Text);
+            int Num_Processo = clsProcesso.ExtractNumeroProcessoNoDV(NumProcText.Text);
+            ProcessoStruct processo = clsProcesso.Dados_Processo(Ano_Processo, Num_Processo);
+            if (processo.ListaProcessoEndereco.Count == 0)
+                EndImovel = "";
+            else {
+                foreach (var item in processo.ListaProcessoEndereco) {
+                    if (!string.IsNullOrEmpty(item.NomeLogradouro))
+                        EndImovel += item.NomeLogradouro + " " + item.Numero + Environment.NewLine;
+                };
+            }
+
+            List<ProcessoDocStruct> ListaDoc = clsProcesso.ListProcessoDoc(Ano_Processo, Num_Processo);
+            List<ProcessoDocStructCrystal> ListaDocCrystal = new List<ProcessoDocStructCrystal>();
+            foreach (ProcessoDocStruct item in ListaDoc.Where(c => c.DataEntrega != null)) {
+                ProcessoDocStructCrystal x = new ProcessoDocStructCrystal() {
+                    Ano_Processo = Ano_Processo,
+                    Num_Processo = Num_Processo,
+                    Codigo = item.CodigoDocumento,
+                    Descricao = item.NomeDocumento,
+                    Data_Entrega = (DateTime)item.DataEntrega
+                };
+                ListaDocCrystal.Add(x);
+            }
+
+            Cidadao_bll clsCidadao = new Cidadao_bll(_connection);
+            CidadaoStruct cidadao = clsCidadao.LoadReg((int)processo.CodigoCidadao);
+            List<Datasets.Processo_Requerente> certidao = new List<Datasets.Processo_Requerente>();
+            Datasets.Processo_Requerente reg = new Datasets.Processo_Requerente() {
+                Ano_Processo = Ano_Processo,
+                Num_Processo = Num_Processo,
+                Seq = 1,
+                Numero_Processo = string.Format("{0}-{1}/{2}", Num_Processo, clsProcesso.DvProcesso(Num_Processo), Ano_Processo),
+                Endereco_Imovel = EndImovel,
+                Assunto = processo.Complemento
+            };
+
+
+
+            if (cidadao != null) {
+                reg.Requerente = cidadao.Nome;
+                reg.Rg = cidadao.Rg ?? "";
+                if (cidadao.EtiquetaR == "S") {
+                    reg.Endereco = cidadao.EnderecoR + " " + cidadao.NumeroR;
+                    reg.Bairro = cidadao.NomeBairroR;
+                    reg.Cidade = cidadao.NomeCidadeR;
+                    reg.Uf = cidadao.UfR;
+                } else {
+                    reg.Endereco = cidadao.EnderecoC + " " + cidadao.NumeroC;
+                    reg.Bairro = cidadao.NomeBairroC;
+                    reg.Cidade = cidadao.NomeCidadeC;
+                    reg.Uf = cidadao.UfC;
+                }
+            }
+
+            if (!string.IsNullOrEmpty(cidadao.Cnpj))
+                reg.Documento = Convert.ToUInt64(cidadao.Cnpj).ToString(@"00\.000\.000\/0000\-00");
+            else {
+                if (!string.IsNullOrEmpty(cidadao.Cpf))
+                    reg.Documento = Convert.ToUInt64(cidadao.Cpf).ToString(@"000\.000\.000\-00");
+            }
+
+            certidao.Add(reg);
+
+            ReportDocument rd = new ReportDocument();
+            rd.Load(rptPath);
+            try {
+                RptViewer rptViewer = new RptViewer();
+                rd.Database.Tables[0].SetDataSource(certidao);
+                rd.Database.Tables[1].SetDataSource(ListaDocCrystal);
+                rptViewer.CrystalViewer.ReportSource = rd;
+                rptViewer.Text = "Comunicado de entrega de documentos";
+                Main f1 = (Main)Application.OpenForms["Main"];
+                rptViewer.MdiParent = f1;
+                rptViewer.CrystalViewer.ShowGroupTreeButton = false;
+                rptViewer.CrystalViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+                rptViewer.Show();
+            } catch {
+                throw;
+            }
+        }
+
+
 
         #endregion
 

@@ -166,7 +166,7 @@
             this.txtPwd.PasswordChar = '*';
             this.txtPwd.Size = new System.Drawing.Size(148, 20);
             this.txtPwd.TabIndex = 2;
-            this.txtPwd.Text = "123456";
+            this.txtPwd.Text = "karma";
             // 
             // Label1
             // 

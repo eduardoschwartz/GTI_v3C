@@ -59,5 +59,8 @@
     <Setting Name="Form_Report_height" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">600</Value>
     </Setting>
+    <Setting Name="Path_Report" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\Work\GTI_v3C\GTI_Desktop\Report</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

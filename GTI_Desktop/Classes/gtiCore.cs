@@ -10,6 +10,7 @@ using System.Text;
 using System.Collections;
 using System.IO;
 using GTI_Bll.Classes;
+using System.Drawing;
 
 namespace GTI_Desktop.Classes {
     /// <summary>
@@ -30,13 +31,19 @@ namespace GTI_Desktop.Classes {
         private static string _baseDadosTeste;
         private static string _ul;
         private static string _servername;
-
+        private static Size _size; 
+        
+        
         public static string ServerName { get => _servername; set => _servername = value; }
         public static string BaseDados { get => _baseDados; set => _baseDados = value; }
         public static string BaseDadosTeste { get => _baseDadosTeste; set => _baseDadosTeste = value; }
-        public static string Ul { get => _ul; set => _ul = value; }
-        public static string Up { get => _up; set => _up = value; }
-        
+        public static string Path_Anexo { get => _ul; set => _ul = value; }
+        public static string Path_Report { get => _up; set => _up = value; }
+        public static Size Form_Processo_Lista { get => _size; set => _size = value; }
+        public static Size Form_Processo_Tramite { get => _size; set => _size = value; }
+        public static Size Form_Report { get => _size; set => _size = value; }
+        public static Size Form_Extrato { get => _size; set => _size = value; }
+
 
         public static List<ToolStripMenuItem> GetItems(MenuStrip menuStrip) {
             List<ToolStripMenuItem> myItems = new List<ToolStripMenuItem>();
@@ -661,6 +668,7 @@ namespace GTI_Desktop.Classes {
                     BaseDados = aDatResult[0][0].ToString();
                     aDatResult = ReadFromDatFile(sDir + sFileName, "DT");
                     BaseDadosTeste = aDatResult[0][0].ToString();
+                    aDatResult = ReadFromDatFile(sDir + sFileName, "LU");
                 } catch (Exception ex) {
                     return ex;
                 }
@@ -670,6 +678,7 @@ namespace GTI_Desktop.Classes {
                 aLista.Add(ConvertDatReg("SN", new[] { "SkyNet" })); // Server Name
                 aLista.Add(ConvertDatReg("DR", new[] { "Tributacao" })); // DataBase Real
                 aLista.Add(ConvertDatReg("DT", new[] { "TributacaoTeste" })); // DataBase Teste
+                aLista.Add(ConvertDatReg("LU", new[] { "" })); // Last User
                 CreateDatFile(sDir + "\\gti000.dat", aLista);
                 LoadSettings();
             }

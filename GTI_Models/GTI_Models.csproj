@@ -50,6 +50,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -71,6 +72,7 @@
     <Compile Include="Models\banco.cs" />
     <Compile Include="Models\boleto.cs" />
     <Compile Include="Models\boletoguia.cs" />
+    <Compile Include="Models\gti_settings.cs" />
     <Compile Include="Models\Integrativa\cadastro.cs" />
     <Compile Include="Models\cadimob.cs" />
     <Compile Include="Models\calculo_resumo.cs" />

@@ -554,5 +554,43 @@ namespace GTI_Dal.Classes {
             }
         }
 
+        public Gti_Settings Load_GTI_Settings(int UserId) {
+            using (GTI_Context db = new GTI_Context(_connection)) {
+                Gti_Settings Sql = (from s in db.Gti_Settings where s.UserId == UserId select s).FirstOrDefault();
+                if (Sql == null) {
+                    Create_GTI_Setting(UserId);
+                } else {
+                    Gti_Settings reg = new Gti_Settings() {
+                        UserId=Sql.UserId,
+                        Path_Report = Sql.Path_Report,
+                        Path_Anexo = Sql.Path_Anexo,
+                        Form_Extrato_Height=Sql.Form_Extrato_Height,
+                        Form_Extrato_Width=Sql.Form_Extrato_Width,
+                        Form_Processo_Lista_Height=Sql.Form_Processo_Lista_Height,
+                        Form_Processo_Lista_Width=Sql.Form_Processo_Lista_Width,
+                        Form_Processo_Tramite_Height=Sql.Form_Processo_Lista_Height,
+                        Form_Processo_Tramite_Width=Sql.Form_Processo_Tramite_Width,
+                        Form_Report_Height=Sql.Form_Report_Height,
+                        Form_Report_Width=Sql.Form_Report_Width
+                    };
+                    return reg;
+                }
+            }
+            return null;
+        }
+
+        private void Create_GTI_Setting(int UserId) {
+            using (GTI_Context db = new GTI_Context(_connection)) {
+                Gti_Settings reg = new Gti_Settings() { UserId = UserId };
+                db.Gti_Settings.Add(reg);
+                try {
+                    db.SaveChanges();
+                } catch (Exception ex) {
+                    throw ex;
+                }
+            }
+            Load_GTI_Settings(UserId);
+        }
+
     }
 }

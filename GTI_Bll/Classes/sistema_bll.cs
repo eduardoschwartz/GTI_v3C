@@ -245,5 +245,12 @@ namespace GTI_Bll.Classes {
             return obj.Nome_por_Cnpj(cnpj);
         }
 
+        public Gti_Settings Load_GTI_Settings(int UserId) {
+            Sistema_Data obj = new Sistema_Data(_connection);
+            return obj.Load_GTI_Settings(UserId);
+
+        }
+
+
     }
 }

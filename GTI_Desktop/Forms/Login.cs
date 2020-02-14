@@ -106,20 +106,18 @@ namespace GTI_Desktop.Forms {
             OriginSize = this.Size.Height;
             LoginToolStrip.Renderer = new MySR();
             txtServer.Text = gtiCore.ServerName;
-            txtLogin.Text = gtiCore.Retorna_Last_User();
+            txtLogin.Text = gtiCore.Ul;
             txtPwd.Focus();
         }
 
         private void Login_Load(object sender, EventArgs e) {
             String Caminho = Application.StartupPath;
-            txtLogin.Text = gtiCore.Retorna_Last_User(); 
+//            txtLogin.Text = gtiCore.Ul;
         }
-
         
         private void Login_Activated(object sender, EventArgs e) {
             txtPwd.Focus();
         }
-           
 
         private void BtGravar_Click(object sender, EventArgs e) {
             if (String.IsNullOrEmpty(txtPwd1.Text) || String.IsNullOrEmpty(txtPwd2.Text)) {

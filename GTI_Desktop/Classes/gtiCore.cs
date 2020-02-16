@@ -31,18 +31,24 @@ namespace GTI_Desktop.Classes {
         private static string _baseDadosTeste;
         private static string _ul;
         private static string _servername;
+        private static string _lastuser;
+        private static int _userid;
         private static Size _size; 
         
         
         public static string ServerName { get => _servername; set => _servername = value; }
         public static string BaseDados { get => _baseDados; set => _baseDados = value; }
         public static string BaseDadosTeste { get => _baseDadosTeste; set => _baseDadosTeste = value; }
+        public static string LastUser { get => _lastuser; set => _lastuser = value; }
         public static string Path_Anexo { get => _ul; set => _ul = value; }
         public static string Path_Report { get => _up; set => _up = value; }
+        public static int UserId { get => _userid; set => _userid = value; }
         public static Size Form_Processo_Lista { get => _size; set => _size = value; }
         public static Size Form_Processo_Tramite { get => _size; set => _size = value; }
         public static Size Form_Report { get => _size; set => _size = value; }
         public static Size Form_Extrato { get => _size; set => _size = value; }
+        public static string Ul = "gtisys";
+        public static string Up = "everest";
 
 
         public static List<ToolStripMenuItem> GetItems(MenuStrip menuStrip) {

@@ -1,7 +1,8 @@
-﻿using System.Drawing;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace GTI_Models.Models {
-    public class Gti_Settings {
+    public class Gti000 {
+        [Key]
         public int UserId { get; set; }
         public string Path_Anexo { get; set; }
         public string Path_Report { get; set; }

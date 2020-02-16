@@ -100,18 +100,18 @@ namespace GTI_Desktop.Forms {
         
         public Login() {
             m_aeroEnabled = false;
-            this.Refresh();
+            Refresh();
             InitializeComponent();
-            this.Size = new Size(this.Size.Width, 190);
-            OriginSize = this.Size.Height;
+            Size = new Size(Size.Width, 190);
+            OriginSize = Size.Height;
             LoginToolStrip.Renderer = new MySR();
-            txtServer.Text = gtiCore.ServerName;
-            txtLogin.Text = gtiCore.Ul;
+            txtServer.Text = "200.232.123.115";
+            txtLogin.Text = gtiCore.LastUser??"";
             txtPwd.Focus();
         }
 
         private void Login_Load(object sender, EventArgs e) {
-            String Caminho = Application.StartupPath;
+            //string Caminho = Application.StartupPath;
 //            txtLogin.Text = gtiCore.Ul;
         }
         
@@ -120,7 +120,7 @@ namespace GTI_Desktop.Forms {
         }
 
         private void BtGravar_Click(object sender, EventArgs e) {
-            if (String.IsNullOrEmpty(txtPwd1.Text) || String.IsNullOrEmpty(txtPwd2.Text)) {
+            if (string.IsNullOrEmpty(txtPwd1.Text) || string.IsNullOrEmpty(txtPwd2.Text)) {
                 MessageBox.Show("Digite a nova senha e confirme a senha.", "Erro de gravação", MessageBoxButtons.OK, MessageBoxIcon.Error);
             } else {
                 if (string.Compare(txtPwd1.Text, txtPwd2.Text) != 0)
@@ -150,7 +150,7 @@ namespace GTI_Desktop.Forms {
                                 LoginButton.Enabled = true;
                                 SairButton.Enabled = true;
                                 txtPwd.Text = txtPwd1.Text;
-                                this.Size = new Size(this.Size.Width, OriginSize);
+                                Size = new Size(Size.Width, OriginSize);
                             }
                         }
                     }
@@ -170,13 +170,13 @@ namespace GTI_Desktop.Forms {
                 SenhaButton.Enabled = false;
                 LoginButton.Enabled = false;
                 SairButton.Enabled = false;
-                this.Size = new Size(this.Size.Width, 321);
+                Size = new Size(Size.Width, 321);
             } else {
                 txtLogin.Enabled = true;
                 SenhaButton.Enabled = true;
                 LoginButton.Enabled = true;
                 SairButton.Enabled = true;
-                this.Size = new Size(this.Size.Width, OriginSize);
+                Size = new Size(Size.Width, OriginSize);
             }
 
         }
@@ -192,7 +192,6 @@ namespace GTI_Desktop.Forms {
             }
             gtiCore.Ocupado(this);
             gtiCore.ServerName = txtServer.Text;
-            //Properties.Settings.Default.Save();
 
             string _connection = gtiCore.Connection_Name();
             Sistema_bll sistema_Class = new Sistema_bll(_connection);
@@ -222,12 +221,15 @@ namespace GTI_Desktop.Forms {
                 MessageBox.Show(ex.InnerException.Message, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            gtiCore.ServerName = txtServer.Text.ToUpper();
-            GTI_Desktop.Properties.Settings.Default.LastUser = txtLogin.Text.ToUpper();
-            GTI_Desktop.Properties.Settings.Default.UserId = sistema_Class.Retorna_User_LoginId(txtLogin.Text);
-            GTI_Desktop.Properties.Settings.Default.Save();
+            gtiCore.LastUser= txtLogin.Text.ToUpper();
+            gtiCore.UserId= sistema_Class.Retorna_User_LoginId(txtLogin.Text); 
 
-            int nId = Properties.Settings.Default.UserId;
+            int nId = gtiCore.UserId;
+            Gti000 _settings = sistema_Class.Load_GTI_Settings(nId, Application.StartupPath);
+            if(_settings.Form_Extrato_Height==0)
+                _settings = sistema_Class.Load_GTI_Settings(nId, Application.StartupPath);
+
+
             usuarioStruct cUser = sistema_Class.Retorna_Usuario(nId);
             int? nSetor = cUser.Setor_atual;
             if (nSetor == null || nSetor == 0) {
@@ -250,7 +252,7 @@ namespace GTI_Desktop.Forms {
        //     string h = GtiTypes.UserBinary;
             Close();
             Main f1 = (Main)Application.OpenForms["Main"];
-            f1.UserToolStripStatus.Text = gtiCore.Retorna_Last_User();
+            f1.UserToolStripStatus.Text = gtiCore.LastUser;
             f1.LockForm(false);
             gtiCore.Liberado(this);
         }

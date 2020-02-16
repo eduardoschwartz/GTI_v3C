@@ -156,6 +156,7 @@
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(148, 20);
             this.txtLogin.TabIndex = 1;
+            this.txtLogin.Text = "schwartz";
             // 
             // txtPwd
             // 
@@ -166,7 +167,7 @@
             this.txtPwd.PasswordChar = '*';
             this.txtPwd.Size = new System.Drawing.Size(148, 20);
             this.txtPwd.TabIndex = 2;
-            this.txtPwd.Text = "karma";
+            this.txtPwd.Text = "scout";
             // 
             // Label1
             // 

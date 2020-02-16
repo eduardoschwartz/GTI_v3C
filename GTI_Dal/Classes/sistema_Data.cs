@@ -2,6 +2,7 @@
 using GTI_Models.Models;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using static GTI_Models.modelCore;
@@ -554,13 +555,14 @@ namespace GTI_Dal.Classes {
             }
         }
 
-        public Gti_Settings Load_GTI_Settings(int UserId) {
+        public Gti000 Load_GTI_Settings(int UserId,string Path) {
             using (GTI_Context db = new GTI_Context(_connection)) {
-                Gti_Settings Sql = (from s in db.Gti_Settings where s.UserId == UserId select s).FirstOrDefault();
+                Gti000 Sql = (from s in db.Gti000 where s.UserId == UserId select s).FirstOrDefault();
                 if (Sql == null) {
-                    Create_GTI_Setting(UserId);
+                    Gti000 regnew= Create_GTI_Setting(UserId,Path);
+                    return regnew;
                 } else {
-                    Gti_Settings reg = new Gti_Settings() {
+                    Gti000 reg = new Gti000() {
                         UserId=Sql.UserId,
                         Path_Report = Sql.Path_Report,
                         Path_Anexo = Sql.Path_Anexo,
@@ -576,20 +578,28 @@ namespace GTI_Dal.Classes {
                     return reg;
                 }
             }
-            return null;
         }
 
-        private void Create_GTI_Setting(int UserId) {
-            using (GTI_Context db = new GTI_Context(_connection)) {
-                Gti_Settings reg = new Gti_Settings() { UserId = UserId };
-                db.Gti_Settings.Add(reg);
+        private Gti000 Create_GTI_Setting(int UserId,string Path) {
+            string _path = System.IO.Path.Combine(Path + "\\Report");
+            using (var db = new GTI_Context(_connection)) {
+                object[] Parametros = new object[2];
+                Parametros[0] = new SqlParameter { ParameterName = "@userid", SqlDbType = SqlDbType.Int, SqlValue = UserId };
+                Parametros[1] = new SqlParameter { ParameterName = "@path_report", SqlDbType = SqlDbType.VarChar, SqlValue = _path };
+                db.Database.ExecuteSqlCommand("INSERT INTO gti000(userid,path_report) VALUES(@userid,@path_report)", Parametros);
                 try {
                     db.SaveChanges();
-                } catch (Exception ex) {
-                    throw ex;
+                } catch {
+                    throw;
                 }
             }
-            Load_GTI_Settings(UserId);
+
+            Gti000 reg = new Gti000() {
+                UserId = UserId,
+                Path_Report = _path
+            };
+
+            return reg;
         }
 
     }

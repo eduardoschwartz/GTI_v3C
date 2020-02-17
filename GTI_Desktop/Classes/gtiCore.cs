@@ -670,20 +670,15 @@ namespace GTI_Desktop.Classes {
                 try {
                     aDatResult = ReadFromDatFile(sDir + sFileName, "SN");
                     ServerName = aDatResult[0][0].ToString();
-                    aDatResult = ReadFromDatFile(sDir + sFileName, "DR");
-                    BaseDados = aDatResult[0][0].ToString();
-                    aDatResult = ReadFromDatFile(sDir + sFileName, "DT");
-                    BaseDadosTeste = aDatResult[0][0].ToString();
                     aDatResult = ReadFromDatFile(sDir + sFileName, "LU");
+                    LastUser = aDatResult[0][0].ToString();
                 } catch (Exception ex) {
                     return ex;
                 }
             } else {
                 List<string> aLista = new List<string>();
                 aLista.Add(ConvertDatReg("ZZ", 1.ToString().Split())); //Versão do arquivo
-                aLista.Add(ConvertDatReg("SN", new[] { "SkyNet" })); // Server Name
-                aLista.Add(ConvertDatReg("DR", new[] { "Tributacao" })); // DataBase Real
-                aLista.Add(ConvertDatReg("DT", new[] { "TributacaoTeste" })); // DataBase Teste
+                aLista.Add(ConvertDatReg("SN", new[] { "200.232.123.115" })); // Server Name
                 aLista.Add(ConvertDatReg("LU", new[] { "" })); // Last User
                 CreateDatFile(sDir + "\\gti000.dat", aLista);
                 LoadSettings();

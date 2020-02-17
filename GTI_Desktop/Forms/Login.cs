@@ -105,8 +105,9 @@ namespace GTI_Desktop.Forms {
             Size = new Size(Size.Width, 190);
             OriginSize = Size.Height;
             LoginToolStrip.Renderer = new MySR();
-            txtServer.Text = "200.232.123.115";
-            txtLogin.Text = gtiCore.LastUser??"";
+            gtiCore.LoadSettings();
+            txtServer.Text = gtiCore.ServerName;
+            txtLogin.Text = gtiCore.LastUser;
             txtPwd.Focus();
         }
 
@@ -225,10 +226,7 @@ namespace GTI_Desktop.Forms {
             gtiCore.UserId= sistema_Class.Retorna_User_LoginId(txtLogin.Text); 
 
             int nId = gtiCore.UserId;
-            Gti000 _settings = sistema_Class.Load_GTI_Settings(nId, Application.StartupPath);
-            if(_settings.Form_Extrato_Height==0)
-                _settings = sistema_Class.Load_GTI_Settings(nId, Application.StartupPath);
-
+            LoadDBSettings(nId);
 
             usuarioStruct cUser = sistema_Class.Retorna_Usuario(nId);
             int? nSetor = cUser.Setor_atual;
@@ -275,5 +273,21 @@ namespace GTI_Desktop.Forms {
             }
             return base.ProcessCmdKey(ref msg, keyData);
         }
+
+        private void LoadDBSettings(int UserId) {
+            Sistema_bll sistema_Class = new Sistema_bll(gtiCore.Connection_Name());
+            Gti000 _settings = sistema_Class.Load_GTI_Settings(UserId, Application.StartupPath);
+            if (_settings.Form_Extrato_Height == 0)
+                _settings = sistema_Class.Load_GTI_Settings(UserId, Application.StartupPath);
+
+            gtiCore.Path_Anexo = _settings.Path_Anexo;
+            gtiCore.Path_Report = _settings.Path_Report;
+            gtiCore.Form_Extrato = new Size(_settings.Form_Extrato_Width, _settings.Form_Extrato_Height);
+            gtiCore.Form_Processo_Lista = new Size(_settings.Form_Processo_Lista_Width, _settings.Form_Processo_Lista_Height);
+            gtiCore.Form_Processo_Tramite = new Size(_settings.Form_Processo_Tramite_Width, _settings.Form_Processo_Tramite_Height);
+            gtiCore.Form_Report = new Size(_settings.Form_Report_Width, _settings.Form_Report_Height);
+        }
+
+
     }
 }

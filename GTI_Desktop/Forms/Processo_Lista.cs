@@ -13,7 +13,7 @@ using static GTI_Desktop.Classes.GtiTypes;
 namespace GTI_Desktop.Forms {
     public partial class Processo_Lista : Form
     {
-        string _connection = gtiCore.Connection_Name();
+        readonly string _connection = gtiCore.Connection_Name();
         public ProcessoNumero ReturnValue { get; set; } = new ProcessoNumero();
         List<ArrayList> aDatResult;
         //int _File_Version = Properties.Settings.Default.gti_003_version;

@@ -33,7 +33,7 @@ namespace GTI_Desktop.Forms {
         private bool m_aeroEnabled;                     // variables for box shadow
         private const int CS_DROPSHADOW = 0x00020000;
         private const int WM_NCPAINT = 0x0085;
-        private const int WM_ACTIVATEAPP = 0x001C;
+        //private const int WM_ACTIVATEAPP = 0x001C;
 
         public struct MARGINS                           // struct for box shadow
         {
@@ -230,8 +230,9 @@ namespace GTI_Desktop.Forms {
             usuarioStruct cUser = sistema_Class.Retorna_Usuario(nId);
             int? nSetor = cUser.Setor_atual;
             if (nSetor == null || nSetor == 0) {
-                Usuario_Setor form = new Usuario_Setor();
-                form.nId = nId;
+                Usuario_Setor form = new Usuario_Setor {
+                    nId = nId
+                };
                 var result = form.ShowDialog(this);
                 if (result != DialogResult.OK)
                     return;

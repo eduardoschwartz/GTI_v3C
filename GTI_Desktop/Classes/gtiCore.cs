@@ -24,8 +24,8 @@ namespace GTI_Desktop.Classes {
         public enum TipoEndereco { Local, Proprietario, Entrega }
         public enum EventoForm { Nenhum=0, Insert=1, Edit=2,Delete=3,Print=4 }
 
-        private static byte[] key = new byte[8] { 1, 2, 3, 4, 5, 6, 7, 8 };
-        private static byte[] iv = new byte[8] { 1, 2, 3, 4, 5, 6, 7, 8 };
+        private static readonly byte[] key = new byte[8] { 1, 2, 3, 4, 5, 6, 7, 8 };
+        private static readonly byte[] iv = new byte[8] { 1, 2, 3, 4, 5, 6, 7, 8 };
 
         private static string _up;
         private static string _baseDados;
@@ -126,12 +126,12 @@ namespace GTI_Desktop.Classes {
             return false;
         }
 
-        private static bool Doubled(string s1, string s2) {
-            bool bRet = false;
-            if (s1.EndsWith(s2))
-                bRet = true;
-            return bRet;
-        }
+        //private static bool Doubled(string s1, string s2) {
+        //    bool bRet = false;
+        //    if (s1.EndsWith(s2))
+        //        bRet = true;
+        //    return bRet;
+        //}
 
         public static char Tweak(System.Windows.Forms.TextBox txt, char sKey, eTweakMode Mode, int DecimalPlaces) {
             int nKey = Convert.ToInt16(sKey);
@@ -291,7 +291,7 @@ namespace GTI_Desktop.Classes {
             }
 
             digito = resto.ToString();
-            tempCpf = tempCpf + digito;
+            tempCpf += digito;
             int soma2 = 0;
 
             for (int i = 0; i < 10; i++) {
@@ -306,7 +306,7 @@ namespace GTI_Desktop.Classes {
                 resto = 11 - resto;
             }
 
-            digito = digito + resto.ToString();
+            digito += resto.ToString();
             return cpf.EndsWith(digito);
         }
 
@@ -373,13 +373,13 @@ namespace GTI_Desktop.Classes {
         }
 
         public static string CreateConnectionString(string ServerName, string DataBaseName, string LoginName, string Pwd) {
-            SqlConnectionStringBuilder sqlBuilder = new SqlConnectionStringBuilder();
-
-            sqlBuilder.DataSource = ServerName;
-            sqlBuilder.InitialCatalog = DataBaseName;
-            sqlBuilder.IntegratedSecurity = false;
-            sqlBuilder.UserID = LoginName;
-            sqlBuilder.Password = Pwd;
+            SqlConnectionStringBuilder sqlBuilder = new SqlConnectionStringBuilder {
+                DataSource = ServerName,
+                InitialCatalog = DataBaseName,
+                IntegratedSecurity = false,
+                UserID = LoginName,
+                Password = Pwd
+            };
 
             return sqlBuilder.ConnectionString;
         }

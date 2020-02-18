@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace GTI_Desktop.Forms {
     public partial class ReportCR : Form {
-        //private string _connection = gtiCore.Connection_Name();
+        //private readonly string _connection = gtiCore.Connection_Name();
         //TableLogOnInfos crtableLogoninfos = new TableLogOnInfos();
         //TableLogOnInfo crtableLogoninfo = new TableLogOnInfo();
         //ConnectionInfo crConnectionInfo = new ConnectionInfo();

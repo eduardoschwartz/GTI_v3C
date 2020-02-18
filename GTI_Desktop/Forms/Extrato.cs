@@ -11,8 +11,7 @@ using static GTI_Models.modelCore;
 
 namespace GTI_Desktop.Forms {
     public partial class Extrato : Form {
-
-        string _connection = gtiCore.Connection_Name();
+        readonly string _connection = gtiCore.Connection_Name();
         List<SpExtrato> Lista_Extrato_Tributo;
         List<SpExtrato> Lista_Extrato_Parcela;
         List<ObsparcelaStruct> Lista_Observacao;

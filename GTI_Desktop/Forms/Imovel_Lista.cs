@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace GTI_Desktop.Forms {
     public partial class Imovel_Lista : Form {
-        string _connection = gtiCore.Connection_Name();
+        readonly string _connection = gtiCore.Connection_Name();
         public int ReturnValue { get; set; }
         List<ArrayList> aDatResult;
         //int _File_Version = Properties.Settings.Default.gti_001_version;
@@ -156,9 +156,9 @@ namespace GTI_Desktop.Forms {
             }
         }
 
-        private void CallPB(System.Windows.Forms.ToolStripProgressBar pBar, int nPos, int nTot) {
-            pBar.Value = nPos * 100 / nTot;
-        }
+        //private void CallPB(System.Windows.Forms.ToolStripProgressBar pBar, int nPos, int nTot) {
+        //    pBar.Value = nPos * 100 / nTot;
+        //}
 
         private void FindButton_Click(object sender, EventArgs e) {
 

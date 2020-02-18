@@ -7,8 +7,8 @@ using System.Windows.Forms;
 
 namespace GTI_Desktop.Forms {
     public partial class Comunicado_Isencao : Form {
-        private string _connection = gtiCore.Connection_Name();
-        short _remessa = 1;
+        private readonly string _connection = gtiCore.Connection_Name();
+        readonly short _remessa = 1;
 
         public Comunicado_Isencao() {
             InitializeComponent();
@@ -64,24 +64,25 @@ namespace GTI_Desktop.Forms {
                 int _cep_numero = Convert.ToInt32(_cep_str);
                 _cep_entrega = _cep_numero.ToString("00000-000");
 
-                Comunicado_isencao Reg = new Comunicado_isencao();
-                Reg.Remessa = _remessa;
-                Reg.Codigo = _codigo;
-                Reg.Nome = _nome.Length > 50 ? _nome.Substring(0, 50) : _nome;
-                Reg.Cpf_cnpj = _cpfcnpj;
-                Reg.Endereco = _endereco;
-                Reg.Bairro = _bairro ?? "";
-                Reg.Cidade = _cidade ?? "";
-                Reg.Cep = _cep ?? "";
-                Reg.Endereco_entrega = _endereco_entrega;
-                Reg.Bairro_entrega = _bairro_entrega ?? "";
-                Reg.Cidade_entrega = _cidade_entrega ?? "";
-                Reg.Cep_entrega = _cep_entrega;
-                Reg.Data_documento = DateTime.Now;
-                Reg.Inscricao = _inscricao;
-                Reg.Lote = _lote.Length > 15 ? _lote.Substring(0, 15) : _lote;
-                Reg.Quadra = _quadra.Length > 15 ? _quadra.Substring(0, 15) : _quadra;
-                Reg.Cep_entrega_cod = _cep_numero;
+                Comunicado_isencao Reg = new Comunicado_isencao {
+                    Remessa = _remessa,
+                    Codigo = _codigo,
+                    Nome = _nome.Length > 50 ? _nome.Substring(0, 50) : _nome,
+                    Cpf_cnpj = _cpfcnpj,
+                    Endereco = _endereco,
+                    Bairro = _bairro ?? "",
+                    Cidade = _cidade ?? "",
+                    Cep = _cep ?? "",
+                    Endereco_entrega = _endereco_entrega,
+                    Bairro_entrega = _bairro_entrega ?? "",
+                    Cidade_entrega = _cidade_entrega ?? "",
+                    Cep_entrega = _cep_entrega,
+                    Data_documento = DateTime.Now,
+                    Inscricao = _inscricao,
+                    Lote = _lote.Length > 15 ? _lote.Substring(0, 15) : _lote,
+                    Quadra = _quadra.Length > 15 ? _quadra.Substring(0, 15) : _quadra,
+                    Cep_entrega_cod = _cep_numero
+                };
 
                 Exception ex = imovel_Class.Insert_Comunicado_Isencao(Reg);
                 if (ex != null) {

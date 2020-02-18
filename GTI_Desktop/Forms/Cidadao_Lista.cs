@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace GTI_Desktop.Forms {
     public partial class Cidadao_Lista : Form {
-        string _connection = gtiCore.Connection_Name();
+        readonly string _connection = gtiCore.Connection_Name();
         public int ReturnValue { get; set; }
         List<ArrayList> aDatResult;
         //int _File_Version = Properties.Settings.Default.gti_002_version;
@@ -83,9 +83,10 @@ namespace GTI_Desktop.Forms {
             if (aDatResult == null) aDatResult = new List<ArrayList>();
             aDatResult.Clear();
             foreach (var item in Lista) {
-                ArrayList itemlv = new ArrayList();
-                itemlv.Add(item.Codcidadao.ToString("000000"));
-                itemlv.Add(item.Nomecidadao);
+                ArrayList itemlv = new ArrayList {
+                    item.Codcidadao.ToString("000000"),
+                    item.Nomecidadao
+                };
                 if (!String.IsNullOrEmpty(item.Cpf) && gtiCore.IsNumeric(item.Cpf))
                     itemlv.Add(String.Format(@"{0:000\.000\.000\-00}", Convert.ToDecimal(Regex.Match(item.Cpf, @"\d+").Value)));
                 else

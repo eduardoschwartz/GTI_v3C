@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace GTI_Desktop.Forms {
     public partial class Empresa_Lista : Form {
-        string _connection = gtiCore.Connection_Name();
+        readonly string _connection = gtiCore.Connection_Name();
         public int ReturnValue { get; set; }
         List<ArrayList> aDatResult;
-        bool _bExec=false;
+        readonly bool _bExec=false;
         //int _File_Version = Properties.Settings.Default.gti_004_version;
 
         public Empresa_Lista() {
@@ -204,9 +204,9 @@ namespace GTI_Desktop.Forms {
 
         //}
 
-        private void CallPB(ToolStripProgressBar pBar, int nPos, int nTot) {
-            pBar.Value = nPos * 100 / nTot;
-        }
+        //private void CallPB(ToolStripProgressBar pBar, int nPos, int nTot) {
+        //    pBar.Value = nPos * 100 / nTot;
+        //}
 
         private void EnderecoAddButton_Click(object sender, EventArgs e) {
             GTI_Models.Models.Endereco reg = new GTI_Models.Models.Endereco {

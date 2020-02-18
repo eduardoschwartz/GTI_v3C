@@ -10,10 +10,11 @@ using static GTI_Models.modelCore;
 
 namespace GTI_Desktop.Forms {
     public partial class Carta_Cobranca : Form {
-        private string _connection = gtiCore.Connection_Name();
+        private readonly string _connection = gtiCore.Connection_Name();
         private bool _stop = false;
+
         //short _remessa = 3; //29/04/2019
-        short _remessa = 4; //29/07/2019
+        readonly short _remessa = 4; //29/07/2019
 
         public Carta_Cobranca() {
             InitializeComponent();
@@ -160,15 +161,16 @@ namespace GTI_Desktop.Forms {
                         Lista_Final[_index].Valorcorrecao += item.Valorcorrecao;
                         Lista_Final[_index].Valortotal += item.Valortributo+_valor_juros+_valor_multa+item.Valorcorrecao;
                     } else {
-                        SpExtrato_carta reg = new SpExtrato_carta();
-                        reg.Codreduzido = item.Codreduzido;
-                        reg.Anoexercicio = item.Anoexercicio;
-                        reg.Valortributo = item.Valortributo;
-                        reg.Valorjuros = _valor_juros;
-                        reg.Valormulta = _valor_multa;
-                        reg.Valorcorrecao = item.Valorcorrecao;
-                        reg.Valortotal = item.Valortributo + _valor_juros + _valor_multa + item.Valorcorrecao;
-                        reg.Dataajuiza = item.Dataajuiza;
+                        SpExtrato_carta reg = new SpExtrato_carta {
+                            Codreduzido = item.Codreduzido,
+                            Anoexercicio = item.Anoexercicio,
+                            Valortributo = item.Valortributo,
+                            Valorjuros = _valor_juros,
+                            Valormulta = _valor_multa,
+                            Valorcorrecao = item.Valorcorrecao,
+                            Valortotal = item.Valortributo + _valor_juros + _valor_multa + item.Valorcorrecao,
+                            Dataajuiza = item.Dataajuiza
+                        };
                         Lista_Final.Add(reg);
                     }
                 }
@@ -301,9 +303,10 @@ namespace GTI_Desktop.Forms {
 
                 //Se não tiver CEP ou CPF grava exclusão e passa para o próximo
                 if(string.IsNullOrWhiteSpace( _cpfcnpj) || string.IsNullOrWhiteSpace(_cep_entrega) || _cep_entrega=="00000-000" || _cep_entrega == "14870-000" || string.IsNullOrWhiteSpace(_endereco_entrega)) {
-                    Carta_cobranca_exclusao regE = new Carta_cobranca_exclusao();
-                    regE.Remessa = _remessa;
-                    regE.Codigo = _codigo_atual;
+                    Carta_cobranca_exclusao regE = new Carta_cobranca_exclusao {
+                        Remessa = _remessa,
+                        Codigo = _codigo_atual
+                    };
                     ex = tributario_Class.Insert_Carta_Cobranca_Exclusao(regE);
                     if (ex != null) {
                         ErrorBox eBox = new ErrorBox("Atenção", ex.Message, ex);
@@ -353,11 +356,12 @@ namespace GTI_Desktop.Forms {
                 ex = tributario_Class.Insert_Documento_Existente(RegDoc);
 
                 //****** GRAVA HEADER **************
-                Carta_cobranca Reg = new Carta_cobranca();
-                Reg.Remessa = _remessa;
-                Reg.Codigo = _codigo_atual;
-                Reg.Parcela = 1;
-                Reg.Total_Parcela = 1;
+                Carta_cobranca Reg = new Carta_cobranca {
+                    Remessa = _remessa,
+                    Codigo = _codigo_atual,
+                    Parcela = 1,
+                    Total_Parcela = 1
+                };
                 Reg.Parcela_Label = Reg.Parcela.ToString("00") + "/" + Reg.Total_Parcela.ToString("00");
                 Reg.Nome = _nome.Length > 50 ? _nome.Substring(0, 50) : _nome;
                 Reg.Cpf_cnpj = _cpfcnpj;
@@ -545,41 +549,41 @@ namespace GTI_Desktop.Forms {
             }
         }
 
-        private void PrintReportOLD(List<SpExtrato>Lista_Debitos,List<int>Lista_Codigos) {
-            gtiCore.Ocupado(this);
-            dsCartaCobranca Ds = new dsCartaCobranca();
-            dsCartaCobranca.CartaCobrancaTableDataTable dTable = new dsCartaCobranca.CartaCobrancaTableDataTable();
-            dsCartaCobranca.CartaCobrancaHeaderTableDataTable dTableHeader = new dsCartaCobranca.CartaCobrancaHeaderTableDataTable();
+        //private void PrintReportOLD(List<SpExtrato>Lista_Debitos,List<int>Lista_Codigos) {
+        //    gtiCore.Ocupado(this);
+        //    dsCartaCobranca Ds = new dsCartaCobranca();
+        //    dsCartaCobranca.CartaCobrancaTableDataTable dTable = new dsCartaCobranca.CartaCobrancaTableDataTable();
+        //    dsCartaCobranca.CartaCobrancaHeaderTableDataTable dTableHeader = new dsCartaCobranca.CartaCobrancaHeaderTableDataTable();
 
-            for (int i = 0; i < Lista_Codigos.Count; i++) {
-                DataRow dRow = dTableHeader.NewRow();
-                dRow["Codigo"] = Lista_Codigos[i];
-                dRow["Grupo"] = 1;
-                dRow["Nome"] = "Kelly Debby";
-                dTableHeader.Rows.Add(dRow);
-            }
+        //    for (int i = 0; i < Lista_Codigos.Count; i++) {
+        //        DataRow dRow = dTableHeader.NewRow();
+        //        dRow["Codigo"] = Lista_Codigos[i];
+        //        dRow["Grupo"] = 1;
+        //        dRow["Nome"] = "Kelly Debby";
+        //        dTableHeader.Rows.Add(dRow);
+        //    }
 
-            foreach (SpExtrato item in Lista_Debitos) {
-                DataRow dRow = dTable.NewRow();
-                dRow["Codigo"] = item.Codreduzido;
-                dRow["Ano"] = item.Anoexercicio;
-                dRow["Valor_Tributo"] = item.Valortributo;
-                dRow["Valor_Juros"] = item.Valorjuros;
-                dRow["Valor_Multa"] = item.Valormulta;
-                dRow["Valor_Correcao"] =item.Valorcorrecao;
-                dTable.Rows.Add(dRow);
-            }
-            Ds.Tables.RemoveAt(0);
-            Ds.Tables.RemoveAt(0);
-            Ds.Tables.Add(dTable);
-            Ds.Tables.Add(dTableHeader);
+        //    foreach (SpExtrato item in Lista_Debitos) {
+        //        DataRow dRow = dTable.NewRow();
+        //        dRow["Codigo"] = item.Codreduzido;
+        //        dRow["Ano"] = item.Anoexercicio;
+        //        dRow["Valor_Tributo"] = item.Valortributo;
+        //        dRow["Valor_Juros"] = item.Valorjuros;
+        //        dRow["Valor_Multa"] = item.Valormulta;
+        //        dRow["Valor_Correcao"] =item.Valorcorrecao;
+        //        dTable.Rows.Add(dRow);
+        //    }
+        //    Ds.Tables.RemoveAt(0);
+        //    Ds.Tables.RemoveAt(0);
+        //    Ds.Tables.Add(dTable);
+        //    Ds.Tables.Add(dTableHeader);
 
-            gtiCore.Liberado(this);
-            //ReportCR fRpt = new ReportCR("Carta_Cobranca_Envelope", null,Ds);
+        //    gtiCore.Liberado(this);
+        //    //ReportCR fRpt = new ReportCR("Carta_Cobranca_Envelope", null,Ds);
             
-            //fRpt.ShowDialog();
+        //    //fRpt.ShowDialog();
 
-        }
+        //}
 
         private void PrintReport() {
             //ReportCR fRpt = new ReportCR("Carta_Cobranca_Envelope", null, null,_remessa);

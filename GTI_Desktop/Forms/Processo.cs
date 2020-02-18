@@ -16,11 +16,11 @@ namespace GTI_Desktop.Forms {
 
         #region Variables
         bool bExec;
-        bool bAssunto;
+        readonly bool bAssunto;
         bool bAddNew;
-        string EmptyDateText = "  /  /    ";
-        List<CustomListBoxItem> lstButtonState;
-        string _connection = gtiCore.Connection_Name();
+        readonly string EmptyDateText = "  /  /    ";
+        readonly List<CustomListBoxItem> lstButtonState;
+        readonly string _connection = gtiCore.Connection_Name();
 
         public int _numero_processo { get; set; }
         public short _ano_processo { get; set; }

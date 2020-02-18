@@ -8,7 +8,7 @@ using System.Windows.Forms;
 namespace GTI_Desktop.Forms {
     public partial class Foto_Imovel : Form {
         string _connection = gtiCore.Connection_Name();
-        string _path = gtiCore.Retorna_Path_Anexo();
+        string _path = gtiCore.Path_Anexo;
         List<string> Lista_Fotos=new List<string>();
         int _pos, _total;
 

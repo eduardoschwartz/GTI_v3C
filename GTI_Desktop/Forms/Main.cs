@@ -54,17 +54,17 @@ namespace GTI_Desktop.Forms
             Version version = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
             VersaoToolStripStatus.Text = $"{version.Major}"+"."+ $"{version.Minor}" +"."+ $"{version.Build}";
             Text += VersaoToolStripStatus.Text;
-            Exception ex = gtiCore.LoadSettings();
-            if (ex != null) {
-                ErrorBox eBox = new ErrorBox("Atenção", "Erro ao carregar as configurações do sistema.", ex);
-                eBox.ShowDialog();
-                Application.Exit();
-            } else {
-                ServidorToolStripStatus.Text = gtiCore.ServerName;
-                LockForm(true);
-                Forms.Login login = new Forms.Login();
-                login.ShowDialog();
-            }
+            //Exception ex = gtiCore.LoadSettings();
+            //if (ex != null) {
+            //    ErrorBox eBox = new ErrorBox("Atenção", "Erro ao carregar as configurações do sistema.", ex);
+            //    eBox.ShowDialog();
+            //    Application.Exit();
+            //} else {
+            ServidorToolStripStatus.Text = gtiCore.ServerName;
+            LockForm(true);
+            Forms.Login login = new Forms.Login();
+            login.ShowDialog();
+            //}
         }
 
         private void SbDataBase_CloseUp(object sender, EventArgs e)

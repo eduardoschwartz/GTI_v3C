@@ -1,4 +1,4 @@
-﻿using CrystalDecisions.CrystalReports.Engine;
+﻿//using CrystalDecisions.CrystalReports.Engine;
 using GTI_Bll.Classes;
 using GTI_Desktop.Classes;
 using GTI_Models.Models;
@@ -334,7 +334,7 @@ namespace GTI_Desktop.Forms {
                 _numero_processo = 0;
                 bAddNew = true;
                 ClearFields();
-                AtendenteLabel.Text = gtiCore.Retorna_Last_User();
+                AtendenteLabel.Text = gtiCore.LastUser;
                 Sistema_bll sistema_Class = new Sistema_bll(_connection);
                 AtendenteLabel.Tag = sistema_Class.Retorna_User_LoginId(AtendenteLabel.Text);
                 NumProcText.Text = "";
@@ -472,7 +472,7 @@ namespace GTI_Desktop.Forms {
                             Anoanexo = (short)nAnoAnexo,
                             Numeroanexo = nNumeroAnexo
                         };
-                        ex = clsProcesso.Incluir_Anexo(reg_anexo, gtiCore.Retorna_Last_User());
+                        ex = clsProcesso.Incluir_Anexo(reg_anexo, gtiCore.LastUser);
                         AnexoLabel.Text = MainListView.Items.Count.ToString() + " anexo(s)";
 
                         ProcessoStruct Proc = clsProcesso.Dados_Processo(nAnoProc, nNumeroProc);
@@ -480,7 +480,7 @@ namespace GTI_Desktop.Forms {
                         ListViewItem lvlog = new ListViewItem(DateTime.Now.ToString("dd/MM/yyyy"));
                         lvlog.SubItems.Add(sNumProcesso);
                         lvlog.SubItems.Add("Anexado");
-                        lvlog.SubItems.Add(sistema_Class.Retorna_User_FullName(gtiCore.Retorna_Last_User()));
+                        lvlog.SubItems.Add(sistema_Class.Retorna_User_FullName(gtiCore.LastUser));
                         AnexoLogListView.Items.Add(lvlog);
 
                         if (ex != null) {
@@ -513,7 +513,7 @@ namespace GTI_Desktop.Forms {
                         Numeroanexo = nNumero
                     };
 
-                    Exception ex = clsProcesso.Excluir_Anexo(reganexo, gtiCore.Retorna_Last_User());
+                    Exception ex = clsProcesso.Excluir_Anexo(reganexo, gtiCore.LastUser);
                     if (ex != null) {
                         ErrorBox eBox = new ErrorBox("Atenção", ex.Message, ex);
                         eBox.ShowDialog();
@@ -526,7 +526,7 @@ namespace GTI_Desktop.Forms {
                         ListViewItem lvlog = new ListViewItem(DateTime.Now.ToString("dd/MM/yyyy"));
                         lvlog.SubItems.Add(sNumProcesso);
                         lvlog.SubItems.Add("Removido");
-                        lvlog.SubItems.Add(sistema_Class.Retorna_User_FullName(gtiCore.Retorna_Last_User()));
+                        lvlog.SubItems.Add(sistema_Class.Retorna_User_FullName(gtiCore.LastUser));
                         AnexoLogListView.Items.Add(lvlog);
                     }
                 }
@@ -601,7 +601,7 @@ namespace GTI_Desktop.Forms {
                             short Ano_Processo = clsProcesso.ExtractAnoProcesso(NumProcText.Text);
                             int Num_Processo = clsProcesso.ExtractNumeroProcessoNoDV(NumProcText.Text);
                             string sHist = "Cancelamento do processo --> " + ObsCancela;
-                            clsProcesso.Incluir_Historico_Processo(Ano_Processo, Num_Processo, sHist, gtiCore.Retorna_Last_User());
+                            clsProcesso.Incluir_Historico_Processo(Ano_Processo, Num_Processo, sHist, gtiCore.LastUser);
                             clsProcesso.Cancelar_Processo(Ano_Processo, Num_Processo, ObsCancela);
                             SituacaoLabel.Text = "CANCELADO";
                         }
@@ -638,7 +638,7 @@ namespace GTI_Desktop.Forms {
                             short Ano_Processo = clsProcesso.ExtractAnoProcesso(NumProcText.Text);
                             int Num_Processo = clsProcesso.ExtractNumeroProcessoNoDV(NumProcText.Text);
                             string sHist = "Reativação do processo --> " + ObsReativa;
-                            clsProcesso.Incluir_Historico_Processo(Ano_Processo, Num_Processo, sHist, gtiCore.Retorna_Last_User());
+                            clsProcesso.Incluir_Historico_Processo(Ano_Processo, Num_Processo, sHist, gtiCore.LastUser);
                             clsProcesso.Reativar_Processo(Ano_Processo, Num_Processo, ObsReativa);
                             SituacaoLabel.Text = "NORMAL";
                         }
@@ -678,7 +678,7 @@ namespace GTI_Desktop.Forms {
                                 short Ano_Processo = clsProcesso.ExtractAnoProcesso(NumProcText.Text);
                                 int Num_Processo = clsProcesso.ExtractNumeroProcessoNoDV(NumProcText.Text);
                                 string sHist = "Suspenção do processo --> " + ObsSuspende;
-                                clsProcesso.Incluir_Historico_Processo(Ano_Processo, Num_Processo, sHist, gtiCore.Retorna_Last_User());
+                                clsProcesso.Incluir_Historico_Processo(Ano_Processo, Num_Processo, sHist, gtiCore.LastUser);
                                 clsProcesso.Suspender_Processo(Ano_Processo, Num_Processo, ObsReativa);
                                 SituacaoLabel.Text = "SUSPENSO";
                             }
@@ -718,7 +718,7 @@ namespace GTI_Desktop.Forms {
                             short Ano_Processo = clsProcesso.ExtractAnoProcesso(NumProcText.Text);
                             int Num_Processo = clsProcesso.ExtractNumeroProcessoNoDV(NumProcText.Text);
                             string sHist = "Arquivação do processo --> " + ObsArquiva;
-                            clsProcesso.Incluir_Historico_Processo(Ano_Processo, Num_Processo, sHist, gtiCore.Retorna_Last_User());
+                            clsProcesso.Incluir_Historico_Processo(Ano_Processo, Num_Processo, sHist, gtiCore.LastUser);
                             clsProcesso.Arquivar_Processo(Ano_Processo, Num_Processo, ObsArquiva);
                             SituacaoLabel.Text = "ARQUIVADO";
                         }
@@ -1205,7 +1205,7 @@ namespace GTI_Desktop.Forms {
 
         private void PrintProcessoRequerente() {
 
-            string rptPath = System.IO.Path.Combine(Properties.Settings.Default.Path_Report, "Processo_Requerente.rpt");
+            string rptPath = System.IO.Path.Combine(gtiCore.Path_Report, "Processo_Requerente.rpt");
             if (!File.Exists(rptPath)) {
                 MessageBox.Show("Caminho " + rptPath + " não encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -1253,29 +1253,29 @@ namespace GTI_Desktop.Forms {
 
             certidao.Add(reg);
 
-            ReportDocument rd = new ReportDocument();
-            rd.Load(rptPath);
-            try {
-                rd.SetDataSource(certidao);
-                RptViewer rptViewer = new RptViewer();
-                rptViewer.CrystalViewer.ReportSource = rd;
-                Main f1 = (Main)Application.OpenForms["Main"];
-                rptViewer.MdiParent = f1;
-                rptViewer.Text = "Protocolo de Abertura de processo";
-                rptViewer.CrystalViewer.ShowGroupTreeButton = false;
-                rptViewer.CrystalViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
-                rptViewer.Show();
-            } catch {
-                throw;
-            }
+            //ReportDocument rd = new ReportDocument();
+            //rd.Load(rptPath);
+            //try {
+            //    rd.SetDataSource(certidao);
+            //    RptViewer rptViewer = new RptViewer();
+            //    rptViewer.CrystalViewer.ReportSource = rd;
+            //    Main f1 = (Main)Application.OpenForms["Main"];
+            //    rptViewer.MdiParent = f1;
+            //    rptViewer.Text = "Protocolo de Abertura de processo";
+            //    rptViewer.CrystalViewer.ShowGroupTreeButton = false;
+            //    rptViewer.CrystalViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+            //    rptViewer.Show();
+            //} catch {
+            //    throw;
+            //}
         }
 
         private void PrintRequerimento(bool bAbertura) {
             string rptPath;
             if (bAbertura)
-                rptPath = Path.Combine(Properties.Settings.Default.Path_Report, "Requerimento_Abertura.rpt");
+                rptPath = Path.Combine(gtiCore.Path_Report, "Requerimento_Abertura.rpt");
             else
-                rptPath =Path.Combine(Properties.Settings.Default.Path_Report, "Requerimento_Cancel.rpt");
+                rptPath =Path.Combine(gtiCore.Path_Report, "Requerimento_Cancel.rpt");
 
             if (!File.Exists(rptPath)) {
                 MessageBox.Show("Caminho " + rptPath + " não encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -1333,30 +1333,30 @@ namespace GTI_Desktop.Forms {
 
             certidao.Add(reg);
 
-            ReportDocument rd = new ReportDocument();
-            rd.Load(rptPath);
-            try {
-                RptViewer rptViewer = new RptViewer();
-                rd.Database.Tables[0].SetDataSource(certidao);
-                rptViewer.CrystalViewer.ReportSource = rd;
-                if (bAbertura)
-                    rptViewer.Text = "Requerimento de Abertura de processo";
-                else
-                    rptViewer.Text = "Requerimento de Cancelamento de processo";
-                Main f1 = (Main)Application.OpenForms["Main"];
-                rptViewer.MdiParent = f1;
-                rptViewer.CrystalViewer.ShowGroupTreeButton = false;
-                rptViewer.CrystalViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
-                rptViewer.Show();
-            } catch {
-                throw;
-            }
+            //ReportDocument rd = new ReportDocument();
+            //rd.Load(rptPath);
+            //try {
+            //    RptViewer rptViewer = new RptViewer();
+            //    rd.Database.Tables[0].SetDataSource(certidao);
+            //    rptViewer.CrystalViewer.ReportSource = rd;
+            //    if (bAbertura)
+            //        rptViewer.Text = "Requerimento de Abertura de processo";
+            //    else
+            //        rptViewer.Text = "Requerimento de Cancelamento de processo";
+            //    Main f1 = (Main)Application.OpenForms["Main"];
+            //    rptViewer.MdiParent = f1;
+            //    rptViewer.CrystalViewer.ShowGroupTreeButton = false;
+            //    rptViewer.CrystalViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+            //    rptViewer.Show();
+            //} catch {
+            //    throw;
+            //}
         } 
 
 
         private void PrintComunicadoDoc() {
             string rptPath;
-            rptPath =Path.Combine(Properties.Settings.Default.Path_Report, "Comunicado_Doc.rpt");
+            rptPath =Path.Combine(gtiCore.Path_Report, "Comunicado_Doc.rpt");
 
             if (!File.Exists(rptPath)) {
                 MessageBox.Show("Caminho " + rptPath + " não encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -1428,28 +1428,28 @@ namespace GTI_Desktop.Forms {
 
             certidao.Add(reg);
 
-            ReportDocument rd = new ReportDocument();
-            rd.Load(rptPath);
-            try {
-                RptViewer rptViewer = new RptViewer();
-                rd.Database.Tables[0].SetDataSource(certidao);
-                rd.Database.Tables[1].SetDataSource(ListaDocCrystal);
-                rptViewer.CrystalViewer.ReportSource = rd;
-                rptViewer.Text = "Comunicado de entrega de documentos";
-                Main f1 = (Main)Application.OpenForms["Main"];
-                rptViewer.MdiParent = f1;
-                rptViewer.CrystalViewer.ShowGroupTreeButton = false;
-                rptViewer.CrystalViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
-                rptViewer.Show();
-            } catch {
-                throw;
-            }
+            //ReportDocument rd = new ReportDocument();
+            //rd.Load(rptPath);
+            //try {
+            //    RptViewer rptViewer = new RptViewer();
+            //    rd.Database.Tables[0].SetDataSource(certidao);
+            //    rd.Database.Tables[1].SetDataSource(ListaDocCrystal);
+            //    rptViewer.CrystalViewer.ReportSource = rd;
+            //    rptViewer.Text = "Comunicado de entrega de documentos";
+            //    Main f1 = (Main)Application.OpenForms["Main"];
+            //    rptViewer.MdiParent = f1;
+            //    rptViewer.CrystalViewer.ShowGroupTreeButton = false;
+            //    //rptViewer.CrystalViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+            //    rptViewer.Show();
+            //} catch {
+            //    throw;
+            //}
 
         }
 
         private void PrintComprovanteDoc() {
             string rptPath;
-            rptPath = System.IO.Path.Combine(Properties.Settings.Default.Path_Report, "Comprovante_Doc.rpt");
+            rptPath = System.IO.Path.Combine(gtiCore.Path_Report, "Comprovante_Doc.rpt");
 
             if (!File.Exists(rptPath)) {
                 MessageBox.Show("Caminho " + rptPath + " não encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -1522,22 +1522,22 @@ namespace GTI_Desktop.Forms {
 
             certidao.Add(reg);
 
-            ReportDocument rd = new ReportDocument();
-            rd.Load(rptPath);
-            try {
-                RptViewer rptViewer = new RptViewer();
-                rd.Database.Tables[0].SetDataSource(certidao);
-                rd.Database.Tables[1].SetDataSource(ListaDocCrystal);
-                rptViewer.CrystalViewer.ReportSource = rd;
-                rptViewer.Text = "Comunicado de entrega de documentos";
-                Main f1 = (Main)Application.OpenForms["Main"];
-                rptViewer.MdiParent = f1;
-                rptViewer.CrystalViewer.ShowGroupTreeButton = false;
-                rptViewer.CrystalViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
-                rptViewer.Show();
-            } catch {
-                throw;
-            }
+            //ReportDocument rd = new ReportDocument();
+            //rd.Load(rptPath);
+            //try {
+            //    RptViewer rptViewer = new RptViewer();
+            //    rd.Database.Tables[0].SetDataSource(certidao);
+            //    rd.Database.Tables[1].SetDataSource(ListaDocCrystal);
+            //    rptViewer.CrystalViewer.ReportSource = rd;
+            //    rptViewer.Text = "Comunicado de entrega de documentos";
+            //    Main f1 = (Main)Application.OpenForms["Main"];
+            //    rptViewer.MdiParent = f1;
+            //    rptViewer.CrystalViewer.ShowGroupTreeButton = false;
+            //    rptViewer.CrystalViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+            //    rptViewer.Show();
+            //} catch {
+            //    throw;
+            //}
         }
 
 

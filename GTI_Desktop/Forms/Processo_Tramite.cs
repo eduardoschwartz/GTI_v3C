@@ -18,7 +18,7 @@ namespace GTI_Desktop.Forms {
 
         public Processo_Tramite(int AnoProcesso, int NumProcesso) {
             InitializeComponent();
-            this.Size = new System.Drawing.Size(Properties.Settings.Default.Form_Processo_Tramite_width, Properties.Settings.Default.Form_Processo_Tramite_height);
+            Size = new System.Drawing.Size(gtiCore.Form_Processo_Tramite.Width, gtiCore.Form_Processo_Tramite.Height);
 
             tBar.Renderer = new MySR();
             Ano_Processo = AnoProcesso;
@@ -191,9 +191,11 @@ namespace GTI_Desktop.Forms {
             Processo_bll clsProc = new Processo_bll(_connection);
             clsProc.Incluir_MovimentoCC((short)Ano_Processo, Num_Processo, Lista);
             gtiCore.Liberado(this);
-            Properties.Settings.Default.Form_Processo_Tramite_width = Size.Width;
-            Properties.Settings.Default.Form_Processo_Tramite_height = Size.Height;
-            Properties.Settings.Default.Save();
+            //Properties.Settings.Default.Form_Processo_Tramite_width = Size.Width;
+            //Properties.Settings.Default.Form_Processo_Tramite_height = Size.Height;
+            //Properties.Settings.Default.Save();
+            gtiCore.Form_Processo_Tramite = new Size(Size.Width, Size.Height);
+            gtiCore.Save_Settings();
 
         }
 
@@ -350,7 +352,7 @@ Adicionar:;
             int CodCC = Convert.ToInt16(lvMain.SelectedItems[0].SubItems[2].Text);
             Processo_bll processo_Class = new Processo_bll(_connection);
             Sistema_bll sistema_Class = new Sistema_bll(_connection);
-            List<UsuariocentroCusto> Lista = processo_Class.ListaCentrocustoUsuario(sistema_Class.Retorna_User_LoginId(  gtiCore.Retorna_Last_User()));
+            List<UsuariocentroCusto> Lista = processo_Class.ListaCentrocustoUsuario(sistema_Class.Retorna_User_LoginId(  gtiCore.LastUser));
             foreach (UsuariocentroCusto item in Lista) {
                 if (item.Codigo == CodCC) {
                     bReadOnly = false;
@@ -388,7 +390,7 @@ Adicionar:;
                 int CodCC = Convert.ToInt16(lvMain.SelectedItems[0].SubItems[2].Text);
                 Processo_bll processo_Class = new Processo_bll(_connection);
                 Sistema_bll sistema_Class = new Sistema_bll(_connection);
-                List<UsuariocentroCusto> Lista = processo_Class.ListaCentrocustoUsuario(sistema_Class.Retorna_User_LoginId(gtiCore.Retorna_Last_User()));
+                List<UsuariocentroCusto> Lista = processo_Class.ListaCentrocustoUsuario(sistema_Class.Retorna_User_LoginId(gtiCore.LastUser));
                 foreach (UsuariocentroCusto item in Lista) {
                     if (item.Codigo == CodCC) {
                         bFind = true;
@@ -459,7 +461,7 @@ Alterar:;
                 return;
             }
             Sistema_bll Sistema_Class = new Sistema_bll(_connection);
-            int nUserId = Sistema_Class.Retorna_User_LoginId(Properties.Settings.Default.LastUser);
+            int nUserId = Sistema_Class.Retorna_User_LoginId(gtiCore.LastUser);
 
             if (bFechado) {
                 MessageBox.Show("O processo não está aberto.", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -468,7 +470,7 @@ Alterar:;
                 bool bFind = false;
                 int CodCC = Convert.ToInt16(lvMain.SelectedItems[0].SubItems[2].Text);
                 Processo_bll processo_Class = new Processo_bll(_connection);
-                List<UsuariocentroCusto> Lista = processo_Class.ListaCentrocustoUsuario(Sistema_Class.Retorna_User_LoginId( gtiCore.Retorna_Last_User()));
+                List<UsuariocentroCusto> Lista = processo_Class.ListaCentrocustoUsuario(Sistema_Class.Retorna_User_LoginId( gtiCore.LastUser));
                 foreach (UsuariocentroCusto item in Lista) {
                     if (item.Codigo == CodCC) {
                         bFind = true;
@@ -521,7 +523,7 @@ Receber:;
             if (lvMain.SelectedItems[0].SubItems[6].Text != "")
                 sNomeCompleto = lvMain.SelectedItems[0].SubItems[6].Text;
             else
-                sNomeCompleto = sistema_Class.Retorna_User_FullName(gtiCore.Retorna_Last_User());
+                sNomeCompleto = sistema_Class.Retorna_User_FullName(gtiCore.LastUser);
             cmbFuncionario.Items.Add(new GtiTypes.CustomListBoxItem(sNomeCompleto, 999));
             Processo_bll clsProc = new Processo_bll(_connection);
             List<UsuarioFuncStruct> ListaFunc = clsProc.ListaFuncionario(nUserId);
@@ -571,7 +573,7 @@ Receber:;
                     if (reg.Userid < 999) 
                         reg.Userid = Sistema_Class.Retorna_User_LoginId("F" + Convert.ToInt32( reg.Userid).ToString("000"));
                     else
-                        reg.Userid= Sistema_Class.Retorna_User_LoginId(gtiCore.Retorna_Last_User());
+                        reg.Userid= Sistema_Class.Retorna_User_LoginId(gtiCore.LastUser);
 
                     ex = clsProcesso.Excluir_Tramite(Ano, Numero, Seq);
                     if (ex != null) {
@@ -596,7 +598,7 @@ Receber:;
                 if (reg.Userid2 < 999)
                     reg.Userid2 = Sistema_Class.Retorna_User_LoginId("F" + Convert.ToInt32(reg.Userid2).ToString("000"));
                 else
-                    reg.Userid2 = Sistema_Class.Retorna_User_LoginId(gtiCore.Retorna_Last_User());
+                    reg.Userid2 = Sistema_Class.Retorna_User_LoginId(gtiCore.LastUser);
 
                 ex = clsProcesso.Alterar_Tramite(reg);
                 if (ex != null) {
@@ -627,8 +629,8 @@ Receber:;
                 int CodCC = Convert.ToInt16(lvMain.SelectedItems[0].SubItems[2].Text);
                 Processo_bll processo_Class = new Processo_bll(_connection);
                 Sistema_bll Sistema_Class = new Sistema_bll(_connection);
-                int nUserId = Sistema_Class.Retorna_User_LoginId( Properties.Settings.Default.LastUser);
-                List<UsuariocentroCusto> Lista = processo_Class.ListaCentrocustoUsuario( Sistema_Class.Retorna_User_LoginId( gtiCore.Retorna_Last_User()));
+                int nUserId = Sistema_Class.Retorna_User_LoginId( gtiCore.LastUser);
+                List<UsuariocentroCusto> Lista = processo_Class.ListaCentrocustoUsuario( Sistema_Class.Retorna_User_LoginId( gtiCore.LastUser));
                 foreach (UsuariocentroCusto item in Lista) {
                     if (item.Codigo == CodCC) {
                         bFind = true;
@@ -683,10 +685,10 @@ Enviar:;
             if (lvMain.SelectedItems[0].SubItems[6].Text != "")
                 sNomeCompleto = lvMain.SelectedItems[0].SubItems[6].Text;
             else
-                sNomeCompleto = sistema_Class.Retorna_User_FullName(gtiCore.Retorna_Last_User());
+                sNomeCompleto = sistema_Class.Retorna_User_FullName(gtiCore.LastUser);
             cmbFuncionario.Items.Add(new GtiTypes.CustomListBoxItem(sNomeCompleto, 999));
             Processo_bll clsProc = new Processo_bll(_connection);
-            List<UsuarioFuncStruct> ListaFunc = clsProc.ListaFuncionario(sistema_Class.Retorna_User_LoginId(gtiCore.Retorna_Last_User()));
+            List<UsuarioFuncStruct> ListaFunc = clsProc.ListaFuncionario(sistema_Class.Retorna_User_LoginId(gtiCore.LastUser));
             foreach (UsuarioFuncStruct item in ListaFunc) {
                 cmbFuncionario.Items.Add(new GtiTypes.CustomListBoxItem(item.NomeCompleto, item.FuncLogin));
             }

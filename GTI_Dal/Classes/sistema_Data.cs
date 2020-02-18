@@ -559,7 +559,7 @@ namespace GTI_Dal.Classes {
             using (GTI_Context db = new GTI_Context(_connection)) {
                 Gti000 Sql = (from s in db.Gti000 where s.UserId == UserId select s).FirstOrDefault();
                 if (Sql == null) {
-                    Gti000 regnew= Create_GTI_Setting(UserId,Path);
+                    Gti000 regnew= Create_GTI_Settings(UserId,Path);
                     return regnew;
                 } else {
                     Gti000 reg = new Gti000() {
@@ -580,7 +580,7 @@ namespace GTI_Dal.Classes {
             }
         }
 
-        private Gti000 Create_GTI_Setting(int UserId,string Path) {
+        private Gti000 Create_GTI_Settings(int UserId,string Path) {
             string _path = System.IO.Path.Combine(Path + "\\Report");
             using (var db = new GTI_Context(_connection)) {
                 object[] Parametros = new object[2];
@@ -601,6 +601,34 @@ namespace GTI_Dal.Classes {
 
             return reg;
         }
+
+        public Exception  Save_GTI_Settings(Gti000 _settings) {
+            using (var db = new GTI_Context(_connection)) {
+                object[] Parametros = new object[11];
+                Parametros[0] = new SqlParameter { ParameterName = "@userid", SqlDbType = SqlDbType.Int, SqlValue = _settings.UserId };
+                Parametros[1] = new SqlParameter { ParameterName = "@path_report", SqlDbType = SqlDbType.VarChar, SqlValue = _settings.Path_Report };
+                Parametros[2] = new SqlParameter { ParameterName = "@path_anexo", SqlDbType = SqlDbType.VarChar, SqlValue = _settings.Path_Anexo };
+                Parametros[3] = new SqlParameter { ParameterName = "@form_extrato_height", SqlDbType = SqlDbType.VarChar, SqlValue = _settings.Form_Extrato_Height };
+                Parametros[4] = new SqlParameter { ParameterName = "@form_extrato_width", SqlDbType = SqlDbType.VarChar, SqlValue = _settings.Form_Extrato_Width };
+                Parametros[5] = new SqlParameter { ParameterName = "@form_processo_lista_height", SqlDbType = SqlDbType.VarChar, SqlValue = _settings.Form_Processo_Lista_Height };
+                Parametros[6] = new SqlParameter { ParameterName = "@form_processo_lista_width", SqlDbType = SqlDbType.VarChar, SqlValue = _settings.Form_Processo_Lista_Width };
+                Parametros[7] = new SqlParameter { ParameterName = "@form_processo_tramite_height", SqlDbType = SqlDbType.VarChar, SqlValue = _settings.Form_Processo_Tramite_Height };
+                Parametros[8] = new SqlParameter { ParameterName = "@form_processo_tramite_width", SqlDbType = SqlDbType.VarChar, SqlValue = _settings.Form_Processo_Tramite_Width };
+                Parametros[9] = new SqlParameter { ParameterName = "@form_report_height", SqlDbType = SqlDbType.VarChar, SqlValue = _settings.Form_Report_Height };
+                Parametros[10] = new SqlParameter { ParameterName = "@form_report_width", SqlDbType = SqlDbType.VarChar, SqlValue = _settings.Form_Report_Width };
+                db.Database.ExecuteSqlCommand("UPDATE gti000 SET pathreport=@pathreport,pathanexo=@pathanexo,form_extrato_height=@form_extrato_height," +
+                    "form_extrato_width=@form_extrato_width,form_processo_lista_height=@form_processo_lista_height,form_processo_lista_width=@form_processo_lista_width," +
+                    "form_processo_tramite_height=@form_processo_tramite_height,form_processo_tramite_width=@form_processo_tramite_width,form_report_height=@form_report_height," +
+                    "form_report_width=@form_report_width where userid=@userid", Parametros);
+                try {
+                    db.SaveChanges();
+                } catch (Exception ex){
+                    return ex;
+                }
+            }
+            return null;
+        }
+
 
     }
 }

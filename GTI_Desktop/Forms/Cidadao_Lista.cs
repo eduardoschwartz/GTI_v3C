@@ -15,11 +15,11 @@ namespace GTI_Desktop.Forms {
         string _connection = gtiCore.Connection_Name();
         public int ReturnValue { get; set; }
         List<ArrayList> aDatResult;
-        int _File_Version = Properties.Settings.Default.gti_002_version;
+        //int _File_Version = Properties.Settings.Default.gti_002_version;
 
         public Cidadao_Lista() {
             InitializeComponent();
-            ReadDatFile();
+            //ReadDatFile();
         }
 
         private void UncheckOtherToolStripMenuItems(ToolStripMenuItem selectedMenuItem) {
@@ -119,7 +119,7 @@ namespace GTI_Desktop.Forms {
             if (col.Count > 0) {
                 DialogResult = DialogResult.OK;
                 ReturnValue = Convert.ToInt32(MainListView.Items[col[0]].Text);
-                SaveDatFile();
+                //SaveDatFile();
                 Close();
             } else {
                 MessageBox.Show("Selecione um Cidadão.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -136,48 +136,48 @@ namespace GTI_Desktop.Forms {
             };
         }
 
-        private void SaveDatFile() {
-            List<string> aLista = new List<string>();
-            string[] aReg = new string[8];
-            string[] aTmp = new string[1];
-            aLista.Add(gtiCore.ConvertDatReg("ZZ", _File_Version.ToString().Split())); //Versão do arquivo
-            aLista.Add(gtiCore.ConvertDatReg("DS", new[] { BuscaText.Text }));
+        //private void SaveDatFile() {
+        //    List<string> aLista = new List<string>();
+        //    string[] aReg = new string[8];
+        //    string[] aTmp = new string[1];
+        //    aLista.Add(gtiCore.ConvertDatReg("ZZ", _File_Version.ToString().Split())); //Versão do arquivo
+        //    aLista.Add(gtiCore.ConvertDatReg("DS", new[] { BuscaText.Text }));
 
-            for (int i = 0; i < MainListView.VirtualListSize; i++) {
-                aReg[0] = MainListView.Items[i].Text;
-                aReg[1] = MainListView.Items[i].SubItems[1].Text;
-                aReg[2] = MainListView.Items[i].SubItems[2].Text == "" ? " " : MainListView.Items[i].SubItems[2].Text;
-                aReg[3] = MainListView.Items[i].SubItems[3].Text == "" ? " " : MainListView.Items[i].SubItems[3].Text;
-                aLista.Add(gtiCore.ConvertDatReg("CD", aReg));
-            }
+        //    for (int i = 0; i < MainListView.VirtualListSize; i++) {
+        //        aReg[0] = MainListView.Items[i].Text;
+        //        aReg[1] = MainListView.Items[i].SubItems[1].Text;
+        //        aReg[2] = MainListView.Items[i].SubItems[2].Text == "" ? " " : MainListView.Items[i].SubItems[2].Text;
+        //        aReg[3] = MainListView.Items[i].SubItems[3].Text == "" ? " " : MainListView.Items[i].SubItems[3].Text;
+        //        aLista.Add(gtiCore.ConvertDatReg("CD", aReg));
+        //    }
 
-            string sDir = AppDomain.CurrentDomain.BaseDirectory;
-            gtiCore.CreateDatFile(sDir + "\\gti002.dat", aLista);
-        }
+        //    string sDir = AppDomain.CurrentDomain.BaseDirectory;
+        //    gtiCore.CreateDatFile(sDir + "\\gti002.dat", aLista);
+        //}
 
-        private void ReadDatFile() {
-            string sDir = AppDomain.CurrentDomain.BaseDirectory;
-            string sFileName = "\\gti002.dat";
-            //se o arquivo não existir, então não tem o que ler.
-            if (!File.Exists(sDir + sFileName)) return;
-            //se o arquivo for de outro dia, então não ler.
-            if (File.GetLastWriteTime(sDir + sFileName).ToString("MM/dd/yyyy") != DateTime.Now.ToString("MM/dd/yyyy")) return;
-            //lê o q arquivo
-            try {
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "ZZ");
-                if (Convert.ToInt32(aDatResult[0][0].ToString()) != _File_Version) {
-                    return;
-                }
+        //private void ReadDatFile() {
+        //    string sDir = AppDomain.CurrentDomain.BaseDirectory;
+        //    string sFileName = "\\gti002.dat";
+        //    //se o arquivo não existir, então não tem o que ler.
+        //    if (!File.Exists(sDir + sFileName)) return;
+        //    //se o arquivo for de outro dia, então não ler.
+        //    if (File.GetLastWriteTime(sDir + sFileName).ToString("MM/dd/yyyy") != DateTime.Now.ToString("MM/dd/yyyy")) return;
+        //    //lê o q arquivo
+        //    try {
+        //        aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "ZZ");
+        //        if (Convert.ToInt32(aDatResult[0][0].ToString()) != _File_Version) {
+        //            return;
+        //        }
 
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "DS");
-                if (aDatResult[0].Count > 0)
-                    BuscaText.Text = aDatResult[0][0].ToString();
+        //        aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "DS");
+        //        if (aDatResult[0].Count > 0)
+        //            BuscaText.Text = aDatResult[0][0].ToString();
 
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "CD",false);
-                MainListView.VirtualListSize = aDatResult.Count;
-            } catch  {
-            }
-        }
+        //        aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "CD",false);
+        //        MainListView.VirtualListSize = aDatResult.Count;
+        //    } catch  {
+        //    }
+        //}
 
 
     }

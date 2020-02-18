@@ -251,6 +251,11 @@ namespace GTI_Bll.Classes {
 
         }
 
+        public Exception Save_GTI_Settings(Gti000 _settings) {
+            Sistema_Data obj = new Sistema_Data(_connection);
+            Exception ex = obj.Save_GTI_Settings(_settings);
+            return ex;
+        }
 
     }
 }

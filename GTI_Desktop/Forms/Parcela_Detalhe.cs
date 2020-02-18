@@ -1,4 +1,4 @@
-﻿using CrystalDecisions.CrystalReports.Engine;
+﻿//using CrystalDecisions.CrystalReports.Engine;
 using GTI_Bll.Classes;
 using GTI_Desktop.Classes;
 using GTI_Desktop.Datasets;
@@ -30,7 +30,7 @@ namespace GTI_Desktop.Forms {
 
         private void BtPrint_Click(object sender, EventArgs e) {
 
-            string rptPath = System.IO.Path.Combine(Properties.Settings.Default.Path_Report, "Detalhe_Parcela.rpt");
+            string rptPath = System.IO.Path.Combine(gtiCore.Path_Report, "Detalhe_Parcela.rpt");
             if (!File.Exists(rptPath)) {
                 MessageBox.Show("Caminho " + rptPath + " não encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -93,23 +93,23 @@ namespace GTI_Desktop.Forms {
                 }
             }
 
-            ReportDocument rd = new ReportDocument();
-            rd.Load(rptPath);
-            try {
-                rd.SetDataSource(certidao);
-                RptViewer rptViewer = new RptViewer();
-                rd.Database.Tables[0].SetDataSource(certidao);
-                rd.Database.Tables[1].SetDataSource(ListaCrystal);
-                rptViewer.CrystalViewer.ReportSource = rd;
-                Main f1 = (Main)Application.OpenForms["Main"];
-                rptViewer.MdiParent = f1;
-                rptViewer.Text = "Detalhe da Parcela";
-                rptViewer.CrystalViewer.ShowGroupTreeButton = false;
-                rptViewer.CrystalViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
-                rptViewer.Show();
-            } catch {
-                throw;
-            }
+            //ReportDocument rd = new ReportDocument();
+            //rd.Load(rptPath);
+            //try {
+            //    rd.SetDataSource(certidao);
+            //    RptViewer rptViewer = new RptViewer();
+            //    rd.Database.Tables[0].SetDataSource(certidao);
+            //    rd.Database.Tables[1].SetDataSource(ListaCrystal);
+            //    rptViewer.CrystalViewer.ReportSource = rd;
+            //    Main f1 = (Main)Application.OpenForms["Main"];
+            //    rptViewer.MdiParent = f1;
+            //    rptViewer.Text = "Detalhe da Parcela";
+            //    rptViewer.CrystalViewer.ShowGroupTreeButton = false;
+            //    rptViewer.CrystalViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+            //    rptViewer.Show();
+            //} catch {
+            //    throw;
+            //}
 
         }
 

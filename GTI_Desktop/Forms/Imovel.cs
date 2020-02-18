@@ -1366,7 +1366,7 @@ namespace GTI_Desktop.Forms {
                     ZoomBox f1 = new ZoomBox("Histórico do imóvel de " + sData, this, sTexto, false);
                     f1.ShowDialog();
                     Sistema_bll sistema_Class = new Sistema_bll(_connection);
-                    string sLogin = Properties.Settings.Default.LastUser;
+                    string sLogin = gtiCore.LastUser;
                     HistoricoListView.SelectedItems[0].SubItems[1].Text = DateTime.Now.ToString("dd/MM/yyyy");
                     HistoricoListView.SelectedItems[0].SubItems[2].Text = f1.ReturnText;
                     HistoricoListView.SelectedItems[0].SubItems[3].Text = sistema_Class.Retorna_User_FullName(sLogin);
@@ -1389,7 +1389,7 @@ namespace GTI_Desktop.Forms {
                         ListViewItem lvItem = new ListViewItem((HistoricoListView.Items.Count + 1).ToString("000"));
                         lvItem.SubItems.Add(sData);
                         lvItem.SubItems.Add(f1.ReturnText);
-                        string sLogin = Properties.Settings.Default.LastUser;
+                        string sLogin = gtiCore.LastUser;
                         lvItem.SubItems.Add(sistema_Class.Retorna_User_FullName(sLogin));
                         lvItem.Tag = sistema_Class.Retorna_User_LoginId(sLogin).ToString();
                         HistoricoListView.Items.Add(lvItem);

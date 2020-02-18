@@ -15,10 +15,10 @@ namespace GTI_Desktop.Forms {
                 DataBaseTeste = gtiCore.BaseDadosTeste
             };
             Pms.PathReport = Pms.PathApp + "\\report";
-            Pms.PathAnexo = Properties.Settings.Default.Path_Anexo_Local;
+            Pms.PathAnexo = gtiCore.Path_Anexo;
             Pms.ServerName = gtiCore.ServerName;
             Pms.ComputerName = Environment.MachineName;
-            Pms.UserName = gtiCore.Retorna_Last_User();
+            Pms.UserName = gtiCore.LastUser;
             pGrid.SelectedObject = Pms;
         }
 

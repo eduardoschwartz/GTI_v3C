@@ -164,7 +164,7 @@ namespace GTI_Desktop.Forms {
             }
 
             Tributario_bll tributario_Class = new Tributario_bll(_connection);
-            int _userId = Properties.Settings.Default.UserId;
+            int _userId = gtiCore.UserId;
             int _ano_certidao = DateTime.Now.Year, _numero_certidao = 0, _codigo = Convert.ToInt32(Codigo.Text), _ano_isencao = DateTime.Now.Year;
             decimal _percisencao = 0, SomaArea = 0;
             DateTime? _data_processo_isencao = null;
@@ -323,7 +323,7 @@ namespace GTI_Desktop.Forms {
                             cert.Cidade = Cidade.Text;
                             cert.Processo = Processo.Text;
                             cert.Dataprocesso = _data_processo;
-                            cert.Atendente = gtiCore.Retorna_Last_User();
+                            cert.Atendente = gtiCore.LastUser;
                             cert.Cpf = sCPF;
                             cert.Cnpj = sCNPJ;
                             cert.Atividade = Atividade.Text;
@@ -365,8 +365,8 @@ namespace GTI_Desktop.Forms {
                         Atividade=sAtividade
                         
                     };
-                    ReportCR fRpt = new ReportCR(_nomeReport, _dados,null);
-                    fRpt.ShowDialog();
+                    //ReportCR fRpt = new ReportCR(_nomeReport, _dados,null);
+                    //fRpt.ShowDialog();
                     ClearFields();
                 }
             }

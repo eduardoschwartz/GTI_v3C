@@ -19,7 +19,7 @@ namespace GTI_Desktop.Forms {
             Sistema_bll sistema_Class = new Sistema_bll(_connection);
             Tributario_bll tributario_Class = new Tributario_bll(_connection);
             _listaTributo = Lista_Tributo;
-            _UserId = sistema_Class.Retorna_User_LoginId(gtiCore.Retorna_Last_User());
+            _UserId = sistema_Class.Retorna_User_LoginId(gtiCore.LastUser);
 
             _codigo = Lista[0].Codreduzido;
             int _lanc = Convert.ToInt32(Lista[0].Desclancamento.Substring(0, 2));

@@ -11,6 +11,7 @@ using System.Collections;
 using System.IO;
 using GTI_Bll.Classes;
 using System.Drawing;
+using GTI_Models.Models;
 
 namespace GTI_Desktop.Classes {
     /// <summary>
@@ -215,13 +216,6 @@ namespace GTI_Desktop.Classes {
                 return (true);
             else
                 return (false);
-        }
-
-        /// <summary>Retorna o nome de login do usuário conectado ou que conectou por último.
-        /// </summary>
-        /// <returns>Nome de Login</returns>
-        public static string Retorna_Last_User() {
-            return Properties.Settings.Default.LastUser;
         }
 
         /// <summary>Retorna a string de conexão.
@@ -526,6 +520,7 @@ namespace GTI_Desktop.Classes {
             return aLinhas;
         }
 
+
         public static void CreateDatFile(string Path, List<string> aArray) {
             Encoding ANSI = Encoding.Default;
             using (StreamWriter sw = new StreamWriter(Path, false, ANSI)) {
@@ -569,7 +564,7 @@ namespace GTI_Desktop.Classes {
             return nDV;
         }
 
-        public static int Calculo_DV11(String sValue) {
+        public static int Calculo_DV11(string sValue) {
             int nDV = 0, intNumero = 0, intTotalNumero = 0,intMultiplicador = 2;
 
             for (int intContador = sValue.Length; intContador > 0; intContador--) {
@@ -601,21 +596,21 @@ namespace GTI_Desktop.Classes {
             return StartCode + DataToPrint + StopCode;
         }
 
-        public static String RetornaNumero(String Numero) {
+        public static string RetornaNumero(string Numero) {
             if (String.IsNullOrWhiteSpace(Numero))
                 return "0";
             else
                 return Regex.Replace(Numero, @"[^\d]", "");
         }
 
-        public static String Virg2Ponto(String Numero) {
+        public static string Virg2Ponto(string Numero) {
             if (String.IsNullOrWhiteSpace(Numero))
                 return "0";
             else
                 return Numero.Replace( ",",".");
         }
 
-        public static String RemovePonto(String Numero) {
+        public static string RemovePonto(string Numero) {
             if (String.IsNullOrWhiteSpace(Numero))
                 return Numero;
             else
@@ -631,26 +626,17 @@ namespace GTI_Desktop.Classes {
         }
 
         public static void UpdateUserBinary() {
-            string _connection = gtiCore.Connection_Name();
+            string _connection = Connection_Name();
             Sistema_bll sistema_Class = new Sistema_bll(_connection);
-            string sTmp = sistema_Class.GetUserBinary(Properties.Settings.Default.UserId);
+            string sTmp = sistema_Class.GetUserBinary(UserId);
             int nSize = sistema_Class.GetSizeofBinary();
-            GtiTypes.UserBinary = gtiCore.Decrypt(sTmp);
+            GtiTypes.UserBinary = Decrypt(sTmp);
             if (nSize > GtiTypes.UserBinary.Length) {
                 int nDif = nSize - GtiTypes.UserBinary.Length;
                 sTmp = new string('0', nDif);
                 GtiTypes.UserBinary += sTmp;
             }
 
-        }
-
-        public static string Retorna_Path_Anexo() {
-            string _path;
-            if (ServerName == "SKYNET" || ServerName == "DEUTSCH")
-                _path = Properties.Settings.Default.Path_Anexo_Local;
-            else
-                _path = Properties.Settings.Default.Path_Anexo_Net;
-            return _path;
         }
 
         //Function to get random number
@@ -662,31 +648,53 @@ namespace GTI_Desktop.Classes {
             }
         }
 
-        public static Exception LoadSettings() {
-            List<ArrayList> aDatResult;
-            string sDir = AppDomain.CurrentDomain.BaseDirectory;
-            string sFileName = "\\gti000.dat";
-            if (File.Exists(sDir + sFileName)) {
-                try {
-                    aDatResult = ReadFromDatFile(sDir + sFileName, "SN");
-                    ServerName = aDatResult[0][0].ToString();
-                    aDatResult = ReadFromDatFile(sDir + sFileName, "LU");
-                    LastUser = aDatResult[0][0].ToString();
-                } catch (Exception ex) {
-                    return ex;
-                }
-            } else {
-                List<string> aLista = new List<string>();
-                aLista.Add(ConvertDatReg("ZZ", 1.ToString().Split())); //Versão do arquivo
-                aLista.Add(ConvertDatReg("SN", new[] { "200.232.123.115" })); // Server Name
-                aLista.Add(ConvertDatReg("LU", new[] { "" })); // Last User
-                CreateDatFile(sDir + "\\gti000.dat", aLista);
-                LoadSettings();
-            }
-            return null;
+        //public static Exception LoadSettings() {
+        //    List<ArrayList> aDatResult;
+        //    string sDir = AppDomain.CurrentDomain.BaseDirectory;
+        //    string sFileName = "\\gti000.dat";
+        //    if (File.Exists(sDir + sFileName)) {
+        //        try {
+        //            aDatResult = ReadFromDatFile(sDir + sFileName, "SN");
+        //            ServerName = aDatResult[0][0].ToString();
+        //            aDatResult = ReadFromDatFile(sDir + sFileName, "LU");
+        //            if (aDatResult[0].Count > 0)
+        //                LastUser = aDatResult[0][0].ToString();
+        //            else
+        //                LastUser = "";
+        //        } catch (Exception ex) {
+        //            return ex;
+        //        }
+        //    } else {
+        //        List<string> aLista = new List<string>();
+        //        aLista.Add(ConvertDatReg("ZZ", 1.ToString().Split())); //Versão do arquivo
+        //        aLista.Add(ConvertDatReg("SN", new[] { "200.232.123.115" })); // Server Name
+        //        aLista.Add(ConvertDatReg("LU", new[] { "" })); // Last User
+        //        CreateDatFile(sDir + "\\gti000.dat", aLista);
+        //        LoadSettings();
+        //    }
+        //    return null;
+        //}
+
+        public static void Save_Settings() {
+            Gti000 reg = new Gti000() {
+                UserId=UserId,
+                Path_Report=Path_Report,
+                Path_Anexo=Path_Anexo,
+                Form_Extrato_Height=Form_Extrato.Height,
+                Form_Extrato_Width=Form_Extrato.Width,
+                Form_Processo_Lista_Height=Form_Processo_Lista.Height,
+                Form_Processo_Lista_Width=Form_Processo_Lista.Width,
+                Form_Processo_Tramite_Height=Form_Processo_Tramite.Height,
+                Form_Processo_Tramite_Width=Form_Processo_Tramite.Width,
+                Form_Report_Height=Form_Report.Height,
+                Form_Report_Width=Form_Report.Width
+            };
+            Sistema_bll sistema_Class = new Sistema_bll(Connection_Name());
+            Exception ex = sistema_Class.Save_GTI_Settings(reg);
+            if (ex != null)
+                throw ex;
         }
-
-
+      
     }
 
     public class MySR : ToolStripSystemRenderer {

@@ -105,15 +105,14 @@ namespace GTI_Desktop.Forms {
             Size = new Size(Size.Width, 190);
             OriginSize = Size.Height;
             LoginToolStrip.Renderer = new MySR();
-            gtiCore.LoadSettings();
+            gtiCore.ServerName = "200.232.123.115";
+            gtiCore.BaseDados = "Tributacao";
+            gtiCore.BaseDadosTeste = "TributacaoTeste";
             txtServer.Text = gtiCore.ServerName;
-            txtLogin.Text = gtiCore.LastUser;
             txtPwd.Focus();
         }
 
         private void Login_Load(object sender, EventArgs e) {
-            //string Caminho = Application.StartupPath;
-//            txtLogin.Text = gtiCore.Ul;
         }
         
         private void Login_Activated(object sender, EventArgs e) {
@@ -164,7 +163,7 @@ namespace GTI_Desktop.Forms {
         }
 
         private void SenhaButton_Click(object sender, EventArgs e) {
-            if (this.Size.Height < 300) {
+            if (Size.Height < 300) {
                 txtPwd1.Text = "";
                 txtPwd2.Text = "";
                 txtLogin.Enabled = false;
@@ -238,16 +237,7 @@ namespace GTI_Desktop.Forms {
                     return;
             }
             gtiCore.UpdateUserBinary();
-            //Update user Binary
-            //string sTmp = sistema_Class.GetUserBinary(nId);
-            //int nSize = sistema_Class.GetSizeofBinary();
-            //GtiTypes.UserBinary = gtiCore.Decrypt(sTmp);
-            //if (nSize > GtiTypes.UserBinary.Length) {
-            //    int nDif = nSize - GtiTypes.UserBinary.Length;
-            //    sTmp = new string('0', nDif);
-            //    GtiTypes.UserBinary += sTmp;
-            //}
-       //     string h = GtiTypes.UserBinary;
+
             Close();
             Main f1 = (Main)Application.OpenForms["Main"];
             f1.UserToolStripStatus.Text = gtiCore.LastUser;

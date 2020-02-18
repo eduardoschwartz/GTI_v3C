@@ -575,15 +575,15 @@ namespace GTI_Desktop.Forms {
             Ds.Tables.Add(dTableHeader);
 
             gtiCore.Liberado(this);
-            ReportCR fRpt = new ReportCR("Carta_Cobranca_Envelope", null,Ds);
+            //ReportCR fRpt = new ReportCR("Carta_Cobranca_Envelope", null,Ds);
             
-            fRpt.ShowDialog();
+            //fRpt.ShowDialog();
 
         }
 
         private void PrintReport() {
-            ReportCR fRpt = new ReportCR("Carta_Cobranca_Envelope", null, null,_remessa);
-            fRpt.ShowDialog();
+            //ReportCR fRpt = new ReportCR("Carta_Cobranca_Envelope", null, null,_remessa);
+            //fRpt.ShowDialog();
         }
 
     }

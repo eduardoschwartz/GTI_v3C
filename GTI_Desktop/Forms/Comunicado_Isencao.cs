@@ -92,8 +92,8 @@ namespace GTI_Desktop.Forms {
 Proximo:;
             }
             PBar.Value = 100;
-            ReportCR fRpt = new ReportCR("Comunicado_Isencao", null, null, _remessa);
-            fRpt.ShowDialog();
+            //ReportCR fRpt = new ReportCR("Comunicado_Isencao", null, null, _remessa);
+            //fRpt.ShowDialog();
 
 
 

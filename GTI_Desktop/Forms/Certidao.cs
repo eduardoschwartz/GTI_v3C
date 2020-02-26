@@ -9,8 +9,14 @@ using static GTI_Models.modelCore;
 
 namespace GTI_Desktop.Forms {
     public partial class Certidao : Form {
-        private string _connection = gtiCore.Connection_Name();
-        private string sNao = "", sTipoCertidao = "", sTributo = "", sAtividade = "", sSufixo = "", sCPF = "", sCNPJ = "";
+        private readonly string _connection = gtiCore.Connection_Name();
+        private string sNao = "";
+        private string sTipoCertidao = "";
+        private string sTributo = "";
+        private readonly string sAtividade = "";
+        private string sSufixo = "";
+        private readonly string sCPF = "";
+        private readonly string sCNPJ = "";
         private short nRet = 0;
 
         TipoCertidao _tipo_certidao;
@@ -100,7 +106,7 @@ namespace GTI_Desktop.Forms {
                 ClearFields();
         }
 
-        private void Tipo_Certidao(int Indice,int codigo) {
+        private void Tipo_Certidao(int Indice) {
             if (Indice == 0)
                 _tipo_certidao = TipoCertidao.Debito;
             else {
@@ -139,7 +145,7 @@ namespace GTI_Desktop.Forms {
                         int _numero = processo_Class.ExtractNumeroProcessoNoDV(Processo.Text);
                         _data_processo = processo_Class.Data_Processo(_ano, _numero);
 
-                        Tipo_Certidao(TipoList.SelectedIndex,_codigo);
+                        Tipo_Certidao(TipoList.SelectedIndex);
                         if((_tipo_certidao==TipoCertidao.Endereco||_tipo_certidao==TipoCertidao.Isencao||_tipo_certidao==TipoCertidao.ValorVenal) && _tipo_cadastro!=TipoCadastro.Imovel) 
                             MessageBox.Show("Este tipo de certidão só pode ser emitida para imóveis.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         else {
@@ -175,17 +181,18 @@ namespace GTI_Desktop.Forms {
                 _nomeReport = "CertidaoEndereco";
                 _numero_certidao = tributario_Class.Retorna_Codigo_Certidao(modelCore.TipoCertidao.Endereco);
                 _controle = _numero_certidao.ToString("00000") + _ano_certidao.ToString("0000") + "/" + _codigo.ToString() + "-EA";
-                Certidao_endereco cert = new Certidao_endereco();
-                cert.Codigo = Convert.ToInt32(_codigo);
-                cert.Ano = _ano_certidao;
-                cert.Numero = _numero_certidao;
-                cert.Data = DateTime.Now;
-                cert.Inscricao = Inscricao.Text;
-                cert.Nomecidadao = Nome.Text;
-                cert.Logradouro = Endereco.Text;
-                cert.descbairro = Bairro.Text;
-                cert.Li_quadras = Quadra.Text;
-                cert.Li_lotes = Lote.Text;
+                Certidao_endereco cert = new Certidao_endereco {
+                    Codigo = Convert.ToInt32(_codigo),
+                    Ano = _ano_certidao,
+                    Numero = _numero_certidao,
+                    Data = DateTime.Now,
+                    Inscricao = Inscricao.Text,
+                    Nomecidadao = Nome.Text,
+                    Logradouro = Endereco.Text,
+                    descbairro = Bairro.Text,
+                    Li_quadras = Quadra.Text,
+                    Li_lotes = Lote.Text
+                };
                 Exception ex = tributario_Class.Insert_Certidao_Endereco(cert);
                 if (ex != null) {
                     throw ex;
@@ -225,21 +232,22 @@ namespace GTI_Desktop.Forms {
                         }
                     }
 
-                    Certidao_isencao cert = new Certidao_isencao();
-                    cert.Codigo = _codigo;
-                    cert.Ano = _ano_certidao;
-                    cert.Numero = _numero_certidao;
-                    cert.Data = DateTime.Now;
-                    cert.Inscricao = Inscricao.Text;
-                    cert.Nomecidadao = Nome.Text;
-                    cert.Logradouro = Endereco.Text;
-                    cert.Descbairro = Bairro.Text;
-                    cert.Li_quadras = Quadra.Text;
-                    cert.Li_lotes = Lote.Text;
-                    cert.Area = SomaArea;
-                    cert.Percisencao = _percisencao;
-                    cert.Numprocesso = _numero_processo;
-                    cert.Dataprocesso = _data_processo_isencao;
+                    Certidao_isencao cert = new Certidao_isencao {
+                        Codigo = _codigo,
+                        Ano = _ano_certidao,
+                        Numero = _numero_certidao,
+                        Data = DateTime.Now,
+                        Inscricao = Inscricao.Text,
+                        Nomecidadao = Nome.Text,
+                        Logradouro = Endereco.Text,
+                        Descbairro = Bairro.Text,
+                        Li_quadras = Quadra.Text,
+                        Li_lotes = Lote.Text,
+                        Area = SomaArea,
+                        Percisencao = _percisencao,
+                        Numprocesso = _numero_processo,
+                        Dataprocesso = _data_processo_isencao
+                    };
                     Exception ex = tributario_Class.Insert_Certidao_Isencao(cert);
                     if (ex != null) {
                         throw ex;
@@ -250,17 +258,18 @@ namespace GTI_Desktop.Forms {
                         _nomeReport = "CertidaoValorVenal";
                         _numero_certidao = tributario_Class.Retorna_Codigo_Certidao(modelCore.TipoCertidao.ValorVenal);
                         _controle = _numero_certidao.ToString("00000") + _ano_certidao.ToString("0000") + "/" + _codigo.ToString() + "-VV";
-                        Certidao_valor_venal cert = new Certidao_valor_venal();
-                        cert.Codigo = Convert.ToInt32(_codigo);
-                        cert.Ano = _ano_certidao;
-                        cert.Numero = _numero_certidao;
-                        cert.Data = DateTime.Now;
-                        cert.Inscricao = Inscricao.Text;
-                        cert.Nomecidadao = Nome.Text;
-                        cert.Logradouro = Endereco.Text;
-                        cert.Descbairro = Bairro.Text;
-                        cert.Li_quadras = Quadra.Text;
-                        cert.Li_lotes = Lote.Text;
+                        Certidao_valor_venal cert = new Certidao_valor_venal {
+                            Codigo = Convert.ToInt32(_codigo),
+                            Ano = _ano_certidao,
+                            Numero = _numero_certidao,
+                            Data = DateTime.Now,
+                            Inscricao = Inscricao.Text,
+                            Nomecidadao = Nome.Text,
+                            Logradouro = Endereco.Text,
+                            Descbairro = Bairro.Text,
+                            Li_quadras = Quadra.Text,
+                            Li_lotes = Lote.Text
+                        };
                         Exception ex = tributario_Class.Insert_Certidao_ValorVenal(cert);
                         if (ex != null) {
                             throw ex;
@@ -310,24 +319,25 @@ namespace GTI_Desktop.Forms {
 
                             _numero_certidao = tributario_Class.Retorna_Codigo_Certidao(modelCore.TipoCertidao.Debito);
                             _controle = _numero_certidao.ToString("00000") + _ano_certidao.ToString("0000") + "/" + _codigo.ToString() + "-" + sSufixo;
-                            Certidao_debito cert = new Certidao_debito();
-                            cert.Codigo = Convert.ToInt32(_codigo);
-                            cert.Ano = (short)_ano_certidao;
-                            cert.Ret = nRet;
-                            cert.Numero = _numero_certidao;
-                            cert.Datagravada = DateTime.Now;
-                            cert.Inscricao =Inscricao.Text;
-                            cert.Nome = Nome.Text;
-                            cert.Logradouro = Endereco.Text;
-                            cert.Bairro = Bairro.Text;
-                            cert.Cidade = Cidade.Text;
-                            cert.Processo = Processo.Text;
-                            cert.Dataprocesso = _data_processo;
-                            cert.Atendente = gtiCore.Retorna_Last_User();
-                            cert.Cpf = sCPF;
-                            cert.Cnpj = sCNPJ;
-                            cert.Atividade = Atividade.Text;
-                            cert.Lancamento = dadosCertidao.Descricao_Lancamentos;
+                            Certidao_debito cert = new Certidao_debito {
+                                Codigo = Convert.ToInt32(_codigo),
+                                Ano = (short)_ano_certidao,
+                                Ret = nRet,
+                                Numero = _numero_certidao,
+                                Datagravada = DateTime.Now,
+                                Inscricao = Inscricao.Text,
+                                Nome = Nome.Text,
+                                Logradouro = Endereco.Text,
+                                Bairro = Bairro.Text,
+                                Cidade = Cidade.Text,
+                                Processo = Processo.Text,
+                                Dataprocesso = _data_processo,
+                                Atendente = gtiCore.LastUser,
+                                Cpf = sCPF,
+                                Cnpj = sCNPJ,
+                                Atividade = Atividade.Text,
+                                Lancamento = dadosCertidao.Descricao_Lancamentos
+                            };
                             Exception ex = tributario_Class.Insert_Certidao_Debito(cert);
                             if (ex != null) {
                                 throw ex;
@@ -365,8 +375,8 @@ namespace GTI_Desktop.Forms {
                         Atividade=sAtividade
                         
                     };
-                    ReportCR fRpt = new ReportCR(_nomeReport, _dados,null);
-                    fRpt.ShowDialog();
+                    //ReportCR fRpt = new ReportCR(_nomeReport, _dados,null);
+                    //fRpt.ShowDialog();
                     ClearFields();
                 }
             }

@@ -17,7 +17,7 @@ namespace GTI_Desktop.Forms {
         public Extrato_Debito_Cancelar(List<SpExtrato> Lista) {
             InitializeComponent();
             Sistema_bll sistema_Class = new Sistema_bll(_connection);
-            _UserId = sistema_Class.Retorna_User_LoginId(gtiCore.Retorna_Last_User());
+            _UserId = sistema_Class.Retorna_User_LoginId(gtiCore.LastUser);
 
             _codigo = Lista[0].Codreduzido;
             foreach (SpExtrato item in Lista) {

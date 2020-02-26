@@ -9,7 +9,7 @@ using static GTI_Desktop.Classes.GtiTypes;
 
 namespace GTI_Desktop.Forms {
     public partial class Empresa_VS : Form {
-        private string _connection = gtiCore.Connection_Name();
+        private readonly string _connection = gtiCore.Connection_Name();
         public CnaeStruct Item_VS { get; set; }
 
         public Empresa_VS(List<CnaeStruct> Lista_Cnae, List<CnaeStruct> Lista_Cnae_VS,bool Read_only) {

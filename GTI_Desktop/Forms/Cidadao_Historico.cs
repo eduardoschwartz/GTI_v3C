@@ -67,7 +67,7 @@ namespace GTI_Desktop.Forms {
                 Sistema_bll sistema_Class = new Sistema_bll(_connection);
                 obscidadao reg = new obscidadao();
                 reg.Codigo = _codigo;
-                reg.Userid = sistema_Class.Retorna_User_LoginId(Properties.Settings.Default.LastUser);
+                reg.Userid = sistema_Class.Retorna_User_LoginId(gtiCore.LastUser);
                 reg.timestamp = DateTime.Now;
                 reg.Obs = HistoricoText.Text;
 

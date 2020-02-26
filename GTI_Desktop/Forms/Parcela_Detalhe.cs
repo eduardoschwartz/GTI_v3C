@@ -1,4 +1,4 @@
-﻿using CrystalDecisions.CrystalReports.Engine;
+﻿//using CrystalDecisions.CrystalReports.Engine;
 using GTI_Bll.Classes;
 using GTI_Desktop.Classes;
 using GTI_Desktop.Datasets;
@@ -14,11 +14,13 @@ using System.Windows.Forms;
 
 namespace GTI_Desktop.Forms {
     public partial class Parcela_Detalhe : Form {
-        Color _backColor = Color.White, _foreColor = Color.DarkBlue;
-        Font _font = new Font("Microsoft Sans Serif", 8, FontStyle.Regular);
-        int _codigo;
-        string _connection = gtiCore.Connection_Name(),_nome;
-        List<SpExtrato> Lista_Extrato_Tributo=new List<SpExtrato>();
+        private readonly Color _backColor = Color.White;
+        private readonly Color _foreColor = Color.DarkBlue;
+        readonly Font _font = new Font("Microsoft Sans Serif", 8, FontStyle.Regular);
+        readonly int _codigo;
+        private readonly string _connection = gtiCore.Connection_Name();
+        private readonly string _nome;
+        readonly List<SpExtrato> Lista_Extrato_Tributo=new List<SpExtrato>();
 
         public Parcela_Detalhe(int Codigo,string Nome, List<SpExtrato> Lista_Extrato) {
             InitializeComponent();
@@ -93,23 +95,23 @@ namespace GTI_Desktop.Forms {
                 }
             }
 
-            ReportDocument rd = new ReportDocument();
-            rd.Load(rptPath);
-            try {
-                rd.SetDataSource(certidao);
-                RptViewer rptViewer = new RptViewer();
-                rd.Database.Tables[0].SetDataSource(certidao);
-                rd.Database.Tables[1].SetDataSource(ListaCrystal);
-                rptViewer.CrystalViewer.ReportSource = rd;
-                Main f1 = (Main)Application.OpenForms["Main"];
-                rptViewer.MdiParent = f1;
-                rptViewer.Text = "Detalhe da Parcela";
-                rptViewer.CrystalViewer.ShowGroupTreeButton = false;
-                rptViewer.CrystalViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
-                rptViewer.Show();
-            } catch {
-                throw;
-            }
+            //ReportDocument rd = new ReportDocument();
+            //rd.Load(rptPath);
+            //try {
+            //    rd.SetDataSource(certidao);
+            //    RptViewer rptViewer = new RptViewer();
+            //    rd.Database.Tables[0].SetDataSource(certidao);
+            //    rd.Database.Tables[1].SetDataSource(ListaCrystal);
+            //    rptViewer.CrystalViewer.ReportSource = rd;
+            //    Main f1 = (Main)Application.OpenForms["Main"];
+            //    rptViewer.MdiParent = f1;
+            //    rptViewer.Text = "Detalhe da Parcela";
+            //    rptViewer.CrystalViewer.ShowGroupTreeButton = false;
+            //    rptViewer.CrystalViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+            //    rptViewer.Show();
+            //} catch {
+            //    throw;
+            //}
 
         }
 

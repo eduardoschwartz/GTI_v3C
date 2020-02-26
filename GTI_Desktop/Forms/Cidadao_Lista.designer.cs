@@ -65,7 +65,7 @@
             this.MainListView.UseCompatibleStateImageBehavior = false;
             this.MainListView.View = System.Windows.Forms.View.Details;
             this.MainListView.VirtualMode = true;
-            this.MainListView.RetrieveVirtualItem += new System.Windows.Forms.RetrieveVirtualItemEventHandler(this.lvMain_RetrieveVirtualItem);
+            this.MainListView.RetrieveVirtualItem += new System.Windows.Forms.RetrieveVirtualItemEventHandler(this.LvMain_RetrieveVirtualItem);
             // 
             // columnHeader1
             // 

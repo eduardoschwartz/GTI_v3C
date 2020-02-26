@@ -15,7 +15,6 @@ namespace GTI_Desktop.Forms {
         public int ReturnValue { get; set; }
         List<ArrayList> aDatResult;
         bool _bExec=false;
-        int _File_Version = Properties.Settings.Default.gti_004_version;
 
         public Empresa_Lista() {
             InitializeComponent();
@@ -110,98 +109,96 @@ namespace GTI_Desktop.Forms {
         }
 
         private void SaveDatFile() {
-            List<string> aLista = new List<string>();
-            string[] aReg = new string[10];
-            string[] aTmp = new string[1];
-            aLista.Add(gtiCore.ConvertDatReg("ZZ", _File_Version.ToString().Split())); //Versão do arquivo
-            aLista.Add(gtiCore.ConvertDatReg("CD", Codigo.Text.Split()));
-            aTmp[0] = RazaoSocialText.Text;
-            aLista.Add(gtiCore.ConvertDatReg("RS", aTmp));
-            if (ProprietarioText.Tag == null || ProprietarioText.Tag.ToString() == "") ProprietarioText.Tag = "0";
-            aTmp[0] = ProprietarioText.Text;
-            aLista.Add(gtiCore.ConvertDatReg("PN", aTmp));
-            aLista.Add(gtiCore.ConvertDatReg("PC", ProprietarioText.Tag.ToString().Split()));
-            if (AtividadeText.Tag == null || AtividadeText.Tag.ToString() == "") AtividadeText.Tag = "0";
-            aTmp[0] = AtividadeText.Text;
-            aLista.Add(gtiCore.ConvertDatReg("AN", aTmp));
-            aLista.Add(gtiCore.ConvertDatReg("AC", AtividadeText.Tag.ToString().Split()));
-            if (LogradouroText.Tag == null || LogradouroText.Tag.ToString() == "") LogradouroText.Tag = "0";
-            aTmp[0] = LogradouroText.Text;
-            aLista.Add(gtiCore.ConvertDatReg("EN", aTmp));
-            aLista.Add(gtiCore.ConvertDatReg("EC", LogradouroText.Tag.ToString().Split()));
-            if (BairroText.Tag == null || BairroText.Tag.ToString() == "") BairroText.Tag = "0";
-            aTmp[0] = BairroText.Text;
-            aLista.Add(gtiCore.ConvertDatReg("BN", aTmp));
-            aLista.Add(gtiCore.ConvertDatReg("BC", BairroText.Tag.ToString().Split()));
+            //List<string> aLista = new List<string>();
+            //string[] aReg = new string[10];
+            //string[] aTmp = new string[1];
+            //aLista.Add(gtiCore.ConvertDatReg("ZZ", _File_Version.ToString().Split())); //Versão do arquivo
+            //aLista.Add(gtiCore.ConvertDatReg("CD", Codigo.Text.Split()));
+            //aTmp[0] = RazaoSocialText.Text;
+            //aLista.Add(gtiCore.ConvertDatReg("RS", aTmp));
+            //if (ProprietarioText.Tag == null || ProprietarioText.Tag.ToString() == "") ProprietarioText.Tag = "0";
+            //aTmp[0] = ProprietarioText.Text;
+            //aLista.Add(gtiCore.ConvertDatReg("PN", aTmp));
+            //aLista.Add(gtiCore.ConvertDatReg("PC", ProprietarioText.Tag.ToString().Split()));
+            //if (AtividadeText.Tag == null || AtividadeText.Tag.ToString() == "") AtividadeText.Tag = "0";
+            //aTmp[0] = AtividadeText.Text;
+            //aLista.Add(gtiCore.ConvertDatReg("AN", aTmp));
+            //aLista.Add(gtiCore.ConvertDatReg("AC", AtividadeText.Tag.ToString().Split()));
+            //if (LogradouroText.Tag == null || LogradouroText.Tag.ToString() == "") LogradouroText.Tag = "0";
+            //aTmp[0] = LogradouroText.Text;
+            //aLista.Add(gtiCore.ConvertDatReg("EN", aTmp));
+            //aLista.Add(gtiCore.ConvertDatReg("EC", LogradouroText.Tag.ToString().Split()));
+            //if (BairroText.Tag == null || BairroText.Tag.ToString() == "") BairroText.Tag = "0";
+            //aTmp[0] = BairroText.Text;
+            //aLista.Add(gtiCore.ConvertDatReg("BN", aTmp));
+            //aLista.Add(gtiCore.ConvertDatReg("BC", BairroText.Tag.ToString().Split()));
 
-            for (int i = 0; i < MainListView.VirtualListSize; i++) {
-                aReg[0] = MainListView.Items[i].Text;
-                aReg[1] = MainListView.Items[i].SubItems[1].Text == "" ? " " : MainListView.Items[i].SubItems[1].Text;
-                aReg[2] = MainListView.Items[i].SubItems[2].Text == "" ? " " : MainListView.Items[i].SubItems[2].Text;
-                aReg[3] = MainListView.Items[i].SubItems[3].Text == "" ? " " : MainListView.Items[i].SubItems[3].Text;
-                aReg[4] = MainListView.Items[i].SubItems[4].Text == "" ? " " : MainListView.Items[i].SubItems[4].Text;
-                aReg[5] = MainListView.Items[i].SubItems[5].Text == "" ? " " : MainListView.Items[i].SubItems[5].Text;
-                aReg[6] = MainListView.Items[i].SubItems[6].Text == "" ? " " : MainListView.Items[i].SubItems[6].Text;
-                aReg[7] = MainListView.Items[i].SubItems[7].Text == "" ? " " : MainListView.Items[i].SubItems[7].Text;
-                aReg[8] = MainListView.Items[i].SubItems[8].Text == "" ? " " : MainListView.Items[i].SubItems[8].Text;
-                aReg[9] = MainListView.Items[i].SubItems[9].Text == "" ? " " : MainListView.Items[i].SubItems[9].Text;
-                aLista.Add(gtiCore.ConvertDatReg("EM", aReg));
-            }
+            //for (int i = 0; i < MainListView.VirtualListSize; i++) {
+            //    aReg[0] = MainListView.Items[i].Text;
+            //    aReg[1] = MainListView.Items[i].SubItems[1].Text == "" ? " " : MainListView.Items[i].SubItems[1].Text;
+            //    aReg[2] = MainListView.Items[i].SubItems[2].Text == "" ? " " : MainListView.Items[i].SubItems[2].Text;
+            //    aReg[3] = MainListView.Items[i].SubItems[3].Text == "" ? " " : MainListView.Items[i].SubItems[3].Text;
+            //    aReg[4] = MainListView.Items[i].SubItems[4].Text == "" ? " " : MainListView.Items[i].SubItems[4].Text;
+            //    aReg[5] = MainListView.Items[i].SubItems[5].Text == "" ? " " : MainListView.Items[i].SubItems[5].Text;
+            //    aReg[6] = MainListView.Items[i].SubItems[6].Text == "" ? " " : MainListView.Items[i].SubItems[6].Text;
+            //    aReg[7] = MainListView.Items[i].SubItems[7].Text == "" ? " " : MainListView.Items[i].SubItems[7].Text;
+            //    aReg[8] = MainListView.Items[i].SubItems[8].Text == "" ? " " : MainListView.Items[i].SubItems[8].Text;
+            //    aReg[9] = MainListView.Items[i].SubItems[9].Text == "" ? " " : MainListView.Items[i].SubItems[9].Text;
+            //    aLista.Add(gtiCore.ConvertDatReg("EM", aReg));
+            //}
 
-            string sDir = AppDomain.CurrentDomain.BaseDirectory;
-            gtiCore.CreateDatFile(sDir + "\\gti004.dat", aLista);
+            //string sDir = AppDomain.CurrentDomain.BaseDirectory;
+            //gtiCore.CreateDatFile(sDir + "\\gti004.dat", aLista);
         }
 
         private void ReadDatFile() {
-            string sDir = AppDomain.CurrentDomain.BaseDirectory;
-            string sFileName = "\\gti004.dat";
-            //se o arquivo não existir, então não tem o que ler.
-            if (!File.Exists(sDir + sFileName)) return;
-            //se o arquivo for de outro dia, então não ler.
-            if (File.GetLastWriteTime(sDir + sFileName).ToString("MM/dd/yyyy") != DateTime.Now.ToString("MM/dd/yyyy")) return;
-            //lê o q arquivo
-            try {
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "ZZ");
-                if (Convert.ToInt32(aDatResult[0][0].ToString()) != _File_Version) {
-                    return;
-                }
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "CD");
-                if (aDatResult[0].Count > 0)
-                    Codigo.Text = aDatResult[0][0].ToString();
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "RS");
-                if (aDatResult[0].Count > 0)
-                    RazaoSocialText.Text = aDatResult[0][0].ToString(); ;
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "PN");
-                if (aDatResult[0].Count > 0)
-                    ProprietarioText.Text = aDatResult[0][0].ToString();
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "PC");
-                if (aDatResult[0].Count > 0)
-                    ProprietarioText.Tag = aDatResult[0][0].ToString();
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "AN");
-                if (aDatResult[0].Count > 0)
-                    AtividadeText.Text = aDatResult[0][0].ToString();
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "AC");
-                if (aDatResult[0].Count > 0)
-                    AtividadeText.Tag = aDatResult[0][0].ToString();
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "EN");
-                if (aDatResult[0].Count > 0)
-                    LogradouroText.Text = aDatResult[0][0].ToString();
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "EC");
-                if (aDatResult[0].Count > 0)
-                    LogradouroText.Tag= aDatResult[0][0].ToString();
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "BN");
-                if (aDatResult[0].Count > 0)
-                    BairroText.Text = aDatResult[0][0].ToString();
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "BC");
-                if (aDatResult[0].Count > 0)
-                    BairroText.Tag = aDatResult[0][0].ToString();
+            //string sDir = AppDomain.CurrentDomain.BaseDirectory;
+            //string sFileName = "\\gti004.dat";
+            ////se o arquivo não existir, então não tem o que ler.
+            //if (!File.Exists(sDir + sFileName)) return;
+            ////se o arquivo for de outro dia, então não ler.
+            //if (File.GetLastWriteTime(sDir + sFileName).ToString("MM/dd/yyyy") != DateTime.Now.ToString("MM/dd/yyyy")) return;
+            ////lê o q arquivo
+            //try {
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "ZZ");
+            //    if (Convert.ToInt32(aDatResult[0][0].ToString()) != _File_Version) {
+            //        return;
+            //    }
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "CD");
+            //    if (aDatResult[0].Count > 0)
+            //        Codigo.Text = aDatResult[0][0].ToString();
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "RS");
+            //    if (aDatResult[0].Count > 0)
+            //        RazaoSocialText.Text = aDatResult[0][0].ToString(); ;
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "PN");
+            //    if (aDatResult[0].Count > 0)
+            //        ProprietarioText.Text = aDatResult[0][0].ToString();
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "PC");
+            //    if (aDatResult[0].Count > 0)
+            //        ProprietarioText.Tag = aDatResult[0][0].ToString();
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "AN");
+            //    if (aDatResult[0].Count > 0)
+            //        AtividadeText.Text = aDatResult[0][0].ToString();
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "AC");
+            //    if (aDatResult[0].Count > 0)
+            //        AtividadeText.Tag = aDatResult[0][0].ToString();
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "EN");
+            //    if (aDatResult[0].Count > 0)
+            //        LogradouroText.Text = aDatResult[0][0].ToString();
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "EC");
+            //    if (aDatResult[0].Count > 0)
+            //        LogradouroText.Tag= aDatResult[0][0].ToString();
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "BN");
+            //    if (aDatResult[0].Count > 0)
+            //        BairroText.Text = aDatResult[0][0].ToString();
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "BC");
+            //    if (aDatResult[0].Count > 0)
+            //        BairroText.Tag = aDatResult[0][0].ToString();
 
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "EM", false);
-                MainListView.VirtualListSize = aDatResult.Count;
-            } catch {
-            }
-
-
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "EM", false);
+            //    MainListView.VirtualListSize = aDatResult.Count;
+            //} catch {
+            //}
         }
 
         private void CallPB(ToolStripProgressBar pBar, int nPos, int nTot) {

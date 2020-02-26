@@ -9,16 +9,15 @@ using System.Windows.Forms;
 
 namespace GTI_Desktop.Forms {
     public partial class Processo_Tramite : Form {
-
-        List<GtiTypes.CustomListBoxItem> lstButtonState;
+        readonly List<GtiTypes.CustomListBoxItem> lstButtonState;
         public int Ano_Processo { get; set; }
         public int Num_Processo { get; set; }
-        private bool bFechado;
-        private string _connection = gtiCore.Connection_Name();
+        private readonly bool bFechado;
+        private readonly string _connection = gtiCore.Connection_Name();
 
         public Processo_Tramite(int AnoProcesso, int NumProcesso) {
             InitializeComponent();
-            this.Size = new System.Drawing.Size(Properties.Settings.Default.Form_Processo_Tramite_width, Properties.Settings.Default.Form_Processo_Tramite_height);
+            this.Size = new System.Drawing.Size(gtiCore.Form_Processo_Tramite.Width,gtiCore.Form_Processo_Tramite.Height);
 
             tBar.Renderer = new MySR();
             Ano_Processo = AnoProcesso;
@@ -191,10 +190,8 @@ namespace GTI_Desktop.Forms {
             Processo_bll clsProc = new Processo_bll(_connection);
             clsProc.Incluir_MovimentoCC((short)Ano_Processo, Num_Processo, Lista);
             gtiCore.Liberado(this);
-            Properties.Settings.Default.Form_Processo_Tramite_width = Size.Width;
-            Properties.Settings.Default.Form_Processo_Tramite_height = Size.Height;
-            Properties.Settings.Default.Save();
-
+            gtiCore.Form_Processo_Tramite = new Size(Size.Width, Size.Height);
+            gtiCore.Atualiza_Gti000();
         }
 
         private void BtAddLocal_Click(object sender, EventArgs e) {

@@ -11,6 +11,7 @@ using System.Collections;
 using System.IO;
 using GTI_Bll.Classes;
 using System.Drawing;
+using GTI_Models.Models;
 
 namespace GTI_Desktop.Classes {
     /// <summary>
@@ -33,9 +34,11 @@ namespace GTI_Desktop.Classes {
         private static string _servername;
         private static string _lastuser;
         private static int _userid;
-        private static Size _size; 
-        
-        
+        private static Size _sizeLista;
+        private static Size _sizeTramite;
+        private static Size _sizeReport;
+        private static Size _sizeExtrato;
+
         public static string ServerName { get => _servername; set => _servername = value; }
         public static string BaseDados { get => _baseDados; set => _baseDados = value; }
         public static string BaseDadosTeste { get => _baseDadosTeste; set => _baseDadosTeste = value; }
@@ -43,10 +46,10 @@ namespace GTI_Desktop.Classes {
         public static string Path_Anexo { get => _ul; set => _ul = value; }
         public static string Path_Report { get => _up; set => _up = value; }
         public static int UserId { get => _userid; set => _userid = value; }
-        public static Size Form_Processo_Lista { get => _size; set => _size = value; }
-        public static Size Form_Processo_Tramite { get => _size; set => _size = value; }
-        public static Size Form_Report { get => _size; set => _size = value; }
-        public static Size Form_Extrato { get => _size; set => _size = value; }
+        public static Size Form_Processo_Lista { get => _sizeLista; set => _sizeLista = value; }
+        public static Size Form_Processo_Tramite { get => _sizeTramite; set => _sizeTramite = value; }
+        public static Size Form_Report { get => _sizeReport; set => _sizeReport = value; }
+        public static Size Form_Extrato { get => _sizeExtrato; set => _sizeExtrato = value; }
         public static string Ul = "gtisys";
         public static string Up = "everest";
 
@@ -230,9 +233,9 @@ namespace GTI_Desktop.Classes {
         public static string Connection_Name() {
             string connString = "";
             Ul = "gtisys"; Up = "everest";
-            //Main f1 = (Main)Application.OpenForms["Main"];
+//            Main f1 = (Main)Application.OpenForms["Main"];
             try {
-                //BaseDados = f1.DataBaseToolStripStatus.Text;
+  //              BaseDados = f1.DataBaseToolStripStatus.Text;
                 connString = CreateConnectionString(ServerName, BaseDados, Ul, Up);
             } catch (Exception) {
             }
@@ -631,26 +634,17 @@ namespace GTI_Desktop.Classes {
         }
 
         public static void UpdateUserBinary() {
-            string _connection = gtiCore.Connection_Name();
+            string _connection = Connection_Name();
             Sistema_bll sistema_Class = new Sistema_bll(_connection);
-            string sTmp = sistema_Class.GetUserBinary(Properties.Settings.Default.UserId);
+            string sTmp = sistema_Class.GetUserBinary(UserId);
             int nSize = sistema_Class.GetSizeofBinary();
-            GtiTypes.UserBinary = gtiCore.Decrypt(sTmp);
+            GtiTypes.UserBinary = Decrypt(sTmp);
             if (nSize > GtiTypes.UserBinary.Length) {
                 int nDif = nSize - GtiTypes.UserBinary.Length;
                 sTmp = new string('0', nDif);
                 GtiTypes.UserBinary += sTmp;
             }
 
-        }
-
-        public static string Retorna_Path_Anexo() {
-            string _path;
-            if (ServerName == "SKYNET" || ServerName == "DEUTSCH")
-                _path = Properties.Settings.Default.Path_Anexo_Local;
-            else
-                _path = Properties.Settings.Default.Path_Anexo_Net;
-            return _path;
         }
 
         //Function to get random number
@@ -662,28 +656,47 @@ namespace GTI_Desktop.Classes {
             }
         }
 
-        public static Exception LoadSettings() {
-            List<ArrayList> aDatResult;
-            string sDir = AppDomain.CurrentDomain.BaseDirectory;
-            string sFileName = "\\gti000.dat";
-            if (File.Exists(sDir + sFileName)) {
-                try {
-                    aDatResult = ReadFromDatFile(sDir + sFileName, "SN");
-                    ServerName = aDatResult[0][0].ToString();
-                    aDatResult = ReadFromDatFile(sDir + sFileName, "LU");
-                    LastUser = aDatResult[0][0].ToString();
-                } catch (Exception ex) {
-                    return ex;
-                }
-            } else {
-                List<string> aLista = new List<string>();
-                aLista.Add(ConvertDatReg("ZZ", 1.ToString().Split())); //Versão do arquivo
-                aLista.Add(ConvertDatReg("SN", new[] { "200.232.123.115" })); // Server Name
-                aLista.Add(ConvertDatReg("LU", new[] { "" })); // Last User
-                CreateDatFile(sDir + "\\gti000.dat", aLista);
-                LoadSettings();
-            }
-            return null;
+        //public static Exception LoadSettings() {
+        //    List<ArrayList> aDatResult;
+        //    string sDir = AppDomain.CurrentDomain.BaseDirectory;
+        //    string sFileName = "\\gti000.dat";
+        //    if (File.Exists(sDir + sFileName)) {
+        //        try {
+        //            aDatResult = ReadFromDatFile(sDir + sFileName, "SN");
+        //            ServerName = aDatResult[0][0].ToString();
+        //            aDatResult = ReadFromDatFile(sDir + sFileName, "LU");
+        //            LastUser = aDatResult[0][0].ToString();
+        //        } catch (Exception ex) {
+        //            return ex;
+        //        }
+        //    } else {
+        //        List<string> aLista = new List<string>();
+        //        aLista.Add(ConvertDatReg("ZZ", 1.ToString().Split())); //Versão do arquivo
+        //        aLista.Add(ConvertDatReg("SN", new[] { "200.232.123.115" })); // Server Name
+        //        aLista.Add(ConvertDatReg("LU", new[] { "USUARIO" })); // Last User
+        //        CreateDatFile(sDir + "\\gti000.dat", aLista);
+        //        LoadSettings();
+        //    }
+        //    return null;
+        //}
+
+        public static Exception Atualiza_Gti000() {
+            Gti000 reg = new Gti000() {
+                UserId=UserId,
+                Form_Extrato_Height=Form_Extrato.Height,
+                Form_Extrato_Width=Form_Extrato.Width,
+                Form_Processo_Lista_Height=Form_Processo_Lista.Height,
+                Form_Processo_Lista_Width=Form_Processo_Lista.Width,
+                Form_Processo_Tramite_Height=Form_Processo_Tramite.Height,
+                Form_Processo_Tramite_Width=Form_Processo_Tramite.Width,
+                Form_Report_Height=Form_Report.Height,
+                Form_Report_Width=Form_Report.Width,
+                Path_Anexo=Path_Anexo,
+                Path_Report=Path_Report
+            };
+            Sistema_bll sistema_class = new Sistema_bll(Connection_Name());
+            Exception ex = sistema_class.Alterar_Gti000(reg);
+            return ex;
         }
 
 

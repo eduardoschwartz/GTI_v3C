@@ -30,7 +30,7 @@ namespace GTI_Desktop.Forms {
 
         private void BtPrint_Click(object sender, EventArgs e) {
 
-            string rptPath = System.IO.Path.Combine(Properties.Settings.Default.Path_Report, "Detalhe_Parcela.rpt");
+            string rptPath = System.IO.Path.Combine(gtiCore.Path_Report, "Detalhe_Parcela.rpt");
             if (!File.Exists(rptPath)) {
                 MessageBox.Show("Caminho " + rptPath + " não encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;

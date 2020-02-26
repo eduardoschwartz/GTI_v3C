@@ -11,10 +11,9 @@ using System.Windows.Forms;
 
 namespace GTI_Desktop.Forms {
     public partial class Imovel_Lista : Form {
-        string _connection = gtiCore.Connection_Name();
+        readonly string _connection = gtiCore.Connection_Name();
         public int ReturnValue { get; set; }
         List<ArrayList> aDatResult;
-        int _File_Version = Properties.Settings.Default.gti_001_version;
 
         public Imovel_Lista() {
             InitializeComponent();
@@ -42,104 +41,104 @@ namespace GTI_Desktop.Forms {
         }
 
         private void SaveDatFile() {
-            List<string> aLista = new List<string>();
-            string[] aReg = new string[8];
-            string[] aTmp = new string[1];
+            //List<string> aLista = new List<string>();
+            //string[] aReg = new string[8];
+            //string[] aTmp = new string[1];
 
-            aLista.Add(gtiCore.ConvertDatReg("ZZ", _File_Version.ToString().Split())); //Versão do arquivo
-            aLista.Add(gtiCore.ConvertDatReg("CD", Codigo.Text.Split()));
-            aLista.Add(gtiCore.ConvertDatReg("PR", PrincipalCheckBox.Checked.ToString().Split()));
-            aTmp[0] = Inscricao.Text;
-            aLista.Add(gtiCore.ConvertDatReg("IC", aTmp));
-            if (Proprietario.Tag == null || Proprietario.Tag.ToString() == "") Proprietario.Tag = "0";
-            aTmp[0] = Proprietario.Text;
-            aLista.Add(gtiCore.ConvertDatReg("PP", aTmp));
-            aLista.Add(gtiCore.ConvertDatReg("Pt", Proprietario.Tag.ToString().Split()));
-            if (Logradouro.Tag == null || Logradouro.Tag.ToString() == "") Logradouro.Tag = "0";
-            aTmp[0] = Logradouro.Text;
-            aLista.Add(gtiCore.ConvertDatReg("LG", aTmp));
-            aLista.Add(gtiCore.ConvertDatReg("Lt", Logradouro.Tag.ToString().Split()));
-            aLista.Add(gtiCore.ConvertDatReg("NM", Numero.Text.Split()));
-            if (Bairro.Tag == null || Bairro.Tag.ToString() == "") Bairro.Tag = "0";
-            aTmp[0] = Bairro.Text;
-            aLista.Add(gtiCore.ConvertDatReg("BR", aTmp));
-            aLista.Add(gtiCore.ConvertDatReg("Bt", Bairro.Tag.ToString().Split()));
-            if (Condominio.Tag == null || Condominio.Tag.ToString() == "") Condominio.Tag = "0";
-            aTmp[0] = Condominio.Text;
-            aLista.Add(gtiCore.ConvertDatReg("CN", aTmp));
-            aLista.Add(gtiCore.ConvertDatReg("Ct", Condominio.Tag.ToString().Split()));
+            //aLista.Add(gtiCore.ConvertDatReg("ZZ", _File_Version.ToString().Split())); //Versão do arquivo
+            //aLista.Add(gtiCore.ConvertDatReg("CD", Codigo.Text.Split()));
+            //aLista.Add(gtiCore.ConvertDatReg("PR", PrincipalCheckBox.Checked.ToString().Split()));
+            //aTmp[0] = Inscricao.Text;
+            //aLista.Add(gtiCore.ConvertDatReg("IC", aTmp));
+            //if (Proprietario.Tag == null || Proprietario.Tag.ToString() == "") Proprietario.Tag = "0";
+            //aTmp[0] = Proprietario.Text;
+            //aLista.Add(gtiCore.ConvertDatReg("PP", aTmp));
+            //aLista.Add(gtiCore.ConvertDatReg("Pt", Proprietario.Tag.ToString().Split()));
+            //if (Logradouro.Tag == null || Logradouro.Tag.ToString() == "") Logradouro.Tag = "0";
+            //aTmp[0] = Logradouro.Text;
+            //aLista.Add(gtiCore.ConvertDatReg("LG", aTmp));
+            //aLista.Add(gtiCore.ConvertDatReg("Lt", Logradouro.Tag.ToString().Split()));
+            //aLista.Add(gtiCore.ConvertDatReg("NM", Numero.Text.Split()));
+            //if (Bairro.Tag == null || Bairro.Tag.ToString() == "") Bairro.Tag = "0";
+            //aTmp[0] = Bairro.Text;
+            //aLista.Add(gtiCore.ConvertDatReg("BR", aTmp));
+            //aLista.Add(gtiCore.ConvertDatReg("Bt", Bairro.Tag.ToString().Split()));
+            //if (Condominio.Tag == null || Condominio.Tag.ToString() == "") Condominio.Tag = "0";
+            //aTmp[0] = Condominio.Text;
+            //aLista.Add(gtiCore.ConvertDatReg("CN", aTmp));
+            //aLista.Add(gtiCore.ConvertDatReg("Ct", Condominio.Tag.ToString().Split()));
 
-            for (int i = 0; i < MainListView.VirtualListSize; i++) {
-                aReg[0] = MainListView.Items[i].Text;
-                aReg[1] = MainListView.Items[i].SubItems[1].Text;
-                aReg[2] = MainListView.Items[i].SubItems[2].Text;
-                aReg[3] = MainListView.Items[i].SubItems[3].Text == "" ? " " : MainListView.Items[i].SubItems[3].Text;
-                aReg[4] = MainListView.Items[i].SubItems[4].Text == "" ? " " : MainListView.Items[i].SubItems[4].Text;
-                aReg[5] = MainListView.Items[i].SubItems[5].Text == "" ? " " : MainListView.Items[i].SubItems[5].Text;
-                aReg[6] = MainListView.Items[i].SubItems[6].Text == "" ? " " : MainListView.Items[i].SubItems[6].Text;
-                aReg[7] = MainListView.Items[i].SubItems[7].Text == "" ? " " : MainListView.Items[i].SubItems[7].Text;
-                aLista.Add(gtiCore.ConvertDatReg("IM", aReg));
-            }
+            //for (int i = 0; i < MainListView.VirtualListSize; i++) {
+            //    aReg[0] = MainListView.Items[i].Text;
+            //    aReg[1] = MainListView.Items[i].SubItems[1].Text;
+            //    aReg[2] = MainListView.Items[i].SubItems[2].Text;
+            //    aReg[3] = MainListView.Items[i].SubItems[3].Text == "" ? " " : MainListView.Items[i].SubItems[3].Text;
+            //    aReg[4] = MainListView.Items[i].SubItems[4].Text == "" ? " " : MainListView.Items[i].SubItems[4].Text;
+            //    aReg[5] = MainListView.Items[i].SubItems[5].Text == "" ? " " : MainListView.Items[i].SubItems[5].Text;
+            //    aReg[6] = MainListView.Items[i].SubItems[6].Text == "" ? " " : MainListView.Items[i].SubItems[6].Text;
+            //    aReg[7] = MainListView.Items[i].SubItems[7].Text == "" ? " " : MainListView.Items[i].SubItems[7].Text;
+            //    aLista.Add(gtiCore.ConvertDatReg("IM", aReg));
+            //}
 
-            string sDir = AppDomain.CurrentDomain.BaseDirectory;
-            gtiCore.CreateDatFile(sDir + "\\gti001.dat", aLista);
+            //string sDir = AppDomain.CurrentDomain.BaseDirectory;
+            //gtiCore.CreateDatFile(sDir + "\\gti001.dat", aLista);
         }
 
         private void ReadDatFile() {
-            string sDir = AppDomain.CurrentDomain.BaseDirectory;
-            string sFileName = "\\gti001.dat";
-            //se o arquivo não existir, então não tem o que ler.
-            if (!File.Exists(sDir + sFileName)) return;
-            //se o arquivo for de outro dia, então não ler.
-            if (File.GetLastWriteTime(sDir + sFileName).ToString("MM/dd/yyyy") != DateTime.Now.ToString("MM/dd/yyyy")) return;
-            //lê o q arquivo
-            try {
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "ZZ");
-                if (Convert.ToInt32(aDatResult[0][0].ToString()) != _File_Version) {
-                    return;
-                }
+            //string sDir = AppDomain.CurrentDomain.BaseDirectory;
+            //string sFileName = "\\gti001.dat";
+            ////se o arquivo não existir, então não tem o que ler.
+            //if (!File.Exists(sDir + sFileName)) return;
+            ////se o arquivo for de outro dia, então não ler.
+            //if (File.GetLastWriteTime(sDir + sFileName).ToString("MM/dd/yyyy") != DateTime.Now.ToString("MM/dd/yyyy")) return;
+            ////lê o q arquivo
+            //try {
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "ZZ");
+            //    if (Convert.ToInt32(aDatResult[0][0].ToString()) != _File_Version) {
+            //        return;
+            //    }
 
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "CD");
-                if (aDatResult[0].Count > 0)
-                    Codigo.Text = aDatResult[0][0].ToString();
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "PR");
-                if (aDatResult[0].Count > 0)
-                    PrincipalCheckBox.Checked = Convert.ToBoolean(aDatResult[0][0]);
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "IC");
-                if (aDatResult[0].Count > 0)
-                    Inscricao.Text = aDatResult[0][0].ToString();
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "PP");
-                if (aDatResult[0].Count > 0)
-                    Proprietario.Text = aDatResult[0][0].ToString();
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "Pt");
-                if (aDatResult[0].Count > 0)
-                    Proprietario.Tag = aDatResult[0][0].ToString();
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "LG");
-                if (aDatResult[0].Count > 0)
-                    Logradouro.Text = aDatResult[0][0].ToString();
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "Lt");
-                if (aDatResult[0].Count > 0)
-                    Logradouro.Tag = aDatResult[0][0].ToString();
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "NM");
-                if (aDatResult[0].Count > 0)
-                    Numero.Text = aDatResult[0][0].ToString();
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "BR");
-                if (aDatResult[0].Count > 0)
-                    Bairro.Text = aDatResult[0][0].ToString();
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "Bt");
-                if (aDatResult[0].Count > 0)
-                    Bairro.Tag = aDatResult[0][0].ToString();
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "CN");
-                if (aDatResult[0].Count > 0)
-                    Condominio.Text = aDatResult[0][0].ToString();
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "Ct");
-                if (aDatResult[0].Count > 0)
-                    Condominio.Tag = aDatResult[0][0].ToString();
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "CD");
+            //    if (aDatResult[0].Count > 0)
+            //        Codigo.Text = aDatResult[0][0].ToString();
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "PR");
+            //    if (aDatResult[0].Count > 0)
+            //        PrincipalCheckBox.Checked = Convert.ToBoolean(aDatResult[0][0]);
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "IC");
+            //    if (aDatResult[0].Count > 0)
+            //        Inscricao.Text = aDatResult[0][0].ToString();
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "PP");
+            //    if (aDatResult[0].Count > 0)
+            //        Proprietario.Text = aDatResult[0][0].ToString();
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "Pt");
+            //    if (aDatResult[0].Count > 0)
+            //        Proprietario.Tag = aDatResult[0][0].ToString();
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "LG");
+            //    if (aDatResult[0].Count > 0)
+            //        Logradouro.Text = aDatResult[0][0].ToString();
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "Lt");
+            //    if (aDatResult[0].Count > 0)
+            //        Logradouro.Tag = aDatResult[0][0].ToString();
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "NM");
+            //    if (aDatResult[0].Count > 0)
+            //        Numero.Text = aDatResult[0][0].ToString();
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "BR");
+            //    if (aDatResult[0].Count > 0)
+            //        Bairro.Text = aDatResult[0][0].ToString();
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "Bt");
+            //    if (aDatResult[0].Count > 0)
+            //        Bairro.Tag = aDatResult[0][0].ToString();
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "CN");
+            //    if (aDatResult[0].Count > 0)
+            //        Condominio.Text = aDatResult[0][0].ToString();
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "Ct");
+            //    if (aDatResult[0].Count > 0)
+            //        Condominio.Tag = aDatResult[0][0].ToString();
 
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "IM", false);
-                MainListView.VirtualListSize = aDatResult.Count;
-            } catch {
-            }
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "IM", false);
+            //    MainListView.VirtualListSize = aDatResult.Count;
+            //} catch {
+            //}
 
         }
 
@@ -168,7 +167,6 @@ namespace GTI_Desktop.Forms {
 
             gtiCore.Ocupado(this);
             Imovel_bll imovel_Class = new Imovel_bll(_connection);
-
             ImovelStruct Reg = new ImovelStruct {
                 Codigo = string.IsNullOrEmpty(Codigo.Text) ? 0 : Convert.ToInt32(Codigo.Text),
                 Proprietario_Principal = PrincipalCheckBox.Checked

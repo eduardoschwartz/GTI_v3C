@@ -602,5 +602,31 @@ namespace GTI_Dal.Classes {
             return reg;
         }
 
+        public Exception Alterar_Gti000(Gti000 reg) {
+            using (GTI_Context db = new GTI_Context(_connection)) {
+                Gti000 u = db.Gti000.First(i => i.UserId == reg.UserId);
+                u.Form_Extrato_Height = reg.Form_Extrato_Height;
+                u.Form_Extrato_Width = reg.Form_Extrato_Width;
+                u.Form_Processo_Lista_Height = reg.Form_Processo_Lista_Height;
+                u.Form_Processo_Lista_Width = reg.Form_Processo_Lista_Width;
+                u.Form_Processo_Tramite_Height = reg.Form_Processo_Tramite_Height;
+                u.Form_Processo_Tramite_Width = reg.Form_Processo_Tramite_Width;
+                u.Form_Report_Height = reg.Form_Report_Height;
+                u.Form_Report_Width = reg.Form_Report_Width;
+                u.Path_Anexo = reg.Path_Anexo;
+                u.Path_Report = reg.Path_Report;
+                try {
+                    db.SaveChanges();
+                } catch (Exception ex) {
+                    return ex;
+                }
+                return null;
+            }
+        }
+
+
+
+
+
     }
 }

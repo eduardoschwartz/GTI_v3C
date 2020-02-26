@@ -11,8 +11,7 @@ using static GTI_Models.modelCore;
 
 namespace GTI_Desktop.Forms {
     public partial class Extrato : Form {
-
-        string _connection = gtiCore.Connection_Name();
+        readonly string _connection = gtiCore.Connection_Name();
         List<SpExtrato> Lista_Extrato_Tributo;
         List<SpExtrato> Lista_Extrato_Parcela;
         List<ObsparcelaStruct> Lista_Observacao;
@@ -23,7 +22,7 @@ namespace GTI_Desktop.Forms {
 
         public Extrato() {
             InitializeComponent();
-            this.Size = new System.Drawing.Size(Properties.Settings.Default.Form_Extrato_width, Properties.Settings.Default.Form_Extrato_height);
+            Size = new Size(gtiCore.Form_Extrato.Width, gtiCore.Form_Extrato.Height);
             Grid_Format();
             ClearAll(true);
         }
@@ -547,9 +546,8 @@ namespace GTI_Desktop.Forms {
         }
 
         private void Extrato_FormClosing(object sender, FormClosingEventArgs e) {
-            Properties.Settings.Default.Form_Extrato_width = this.Size.Width;
-            Properties.Settings.Default.Form_Extrato_height = this.Size.Height;
-            Properties.Settings.Default.Save();
+            gtiCore.Form_Extrato = new Size( Size.Width,Size.Height);
+            gtiCore.Atualiza_Gti000();
         }
 
         private void BtDetalhe_Click(object sender, EventArgs e) {
@@ -923,7 +921,7 @@ InicioObs:
         }
 
         private void ObservacaoControlBehaviour(bool bStart) {
-            Color color_enable = Color.White, color_disable = this.BackColor;
+//            Color color_enable = Color.White, color_disable = this.BackColor;
             AlterarObsButton.Enabled = bStart;
             NovaObsButton.Enabled = bStart;
             ExcluirObsButton.Enabled = bStart;

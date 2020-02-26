@@ -12,10 +12,9 @@ using System.Windows.Forms;
 
 namespace GTI_Desktop.Forms {
     public partial class Cidadao_Lista : Form {
-        string _connection = gtiCore.Connection_Name();
+        readonly string _connection = gtiCore.Connection_Name();
         public int ReturnValue { get; set; }
         List<ArrayList> aDatResult;
-        int _File_Version = Properties.Settings.Default.gti_002_version;
 
         public Cidadao_Lista() {
             InitializeComponent();
@@ -83,9 +82,10 @@ namespace GTI_Desktop.Forms {
             if (aDatResult == null) aDatResult = new List<ArrayList>();
             aDatResult.Clear();
             foreach (var item in Lista) {
-                ArrayList itemlv = new ArrayList();
-                itemlv.Add(item.Codcidadao.ToString("000000"));
-                itemlv.Add(item.Nomecidadao);
+                ArrayList itemlv = new ArrayList {
+                    item.Codcidadao.ToString("000000"),
+                    item.Nomecidadao
+                };
                 if (!String.IsNullOrEmpty(item.Cpf) && gtiCore.IsNumeric(item.Cpf))
                     itemlv.Add(String.Format(@"{0:000\.000\.000\-00}", Convert.ToDecimal(Regex.Match(item.Cpf, @"\d+").Value)));
                 else
@@ -126,7 +126,7 @@ namespace GTI_Desktop.Forms {
             }
         }
 
-        private void lvMain_RetrieveVirtualItem(object sender, RetrieveVirtualItemEventArgs e) {
+        private void LvMain_RetrieveVirtualItem(object sender, RetrieveVirtualItemEventArgs e) {
             var acc = aDatResult[e.ItemIndex];
             e.Item = new ListViewItem(
                 new string[]
@@ -137,46 +137,46 @@ namespace GTI_Desktop.Forms {
         }
 
         private void SaveDatFile() {
-            List<string> aLista = new List<string>();
-            string[] aReg = new string[8];
-            string[] aTmp = new string[1];
-            aLista.Add(gtiCore.ConvertDatReg("ZZ", _File_Version.ToString().Split())); //Versão do arquivo
-            aLista.Add(gtiCore.ConvertDatReg("DS", new[] { BuscaText.Text }));
+            //List<string> aLista = new List<string>();
+            //string[] aReg = new string[8];
+            //string[] aTmp = new string[1];
+            //aLista.Add(gtiCore.ConvertDatReg("ZZ", _File_Version.ToString().Split())); //Versão do arquivo
+            //aLista.Add(gtiCore.ConvertDatReg("DS", new[] { BuscaText.Text }));
 
-            for (int i = 0; i < MainListView.VirtualListSize; i++) {
-                aReg[0] = MainListView.Items[i].Text;
-                aReg[1] = MainListView.Items[i].SubItems[1].Text;
-                aReg[2] = MainListView.Items[i].SubItems[2].Text == "" ? " " : MainListView.Items[i].SubItems[2].Text;
-                aReg[3] = MainListView.Items[i].SubItems[3].Text == "" ? " " : MainListView.Items[i].SubItems[3].Text;
-                aLista.Add(gtiCore.ConvertDatReg("CD", aReg));
-            }
+            //for (int i = 0; i < MainListView.VirtualListSize; i++) {
+            //    aReg[0] = MainListView.Items[i].Text;
+            //    aReg[1] = MainListView.Items[i].SubItems[1].Text;
+            //    aReg[2] = MainListView.Items[i].SubItems[2].Text == "" ? " " : MainListView.Items[i].SubItems[2].Text;
+            //    aReg[3] = MainListView.Items[i].SubItems[3].Text == "" ? " " : MainListView.Items[i].SubItems[3].Text;
+            //    aLista.Add(gtiCore.ConvertDatReg("CD", aReg));
+            //}
 
-            string sDir = AppDomain.CurrentDomain.BaseDirectory;
-            gtiCore.CreateDatFile(sDir + "\\gti002.dat", aLista);
+            //string sDir = AppDomain.CurrentDomain.BaseDirectory;
+            //gtiCore.CreateDatFile(sDir + "\\gti002.dat", aLista);
         }
 
         private void ReadDatFile() {
-            string sDir = AppDomain.CurrentDomain.BaseDirectory;
-            string sFileName = "\\gti002.dat";
-            //se o arquivo não existir, então não tem o que ler.
-            if (!File.Exists(sDir + sFileName)) return;
-            //se o arquivo for de outro dia, então não ler.
-            if (File.GetLastWriteTime(sDir + sFileName).ToString("MM/dd/yyyy") != DateTime.Now.ToString("MM/dd/yyyy")) return;
-            //lê o q arquivo
-            try {
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "ZZ");
-                if (Convert.ToInt32(aDatResult[0][0].ToString()) != _File_Version) {
-                    return;
-                }
+            //string sDir = AppDomain.CurrentDomain.BaseDirectory;
+            //string sFileName = "\\gti002.dat";
+            ////se o arquivo não existir, então não tem o que ler.
+            //if (!File.Exists(sDir + sFileName)) return;
+            ////se o arquivo for de outro dia, então não ler.
+            //if (File.GetLastWriteTime(sDir + sFileName).ToString("MM/dd/yyyy") != DateTime.Now.ToString("MM/dd/yyyy")) return;
+            ////lê o q arquivo
+            //try {
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "ZZ");
+            //    if (Convert.ToInt32(aDatResult[0][0].ToString()) != _File_Version) {
+            //        return;
+            //    }
 
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "DS");
-                if (aDatResult[0].Count > 0)
-                    BuscaText.Text = aDatResult[0][0].ToString();
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "DS");
+            //    if (aDatResult[0].Count > 0)
+            //        BuscaText.Text = aDatResult[0][0].ToString();
 
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "CD",false);
-                MainListView.VirtualListSize = aDatResult.Count;
-            } catch  {
-            }
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "CD",false);
+            //    MainListView.VirtualListSize = aDatResult.Count;
+            //} catch  {
+            //}
         }
 
 

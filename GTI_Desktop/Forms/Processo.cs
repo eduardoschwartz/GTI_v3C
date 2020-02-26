@@ -1205,7 +1205,7 @@ namespace GTI_Desktop.Forms {
 
         private void PrintProcessoRequerente() {
 
-            string rptPath = System.IO.Path.Combine(Properties.Settings.Default.Path_Report, "Processo_Requerente.rpt");
+            string rptPath = System.IO.Path.Combine(gtiCore.Path_Report, "Processo_Requerente.rpt");
             if (!File.Exists(rptPath)) {
                 MessageBox.Show("Caminho " + rptPath + " não encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -1273,9 +1273,9 @@ namespace GTI_Desktop.Forms {
         private void PrintRequerimento(bool bAbertura) {
             string rptPath;
             if (bAbertura)
-                rptPath = Path.Combine(Properties.Settings.Default.Path_Report, "Requerimento_Abertura.rpt");
+                rptPath = Path.Combine(gtiCore.Path_Report, "Requerimento_Abertura.rpt");
             else
-                rptPath =Path.Combine(Properties.Settings.Default.Path_Report, "Requerimento_Cancel.rpt");
+                rptPath =Path.Combine(gtiCore.Path_Report, "Requerimento_Cancel.rpt");
 
             if (!File.Exists(rptPath)) {
                 MessageBox.Show("Caminho " + rptPath + " não encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -1356,7 +1356,7 @@ namespace GTI_Desktop.Forms {
 
         private void PrintComunicadoDoc() {
             string rptPath;
-            rptPath =Path.Combine(Properties.Settings.Default.Path_Report, "Comunicado_Doc.rpt");
+            rptPath =Path.Combine(gtiCore.Path_Report, "Comunicado_Doc.rpt");
 
             if (!File.Exists(rptPath)) {
                 MessageBox.Show("Caminho " + rptPath + " não encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -1449,7 +1449,7 @@ namespace GTI_Desktop.Forms {
 
         private void PrintComprovanteDoc() {
             string rptPath;
-            rptPath = System.IO.Path.Combine(Properties.Settings.Default.Path_Report, "Comprovante_Doc.rpt");
+            rptPath = System.IO.Path.Combine(gtiCore.Path_Report, "Comprovante_Doc.rpt");
 
             if (!File.Exists(rptPath)) {
                 MessageBox.Show("Caminho " + rptPath + " não encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);

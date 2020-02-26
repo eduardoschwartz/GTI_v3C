@@ -16,14 +16,13 @@ namespace GTI_Desktop.Forms {
         string _connection = gtiCore.Connection_Name();
         public ProcessoNumero ReturnValue { get; set; } = new ProcessoNumero();
         List<ArrayList> aDatResult;
-        int _File_Version = Properties.Settings.Default.gti_003_version;
 
         public Processo_Lista()
         {
             InitializeComponent();
             tBar.Renderer = new MySR();
             ProprietarioToolStrip.Renderer = new MySR();
-            this.Size = new System.Drawing.Size(Properties.Settings.Default.Form_Processo_Lista_width, Properties.Settings.Default.Form_Processo_Lista_height);
+            Size = new Size(gtiCore.Form_Processo_Lista.Width, gtiCore.Form_Processo_Lista.Height);
             InternoList.SelectedIndex = 0;
             FisicoList.SelectedIndex = 0;
             Carrega_Lista();
@@ -59,92 +58,92 @@ namespace GTI_Desktop.Forms {
         }
 
         private void ReadDatFile() {
-            string sDir = AppDomain.CurrentDomain.BaseDirectory;
-            string sFileName = "\\gti003.dat";
-            //se o arquivo não existir, então não tem o que ler.
-            if (!File.Exists(sDir + sFileName)) return;
-            //se o arquivo for de outro dia, então não ler.
-            if (File.GetLastWriteTime(sDir + sFileName).ToString("MM/dd/yyyy") != DateTime.Now.ToString("MM/dd/yyyy")) return;
-            //lê o q arquivo
-            try {
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "ZZ");
-                if (Convert.ToInt32(aDatResult[0][0].ToString()) != _File_Version) {
-                    return;
-                }
+            //string sDir = AppDomain.CurrentDomain.BaseDirectory;
+            //string sFileName = "\\gti003.dat";
+            ////se o arquivo não existir, então não tem o que ler.
+            //if (!File.Exists(sDir + sFileName)) return;
+            ////se o arquivo for de outro dia, então não ler.
+            //if (File.GetLastWriteTime(sDir + sFileName).ToString("MM/dd/yyyy") != DateTime.Now.ToString("MM/dd/yyyy")) return;
+            ////lê o q arquivo
+            //try {
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "ZZ");
+            //    if (Convert.ToInt32(aDatResult[0][0].ToString()) != _File_Version) {
+            //        return;
+            //    }
 
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "NP");
-                if (aDatResult[0].Count > 0)
-                    NumeroProcesso.Text = aDatResult[0][0].ToString();
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "AI");
-                if (aDatResult[0].Count > 0)
-                    AnoInicial.Text = aDatResult[0][0].ToString();
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "AF");
-                if (aDatResult[0].Count > 0)
-                    AnoFinal.Text = aDatResult[0][0].ToString();
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "DE");
-                if (aDatResult[0].Count > 0)
-                    DataEntrada.Text = aDatResult[0][0].ToString();
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "RQ");
-                if (aDatResult[0].Count > 0)
-                    Requerente.Text = aDatResult[0][0].ToString();
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "FI");
-                if (aDatResult[0].Count > 0)
-                    FisicoList.SelectedIndex = Convert.ToInt32(aDatResult[0][0].ToString());
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "IN");
-                if (aDatResult[0].Count > 0)
-                    InternoList.SelectedIndex = Convert.ToInt32(aDatResult[0][0].ToString());
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "CC");
-                if (aDatResult[0].Count > 0)
-                    SetorList.SelectedIndex = Convert.ToInt32(aDatResult[0][0].ToString());
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "AS");
-                if (aDatResult[0].Count > 0)
-                    AssuntoList.SelectedIndex = Convert.ToInt32(aDatResult[0][0].ToString());
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "CP");
-                if (aDatResult[0].Count > 0)
-                    Complemento.Text = aDatResult[0][0].ToString();
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "NP");
+            //    if (aDatResult[0].Count > 0)
+            //        NumeroProcesso.Text = aDatResult[0][0].ToString();
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "AI");
+            //    if (aDatResult[0].Count > 0)
+            //        AnoInicial.Text = aDatResult[0][0].ToString();
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "AF");
+            //    if (aDatResult[0].Count > 0)
+            //        AnoFinal.Text = aDatResult[0][0].ToString();
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "DE");
+            //    if (aDatResult[0].Count > 0)
+            //        DataEntrada.Text = aDatResult[0][0].ToString();
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "RQ");
+            //    if (aDatResult[0].Count > 0)
+            //        Requerente.Text = aDatResult[0][0].ToString();
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "FI");
+            //    if (aDatResult[0].Count > 0)
+            //        FisicoList.SelectedIndex = Convert.ToInt32(aDatResult[0][0].ToString());
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "IN");
+            //    if (aDatResult[0].Count > 0)
+            //        InternoList.SelectedIndex = Convert.ToInt32(aDatResult[0][0].ToString());
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "CC");
+            //    if (aDatResult[0].Count > 0)
+            //        SetorList.SelectedIndex = Convert.ToInt32(aDatResult[0][0].ToString());
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "AS");
+            //    if (aDatResult[0].Count > 0)
+            //        AssuntoList.SelectedIndex = Convert.ToInt32(aDatResult[0][0].ToString());
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "CP");
+            //    if (aDatResult[0].Count > 0)
+            //        Complemento.Text = aDatResult[0][0].ToString();
 
 
-                aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "PC", false);
-                MainListView.VirtualListSize = aDatResult.Count;
-            } catch {
-            }
+            //    aDatResult = gtiCore.ReadFromDatFile(sDir + sFileName, "PC", false);
+            //    MainListView.VirtualListSize = aDatResult.Count;
+            //} catch {
+            //}
         }
 
         private void SaveDatFile() {
-            List<string> aLista = new List<string>();
-            string[] aReg = new string[12];
-            string[] aTmp = new string[1];
+            //List<string> aLista = new List<string>();
+            //string[] aReg = new string[12];
+            //string[] aTmp = new string[1];
 
-            aLista.Add(gtiCore.ConvertDatReg("ZZ", _File_Version.ToString().Split())); //Versão do arquivo
-            aLista.Add(gtiCore.ConvertDatReg("NP", new[] { NumeroProcesso.Text }));
-            aLista.Add(gtiCore.ConvertDatReg("AI", new[] { AnoInicial.Text }));
-            aLista.Add(gtiCore.ConvertDatReg("AF", new[] { AnoFinal.Text }));
-            aLista.Add(gtiCore.ConvertDatReg("DE", new[] { DataEntrada.Text }));
-            aLista.Add(gtiCore.ConvertDatReg("RQ", new[] { Requerente.Text }));
-            aLista.Add(gtiCore.ConvertDatReg("FI", new[] { FisicoList.SelectedIndex.ToString() }));
-            aLista.Add(gtiCore.ConvertDatReg("IN", new[] { InternoList.SelectedIndex.ToString() }));
-            aLista.Add(gtiCore.ConvertDatReg("CC", new[] { SetorList.SelectedIndex.ToString() }));
-            aLista.Add(gtiCore.ConvertDatReg("AS", new[] { AssuntoList.SelectedIndex.ToString() }));
-            aLista.Add(gtiCore.ConvertDatReg("CP", new[] { Complemento.Text }));
+            //aLista.Add(gtiCore.ConvertDatReg("ZZ", _File_Version.ToString().Split())); //Versão do arquivo
+            //aLista.Add(gtiCore.ConvertDatReg("NP", new[] { NumeroProcesso.Text }));
+            //aLista.Add(gtiCore.ConvertDatReg("AI", new[] { AnoInicial.Text }));
+            //aLista.Add(gtiCore.ConvertDatReg("AF", new[] { AnoFinal.Text }));
+            //aLista.Add(gtiCore.ConvertDatReg("DE", new[] { DataEntrada.Text }));
+            //aLista.Add(gtiCore.ConvertDatReg("RQ", new[] { Requerente.Text }));
+            //aLista.Add(gtiCore.ConvertDatReg("FI", new[] { FisicoList.SelectedIndex.ToString() }));
+            //aLista.Add(gtiCore.ConvertDatReg("IN", new[] { InternoList.SelectedIndex.ToString() }));
+            //aLista.Add(gtiCore.ConvertDatReg("CC", new[] { SetorList.SelectedIndex.ToString() }));
+            //aLista.Add(gtiCore.ConvertDatReg("AS", new[] { AssuntoList.SelectedIndex.ToString() }));
+            //aLista.Add(gtiCore.ConvertDatReg("CP", new[] { Complemento.Text }));
 
 
-            for (int i = 0; i < MainListView.VirtualListSize; i++) {
-                aReg[0] = MainListView.Items[i].Text;
-                aReg[1] = MainListView.Items[i].SubItems[1].Text;
-                aReg[2] = MainListView.Items[i].SubItems[2].Text;
-                aReg[3] = MainListView.Items[i].SubItems[3].Text == "" ? " " : MainListView.Items[i].SubItems[3].Text;
-                aReg[4] = MainListView.Items[i].SubItems[4].Text == "" ? " " : MainListView.Items[i].SubItems[4].Text;
-                aReg[5] = MainListView.Items[i].SubItems[5].Text == "" ? " " : MainListView.Items[i].SubItems[5].Text;
-                aReg[6] = MainListView.Items[i].SubItems[6].Text == "" ? " " : MainListView.Items[i].SubItems[6].Text;
-                aReg[7] = MainListView.Items[i].SubItems[7].Text == "" ? " " : MainListView.Items[i].SubItems[7].Text;
-                aReg[8] = MainListView.Items[i].SubItems[8].Text == "" ? " " : MainListView.Items[i].SubItems[8].Text;
-                aReg[9] = MainListView.Items[i].SubItems[9].Text == "" ? " " : MainListView.Items[i].SubItems[9].Text;
-                aReg[10] = MainListView.Items[i].SubItems[10].Text == "" ? " " : MainListView.Items[i].SubItems[10].Text;
-                aLista.Add(gtiCore.ConvertDatReg("PC", aReg));
-            }
+            //for (int i = 0; i < MainListView.VirtualListSize; i++) {
+            //    aReg[0] = MainListView.Items[i].Text;
+            //    aReg[1] = MainListView.Items[i].SubItems[1].Text;
+            //    aReg[2] = MainListView.Items[i].SubItems[2].Text;
+            //    aReg[3] = MainListView.Items[i].SubItems[3].Text == "" ? " " : MainListView.Items[i].SubItems[3].Text;
+            //    aReg[4] = MainListView.Items[i].SubItems[4].Text == "" ? " " : MainListView.Items[i].SubItems[4].Text;
+            //    aReg[5] = MainListView.Items[i].SubItems[5].Text == "" ? " " : MainListView.Items[i].SubItems[5].Text;
+            //    aReg[6] = MainListView.Items[i].SubItems[6].Text == "" ? " " : MainListView.Items[i].SubItems[6].Text;
+            //    aReg[7] = MainListView.Items[i].SubItems[7].Text == "" ? " " : MainListView.Items[i].SubItems[7].Text;
+            //    aReg[8] = MainListView.Items[i].SubItems[8].Text == "" ? " " : MainListView.Items[i].SubItems[8].Text;
+            //    aReg[9] = MainListView.Items[i].SubItems[9].Text == "" ? " " : MainListView.Items[i].SubItems[9].Text;
+            //    aReg[10] = MainListView.Items[i].SubItems[10].Text == "" ? " " : MainListView.Items[i].SubItems[10].Text;
+            //    aLista.Add(gtiCore.ConvertDatReg("PC", aReg));
+            //}
 
-            string sDir = AppDomain.CurrentDomain.BaseDirectory;
-            gtiCore.CreateDatFile(sDir + "\\gti003.dat", aLista);
+            //string sDir = AppDomain.CurrentDomain.BaseDirectory;
+            //gtiCore.CreateDatFile(sDir + "\\gti003.dat", aLista);
         }
 
         private void SelectButton_Click(object sender, System.EventArgs e) {
@@ -395,10 +394,10 @@ namespace GTI_Desktop.Forms {
         }
 
         private void Processo_Lista_FormClosing(object sender, FormClosingEventArgs e) {
+            gtiCore.Form_Processo_Lista = new Size(Size.Width, Size.Height);
+            gtiCore.Atualiza_Gti000();
             SaveDatFile();
-            Properties.Settings.Default.Form_Processo_Lista_width = this.Size.Width;
-            Properties.Settings.Default.Form_Processo_Lista_height = this.Size.Height;
-            Properties.Settings.Default.Save();
+
         }
     }
 }

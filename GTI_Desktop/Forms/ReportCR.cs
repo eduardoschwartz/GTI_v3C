@@ -6,6 +6,7 @@ using GTI_Desktop.Report;
 using GTI_Models.Models;
 using System;
 using System.Data;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace GTI_Desktop.Forms {
@@ -18,7 +19,7 @@ namespace GTI_Desktop.Forms {
 
         public ReportCR(String ReportName,Report_Data Dados, DataSet Ds,int Valor1=0) {
             InitializeComponent();
-            this.Size = new System.Drawing.Size(Properties.Settings.Default.Form_Report_width, Properties.Settings.Default.Form_Report_height);
+            Size = new System.Drawing.Size(gtiCore.Form_Report.Width, gtiCore.Form_Report.Height);
 
             crConnectionInfo.ServerName = gtiCore.ServerName;
             crConnectionInfo.DatabaseName = "TributacaoTeste";
@@ -266,10 +267,8 @@ namespace GTI_Desktop.Forms {
         }//End showReport
 
         private void ReportCR_FormClosing(object sender, FormClosingEventArgs e) {
-            Properties.Settings.Default.Form_Report_width = Size.Width;
-            Properties.Settings.Default.Form_Report_height = Size.Height;
-            Properties.Settings.Default.Save();
-
+            gtiCore.Form_Report = new Size(Size.Width, Size.Height);
+            gtiCore.Atualiza_Gti000();
         }
     }
 }

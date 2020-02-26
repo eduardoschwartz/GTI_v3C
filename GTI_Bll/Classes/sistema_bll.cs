@@ -251,6 +251,11 @@ namespace GTI_Bll.Classes {
 
         }
 
+        public Exception Alterar_Gti000(Gti000 reg) {
+            Sistema_Data obj = new Sistema_Data(_connection);
+            Exception ex = obj.Alterar_Gti000(reg);
+            return ex;
+        }
 
     }
 }

@@ -105,9 +105,9 @@ namespace GTI_Desktop.Forms {
             Size = new Size(Size.Width, 190);
             OriginSize = Size.Height;
             LoginToolStrip.Renderer = new MySR();
-            gtiCore.LoadSettings();
-            txtServer.Text = gtiCore.ServerName;
-            txtLogin.Text = gtiCore.LastUser;
+            gtiCore.BaseDados = "Tributacao";
+            txtServer.Text = Properties.Settings.Default.ServerName;
+            txtLogin.Text = Properties.Settings.Default.LastUser;
             txtPwd.Focus();
         }
 
@@ -224,6 +224,7 @@ namespace GTI_Desktop.Forms {
             }
             gtiCore.LastUser= txtLogin.Text.ToUpper();
             gtiCore.UserId= sistema_Class.Retorna_User_LoginId(txtLogin.Text); 
+
 
             int nId = gtiCore.UserId;
             LoadDBSettings(nId);

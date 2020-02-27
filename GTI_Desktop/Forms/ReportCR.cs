@@ -31,7 +31,7 @@ namespace GTI_Desktop.Forms {
 
         private void ShowReport(String _nome,Report_Data _dados, DataSet Ds, int Valor1 ) {
             crViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
-            string _usuario = Properties.Settings.Default.LastUser;
+            string _usuario = gtiCore.LastUser;
 
             switch (_nome) {
                 case "CertidaoEndereco":

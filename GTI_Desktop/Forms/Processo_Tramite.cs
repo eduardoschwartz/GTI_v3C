@@ -456,7 +456,7 @@ Alterar:;
                 return;
             }
             Sistema_bll Sistema_Class = new Sistema_bll(_connection);
-            int nUserId = Sistema_Class.Retorna_User_LoginId(Properties.Settings.Default.LastUser);
+            int nUserId = Sistema_Class.Retorna_User_LoginId(gtiCore.LastUser);
 
             if (bFechado) {
                 MessageBox.Show("O processo não está aberto.", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -624,7 +624,7 @@ Receber:;
                 int CodCC = Convert.ToInt16(lvMain.SelectedItems[0].SubItems[2].Text);
                 Processo_bll processo_Class = new Processo_bll(_connection);
                 Sistema_bll Sistema_Class = new Sistema_bll(_connection);
-                int nUserId = Sistema_Class.Retorna_User_LoginId( Properties.Settings.Default.LastUser);
+                int nUserId = Sistema_Class.Retorna_User_LoginId( gtiCore.LastUser);
                 List<UsuariocentroCusto> Lista = processo_Class.ListaCentrocustoUsuario( Sistema_Class.Retorna_User_LoginId( gtiCore.Retorna_Last_User()));
                 foreach (UsuariocentroCusto item in Lista) {
                     if (item.Codigo == CodCC) {

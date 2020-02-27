@@ -12,6 +12,7 @@ using System.IO;
 using GTI_Bll.Classes;
 using System.Drawing;
 using GTI_Models.Models;
+using System.Configuration;
 
 namespace GTI_Desktop.Classes {
     /// <summary>
@@ -224,7 +225,7 @@ namespace GTI_Desktop.Classes {
         /// </summary>
         /// <returns>Nome de Login</returns>
         public static string Retorna_Last_User() {
-            return Properties.Settings.Default.LastUser;
+            return ConfigurationManager.AppSettings["lastuser"]; 
         }
 
         /// <summary>Retorna a string de conexão.

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Specialized;
+using System.Configuration;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
@@ -106,8 +108,9 @@ namespace GTI_Desktop.Forms {
             OriginSize = Size.Height;
             LoginToolStrip.Renderer = new MySR();
             gtiCore.BaseDados = "Tributacao";
-            txtServer.Text = Properties.Settings.Default.ServerName;
-            txtLogin.Text = Properties.Settings.Default.LastUser;
+            gtiCore.BaseDadosTeste = "TributacaoTeste";
+            txtServer.Text = ConfigurationManager.AppSettings["server"]; 
+            txtLogin.Text = ConfigurationManager.AppSettings["lastuser"];
             txtPwd.Focus();
         }
 
@@ -222,9 +225,14 @@ namespace GTI_Desktop.Forms {
                 MessageBox.Show(ex.InnerException.Message, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            gtiCore.LastUser= txtLogin.Text.ToUpper();
-            gtiCore.UserId= sistema_Class.Retorna_User_LoginId(txtLogin.Text); 
-
+            gtiCore.LastUser = txtLogin.Text.ToUpper();
+            gtiCore.UserId = sistema_Class.Retorna_User_LoginId(txtLogin.Text);
+            //gtiCore.LastUser = txtLogin.Text.ToUpper();
+            //Properties.Settings.Default.Save();
+            Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            config.AppSettings.Settings["lastuser"].Value = txtLogin.Text.ToUpper();
+            config.Save(ConfigurationSaveMode.Modified);
+            ConfigurationManager.RefreshSection("appSettings");
 
             int nId = gtiCore.UserId;
             LoadDBSettings(nId);

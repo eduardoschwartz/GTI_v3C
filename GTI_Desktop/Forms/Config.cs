@@ -1,6 +1,7 @@
 ﻿using System;
 using GTI_Desktop.Classes;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace GTI_Desktop.Forms {
     public partial class Config : Form {
@@ -38,7 +39,12 @@ namespace GTI_Desktop.Forms {
                     default:
                         break;
                 }
-                Properties.Settings.Default.Save();
+
+                Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+                config.AppSettings.Settings["server"].Value = e.ChangedItem.Value.ToString();
+                config.Save(ConfigurationSaveMode.Modified);
+                ConfigurationManager.RefreshSection("appSettings");
+
                 FillGrid();
             }
         }

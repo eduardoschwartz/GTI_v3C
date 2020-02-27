@@ -110,9 +110,6 @@ namespace GTI_Desktop.Forms
 
         public void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Properties.Settings.Default.ServerName = gtiCore.ServerName;
-            Properties.Settings.Default.LastUser = gtiCore.LastUser;
-            Properties.Settings.Default.Save();
             Application.Exit();
         }
 

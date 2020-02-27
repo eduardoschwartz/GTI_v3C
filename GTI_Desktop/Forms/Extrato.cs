@@ -701,7 +701,7 @@ namespace GTI_Desktop.Forms {
                 MessageBox.Show("Selecione a observação que deseja alterar.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             } else {
                 string sUser = ObservacaoListView.SelectedItems[0].SubItems[2].Text;
-                if (sUser != Properties.Settings.Default.LastUser)
+                if (sUser != gtiCore.LastUser)
                     MessageBox.Show("Você só pode alterar as observações criadas por você.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 else {
                     bAddNew = false;
@@ -729,7 +729,7 @@ namespace GTI_Desktop.Forms {
                     reg.Obs = ObservacaoText.Text.Trim();
                     reg.Dataobs = DateTime.Now;
                     Sistema_bll sistema_Class = new Sistema_bll(_connection);
-                    reg.Userid = sistema_Class.Retorna_User_LoginId( Properties.Settings.Default.LastUser);
+                    reg.Userid = sistema_Class.Retorna_User_LoginId( gtiCore.LastUser);
                     //Nova Observação Geral
                     if (bAddNew) {
                         ex = clsTributario.Insert_Observacao_Codigo(reg);
@@ -740,7 +740,7 @@ namespace GTI_Desktop.Forms {
                             short nSeq = clsTributario.Retorna_Ultima_Seq_Observacao_Codigo(reg.Codreduzido);
                             ListViewItem lvItem = new ListViewItem(nSeq.ToString("000"));
                             lvItem.SubItems.Add(DateTime.Now.ToString("dd/MM/yyyy"));
-                            lvItem.SubItems.Add(Properties.Settings.Default.LastUser);
+                            lvItem.SubItems.Add(gtiCore.LastUser);
                             lvItem.SubItems.Add(ObservacaoText.Text);
                             ObservacaoListView.Items.Add(lvItem);
                             ObservacaoControlBehaviour(true);
@@ -761,7 +761,7 @@ namespace GTI_Desktop.Forms {
                         } else {
                             //atualiza ListView
                             ObservacaoListView.SelectedItems[0].SubItems[1].Text = DateTime.Now.ToString("dd/MM/yyyy");
-                            ObservacaoListView.SelectedItems[0].SubItems[2].Text = Properties.Settings.Default.LastUser;
+                            ObservacaoListView.SelectedItems[0].SubItems[2].Text = gtiCore.LastUser;
                             ObservacaoListView.SelectedItems[0].SubItems[3].Text = ObservacaoText.Text.Trim();
                             ObservacaoControlBehaviour(true);
                         }
@@ -780,7 +780,7 @@ namespace GTI_Desktop.Forms {
                     reg.Obs = ObservacaoText.Text.Trim();
                     reg.Data = DateTime.Now;
                     Sistema_bll sistema_Class = new Sistema_bll(_connection);
-                    reg.Userid = sistema_Class.Retorna_User_LoginId( Properties.Settings.Default.LastUser);
+                    reg.Userid = sistema_Class.Retorna_User_LoginId( gtiCore.LastUser);
                     //Nova observação da parcela
                     if (bAddNew) {
                         ex = clsTributario.Insert_Observacao_Parcela(reg);
@@ -791,7 +791,7 @@ namespace GTI_Desktop.Forms {
                             short nSeq = clsTributario.Retorna_Ultima_Seq_Observacao_Parcela(reg.Codreduzido, reg.Anoexercicio, reg.Codlancamento, reg.Seqlancamento, reg.Numparcela, reg.Codcomplemento);
                             ListViewItem lvItem = new ListViewItem(nSeq.ToString("000"));
                             lvItem.SubItems.Add(DateTime.Now.ToString("dd/MM/yyyy"));
-                            lvItem.SubItems.Add(Properties.Settings.Default.LastUser);
+                            lvItem.SubItems.Add(gtiCore.LastUser);
                             lvItem.SubItems.Add(ObservacaoText.Text);
                             ObservacaoListView.Items.Add(lvItem);
                             ObservacaoControlBehaviour(true);
@@ -829,7 +829,7 @@ namespace GTI_Desktop.Forms {
                             ObservacaoControlBehaviour(true);
                             //atualiza ListView
                             ObservacaoListView.SelectedItems[0].SubItems[1].Text = DateTime.Now.ToString("dd/MM/yyyy");
-                            ObservacaoListView.SelectedItems[0].SubItems[2].Text = Properties.Settings.Default.LastUser;
+                            ObservacaoListView.SelectedItems[0].SubItems[2].Text = gtiCore.LastUser;
                             ObservacaoListView.SelectedItems[0].SubItems[3].Text = ObservacaoText.Text.Trim();
                             //atualiza lista de observação
                             for (int i = 0; i < Lista_Observacao.Count; i++) {
@@ -857,7 +857,7 @@ namespace GTI_Desktop.Forms {
             } else {
                 if (MessageBox.Show("Excluir esta observação?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) {
                     string sUser = ObservacaoListView.SelectedItems[0].SubItems[2].Text;
-                    if (sUser != Properties.Settings.Default.LastUser)
+                    if (sUser != gtiCore.LastUser)
                         MessageBox.Show("Você só pode excluir as observações criadas por você.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     else {
                         Tributario_bll clsTributario = new Tributario_bll(_connection);

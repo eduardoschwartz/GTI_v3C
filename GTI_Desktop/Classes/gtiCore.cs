@@ -700,6 +700,47 @@ namespace GTI_Desktop.Classes {
             return ex;
         }
 
+        public static string DecryptGTI(string value) {
+            string sData="",champl=Ul ;
+            int si = 0, x1a2 = 0, i = 0, lchampl=Ul.Length,d=0,c=0,inter=0;
+            List<int> cle = new List<int>();
+            for (int fois = 1; fois <= 16; fois++) {
+                cle.Add(0);
+            }
+
+            for (int fois = 1; fois <= lchampl; fois++) {
+                d =  Convert.ToInt32(champl.Substring(fois, 1));
+                if(d- 97 >= 0) {
+                    d = d - 97;
+                    if (d >= 0 && d <= 15)
+                        d *= 16;
+                }
+                if (fois != Ul.Length)
+                    fois++;
+                int e = Convert.ToInt32(champl.Substring(fois, 1));
+                if (e - 97>= 0){
+                    e -= 97;
+                    if (e >= 0 && e <= 15)
+                        c = d + e;
+                }
+                //    Assemble128
+                int cfc = (((inter / 256) * 256) - (inter % 256)) / 256;
+                int cfd = inter % 256;
+
+                int t = cfc ^ cfd;
+                c ^= t;
+
+                for (int compte = 1; compte <= 16; compte++) {
+                    cle[compte] = cle[compte] ^ c;
+                }
+                sData += Convert.ToChar(c);
+
+            }
+
+            return sData;
+        }
+
+
 
     }
 

@@ -63,6 +63,12 @@ namespace GTI_Bll.Classes {
             return obj.Retorna_User_Password(login);
         }
 
+        public string Retorna_User_Password_Old(string login) {
+            Sistema_Data obj = new Sistema_Data(_connection);
+            return obj.Retorna_User_Password_Old(login);
+        }
+
+
         /// <summary>Retorna os dados principais do contribuinte.
         /// </summary>
         public Contribuinte_Header_Struct Contribuinte_Header(int Codigo) {

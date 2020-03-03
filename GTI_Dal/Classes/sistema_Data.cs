@@ -367,6 +367,13 @@ namespace GTI_Dal.Classes {
             }
         }
 
+        public string Retorna_User_Password_Old(string login) {
+            using (GTI_Context db = new GTI_Context(_connection)) {
+                string Sql = (from u in db.Usuario where u.Nomelogin == login select u.Senha).FirstOrDefault();
+                return Sql;
+            }
+        }
+
         public List<security_event> Lista_Sec_Eventos() {
             using (GTI_Context db = new GTI_Context(_connection)) {
                 var reg = (from t in db.Security_event orderby t.Id select t).ToList();

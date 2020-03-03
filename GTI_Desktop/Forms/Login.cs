@@ -200,7 +200,7 @@ namespace GTI_Desktop.Forms {
             string _connection = gtiCore.Connection_Name();
             Sistema_bll sistema_Class = new Sistema_bll(_connection);
             try {
-                string sUser = sistema_Class.Retorna_User_FullName( txtLogin.Text);
+                string sUser = sistema_Class.Retorna_User_FullName(txtLogin.Text);
                 gtiCore.Liberado(this);
                 if (string.IsNullOrEmpty(sUser)) {
                     gtiCore.Liberado(this);
@@ -208,13 +208,17 @@ namespace GTI_Desktop.Forms {
                     return;
                 }
                 string sPwd = sistema_Class.Retorna_User_Password(txtLogin.Text);
-                if (string.IsNullOrEmpty(sPwd)) {
+                string sPwdOld = sistema_Class.Retorna_User_Password_Old(txtLogin.Text);
+
+                TAcessoFunction _access = new TAcessoFunction();
+                string _decrypt = _access.DecryptGTI(sPwdOld);
+                if (string.IsNullOrEmpty(_decrypt)) {
                     gtiCore.Liberado(this);
                     MessageBox.Show("Por favor cadastre uma senha!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     SenhaButton_Click(null, null);
                     return;
                 } else {
-                    if (string.Compare(txtPwd.Text, gtiCore.Decrypt(sPwd)) != 0) {
+                    if (string.Compare(txtPwd.Text, _decrypt) != 0) {
                         gtiCore.Liberado(this);
                         MessageBox.Show("Senha inválida.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
